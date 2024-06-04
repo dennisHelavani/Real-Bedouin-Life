@@ -207,7 +207,7 @@ nav {
         color: #9C7966;
     }
 }
-.history {
+.history, .gallery {
     margin-top: 4%;
     text-align: center;
     width: 100%;
@@ -221,7 +221,7 @@ nav {
     height: 60vh;
 }
 
-.history h1, .tours h1 {
+.history h1, .tours h1, .gallery h1 {
     color: #D89F6F;
     font-weight: 400;
     font-size: 30px;
@@ -331,23 +331,23 @@ nav {
 }
 
 
-
-/* Styling Gallery  */
-
-
-/* Create four equal columns that sits next to each other */
+.gallery {
+    max-height: 80vh ;
+}
+/* Create four equal columns that sit next to each other */
+/* Create equal columns that sit next to each other */
 .row {
-    justify-content: center; 
-    align-items: center;
-    display: -ms-flexbox; /* IE10 */
+    max-height: 90vh;
+    height: 90vh;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0 4px;
+    position: relative;
+    overflow: hidden;
 }
 
 .column {
-    -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -364,7 +364,6 @@ nav {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
-        -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
@@ -373,7 +372,6 @@ nav {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
-        -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
@@ -410,6 +408,85 @@ nav {
 .column img:nth-child(6) {
     animation-delay: 1s;
 }
+.column img:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.column img:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+/* Style for the last row */
+.row .column:last-child img {
+    opacity: 0.3; /* Make the last row images almost disappearing */
+}
+
+/* Style for the button overlay */
+.more-images {
+    opacity: 0;
+    animation: buttonAppears 2s ease-in-out forwards;
+    animation-delay: 1.0s;
+    display: block;
+    width: 74.2%;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;  
+    
+    padding: 30px 0 0 0;
+  
+    border-left: none; /* No left border */
+    border-right: none; /* No right border */
+    min-height: 50px; /* Ensure the button has enough height */
+    /* background-color: rgba(255, 0, 0, 0.3);  */
+}
+
+
+/* .more-images {
+    opacity: 0;
+    animation: buttonAppears 2s ease-in-out forwards;
+    animation-delay: 1.0s;
+    display: block;
+    width: 74.2%;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(360deg, #4C4C4C, rgba(0, 0, 0, 0)); 
+    padding: 20px 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5); 
+   
+    border-left: none; 
+    border-right: none;
+    min-height: 50px;
+    background-color: rgba(255, 0, 0, 0.3); } */
+
+@keyframes buttonAppears {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.more-images button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #D89F6F;
+    border: 1px solid #D89F6F;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.more-images button:hover {
+    background-color: #c87f4a;
+    cursor: pointer;
+}
+
+
 
 
 
