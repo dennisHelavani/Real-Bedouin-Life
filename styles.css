@@ -1,0 +1,438 @@
+/* "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+   
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10% 20px 10%;
+    background: transparent;
+    z-index: 10;
+}
+
+.logo img {
+    max-height: 45px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+     color: white; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    animation: bgSlide 45s infinite;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.hero-text {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.hero-description {
+    width: 40%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.hero-heading-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.heading-name-wadi, .heading-name-rum {
+    flex: 1;
+    max-width: 50%;
+}
+
+.heading-name-wadi {
+    text-align: right;
+}
+
+.heading-name-rum {
+    text-align: left;
+}
+
+#hero-heading-first {
+    letter-spacing: 7px;
+    font-size: 160px;
+}
+
+#hero-heading-first_second {
+    letter-spacing: 7px;
+    font-size: 160px;
+}
+
+.hero-heading-desert {
+    text-align: left;
+    max-width: 40%;
+    margin-left: 10%;
+}
+
+#hero-heading-second {
+    font-size: 160px;
+    letter-spacing: 7px;
+}
+
+.hero-heading h1 {
+    animation: headingColors 45s linear infinite;
+}
+
+.hero-description p {
+    color: #c6baba;
+    font-size: 18px;
+}
+
+/* Keyframe animation for heading colors */
+@keyframes headingColors {
+    0% {
+        color: #D89F6F;
+    }
+
+    33.33% {
+        color: #D89F6F;
+    }
+
+    66.66% {
+        color: #585C68;
+    }
+
+    100% {
+        color: #47271B;
+    }
+}
+
+/* Additional adjustments for better responsiveness and alignment */
+@media (max-width: 1200px) {
+    #hero-heading-first, #hero-heading-first_second, #hero-heading-second {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-heading-first, #hero-heading-first_second, #hero-heading-second {
+        font-size: 80px;
+    }
+
+    .hero-description {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+@keyframes bgSlide {
+    0% {
+        background: url('images/Main Wadi Rum Desert Picture.jpeg') center center/cover no-repeat;
+    }
+
+    33.33% {
+        background: url('images/background-picture-2.jpeg') center center/cover no-repeat;
+    }
+
+    66.66% {
+        background: url('images/background-picture-3.jpeg') center center/cover no-repeat;
+    }
+
+    100% {
+        background: url('images/background-picture-4.jpeg') center center/cover no-repeat;
+    }
+}
+
+@keyframes headingColors {
+    0% {
+        color: #D89F6F;
+    }
+
+    33.33% {
+        color: #D89F6F;
+    }
+
+    66.66% {
+        color: #585C68;
+    }
+
+    100% {
+        color: #9C7966;
+    }
+}
+.history {
+    margin-top: 4%;
+    text-align: center;
+    width: 100%;
+}
+
+.history-card {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
+}
+
+.history h1, .tours h1 {
+    color: #D89F6F;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.history-card-image {
+    max-width: 60%;
+    width: 55%;
+    height: 85%;
+    background: url('images/Main Wadi Rum Desert Picture.jpeg') center center/cover no-repeat;
+}
+
+.history-card-image-2 {
+    max-width: 60%;
+    width: 55%;
+    height: 85%;
+    background: url('images/bedouin_3.jpeg') center center/cover no-repeat;
+}
+.history-card-text h2 {
+   margin-bottom: 20px;
+   color:#fff;
+}
+
+.history-card-text {
+    max-width: 50%;
+    width: 45%;
+    height: 85%;
+    background-color: rgba(216, 159, 111, 0.8);
+    color: #c6baba;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.history-card-text p {
+    margin: 0;
+}
+
+.history-card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #fff; /* Set the text color for better visibility */
+}
+
+.history-card-info div {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.history-card-info div:not(:last-child) {
+    border-right: 1px solid #ddd; /* Optional: Add divider between columns */
+}
+
+
+
+@keyframes bgSlide_2 {
+    0% {
+        background: url('images/bedouin_1.jpeg') center center/cover no-repeat;
+    }
+
+    33.33% {
+        background: url('images/bedouin_2.jpeg') center center/cover no-repeat;
+    }
+
+    66.66% {
+        background: url('images/bedouin_3.jpeg') center center/cover no-repeat;
+    }
+
+    100% {
+        background: url('images/bedouin_4.jpeg') center center/cover no-repeat;
+    }
+}
+
+.history-card-text {
+    position: absolute; /* Position it absolutely within the parent */
+    top: 42%; /* Center it vertically */
+    left: 75%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to truly center */
+    /* background-color: rgba(216, 159, 111, 0.8); */
+    background: rgba(0, 0, 0, 0.7);
+    
+    color: #c6baba;
+    width: 50%; /* Use the specified width */
+    height: 65%; /* Use the specified height */
+    display: flex; /* Use flexbox to align content */
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 40px 40px 75px; /* Add some padding for better appearance */
+    z-index: 2; /* Make sure it's above the image */
+}
+
+.history-card-text p {
+    margin: 0;
+}
+
+
+.tours {
+    width: 100%;
+    height: 100vh;
+    background: url('images/backgroud-about-us-2.jpeg') center center/cover no-repeat;
+    text-align: center;
+}
+
+
+
+/* Styling Gallery  */
+
+
+/* Create four equal columns that sits next to each other */
+.row {
+    justify-content: center; 
+    align-items: center;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0; /* Initially hide images */
+    animation: sandAppear 2s ease-in-out forwards; /* Apply animation */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Keyframes for sand appearance animation */
+@keyframes sandAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Stagger the animation start times */
+.column img:nth-child(1) {
+    animation-delay: 0s;
+}
+.column img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.column img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.column img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.column img:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.column img:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+
+.sound-button {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound-button i {
+    font-size: 24px; /* Adjust the size of the icon */
+}
+
+.sound-button:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
