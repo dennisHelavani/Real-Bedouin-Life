@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-header {
+header{
    
     position: absolute;
     top: 0;
@@ -242,7 +242,9 @@ nav {
     background: url('images/bedouin_3.jpeg') center center/cover no-repeat;
 }
 .history-card-text h2 {
-   margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+   margin-bottom: 40px;
    color:#fff;
 }
 
@@ -331,9 +333,9 @@ nav {
 }
 
 
-.gallery {
+/* .gallery {
     max-height: 80vh ;
-}
+} */
 /* Create four equal columns that sit next to each other */
 /* Create equal columns that sit next to each other */
 .row {
@@ -431,7 +433,7 @@ nav {
     text-align: center;
     background: transparent;  
     
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
   
     border-left: none; /* No left border */
     border-right: none; /* No right border */
@@ -471,7 +473,7 @@ nav {
 
 
 .more-images button {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
     background-color: #fff;
     color: #D89F6F;
     border: 1px solid #D89F6F;
@@ -484,6 +486,7 @@ nav {
 .more-images button:hover {
     background-color: #c87f4a;
     cursor: pointer;
+    color:#fff
 }
 
 
@@ -511,5 +514,85 @@ nav {
 }
 
 .sound-button:hover {
-    background-color: #555; /* Slightly darker on hover */
+    background-color: #555;
+    color:#fff /* Slightly darker on hover */
 }
+
+
+.logo-footer img {
+    max-height: 30px;
+}
+
+
+.footer {
+    color: #D89F6F;
+    display: flex;
+    border-top: none; /* Remove the top border */
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10% 15px 10%;
+    background-color: transparent;
+    z-index: 10;
+    position: relative; /* Required for pseudo-element positioning */
+  }
+  
+  .footer::before {
+    content: "";
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    top: 0; /* Position at the top */
+    left: 0;
+    right: 0; /* Span the entire width */
+    height: 1px; /* Set the height for the border */
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+.footer nav {
+    text-align: center;
+    /* margin: 0 auto; */
+    flex: 1;
+}
+
+.nav-links-footer, .social-medias {
+    list-style: none;
+    /* display: flex; */
+}
+
+ .nav-links-footer li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-links-footer a {
+    text-decoration: none;
+     color: #D89F6F; 
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-links-footer a:hover {
+    color: #ddd;
+}
+
+#first-li{
+    margin-left: 0px;
+}
+
+.social-medias img {
+    max-height: 30px;
+}
+
+.social-medias li {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+.social-medias li :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
