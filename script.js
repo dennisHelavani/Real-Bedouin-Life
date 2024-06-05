@@ -91,4 +91,20 @@ fetch('your-reviews-api-endpoint')
         });
     })
     .catch(error => console.error('Error fetching reviews:', error));
-  
+
+
+// Spinner Gallery Mover
+let currentPosition = 0;
+const spinnerContainerWidth = document.querySelector('.spinner-container').offsetWidth;
+const numItems = document.querySelectorAll('.spinner-item').length;
+const itemWidth = spinnerContainerWidth / numItems;
+
+function rotateSpinner() {
+    currentPosition -= itemWidth;
+    if (currentPosition <= -spinnerContainerWidth) {
+        currentPosition = 0;
+    }
+    document.querySelector('.spinner-container').style.transform = `translateX(${currentPosition}px)`;
+}
+
+setInterval(rotateSpinner, 3000); // Change image every 3 seconds
