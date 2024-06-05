@@ -73,4 +73,22 @@ document.querySelectorAll('.faq-item').forEach(item => {
     });
   });
   
+
+// Coonecting by API to a trip advisor
+fetch('your-reviews-api-endpoint')
+    .then(response => response.json())
+    .then(reviews => {
+        const reviewBlock = document.querySelector('.review-block');
+        reviewBlock.innerHTML = ''; // Clear existing reviews
+        reviews.forEach(review => {
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+            reviewElement.innerHTML = `
+                <p>"${review.text}"</p>
+                <p class="client">- ${review.author}</p>
+            `;
+            reviewBlock.appendChild(reviewElement);
+        });
+    })
+    .catch(error => console.error('Error fetching reviews:', error));
   

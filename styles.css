@@ -45,16 +45,19 @@ nav {
     margin-left: 0;
 }
 
+
+
 .nav-links a {
+    transition: transform 0.3s ease;
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 700;
 }
 
-header a:hover {
+header a:hover,.nav-links li:hover {
     cursor: pointer !important;
-
+    transform: scale(1.1);
 }
 
 .hero {
@@ -239,7 +242,8 @@ header a:hover {
 .history h1,
 .tours h1,
 .gallery h1,
-.faq h1 {
+.faq h1,
+.call-to-action h1{
     color: #D89F6F;
     font-weight: 400;
     font-size: 30px;
@@ -358,7 +362,7 @@ header a:hover {
 .tours {
     width: 100%;
     height: 100vh;
-    background: url('images/backgroud-about-us-2.jpeg') center center/cover no-repeat;
+    background: url('images/top\ 1\ less\ background.jpeg') center center/cover no-repeat;
     text-align: center;
 }
 
@@ -367,6 +371,7 @@ header a:hover {
     max-height: 80vh ;
 } */
 /* Create four equal columns that sit next to each other */
+/* Create equal columns that sit next to each other */
 /* Create equal columns that sit next to each other */
 .row {
     max-height: 90vh;
@@ -390,9 +395,12 @@ header a:hover {
     vertical-align: middle;
     width: 100%;
     opacity: 0;
-    /* Initially hide images */
     animation: sandAppear 2s ease-in-out forwards;
-    /* Apply animation */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.column img:hover {
+    transform: scale(1.1);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -417,7 +425,6 @@ header a:hover {
         opacity: 0;
         transform: translateY(50px) scale(0.8);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -463,27 +470,29 @@ header a:hover {
     /* Make the last row images almost disappearing */
 }
 
-/* Style for the button overlay */
+/* Button styling for more images */
 .more-images {
-    opacity: 0;
-    animation: buttonAppears 2s ease-in-out forwards;
-    animation-delay: 1.0s;
-    display: block;
-    width: 74.2%;
-    margin: 0 auto;
-    text-align: center;
-    background: transparent;
-
-    padding: 30px 0 30px 0;
-
-    border-left: none;
-    /* No left border */
-    border-right: none;
-    /* No right border */
-    min-height: 50px;
-    /* Ensure the button has enough height */
-    /* background-color: rgba(255, 0, 0, 0.3);  */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.more-images button {
+    background-color: #D89F6F;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.more-images button:hover {
+    background-color: #b88255;
+    transform: scale(1.1);
+}
+
 
 
 @keyframes buttonAppears {
@@ -498,24 +507,6 @@ header a:hover {
 
 
 
-
-
-.more-images button {
-    padding: 10px 20px 10px 20px;
-    background-color: #fff;
-    color: #D89F6F;
-    border: 1px solid #D89F6F;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.more-images button:hover {
-    background-color: #c87f4a;
-    cursor: pointer;
-    color: #fff
-}
 
 
 
@@ -583,6 +574,7 @@ header a:hover {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
     font-size: 16px;
     background-color: white;
+    
     color: #D89F6F;
     padding: 10px;
     padding-bottom: 15px;
@@ -640,8 +632,78 @@ header a:hover {
 
 .faq-answer {
     margin-top: 20px;
+    color:rgba(0, 0, 0, 0.7);
     font-size: 16px;
 }
+
+.call-to-action {
+    background-image: url('background-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #D89F6F;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-book {
+    background-color: #D89F6F;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #b88255;
+}
+
+.review-block {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+    padding: 30px;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-block h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #D89F6F;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.review .client {
+    font-style: italic;
+    color: #D89F6F;
+}
+
+
 
 footer {
     background-color: #fff;
