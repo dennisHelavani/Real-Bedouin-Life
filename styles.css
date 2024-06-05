@@ -21,7 +21,7 @@ header {
     align-items: center;
     padding: 20px 10% 20px 10%;
     background: transparent;
-    z-index: 10;
+    z-index: 11;
 }
 
 .logo img {
@@ -41,6 +41,10 @@ nav {
     margin-left: 20px;
 }
 
+.first-child{
+    margin-left: 0;
+}
+
 .nav-links a {
     text-decoration: none;
     color: white;
@@ -48,10 +52,10 @@ nav {
     font-weight: 700;
 }
 
-.nav-links a:hover {
-    color: #ddd;
-}
+header a:hover{
+    cursor: pointer !important;
 
+}
 .hero {
     position: relative;
     height: 100vh;
@@ -548,84 +552,43 @@ nav {
 }
 
 
-.footer {
-    color: #D89F6F;
-    display: flex;
-    border-top: none;
-    /* Remove the top border */
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10% 15px 10%;
-    background-color: transparent;
-    z-index: 10;
-    position: relative;
-    /* Required for pseudo-element positioning */
-}
 
-.footer::before {
-    content: "";
-    margin: 0 auto;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    /* Position at the top */
-    left: 0;
-    right: 0;
-    /* Span the entire width */
-    height: 1px;
-    /* Set the height for the border */
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.footer h3{
-    font-size: 16px;
-    font-weight: 400;
-}
-.footer nav {
+footer {
+    background-color: #fff;
+    padding: 20px 0;
     text-align: center;
-    /* margin: 0 auto; */
-    flex: 1;
+    color: #D89F6F;
 }
 
-.nav-links-footer,
-.social-medias {
-    list-style: none;
-    /* display: flex; */
-}
-
-.nav-links-footer li {
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.nav-links-footer a {
+footer a {
     text-decoration: none;
     color: #D89F6F;
-    font-size: 16px;
-    font-weight: 500;
+    margin: 0 15px;
 }
 
-.nav-links-footer a:hover {
-    color: #ddd;
+footer a:hover {
+    color: #b88255;
 }
 
-#first-li {
-    margin-left: 0px;
+footer div {
+    margin-bottom: 10px;
 }
 
-.social-medias img {
+footer div:last-child {
+    font-size: 14px;
+}
+
+
+footer img {
+
+
+    /* filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg) brightness(89%) contrast(90%); */
     max-height: 30px;
 }
 
-.social-medias li {
-    display: inline-block;
-    margin-left: 10px;
 
-}
-
-.social-medias li :hover {
+footer img:hover{
+    filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg) brightness(89%) contrast(90%);
     transform: scale(1.1);
     cursor: pointer;
 }
