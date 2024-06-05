@@ -41,7 +41,7 @@ nav {
     margin-left: 20px;
 }
 
-.first-child{
+.first-child {
     margin-left: 0;
 }
 
@@ -52,10 +52,11 @@ nav {
     font-weight: 700;
 }
 
-header a:hover{
+header a:hover {
     cursor: pointer !important;
 
 }
+
 .hero {
     position: relative;
     height: 100vh;
@@ -237,7 +238,8 @@ header a:hover{
 
 .history h1,
 .tours h1,
-.gallery h1 {
+.gallery h1,
+.faq h1 {
     color: #D89F6F;
     font-weight: 400;
     font-size: 30px;
@@ -551,13 +553,103 @@ header a:hover{
     max-height: 30px;
 }
 
+.faq {
+    margin-top: 4%;
+}
 
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping to prevent overlap */
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.faq-left {
+    width: 37%;
+    margin-left: 10%;
+    height: 100%;
+}
+
+.faq-right {
+    width: 40%;
+    margin-left: 3%;
+}
+
+.faq-item {
+    /* border-top: 1px solid rgba(0, 0, 0, 0.7); */
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    background-color: white;
+    color: #D89F6F;
+    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulsing {
+    animation: pulse 1s infinite alternate;
+}
+
+.faq-item img {
+    width: 20px;
+}
+
+.faq-item:hover {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.7);
+}
+
+.faq-item:hover img {
+    filter: invert(95%) sepia(29%) saturate(6164%) hue-rotate(304deg) brightness(90%) contrast(87%);
+}
+
+/* .faq-item:hover {
+    background-color: #D89F6F;
+    color: white;
+  } */
+
+/* .faq-item:hover img {
+    filter: invert(97%) sepia(28%) saturate(414%) hue-rotate(271deg) brightness(117%) contrast(100%);
+} */
+
+.faq-question {
+    margin: 0;
+}
+
+.faq-answer {
+    margin-top: 20px;
+    font-size: 16px;
+}
 
 footer {
     background-color: #fff;
     padding: 20px 0;
     text-align: center;
     color: #D89F6F;
+    clear: both;
+    /* Ensure footer is positioned below content */
 }
 
 footer a {
@@ -578,16 +670,11 @@ footer div:last-child {
     font-size: 14px;
 }
 
-
 footer img {
-
-
-    /* filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg) brightness(89%) contrast(90%); */
     max-height: 30px;
 }
 
-
-footer img:hover{
+footer img:hover {
     filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg) brightness(89%) contrast(90%);
     transform: scale(1.1);
     cursor: pointer;
