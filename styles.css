@@ -244,7 +244,7 @@ header a:hover,.nav-links li:hover {
 .gallery h1,
 .faq h1,
 .call-to-action h1{
-    color: #D89F6F;
+    color: #b88255;
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 40px;
@@ -279,7 +279,7 @@ header a:hover,.nav-links li:hover {
     width: 45%;
     height: 85%;
     background-color: rgba(216, 159, 111, 0.8);
-    color: #c6baba;
+    color: #d3d0d0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -288,10 +288,13 @@ header a:hover,.nav-links li:hover {
 
 .history-card-text p {
     margin: 0;
+    line-height:1.4;
+   
 }
 
 .history-card-info {
     display: flex;
+    
     justify-content: space-between;
     margin-top: 50px;
     font-size: 14px;
@@ -359,6 +362,7 @@ header a:hover,.nav-links li:hover {
 
 .history-card-text p {
     margin: 0;
+    text-align: left;
 }
 
 
@@ -481,7 +485,7 @@ header a:hover,.nav-links li:hover {
 }
 
 .more-images button {
-    background-color: #D89F6F;
+    background-color: #b88255;
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -492,7 +496,7 @@ header a:hover,.nav-links li:hover {
 }
 
 .more-images button:hover {
-    background-color: #b88255;
+    background-color: #8a6438;
     transform: scale(1.1);
 }
 
@@ -578,7 +582,7 @@ header a:hover,.nav-links li:hover {
     font-size: 16px;
     background-color: white;
     
-    color: #D89F6F;
+    color: #b88255;
     padding: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -640,9 +644,9 @@ header a:hover,.nav-links li:hover {
     font-size: 16px;
 }
 /* /* Call-to-Action Section */
+/* Call-to-Action Section */
 .cta {
     background-color: #fff;
-    padding: 50px 20px;
     text-align: center;
     position: relative;
 }
@@ -650,7 +654,6 @@ header a:hover,.nav-links li:hover {
 .cta-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -659,6 +662,9 @@ header a:hover,.nav-links li:hover {
 .cta-content {
     flex: 1;
     padding: 20px;
+    text-align: center;
+    /* margin-left: 10%; */
+    width: 100%;
 }
 
 .cta-content h2 {
@@ -693,11 +699,13 @@ header a:hover,.nav-links li:hover {
     flex: 1;
     text-align: right;
     padding: 20px;
+    margin-right: 10%;
+    width: 40%;
 }
 
 .cta-image img {
     max-width: 100%;
-    /* border-radius: 15px; */
+   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -707,9 +715,16 @@ header a:hover,.nav-links li:hover {
         text-align: center;
     }
 
-    .cta-image {
+    .cta-content {
+        width: 100%;
+        margin-left: 0;
         text-align: center;
-        margin-top: 20px;
+    }
+
+    .cta-image {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
 }
 
