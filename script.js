@@ -1,41 +1,39 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const audio = document.getElementById('scrollSound');
-    const soundButton = document.getElementById('soundButton');
-    let scrollTimeout;
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const audio = document.getElementById('scrollSound');
+//     const soundButton = document.getElementById('soundButton');
+//     let scrollTimeout;
 
-    const playSound = () => {
-        if (audio.paused) {
-            audio.play().catch((error) => {
-                console.log('Audio playback failed: ', error);
-            });
-        }
-    };
+//     const playSound = () => {
+//         if (audio.paused) {
+//             audio.play().catch((error) => {
+//                 console.log('Audio playback failed: ', error);
+//             });
+//         }
+//     };
 
-    const stopSound = () => {
-        if (!audio.paused) {
-            audio.pause();
-        }
-    };
+//     const stopSound = () => {
+//         if (!audio.paused) {
+//             audio.pause();
+//         }
+//     };
 
-    const onScroll = () => {
-        playSound();
+//     const onScroll = () => {
+//         playSound();
 
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            stopSound();
-        }, 150); // 150ms delay to detect when scrolling stops
-    };
+//         clearTimeout(scrollTimeout);
+//         scrollTimeout = setTimeout(() => {
+//             stopSound();
+//         }, 150); // 150ms delay to detect when scrolling stops
+//     };
 
-    const enableSound = () => {
-        soundButton.style.display = 'none'; // Hide the button after enabling sound
-        window.addEventListener('scroll', onScroll);
-    };
+//     const enableSound = () => {
+//         soundButton.style.display = 'none'; // Hide the button after enabling sound
+//         window.addEventListener('scroll', onScroll);
+//     };
 
-    soundButton.addEventListener('click', enableSound);
-});
+//     soundButton.addEventListener('click', enableSound);
+// });
 
-
-// FAQ Section and Its answers
 const answers = [
     "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
     "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
@@ -45,7 +43,26 @@ const answers = [
 ];
 
 function showAnswer(index) {
-    document.getElementById('faq-answer').textContent = answers[index - 1];
+    const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
+    let answerElement = faqItem.querySelector('.faq-answer');
+    const arrowElement = document.getElementById(`arrow-${index}`);
+    
+    // If the answer element doesn't exist, create it
+    if (!answerElement) {
+        answerElement = document.createElement('div');
+        answerElement.classList.add('faq-answer');
+        answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
+        faqItem.appendChild(answerElement);
+    }
+
+    // Toggle the display of the answer
+    if (answerElement.style.display === 'block') {
+        answerElement.style.display = 'none';
+        arrowElement.src = 'images/arrow-down.png'; // Change back to original arrow image
+    } else {
+        answerElement.style.display = 'block';
+        arrowElement.src = 'images/arrow-up.png'; // Change to new arrow image
+    }
 }
 // Pulse animation below
 document.querySelectorAll('.faq-item').forEach(item => {
@@ -75,18 +92,18 @@ document.querySelectorAll('.faq-item').forEach(item => {
   
 
 
-// Spinner Gallery Mover
-let currentPosition = 0;
-const spinnerContainerWidth = document.querySelector('.spinner-container').offsetWidth;
-const numItems = document.querySelectorAll('.spinner-item').length;
-const itemWidth = spinnerContainerWidth / numItems;
+// // Spinner Gallery Mover
+// let currentPosition = 0;
+// const spinnerContainerWidth = document.querySelector('.spinner-container').offsetWidth;
+// const numItems = document.querySelectorAll('.spinner-item').length;
+// const itemWidth = spinnerContainerWidth / numItems;
 
-function rotateSpinner() {
-    currentPosition -= itemWidth;
-    if (currentPosition <= -spinnerContainerWidth) {
-        currentPosition = 0;
-    }
-    document.querySelector('.spinner-container').style.transform = `translateX(${currentPosition}px)`;
-}
+// function rotateSpinner() {
+//     currentPosition -= itemWidth;
+//     if (currentPosition <= -spinnerContainerWidth) {
+//         currentPosition = 0;
+//     }
+//     document.querySelector('.spinner-container').style.transform = `translateX(${currentPosition}px)`;
+// }
 
-setInterval(rotateSpinner, 3000); // Change image every 3 seconds
+// setInterval(rotateSpinner, 3000); // Change image every 3 seconds
