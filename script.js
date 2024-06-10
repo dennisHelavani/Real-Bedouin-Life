@@ -1,109 +1,251 @@
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     const audio = document.getElementById('scrollSound');
-//     const soundButton = document.getElementById('soundButton');
-//     let scrollTimeout;
 
-//     const playSound = () => {
-//         if (audio.paused) {
-//             audio.play().catch((error) => {
-//                 console.log('Audio playback failed: ', error);
-//             });
-//         }
-//     };
 
-//     const stopSound = () => {
-//         if (!audio.paused) {
-//             audio.pause();
-//         }
-//     };
+const elements = document.querySelectorAll(".animate-on-scrollY");
+let lastScrollPosition = 0;
+function checkPosition() {
+  const windowHeight = window.innerHeight;
+  const scrollPosition = window.scrollY || window.pageYOffset;
 
-//     const onScroll = () => {
-//         playSound();
+  elements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top + scrollPosition;
 
-//         clearTimeout(scrollTimeout);
-//         scrollTimeout = setTimeout(() => {
-//             stopSound();
-//         }, 150); // 150ms delay to detect when scrolling stops
-//     };
+    if (elementTop - windowHeight <= 0) {
+      element.classList.add("showY");
+    } else {
+      element.classList.remove("showY");
+    }
+  });
+}
 
-//     const enableSound = () => {
-//         soundButton.style.display = 'none'; // Hide the button after enabling sound
-//         window.addEventListener('scroll', onScroll);
-//     };
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  let scrollDirection = scrollPosition > lastScrollPosition ? "down" : "up";
+  lastScrollPosition = scrollPosition;
 
-//     soundButton.addEventListener('click', enableSound);
-// });
+  let opacity = 1 - scrollPosition / 300;
+  let opacity_slower = 1 - scrollPosition / 150;
+  let translateY = Math.min(scrollPosition / 3, 250); // Adjust the divisor to control the translation speed
 
+  const heroHeadingWrap = document.querySelector(".hero-heading-wrap");
+  const heroHeadingSecond = document.getElementById("hero-heading-second");
+  const heroHeadingDescription = document.querySelector(".hero-description");
+
+  heroHeadingWrap.style.opacity = opacity;
+  heroHeadingSecond.style.opacity = opacity;
+  heroHeadingDescription.style.opacity = opacity_slower;
+
+  heroHeadingWrap.style.transform = `translateY(${translateY}px)`;
+  heroHeadingSecond.style.transform = `translateY(${translateY}px)`;
+  heroHeadingDescription.style.transform = `translateY(${translateY}px)`;
+
+  // Add class to elements when scrolling down, remove when scrolling up
+  if (scrollDirection === "down") {
+    elements.forEach((element) => {
+      if (element.classList.contains("showY")) {
+        element.classList.remove("showY");
+      }
+    });
+  } else {
+    checkPosition();
+  }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const historyCardBlocks = document.querySelectorAll(".history-card-block");
+  const historyH1 = document.querySelectorAll(".history h1");
+  const toursH1 = document.querySelector(".tours h1");
+  const galleryH1 = document.querySelector(".gallery h1");
+  const faqH1 = document.querySelector(".faq h1");
+  const spinnerH1 = document.querySelector(".spinner h1");
+  const callToActionH1 = document.querySelector(".cta");
+  const moreImages = document.querySelector(".more-images button");
+
+  const elements = [
+    ...historyCardBlocks,
+    ...historyH1,
+    toursH1,
+    galleryH1,
+    faqH1,
+    callToActionH1,
+    spinnerH1,
+    moreImages
+  ];
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1, // Adjust based on when you want to trigger the animation
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Start listening to scroll events when the element is in view
+        window.addEventListener("scroll", onScroll);
+      } else {
+        // Stop listening to scroll events when the element is out of view
+        window.removeEventListener("scroll", onScroll);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  elements.forEach((element) => observer.observe(element));
+
+  const onScroll = () => {
+    const scrollPosition = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const thresholdPercentage = 0.75; // 70%
+    const thresholdPosition = viewportHeight * thresholdPercentage;
+
+    elements.forEach((element) => {
+      const bounding = element.getBoundingClientRect();
+      const elementTop = bounding.top + scrollPosition;
+      const elementMiddle = elementTop + bounding.height / 2;
+
+      // Calculate distance from the threshold position
+      const distanceFromThreshold = Math.abs(
+        elementMiddle - (scrollPosition + thresholdPosition)
+      );
+      const threshold = viewportHeight * thresholdPercentage;
+
+      // Check if the element has already crossed the threshold position
+      if (elementMiddle < scrollPosition + thresholdPosition) {
+        element.style.opacity = 1;
+        element.style.transform = `translateY(0px)`;
+      } else {
+        let opacity = 1 - distanceFromThreshold / threshold;
+        opacity = Math.max(0, Math.min(1, opacity)); // Ensure opacity is between 0 and 1
+
+        let translateY = Math.min(distanceFromThreshold / 3, 150); // Adjust the divisor to control the translation speed
+
+        element.style.opacity = opacity;
+        element.style.transform = `translateY(${translateY}px)`;
+      }
+    });
+  };
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // const historyCardBlocks = document.querySelectorAll(".history-card-block");
+  const footer = document.querySelectorAll("footer");
+
+  const elements = [...footer];
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1, // Adjust based on when you want to trigger the animation
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Start listening to scroll events when the element is in view
+        window.addEventListener("scroll", onScroll);
+      } else {
+        // Stop listening to scroll events when the element is out of view
+        window.removeEventListener("scroll", onScroll);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  elements.forEach((element) => observer.observe(element));
+
+  const onScroll = () => {
+    const scrollPosition = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const thresholdPercentage = 0.90;
+    const thresholdPosition = viewportHeight * thresholdPercentage;
+
+    elements.forEach((element) => {
+      const bounding = element.getBoundingClientRect();
+      const elementTop = bounding.top + scrollPosition;
+      const elementMiddle = elementTop + bounding.height / 2;
+
+      // Calculate distance from the threshold position
+      const distanceFromThreshold = Math.abs(
+        elementMiddle - (scrollPosition + thresholdPosition)
+      );
+      const threshold = viewportHeight * thresholdPercentage;
+
+      // Check if the element has already crossed the threshold position
+      if (elementMiddle < scrollPosition + thresholdPosition) {
+        element.style.opacity = 1;
+        element.style.transform = `translateY(0px)`;
+      } else {
+        let opacity = 1 - distanceFromThreshold / threshold;
+        opacity = Math.max(0, Math.min(1, opacity)); // Ensure opacity is between 0 and 1
+
+        let translateY = Math.min(distanceFromThreshold / 3, 150); // Adjust the divisor to control the translation speed
+
+        element.style.opacity = opacity;
+        element.style.transform = `translateY(${translateY}px)`;
+      }
+    });
+  };
+});
+
+// FAQ Section
 const answers = [
-    "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
-    "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
-    "The best time to visit is from March to May and September to November, when the weather is mild.",
-    "Yes, all meals are provided during the tour, including traditional Bedouin dishes.",
-    "Yes, the tour is suitable for children. We offer family-friendly packages."
+  "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
+  "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
+  "The best time to visit is from March to May and September to November, when the weather is mild.",
+  "Yes, all meals are provided during the tour, including traditional Bedouin dishes.",
+  "Yes, the tour is suitable for children. We offer family-friendly packages.",
 ];
 
 function showAnswer(index) {
-    const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
-    let answerElement = faqItem.querySelector('.faq-answer');
-    const arrowElement = document.getElementById(`arrow-${index}`);
-    
-    // If the answer element doesn't exist, create it
-    if (!answerElement) {
-        answerElement = document.createElement('div');
-        answerElement.classList.add('faq-answer');
-        answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
-        faqItem.appendChild(answerElement);
-    }
+  const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
+  let answerElement = faqItem.querySelector(".faq-answer");
+  const arrowElement = document.getElementById(`arrow-${index}`);
 
-    // Toggle the display of the answer
-    if (answerElement.style.display === 'block') {
-        answerElement.style.display = 'none';
-        arrowElement.src = 'images/arrow-down.png'; // Change back to original arrow image
-    } else {
-        answerElement.style.display = 'block';
-        arrowElement.src = 'images/arrow-up.png'; // Change to new arrow image
-    }
+  // If the answer element doesn't exist, create it
+  if (!answerElement) {
+    answerElement = document.createElement("div");
+    answerElement.classList.add("faq-answer");
+    answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
+    faqItem.appendChild(answerElement);
+  }
+
+  // Toggle the display of the answer
+  if (answerElement.style.display === "block") {
+    answerElement.style.display = "none";
+    arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
+  } else {
+    answerElement.style.display = "block";
+    arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
+  }
 }
-// Pulse animation below
-document.querySelectorAll('.faq-item').forEach(item => {
-    let isPulsing = false; // Initialize a flag to track if the animation is active
-  
-    item.addEventListener('mouseenter', () => {
-      if (!isPulsing) { // Check if the animation is not already active
-        isPulsing = true;
-        item.classList.add('pulsing');
-      }
-    });
-  
-    item.addEventListener('animationiteration', () => {
-      if (isPulsing) { // Check if the animation is active
-        isPulsing = false;
-        item.classList.remove('pulsing');
-      }
-    });
-  
-    item.addEventListener('mouseleave', () => {
-      if (isPulsing) { // Check if the animation is active
-        isPulsing = false;
-        item.classList.remove('pulsing');
-      }
-    });
+
+// // Pulse animation below
+document.querySelectorAll(".faq-item").forEach((item) => {
+  let isPulsing = false; // Initialize a flag to track if the animation is active
+
+  item.addEventListener("mouseenter", () => {
+    if (!isPulsing) {
+      // Check if the animation is not already active
+      isPulsing = true;
+      item.classList.add("pulsing");
+    }
   });
-  
 
+  item.addEventListener("animationiteration", () => {
+    if (isPulsing) {
+      // Check if the animation is active
+      isPulsing = false;
+      item.classList.remove("pulsing");
+    }
+  });
 
-// // Spinner Gallery Mover
-// let currentPosition = 0;
-// const spinnerContainerWidth = document.querySelector('.spinner-container').offsetWidth;
-// const numItems = document.querySelectorAll('.spinner-item').length;
-// const itemWidth = spinnerContainerWidth / numItems;
-
-// function rotateSpinner() {
-//     currentPosition -= itemWidth;
-//     if (currentPosition <= -spinnerContainerWidth) {
-//         currentPosition = 0;
-//     }
-//     document.querySelector('.spinner-container').style.transform = `translateX(${currentPosition}px)`;
-// }
-
-// setInterval(rotateSpinner, 3000); // Change image every 3 seconds
+  item.addEventListener("mouseleave", () => {
+    if (isPulsing) {
+      // Check if the animation is active
+      isPulsing = false;
+      item.classList.remove("pulsing");
+    }
+  });
+});
