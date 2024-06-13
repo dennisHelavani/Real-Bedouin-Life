@@ -1,5 +1,6 @@
 
 
+
 const elements = document.querySelectorAll(".animate-on-scrollY");
 let lastScrollPosition = 0;
 function checkPosition() {

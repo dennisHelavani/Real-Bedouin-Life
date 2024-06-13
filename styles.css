@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -374,6 +377,7 @@ header a:hover,
 
 
 .tours {
+    margin-top:20px ;
     width: 100%;
     height: 100vh;
     background: url('images/top\ 1\ less\ background.jpeg') center center/cover no-repeat;
@@ -477,7 +481,7 @@ header a:hover,
 /* Style for the last row */
 .row .column:last-child img {
     opacity: 0.3;
-    /* Make the last row images almost disappearing */
+    
 }
 
 /* Button styling for more images */
@@ -486,6 +490,7 @@ header a:hover,
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 10px;;
 }
 
 .more-images button {
@@ -553,7 +558,7 @@ header a:hover,
     left: 50%;
     transform: translateX(-50%);
     background-color:transparent;
-    filter: brightness(0.9);
+    filter: brightness(1);
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
@@ -605,6 +610,7 @@ header a:hover,
 }
 
 .faq {
+    /* margin-top:20px ; */
     overflow-x: hidden;
     margin-top: 4%;
 }
@@ -618,20 +624,15 @@ header a:hover,
 }
 
 .faq-left {
-    width: 37%;
-    margin-left: 10%;
-    height: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.faq-right {
-    height: 100%;
-    width: 40%;
-    margin-left: 3%;
-}
+
 
 .faq-item {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
-    font-size: 16px;
+    font-size: 18px;
     background-color: white;
     color: #b88255;
     padding: 10px 0;
