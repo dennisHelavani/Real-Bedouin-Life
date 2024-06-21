@@ -2,9 +2,13 @@
     --font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --section-margin-top:4%;
     --h1-c:#b88255;
+    --header-color:#b88255;
     --h1-w:400;
     --h1-fs:30px;
     --h1-mb:4%;
+    --logo-name-font-one:8px;
+    --logo-name-font-two:20px;
+    --logo-name-w:500;
 }
 
 * {
@@ -23,19 +27,42 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10% 20px 10%;
-    background: transparent;
+    padding: 0px 10% 0px 10%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 11;
+    transition:all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    
+}
+.logo-name-container{
+    /* border: 0; */
+    /* border-bottom: 1px solid var(--h1-c); */
+}
+
+
+#logo-name-part-two{
+    font-size: var( --logo-name-font-two);
+    font-weight: var(--logo-name-w);
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+#logo-name-part-one{
+    margin: 0;
+    padding: 0;
+    font-size: var( --logo-name-font-one);
+    font-weight: var(--h1-w);
 }
 
 .logo img {
     max-height: 45px;
+    margin-right: 3px;
 }
 
 nav {
@@ -58,11 +85,12 @@ nav {
 
 
 .nav-links a {
+    
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: white;
+    color: var( --header-color);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 header a:hover,
@@ -611,9 +639,13 @@ header a:hover,
     vertical-align: middle;
     width: 100%;
     opacity: 1;
+    transition: 0.5s;
+}
+.column img:hover{
+    cursor: pointer;
+    filter: brightness(0.5);
     
 }
-
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -713,7 +745,7 @@ header a:hover,
 }
 
 
-.spinner-item:hover img {
+.spinner-item img:hover  {
     /* transform: scale(1.05); */
     filter: brightness(1.2);
 }
@@ -737,26 +769,9 @@ header a:hover,
 }
 
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.pulsing {
-    animation: pulse 1s infinite alternate;
-}
 
 .faq {
-   
+   height: 50vh;
     overflow-x: hidden;
     
 }
@@ -821,6 +836,7 @@ header a:hover,
 /* /* Call-to-Action Section */
 /* Call-to-Action Section */
 .cta {
+    height: 40vh;
     background-color: #fff;
     position: relative;
 

@@ -1,3 +1,35 @@
+var prevScrollpos = window.pageYOffset;
+
+// Ensure the navbar is hidden on page load
+window.onload = function() {
+    document.getElementById("navbar").style.top = "-70px";
+};
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    var navbar = document.getElementById("navbar");
+
+    if(currentScrollPos >= 0 && currentScrollPos <400){
+      navbar.style.top = "-70px";
+    }
+    // Check if the user has scrolled more than 100px
+    else if (currentScrollPos > 400) {
+        // Add a class to show the navbar if it doesn't already have it
+    
+        if (prevScrollpos > currentScrollPos) {
+            navbar.style.top = "0px";
+        } else {
+            navbar.style.top = "0px";
+        }
+    } else {
+        // Hide the navbar if the scroll position is less than or equal to 100px
+        navbar.style.top = "0px";
+      
+        
+    }
+
+    prevScrollpos = currentScrollPos;
+};
 
 
 
@@ -54,66 +86,6 @@ window.addEventListener("scroll", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  // const historyCardBlocks = document.querySelectorAll(".history-card-block");
-  const footer = document.querySelectorAll("footer");
-
-  const elements = [...footer];
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.1, // Adjust based on when you want to trigger the animation
-  };
-
-  const observerCallback = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Start listening to scroll events when the element is in view
-        window.addEventListener("scroll", onScroll);
-      } else {
-        // Stop listening to scroll events when the element is out of view
-        window.removeEventListener("scroll", onScroll);
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  elements.forEach((element) => observer.observe(element));
-
-  const onScroll = () => {
-    const scrollPosition = window.scrollY;
-    const viewportHeight = window.innerHeight;
-    const thresholdPercentage = 0.90;
-    const thresholdPosition = viewportHeight * thresholdPercentage;
-
-    elements.forEach((element) => {
-      const bounding = element.getBoundingClientRect();
-      const elementTop = bounding.top + scrollPosition;
-      const elementMiddle = elementTop + bounding.height / 2;
-
-      // Calculate distance from the threshold position
-      const distanceFromThreshold = Math.abs(
-        elementMiddle - (scrollPosition + thresholdPosition)
-      );
-      const threshold = viewportHeight * thresholdPercentage;
-
-      // Check if the element has already crossed the threshold position
-      if (elementMiddle < scrollPosition + thresholdPosition) {
-        element.style.opacity = 1;
-        element.style.transform = `translateY(0px)`;
-      } else {
-        let opacity = 1 - distanceFromThreshold / threshold;
-        opacity = Math.max(0, Math.min(1, opacity)); // Ensure opacity is between 0 and 1
-
-        let translateY = Math.min(distanceFromThreshold / 3, 150); // Adjust the divisor to control the translation speed
-
-        element.style.opacity = opacity;
-        element.style.transform = `translateY(${translateY}px)`;
-      }
-    });
-  };
-});
-
 // FAQ Section
 const answers = [
   "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
@@ -146,31 +118,4 @@ function showAnswer(index) {
   }
 }
 
-// // Pulse animation below
-document.querySelectorAll(".faq-item").forEach((item) => {
-  let isPulsing = false; // Initialize a flag to track if the animation is active
 
-  item.addEventListener("mouseenter", () => {
-    if (!isPulsing) {
-      // Check if the animation is not already active
-      isPulsing = true;
-      item.classList.add("pulsing");
-    }
-  });
-
-  item.addEventListener("animationiteration", () => {
-    if (isPulsing) {
-      // Check if the animation is active
-      isPulsing = false;
-      item.classList.remove("pulsing");
-    }
-  });
-
-  item.addEventListener("mouseleave", () => {
-    if (isPulsing) {
-      // Check if the animation is active
-      isPulsing = false;
-      item.classList.remove("pulsing");
-    }
-  });
-});
