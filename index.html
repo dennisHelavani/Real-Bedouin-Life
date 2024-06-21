@@ -8,12 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <div class="logo">
         <img src="images/logo_1.png" alt="Logo" />
+        REAL BEDOUIN 
+        LIFE
       </div>
       <nav>
         <ul class="nav-links">
@@ -60,12 +63,12 @@
    
 
     <section class="history" id="about">
-      <h1>ABOUT US</h1>
+      <h1  data-aos="fade-down">ABOUT US</h1>
       <div class="history-card">
-        <div class="history-card-image-2">
+        <div class="history-card-image-2" data-aos="fade-up-right" >
           <img src="images/bedouin_3.jpeg" alt="" srcset="" />
         </div>
-        <div class="history-card-block">
+        <div class="history-card-block" data-aos="fade-up-left"  >
           <h2>GET TO KNOW US</h2>
           <p class="history-card-text">
             My name is Sabbah, your guide through the magic Wadi Rum desert. I
@@ -95,15 +98,16 @@
       </div>
     </section>
     <section class="tour" id="tours">
-      <h1>OUR TOURS</h1>
+      <h1 data-aos="fade-down">OUR TOURS</h1>
 
       <section class="tours">
-        <ul>
+        <ul >
           <li
             class="booking-card"
             style="
               background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-            "
+            " data-aos="zoom-in-up"
+            data-aos-duration="3000"
           >
             <div class="book-container">
               <div class="content">
@@ -162,7 +166,8 @@
               </div>
             </div>
           </li>
-          <li
+          <li data-aos="zoom-in-up"
+          data-aos-duration="3000"
             class="booking-card"
             style="
               background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
@@ -225,7 +230,8 @@
               </div>
             </div>
           </li>
-          <li
+          <li data-aos="zoom-in-up"
+          data-aos-duration="3000"
             class="booking-card"
             style="
               background-image: url(https://images.unsplash.com/photo-1579489225078-27977a77bf72?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
@@ -355,16 +361,16 @@
       </section>
     </section>
     <section class="history">
-      <h1>HISTORY OF WADI RUM</h1>
+      <h1 data-aos="fade-down">HISTORY OF WADI RUM</h1>
       <div class="history-card">
-        <div class="history-card-image">
+        <div class="history-card-image" data-aos="fade-up-right">
           <img
             src="images/Main Wadi Rum Desert Picture.jpeg"
             alt=""
             srcset=""
           />
         </div>
-        <div class="history-card-block">
+        <div class="history-card-block" data-aos="fade-up-left">
           <p class="history-card-text">
             Wadi Rum, the Valley of the Moon, first chronicled by explorers in
             the early 19th century. This stunning desert landscape boasts
@@ -381,10 +387,10 @@
       </div>
     </section>
     <section class="spinner">
-      <div style="margin: 0 auto">
-        <h1>WHAT YOU SEE!</h1>
-      </div>
-      <div class="spinner-container">
+    
+        <h1 data-aos="fade-down">WHAT YOU SEE!</h1>
+      
+      <div class="spinner-container" data-aos="zoom-in-up">
         <div class="spinner-items">
           <div class="spinner-item">
             <img src="images/gallery1.jpeg" alt="Place 1" />
@@ -411,10 +417,10 @@
     </section>
 
     <section class="faq" id="faq">
-      <div style="text-align: center">
+      <div style="text-align: center" data-aos="fade-down">
         <h1>FAQ</h1>
       </div>
-      <div class="faq-container">
+      <div class="faq-container" data-aos="flip-down">
         <div class="faq-left">
           <div class="faq-item" onclick="showAnswer(1)">
             <div class="faq-question-wrap">
@@ -468,8 +474,8 @@
       </div>
     </section>
     <section class="gallery">
-      <h1>GALLERY</h1>
-      <div class="row">
+      <h1 data-aos="fade-down">GALLERY</h1>
+      <div class="row" data-aos="zoom-in">
         <div class="column">
           <img src="images/backgroud-about-us-2.jpeg" style="width: 100%" />
           <img src="images/background-about-us-1.jpeg" style="width: 100%" />
@@ -492,13 +498,13 @@
           <img src="images/gallery_4.jpeg" style="width: 100%" />
         </div>
       </div>
-      <div class="more-images">
+      <div class="more-images" data-aos="zoom-in-up">
         <button onclick="window.location.href='https://www.instagram.com/'">
           SEE MORE
         </button>
       </div>
     </section>
-    <section class="cta">
+    <section class="cta" data-aos="fade-up">
       <div class="cta-container">
         <div class="cta-content">
           <h2>Want to experience all that WADI RUM has to offer?</h2>
@@ -578,5 +584,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 1000
+
+      });
+  </script>
   </body>
 </html>

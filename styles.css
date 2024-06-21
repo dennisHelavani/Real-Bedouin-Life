@@ -1,4 +1,12 @@
-/* "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+:root {
+    --font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --section-margin-top:4%;
+    --h1-c:#b88255;
+    --h1-w:400;
+    --h1-fs:30px;
+    --h1-mb:4%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +17,12 @@ html {
 }
 
 body {
-    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     background-color: #fff;
     color: #333;
 }
 
 header {
-
     position: absolute;
     top: 0;
     width: 100%;
@@ -245,7 +252,7 @@ header a:hover,
 .spinner,
 .faq,
 .cta{
-    margin-top: 4%;
+    margin-top: var( --section-margin-top);
     text-align: center;
     width: 100%;
 }
@@ -265,10 +272,10 @@ header a:hover,
 .gallery h1,
 .faq h1,
 .spinner h1 {
-    color: #b88255;
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: 4%;
+    color: var(--h1-c);
+    font-weight: var(--h1-w);
+    font-size: var(--h1-fs);
+    margin-bottom: var(--h1-mb);
 }
 
 .history-card-image {
@@ -604,13 +611,10 @@ header a:hover,
     vertical-align: middle;
     width: 100%;
     opacity: 1;
-    animation: sandAppear 2s ease-in-out forwards;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    
 }
 
-.column img:hover {
-    transform: scale(1.1);
-}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -627,59 +631,6 @@ header a:hover,
         max-width: 100%;
     }
 }
-
-/* Keyframes for sand appearance animation */
-@keyframes sandAppear {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.8);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* Stagger the animation start times */
-.column img:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.column img:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.column img:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.column img:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.column img:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.column img:nth-child(6) {
-    animation-delay: 1s;
-}
-
-.column img:nth-child(7) {
-    animation-delay: 1.2s;
-}
-
-.column img:nth-child(8) {
-    animation-delay: 1.4s;
-}
-
-/* Style for the last row */
-.row .column:last-child img {
-    opacity: 0.3;
-    
-}
-
 /* Button styling for more images */
 .more-images {
    
@@ -872,7 +823,7 @@ header a:hover,
 .cta {
     background-color: #fff;
     position: relative;
-    
+
 }
 
 .cta-container {
