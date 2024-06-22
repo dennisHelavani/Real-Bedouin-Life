@@ -158,12 +158,13 @@ nav {
 
 #hero-heading-first {
     letter-spacing: 7px;
-    font-size: 160px;
+    font-size: clamp(2rem, 9vw, 14rem); 
 }
 
 #hero-heading-first_second {
     letter-spacing: 7px;
-    font-size: 160px;
+    font-size: clamp(2rem, 9vw, 14rem); 
+    /* font-size: 160px; */
 }
 
 .hero-heading-desert {
@@ -174,7 +175,7 @@ nav {
 }
 
 #hero-heading-second {
-    font-size: 160px;
+    font-size: clamp(2rem, 9vw, 14rem); 
     text-wrap:wrap;
     letter-spacing: 7px;
 }
@@ -218,20 +219,20 @@ nav {
 /* Additional adjustments for better responsiveness and alignment */
 @media (max-width: 1200px) {
 
-    #hero-heading-first,
+    /* #hero-heading-first,
     #hero-heading-first_second,
     #hero-heading-second {
-        font-size: 120px;
-    }
+        font-size: 100px;
+    } */
 }
 
 @media (max-width: 768px) {
 
-    #hero-heading-first,
+    /* #hero-heading-first,
     #hero-heading-first_second,
     #hero-heading-second {
         font-size: 80px;
-    }
+    } */
 
     .hero-description {
         width: 80%;
@@ -286,6 +287,7 @@ nav {
     padding-top: var( --section-margin-top);
     text-align: center;
     width: 100%;
+    scroll-margin-top: 30px;
 }
 
 .history-card {
@@ -388,29 +390,12 @@ nav {
 
 
 
-@keyframes bgSlide_2 {
-    0% {
-        background: url('images/bedouin_1.jpeg') center center/cover no-repeat;
-    }
-
-    33.33% {
-        background: url('images/bedouin_2.jpeg') center center/cover no-repeat;
-    }
-
-    66.66% {
-        background: url('images/bedouin_3.jpeg') center center/cover no-repeat;
-    }
-
-    100% {
-        background: url('images/bedouin_4.jpeg') center center/cover no-repeat;
-    }
-}
 
 
 
 .tour {
-    max-height: 80vh;
-    height: 80vh;
+    max-height: 80%;
+    height: 80%;
     background: url('images/top\ 1\ less\ background.jpeg') center center/cover no-repeat;
     text-align: center;
 }

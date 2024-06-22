@@ -1,35 +1,37 @@
-// var prevScrollpos = window.pageYOffset;
+document.querySelectorAll('.header a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      const offset = 100; // Adjust as needed for fixed header height
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-// Ensure the navbar is hidden on page load
-// window.onload = function() {
-//     document.getElementById("navbar").style.top = "0px";
-//     document.getElementById("navbar").style.backgroundColor = "transparent";
-    
-// };
+      // Custom easing function for slower animation
+      const easing = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     var navbar = document.getElementById("navbar");
+      const duration = 1000; // Animation duration in milliseconds
+      const startTime = performance.now();
+
+      function scroll() {
+          const elapsed = performance.now() - startTime;
+          const progress = easing(Math.min(elapsed / duration, 1));
+
+          window.scrollTo({
+              top: offsetPosition * progress,
+              behavior: 'smooth'
+          });
+
+          if (elapsed < duration) {
+              requestAnimationFrame(scroll);
+          }
+      }
+
+      scroll();
+  });
+});
 
 
-//     if(currentScrollPos >= 0 && currentScrollPos <400){
-//       navbar.style.top = "0px";
-//     }
-//     // Check if the user has scrolled more than 100px
-//     else if (currentScrollPos > 400) {
-//         // Add a class to show the navbar if it doesn't already have it
-    
-//         if (prevScrollpos > currentScrollPos) {
-//             navbar.style.top = "0px";
-//         } else {
-//             navbar.style.top = "0px";
-//         }
-//     } else {
-//         // Hide the navbar if the scroll position is less than or equal to 100px
-//         navbar.style.top = "0px";   
-//     }
-//     prevScrollpos = currentScrollPos;
-// };
 
 window.addEventListener('scroll', function() {
   var header = document.getElementById('navbar');
