@@ -1,36 +1,63 @@
 var prevScrollpos = window.pageYOffset;
 
 // Ensure the navbar is hidden on page load
-window.onload = function() {
-    document.getElementById("navbar").style.top = "-70px";
-};
-
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    var navbar = document.getElementById("navbar");
-
-    if(currentScrollPos >= 0 && currentScrollPos <400){
-      navbar.style.top = "-70px";
-    }
-    // Check if the user has scrolled more than 100px
-    else if (currentScrollPos > 400) {
-        // Add a class to show the navbar if it doesn't already have it
+// window.onload = function() {
+//     document.getElementById("navbar").style.top = "0px";
+//     document.getElementById("navbar").style.backgroundColor = "transparent";
     
-        if (prevScrollpos > currentScrollPos) {
-            navbar.style.top = "0px";
-        } else {
-            navbar.style.top = "0px";
-        }
-    } else {
-        // Hide the navbar if the scroll position is less than or equal to 100px
-        navbar.style.top = "0px";
+// };
+
+// window.onscroll = function() {
+//     var currentScrollPos = window.pageYOffset;
+//     var navbar = document.getElementById("navbar");
+
+
+//     if(currentScrollPos >= 0 && currentScrollPos <400){
+//       navbar.style.top = "0px";
+//     }
+//     // Check if the user has scrolled more than 100px
+//     else if (currentScrollPos > 400) {
+//         // Add a class to show the navbar if it doesn't already have it
+    
+//         if (prevScrollpos > currentScrollPos) {
+//             navbar.style.top = "0px";
+//         } else {
+//             navbar.style.top = "0px";
+//         }
+//     } else {
+//         // Hide the navbar if the scroll position is less than or equal to 100px
+//         navbar.style.top = "0px";   
+//     }
+//     prevScrollpos = currentScrollPos;
+// };
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('navbar');
+  var header_logo_text_one= document.getElementById('logo-name-part-one');
+  var header_logo_text_two= document.getElementById('logo-name-part-two');
+  var header_nav_linls = document.getElementsByClassName('nav-links');
+  var headerLinks = header.querySelectorAll('a');
+
+
+  if (window.scrollY > window.innerHeight/2) {
+    header.style.boxShadow = ' 0 4px 8px rgba(0, 0, 0, 0.2)';
+      header.style.background = 'white';
+      header_logo_text_one.style.color = 'black';
+      header_logo_text_two.style.color = 'black';
       
-        
+      for (var i = 0; i < headerLinks.length; i++) {
+        headerLinks[i].style.color = '#b88255'; // Assuming you want black text on white background
     }
-
-    prevScrollpos = currentScrollPos;
-};
-
+  } else {
+      header.style.background = 'transparent';
+      header_logo_text_one.style.color = '#fff';
+      header_logo_text_two.style.color = '#fff';
+      for (var i = 0; i < headerLinks.length; i++) {
+        headerLinks[i].style.color = '#fff'; 
+        header.style.boxShadow = 'none';// Assuming you want black text on white background
+    }
+  }
+});
 
 
 const elements = document.querySelectorAll(".animate-on-scrollY");

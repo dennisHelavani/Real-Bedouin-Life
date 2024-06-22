@@ -34,15 +34,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10% 0px 10%;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     z-index: 11;
     transition:all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-    
+
 }
 .logo-name-container{
-    /* border: 0; */
-    /* border-bottom: 1px solid var(--h1-c); */
+    color:white;
 }
 
 
@@ -85,18 +84,19 @@ nav {
 
 
 .nav-links a {
-    
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: var( --header-color);
+    color:#fff;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    padding-bottom: 5px;
 }
 
-header a:hover,
-.nav-links li:hover {
+
+.nav-links a:hover {
     cursor: pointer !important;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    border-bottom:2.5px solid var(--h1-c);
 }
 
 .hero {
@@ -280,7 +280,7 @@ header a:hover,
 .spinner,
 .faq,
 .cta{
-    margin-top: var( --section-margin-top);
+    padding-top: var( --section-margin-top);
     text-align: center;
     width: 100%;
 }
