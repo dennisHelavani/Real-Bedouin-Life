@@ -1,4 +1,4 @@
-var prevScrollpos = window.pageYOffset;
+// var prevScrollpos = window.pageYOffset;
 
 // Ensure the navbar is hidden on page load
 // window.onload = function() {
@@ -35,7 +35,6 @@ window.addEventListener('scroll', function() {
   var header = document.getElementById('navbar');
   var header_logo_text_one= document.getElementById('logo-name-part-one');
   var header_logo_text_two= document.getElementById('logo-name-part-two');
-  var header_nav_linls = document.getElementsByClassName('nav-links');
   var headerLinks = header.querySelectorAll('a');
 
 
