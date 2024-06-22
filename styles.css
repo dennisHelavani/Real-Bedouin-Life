@@ -440,6 +440,7 @@ nav {
 	transition: transform 0.3s ease;
 }
 .img-area:hover img {
+    
 	transform: scale(1.1);
 }
 .overlay {
