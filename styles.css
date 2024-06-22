@@ -9,6 +9,8 @@
     --logo-name-font-one:8px;
     --logo-name-font-two:20px;
     --logo-name-w:500;
+    --h2-fs:25px;
+    --h2-fw:400;
 }
 
 * {
@@ -74,7 +76,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .first-child {
@@ -104,6 +106,7 @@ nav {
     align-items: center;
     justify-content: flex-start;
     color: white;
+    object-fit: cover;
     animation: bgSlide 45s infinite;
 }
 
@@ -129,6 +132,7 @@ nav {
     width: 40%;
     text-align: left;
     margin-left: 10%;
+    text-wrap:pretty;
 }
 
 
@@ -141,6 +145,7 @@ nav {
 .heading-name-rum {
     flex: 1;
     max-width: 50%;
+    text-wrap:wrap;
 }
 
 .heading-name-wadi {
@@ -164,12 +169,13 @@ nav {
 .hero-heading-desert {
     text-align: left;
     max-width: 40%;
-    margin-bottom: 3%;
-    margin-left: 10%;
+    padding-bottom: 3%;
+    padding-left: 10%;
 }
 
 #hero-heading-second {
     font-size: 160px;
+    text-wrap:wrap;
     letter-spacing: 7px;
 }
 
@@ -304,24 +310,7 @@ nav {
     margin-bottom: var(--h1-mb);
 }
 
-.history-card-image {
-    opacity: 1;
-    max-width: 60%;
-    width: 55%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 85%;
-    background: transparent;
-}
-
-.history-card-image img {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
+.history-card-image,
 .history-card-image-2 {
     opacity: 1;
     max-width: 60%;
@@ -331,22 +320,24 @@ nav {
     background: transparent;
 }
 
-.history-card-image-2 img {
+.history-card-image img,.history-card-image-2 img
+ {
     opacity: 1;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.history-card-block h2 {
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    color: #fff;
 
+
+.history-card-block h2 {
+    font-size: var(--h2-fs);
+    font-weight: var(--h2-fw);
+    margin-bottom: 30px;
+    color: #fff;
 }
 
 .history-card-block {
-  
     transition: opacity 0.5s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -363,10 +354,11 @@ nav {
     padding: 40px 40px 40px 75px;
     flex-direction: column;
     z-index: 2;
-    
 }
 
+
 .history-card-block p {
+    text-wrap: pretty;
     opacity: 1;
     margin: 0;
     line-height: 1.4;
@@ -377,7 +369,7 @@ nav {
 .history-card-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 40px;
     font-size: 14px;
     color: #fff;
     /* Set the text color for better visibility */
@@ -444,7 +436,7 @@ nav {
 	transition: box-shadow 0.3s ease;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.7);
-	border-radius: 15px;
+	border-radius: 10px;
 	transition: all 0.8s ease-in-out;
 }
 .single-card:hover {
@@ -483,11 +475,11 @@ nav {
 	opacity: 1;
 }
 .add-to-cart, .view-details {
-	background-color: #b88255;
+	background-color: transparent;
 	color: #fff;
     border: none;
 	padding: 10px 15px;
-	border-radius: 25px;
+	/* border-radius: 25px;s */
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -495,21 +487,23 @@ nav {
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease;
 	margin-bottom: 10px;
+    
 }
 .add-to-cart:hover, .view-details:hover {
-	background-color: #8a6438;
+	/* background-color: #b88255; */
 	color: #fff;
-	border: none;
+	border-bottom:2.5px solid var(--h1-c);
 }
 .info {
 	padding: 10px;
 	text-align: center;
-	color: #ddd;
+	color: #fff;
 }
-.info h3 {
+.info h2 {
 	margin: 15px 0 10px;
-	font-size: 30px;
-	font-weight: bold;
+	font-size: var(--h2-fs);
+    font-weight: var(--h2-fw);
+	/* font-weight: bold; */
 	text-transform: uppercase;
 }
 .info .price {
@@ -614,15 +608,18 @@ nav {
     /* width: 500%;  */
 }
 .spinner-item {
+    transition: all 0.8s ease-in-out;
     position: relative;
     width: 20%;
     height: 100%;
 }
 
 .spinner-item img {
+    object-fit: cover;
     animation: fadeInAnimation ease 3s;
     width: 300px;
     height: 350px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease-in-out;
     z-index: 1; 
@@ -645,11 +642,15 @@ nav {
     opacity: 1;
     z-index: 2; /* Ensure text is above images */
 }
-
+.spinner-item:hover{
+    transform: translateY(-10px);
+}
 
 .spinner-item img:hover  {
     /* transform: scale(1.05); */
     filter: brightness(1.2);
+   
+
 }
 
 
@@ -844,6 +845,7 @@ footer a {
 
 footer a:hover {
     color: #b88255;
+    border-bottom:2.5px solid var(--h1-c);
 }
 
 footer div {
