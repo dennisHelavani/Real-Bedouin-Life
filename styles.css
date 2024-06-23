@@ -479,10 +479,10 @@ nav {
 }
 .add-to-cart, .view-details {
 	background-color: transparent;
+    position: relative;
 	color: #fff;
     border: none;
 	padding: 10px 15px;
-	/* border-radius: 25px;s */
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -492,11 +492,29 @@ nav {
 	margin-bottom: 10px;
     
 }
-.add-to-cart:hover, .view-details:hover {
-	/* background-color: #b88255; */
-	color: #fff;
-	border-bottom:2.5px solid var(--h1-c);
+
+
+
+
+.add-to-cart:after,
+.view-details:after {
+    content: ' ';
+    position: absolute;
+    height: 2.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: var(--header-color);
+    transition: width 0.5s;
 }
+
+.add-to-cart:hover:after,
+.view-details:hover:after{
+    cursor: pointer !important;
+    width: 100%;
+}
+
+
 .info {
 	padding: 10px;
 	text-align: center;
@@ -573,20 +591,22 @@ nav {
 }
 
 .more-images button {
-    
-    background-color: #b88255;
-    color: #fff;
-    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 10rem;
+    height: 2.25rem;
     border: none;
     border-radius: 25px;
-    font-size: 18px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    outline: none;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+   
 }
 
 .more-images button:hover {
-    background-color: #8a6438;
-    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .spinner {
@@ -781,19 +801,21 @@ nav {
 }
 
 .cta-button {
-    background-color: #b88255;
-    color: #fff;
-    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 10rem;
+    height: 2.25rem;
     border: none;
     border-radius: 25px;
-    font-size: 18px;
+    outline: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #8a6438;
-    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .cta-image {
@@ -860,7 +882,7 @@ nav {
 .contact-container label,
 .contact-container button,
 .description {
-    font-family: 'Jost', sans-serif;
+  
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
