@@ -73,6 +73,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    position: relative;
 }
 
 .nav-links li {
@@ -84,19 +85,30 @@ nav {
 }
 
 .nav-links a {
-    transition: transform 0.3s ease;
     text-decoration: none;
-    color:#fff;
+    color: var(--header-color);
     font-size: 16px;
     font-weight: 500;
+    position: relative;
     padding-bottom: 5px;
 }
 
-.nav-links a:hover {
-    cursor: pointer !important;
-    /* transform: scale(1.1); */
-    border-bottom:2.5px solid var(--h1-c);
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: var(--header-color);
+    transition: width 0.5s;
 }
+
+.nav-links a:hover:after {
+    cursor: pointer !important;
+    width: 100%;
+}
+
 
 .hero {
     position: relative;
