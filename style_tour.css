@@ -9,6 +9,7 @@
     --logo-name-font-one: 8px;
     --logo-name-font-two: 20px;
     --logo-name-w: 500;
+    --highlight:#D89F6F;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
 }
 
 header {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,17 +37,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10% 0px 10%;
-    background: white;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    background: transparent;
     z-index: 11;
     transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-
 }
 
 .logo-name-container {
     color: black;
 }
-
 
 #logo-name-part-two {
     font-size: var(--logo-name-font-two);
@@ -84,12 +82,15 @@ nav {
     margin-left: 20px;
 }
 
+#firs-child{
+    margin-left: 0 !important;
+}
+
 .first-child {
     margin-left: 0;
 }
 
 .nav-links a {
-    /* transition: transform 0.3s ease; */
     text-decoration: none;
     color: var(--header-color);
     font-size: 16px;
@@ -115,10 +116,172 @@ nav {
 }
 
 
+
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    object-fit: cover;
+    animation: bgSlide 45s infinite;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.hero-text {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.hero-description {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap:pretty;
+}
+
+.hero-heading-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+
+.heading-name-rum {
+    text-align: left;
+}
+
+#hero-heading-first {
+    letter-spacing: 7px;
+    font-size: clamp(2rem, 9vw, 14rem); 
+}
+
+
+.hero-heading-desert {
+    text-align: center;
+    max-width: 100%;
+}
+
+#hero-heading-second {
+    font-size: clamp(2rem, 9vw, 14rem); 
+    text-wrap:wrap;
+    letter-spacing: 7px;
+}
+
+.hero-heading h1 {
+    animation: headingColors 45s linear infinite;
+}
+
+
+
+.hero-description p {
+    color: #c6baba;
+    font-size: 18px;
+}
+
+
+.hero-heading {
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity change */
+}
+
+
+/* Keyframe animation for heading colors */
+@keyframes headingColors {
+    0% {
+        color: #D89F6F;
+    }
+
+    33.33% {
+        color: #D89F6F;
+    }
+
+    66.66% {
+        color: #585C68;
+    }
+
+    100% {
+        color: #47271B;
+    }
+}
+
+/* Additional adjustments for better responsiveness and alignment */
+@media (max-width: 1200px) {
+
+    /* #hero-heading-first,
+    #hero-heading-first_second,
+    #hero-heading-second {
+        font-size: 100px;
+    } */
+}
+
+@media (max-width: 768px) {
+
+    /* #hero-heading-first,
+    #hero-heading-first_second,
+    #hero-heading-second {
+        font-size: 80px;
+    } */
+
+    .hero-description {
+        width: 80%;
+       
+    }
+}
+
+
+@keyframes bgSlide {
+    0% {
+        background: url('images/Main Wadi Rum Desert Picture.jpeg') center center/cover no-repeat;
+    }
+
+    33.33% {
+        background: url('images/background-picture-2.jpeg') center center/cover no-repeat;
+    }
+
+    66.66% {
+        background: url('images/background-picture-3.jpeg') center center/cover no-repeat;
+    }
+
+    100% {
+        background: url('images/background-picture-4.jpeg') center center/cover no-repeat;
+    }
+}
+
+@keyframes headingColors {
+    0% {
+        color: #D89F6F;
+    }
+
+    33.33% {
+        color: #D89F6F;
+    }
+
+    66.66% {
+        color: #585C68;
+    }
+
+    100% {
+        color: #9C7966;
+    }
+}
+
+
 .tour-links a {
-    /* transition: transform 0.3s ease; */
     text-decoration: none;
-    color: var(--header-color);
+    color: white;
     font-size: var(--h1-fs);
     font-weight: 400;
     position: relative;
@@ -139,16 +302,15 @@ nav {
 .tour-links a:hover:after {
     cursor: pointer !important;
     width: 100%;
-    /* text-decoration: underline;
-    border-bottom:2.5px solid var(--h1-c); */
 }
 
 .tour-intro {
-    padding-top: 6%;
-    
+    padding-top: 30px;
+    font-weight: bold;
     align-items: center;
-    height: 50px;
-    width: 100%;
+    max-height: 50px;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .tour-links {
@@ -164,8 +326,6 @@ nav {
 .tour-container {
     padding-top: var(--section-margin-top);
     scroll-margin-top: 40px;
-    /* text-align: center; */
-
 }
 
 .tour-container h1,
@@ -183,9 +343,9 @@ nav {
     margin-bottom: 0 !important;
 }
 
-
 .container {
     display: flex;
+    flex-direction: row;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -206,6 +366,7 @@ nav {
 .tour-list li {
     margin-bottom: 10px;
 }
+
 .action-container {
     display: flex;
     align-items: center;
@@ -247,7 +408,6 @@ nav {
     width: 100%;
     position: relative;
     height: 500px;
-    /* Adjust as needed for your layout */
 }
 
 .image-grid img {
@@ -255,7 +415,6 @@ nav {
     border-radius: 8px;
     object-fit: cover;
 }
-
 
 .img1 {
     top: 0;
@@ -278,6 +437,106 @@ nav {
     z-index: 3;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tour-container h1,
+    #tour-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .book-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .image-grid {
+        height: auto;
+    }
+
+    .img1, .img2, .img3 {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .tour-links {
+        flex-direction: column;
+    }
+
+    .tour-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .text-content, .image-content {
+        padding: 5px;
+    }
+
+    .tour-container h1,
+    #tour-heading {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .book-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .tour-links a {
+        font-size: 18px;
+    }
+}
 
 .spinner {
     padding-bottom: var(--section-margin-top);

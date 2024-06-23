@@ -27,14 +27,37 @@
         </ul>
       </nav>
     </header>
-    <section class="tour-intro">
-      <ul class="tour-links">
-        <li><a href="#tour1">Tour 1</a></li>
-        <li><a href="#tour2">Tour 2</a></li>
-        <li><a href="#tour3">Tour 3</a></li>
-      </ul>
+   
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <div class="hero-heading">
+          <div class="hero-heading-wrap">
+           
+              <h1 id="hero-heading-first">TOURS</h1>
+           
+     
+          
+        </div>
+        <div class="hero-description">
+          <p>
+            Discover the magic of the Wadi Rum with our expert guides. From
+            sweeping dunes to ancient caravan routes, we'll show you sights
+            beyond your wildest dreams. Don't just visit the Wadi Rum -
+            experience it with us.
+          </p>
+        </div>
+      </div>
+      <div class="tour-intro">
+        <ul class="tour-links">
+          <li id="firs-child"><a href="#tour1">Tour 1</a></li>
+          <li><a href="#tour2">Tour 2</a></li>
+          <li><a href="#tour3">Tour 3</a></li>
+        </ul>
+      </div>
+     
     </section>
-
+   
     <section class="tour-container" id="tour1">
       <div class="container">
         <div class="text-content" data-aos="fade-down">
@@ -151,7 +174,7 @@
     </section>
     <section class="spinner">
       <h1 data-aos="fade-down">WHAT YOU SEE!</h1>
-
+    
       <div class="spinner-container" data-aos="zoom-in-up">
         <div class="spinner-items">
           <div class="spinner-item">
@@ -177,6 +200,7 @@
         </div>
       </div>
     </section>
+    
     <section class="tour-container" id="tour3">
       <div class="container">
         <div class="text-content" data-aos="fade-down">
@@ -249,13 +273,7 @@
       </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 200,
-        duration: 1000,
-      });
-    </script>
+    
     <footer
       style="
         background-color: #fff;
@@ -317,5 +335,13 @@
         &copy; 2024 Real Bedouin Life. All rights reserved.
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script_tours.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
