@@ -16,6 +16,7 @@
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
+    --animation-color:#f0a500;
 }
 
 * {
@@ -105,7 +106,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 0;
-    background: var(--header-color);
+    background: var(--animation-color);
     transition: width 0.5s;
 }
 
@@ -322,8 +323,10 @@ nav {
 .tour h1,
 .gallery h1,
 .faq h1,
-.spinner h1 {
+.spinner h1,
+.contact-container h1 {
     color: var(--h1-c);
+    text-transform: uppercase;
     font-weight: var(--h1-w);
     font-size: var(--h1-fs);
     margin-bottom: var(--h1-mb);
@@ -439,7 +442,7 @@ nav {
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.7);
 	border-radius: 10px;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .single-card:hover {
 	transform: translateY(-10px);
@@ -631,7 +634,7 @@ nav {
     /* width: 500%;  */
 }
 .spinner-item {
-    transition: all 0.8s ease-in-out;
+     transition: all 0.5s ease-in-out; 
     position: relative;
     width: 20%;
     height: 100%;
@@ -878,7 +881,7 @@ nav {
     padding: 2rem 0 5rem 2rem;
 }
 
-.contact-container h1,
+/* .contact-container h1, */
 .contact-container label,
 .contact-container button,
 .description {
@@ -887,13 +890,13 @@ nav {
     letter-spacing: 0.1rem;
 }
 
-.contact-container h1 {
+/* .contact-container h1 {
     color: var(--h1-c);
     text-transform: uppercase;
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
     font-weight: 300;
-}
+} */
 
 .contact-container p {
     color: var(--secondary-color);
@@ -1028,10 +1031,7 @@ footer a {
     margin: 0 15px;
 }
 
-footer a:hover {
-    color: #b88255;
-    border-bottom:2.5px solid var(--h1-c);
-}
+
 
 footer div {
     margin-bottom: 10px;
@@ -1050,3 +1050,41 @@ footer img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 320px) {
+   
+  }
+  
+  /* Small Devices (Landscape Phones) */
+  @media (min-width: 321px) and (max-width: 480px) {
+   
+  }
+  
+  /* Small Tablets (Portrait) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    
+  }
+  
+  /* Large Tablets (Landscape) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    
+  }
+  
+  /* Small Desktops */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+   
+  }
+  
+  /* Medium Desktops */
+  @media (min-width: 1201px) and (max-width: 1600px) {
+   
+  }
+  
+  /* Large Desktops */
+  @media (min-width: 1601px) {
+   
+  }
