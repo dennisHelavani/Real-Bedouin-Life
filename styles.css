@@ -17,6 +17,7 @@
     --button-color: #b88255;
     --h1-color: #3F444C;
     --animation-color:#f0a500;
+    --form-fs:16px;
 }
 
 * {
@@ -990,31 +991,7 @@ nav {
     transition-delay: 3s;
 }
 
-@media only screen and (max-width: 950px) {
-    .logo {
-        width: 8rem;
-    }
 
-    .contact-container h1 {
-        font-size: 1.75rem;
-    }
-
-    .contact-container p {
-        font-size: 0.7rem;
-    }
-
-    .contact-container input,
-    .contact-container textarea,
-    .contact-container button {
-        font-size: 0.65rem;
-    }
-
-    .contact-container button {
-        width: 7rem;
-    }
-
-
-}
 
 footer {
     background-color: #fff;
@@ -1066,17 +1043,145 @@ footer img:hover {
   
   /* Small Tablets (Portrait) */
   @media (min-width: 481px) and (max-width: 768px) {
-    
+    :root {
+        --nav-fs: 12px;
+        --text-fs: 12px;
+        --h1-fs: 20px;
+        --price-fs: 15px;
+        --tour-link-fw: 300;
+        --form-fs:12px;
+    }
+    .hero{
+        height:100vh;
+    }
+    .spinner-item img {
+        height: 270px;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .spinner-container{
+        display: none;
+    }
+    header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .contact-container {
+        height: 48vh;  
+      }
+      .left-col{
+        display: none;
+      }
+      .right-col{
+          padding: 0rem 0 5rem 1rem;
+          height: 90%;
+      }
+      .contact-container form {
+          padding: 0;
+          margin-top:15px;
+          
+  
+      }
+  
+      .contact-container input,
+      .contact-container textarea,
+      .contact-container button {
+          font-size: 12px;
+      }
+  
+      .contact-container button {
+          width: 7rem;
+      }
+  
+      footer div:last-child {
+          font-size: 12px;
+      }
+      footer a{
+          font-size: var(--nav-fs);
+      }
+      footer a:after,
+      .tour-links a:after ,
+      .nav-links a:after{
+          height: 2px;
+      }
   }
   
   /* Large Tablets (Landscape) */
   @media (min-width: 769px) and (max-width: 1024px) {
-    
+    :root {
+        --nav-fs: 14px;
+        --text-fs: 14px;
+        --h1-fs: 24px;
+        --price-fs: 17px;
+        --tour-link-fw: 400;
+        --form-fs:12px;
+    }
+
+    .spinner-item img {
+        height: 270px;
+    }
+    .contact-container {
+        height: 48vh;  
+      }
+      .right-col{
+          padding: 0rem 0 5rem 1rem;
+          height: 90%;
+      }
+      .contact-container form {
+          padding: 0;
+          margin-top:15px;
+          
+  
+      }
+  
+      .contact-container input,
+      .contact-container textarea,
+      .contact-container button {
+          font-size: 12px;
+      }
+    .contact-container button {
+        width: 7rem;
+    }
+
+    footer div:last-child {
+        font-size: 12px;
+    }
+    footer a{
+        font-size: var(--nav-fs);
+    }
+    footer a:after,
+    .tour-links a:after ,
+    .nav-links a:after{
+        height: 2px;
+    }
   }
   
   /* Small Desktops */
   @media (min-width: 1025px) and (max-width: 1200px) {
-   
+    .spinner-container {
+        height: 80%;
+    }
+
+    .spinner-item img {
+        object-fit: cover;
+        animation: fadeInAnimation ease 3s;
+        width: 100%;
+        height: 310px;
+
+    }
   }
   
   /* Medium Desktops */

@@ -20,6 +20,7 @@
     --h1-color: #3F444C;
     --animation-color: #f0a500;
     --price-fs: 24px;
+    --form-fs:16px;
 }
 
 * {
@@ -550,6 +551,7 @@ footer a:hover:after {
 }
 
 .left-col {
+    object-fit: cover;
     width: 50%;
     height: 100%;
     background-image: url("images_resized/gallery_4.jpeg");
@@ -561,6 +563,7 @@ footer a:hover:after {
 .right-col {
     background: var(--bg-color);
     max-width: 50%;
+    width: 50%;
     height: 100%;
     padding: 2rem 0 5rem 2rem;
 }
@@ -583,9 +586,9 @@ footer a:hover:after {
 
 .contact-container p {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: var(--text-fs);
     letter-spacing: 0.01rem;
-    width: 40vw;
+    width: 100%;
     margin: 0.25rem 0;
 }
 
@@ -593,11 +596,11 @@ footer a:hover:after {
 .description {
     color: var(--secondary-color);
     text-transform: uppercase;
-    font-size: 0.625rem;
+    font-size: var(--form-fs);
 }
 
 .contact-container form {
-    width: 31.25rem;
+    width: 100%;
     position: relative;
     margin-top: 2rem;
     padding: 1rem 0;
@@ -606,7 +609,7 @@ footer a:hover:after {
 .contact-container input,
 .contact-container textarea,
 .contact-container label {
-    width: 40vw;
+    width: 100%;
     display: block;
 }
 
@@ -667,9 +670,9 @@ footer a:hover:after {
 
 #error,
 #success-msg {
-    width: 40vw;
+    width: 100%;
     margin: 0.125rem 0;
-    font-size: 0.75rem;
+    font-size: var(--text-fs);
     text-transform: uppercase;
 
     color: var(--secondary-color);
@@ -718,39 +721,116 @@ footer img:hover {
 }
 
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    
+}
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
+    :root {
+        --nav-fs: 12px;
+        --text-fs: 12px;
+        --h1-fs: 20px;
+        --price-fs: 15px;
+        --tour-link-fw: 300;
+        --form-fs:12px;
+    }
+    .hero{
+        height:100vh;
+    }
+    .spinner-item img {
+        height: 270px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .book-button {
+        font-size: var(--text-fs);
+        width: 9rem;
+        height: 2.25rem;
+
+    }
     .container {
-        width: 100%;
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-col{
+        display: none;
+      }
+
+      .right-col{
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 90%;
+      }
+
+    .contact-container  {
+        text-align: center;
+    }
+    .contact-container label,
+    .description {
+       text-align: left;
     }
 
-    .text-content,
+    .spinner-container{
+        visibility: hidden;
+    }
+
     .image-content {
-        padding: 5px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 10px;
     }
 
     .tour-container h1,
     #tour-heading {
-        font-size: 20px;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
-    .price {
-        font-size: 18px;
+
+    .image-grid {
+        height: auto;
     }
 
-    .book-button {
-        padding: 8px 16px;
-        font-size: 14px;
+    .img1,
+    .img2,
+    .img3 {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
 
-    .nav-links a {
-        font-size: 14px;
+    header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        padding: 10px;
+        max-width: 100vw;;
     }
 
-    .tour-links a {
-        font-size: 18px;
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .tour-links {
+        flex-direction: column;
+    }
+
+    .tour-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -763,6 +843,7 @@ footer img:hover {
         --h1-fs: 20px;
         --price-fs: 15px;
         --tour-link-fw: 300;
+        --form-fs:12px;
     }
     .hero{
         height:100vh;
@@ -784,7 +865,7 @@ footer img:hover {
         width: 90%;
     }
     .spinner-container{
-        visibility: hidden;
+        display: none;
     }
 
     .image-content {
@@ -841,6 +922,44 @@ footer img:hover {
         margin-left: 0;
         margin-bottom: 10px;
     }
+    .contact-container {
+        height: 48vh;  
+      }
+      .left-col{
+        display: none;
+      }
+      .right-col{
+          padding: 0rem 0 5rem 1rem;
+          height: 90%;
+      }
+      .contact-container form {
+          padding: 0;
+          margin-top:15px;
+          
+  
+      }
+  
+      .contact-container input,
+      .contact-container textarea,
+      .contact-container button {
+          font-size: 12px;
+      }
+  
+      .contact-container button {
+          width: 7rem;
+      }
+  
+      footer div:last-child {
+          font-size: 12px;
+      }
+      footer a{
+          font-size: var(--nav-fs);
+      }
+      footer a:after,
+      .tour-links a:after ,
+      .nav-links a:after{
+          height: 2px;
+      }
 }
 
 /* Large Tablets (Landscape) */
@@ -852,6 +971,7 @@ footer img:hover {
         --h1-fs: 24px;
         --price-fs: 17px;
         --tour-link-fw: 400;
+        --form-fs:12px;
     }
 
     .spinner-item img {
@@ -883,19 +1003,24 @@ footer img:hover {
         width: 60%;
         z-index: 3;
     }
-
-    .contact-container h1 {
-        font-size: 1.75rem;
+    .contact-container {
+      height: 48vh;  
     }
+    .right-col{
+        padding: 0rem 0 5rem 1rem;
+        height: 90%;
+    }
+    .contact-container form {
+        padding: 0;
+        margin-top:15px;
+        
 
-    .contact-container p {
-        font-size: 0.7rem;
     }
 
     .contact-container input,
     .contact-container textarea,
     .contact-container button {
-        font-size: 0.65rem;
+        font-size: 12px;
     }
 
     .contact-container button {
@@ -913,6 +1038,7 @@ footer img:hover {
     .nav-links a:after{
         height: 2px;
     }
+
 }
 
 /* Small Desktops */
