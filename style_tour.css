@@ -244,19 +244,19 @@ footer a:hover:after {
 
 @keyframes bgSlide {
     0% {
-        background: url('images/Main Wadi Rum Desert Picture.jpeg') center center/cover no-repeat;
+        background: url('images_resized/Main Wadi Rum Desert Picture.jpeg') center center/cover no-repeat;
     }
 
     33.33% {
-        background: url('images/background-picture-2.jpeg') center center/cover no-repeat;
+        background: url('images_resized/background-picture-2.jpeg') center center/cover no-repeat;
     }
 
     66.66% {
-        background: url('images/background-picture-3.jpeg') center center/cover no-repeat;
+        background: url('images_resized/background-picture-3.jpeg') center center/cover no-repeat;
     }
 
     100% {
-        background: url('images/background-picture-4.jpeg') center center/cover no-repeat;
+        background: url('images_resized/background-picture-4.jpeg') center center/cover no-repeat;
     }
 }
 
