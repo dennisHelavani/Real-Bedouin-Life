@@ -114,36 +114,36 @@ window.addEventListener("scroll", function () {
 
 
 
-// FAQ Section
-const answers = [
-  "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
-  "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
-  "The best time to visit is from March to May and September to November, when the weather is mild.",
-  "Yes, all meals are provided during the tour, including traditional Bedouin dishes.",
-  "Yes, the tour is suitable for children. We offer family-friendly packages.",
-];
+// // FAQ Section
+// const answers = [
+//   "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
+//   "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
+//   "The best time to visit is from March to May and September to November, when the weather is mild.",
+//   "Yes, all meals are provided during the tour, including traditional Bedouin dishes.",
+//   "Yes, the tour is suitable for children. We offer family-friendly packages.",
+// ];
 
-function showAnswer(index) {
-  const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
-  let answerElement = faqItem.querySelector(".faq-answer");
-  const arrowElement = document.getElementById(`arrow-${index}`);
+// function showAnswer(index) {
+//   const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
+//   let answerElement = faqItem.querySelector(".faq-answer");
+//   const arrowElement = document.getElementById(`arrow-${index}`);
 
-  // If the answer element doesn't exist, create it
-  if (!answerElement) {
-    answerElement = document.createElement("div");
-    answerElement.classList.add("faq-answer");
-    answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
-    faqItem.appendChild(answerElement);
-  }
+//   // If the answer element doesn't exist, create it
+//   if (!answerElement) {
+//     answerElement = document.createElement("div");
+//     answerElement.classList.add("faq-answer");
+//     answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
+//     faqItem.appendChild(answerElement);
+//   }
 
-  // Toggle the display of the answer
-  if (answerElement.style.display === "block") {
-    answerElement.style.display = "none";
-    arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
-  } else {
-    answerElement.style.display = "block";
-    arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
-  }
-}
+//   // Toggle the display of the answer
+//   if (answerElement.style.display === "block") {
+//     answerElement.style.display = "none";
+//     arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
+//   } else {
+//     answerElement.style.display = "block";
+//     arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
+//   }
+// }
 
 
