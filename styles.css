@@ -310,8 +310,8 @@ footer a:hover:after {
     display: flex;
     margin: 0 auto;
     width: 80%;
-    max-height: 60vh;
-    height: 60vh;
+    /* max-height: 60vh;
+    height: 60vh; */
 }
 
 .history h1,
@@ -365,7 +365,7 @@ footer a:hover:after {
     background: var(--backgroud-div);
     color: var(--primary-color);
     width: 50%;
-    height: 65%;
+    /* height: 65%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -647,6 +647,7 @@ text-decoration: none;
 .more-images button {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: var();
     background: var(--button-color);
     color: var(--bg-color);
     width: 10rem;
