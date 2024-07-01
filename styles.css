@@ -342,7 +342,7 @@ footer a:hover:after {
     opacity: 1;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 
@@ -355,23 +355,29 @@ footer a:hover:after {
 }
 
 .history-card-block {
+    object-fit: cover;
     transition: opacity 0.5s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 9%;
     left: 51%;
     max-width: 50%;
-    /* background: rgba(0, 0, 0, 0.7); */
-    background: var(--backgroud-div);
     color: var(--primary-color);
     width: 50%;
-    /* height: 65%; */
+    height: 100%;;
+  
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 40px 40px 65px;
     flex-direction: column;
     z-index: 2;
+}
+
+.history-card-block-styling{
+    margin-top: auto;
+    margin-bottom: auto;
+    background: var(--backgroud-div);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px 40px 40px 65px;
+    min-height: 20rem;
 }
 
 
@@ -481,7 +487,7 @@ text-decoration: none;
 .ag-courses-item_title {
     min-height: 87px;
     margin: 0 0 25px;
-
+    text-transform: uppercase;
     overflow: hidden;
 
     font-weight: bold;
@@ -757,9 +763,8 @@ text-decoration: none;
 
 
 .faq {
-    height: 60vh;
-    overflow-x: hidden;
 
+    overflow-x: hidden;
 }
 
 .faq-container {
@@ -811,7 +816,7 @@ text-decoration: none;
 .cta {
     position: relative;
     margin-top: 50px;
-    height: 40vh;
+    height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -923,15 +928,14 @@ text-decoration: none;
     padding-top: 50px;
     margin: 0 auto;
     display: flex;
-    width: 80vw;
-    height: 60vh;
+    width: 80%;
     background: var(--bg-color);
     transition: all 0.3s ease-in-out;
 }
 
 .left-col {
     width: 50%;
-    height: 100%;
+    height: auto;
     background-image: url("images_resized/gallery_4.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -941,7 +945,7 @@ text-decoration: none;
 .right-col {
     background: var(--bg-color);
     max-width: 50%;
-    height: 100%;
+    /* height: 100%; */
     padding: 2rem 0 5rem 2rem;
 }
 
@@ -953,14 +957,6 @@ text-decoration: none;
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
-
-/* .contact-container h1 {
-    color: var(--h1-c);
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    letter-spacing: 0.5rem;
-    font-weight: 300;
-} */
 
 .contact-container p {
     color: var(--secondary-color);
