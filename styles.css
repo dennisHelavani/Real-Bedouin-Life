@@ -491,10 +491,9 @@ text-decoration: none;
 .ag-courses-item_link {
     display: block;
     padding: 30px 20px;
-    background-color: var(--h1-color);
-    opacity: 0.8;
+    background-color: #483f2f;
+    opacity: 0.79;
     overflow: hidden;
-
     position: relative;
 }
 
@@ -502,12 +501,14 @@ text-decoration: none;
 .ag-courses-item_link:hover .ag-courses-item_date {
     text-decoration: none;
     color: #FFF;
+    opacity: 1;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
     transform: scale(10);
+    opacity:1;
 }
 
 .ag-courses-item_title {
