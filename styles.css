@@ -22,6 +22,8 @@
     --text-fs: 16px;
     --text-bigger: 18px;
     --faq-question: 18px;
+    --nav-fs: 16px;
+    --nav-dd-fs:13px;
 }
 
 * {
@@ -37,7 +39,7 @@ html {
 body {
     font-family: var(--font-family);
     background-color: #fff;
-    color: #333;
+    /* color: #333; */
 }
 
 header {
@@ -99,6 +101,7 @@ nav {
 
 .nav-links li {
     margin-left: 30px;
+    position: relative;
 }
 
 .first-child {
@@ -108,7 +111,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: var(--header-color);
-    font-size: 16px;
+    font-size: var( --nav-fs);
     font-weight: 500;
     position: relative;
     padding-bottom: 5px;
@@ -130,6 +133,30 @@ footer a:after {
 footer a:hover:after {
     cursor: pointer !important;
     width: 100%;
+}
+
+.nav-links .dropdown {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: fit-content;
+    left: 0;
+    list-style: none;
+    padding:15px 0px 4px 0px;
+    margin:0px 0 0px -30px;
+}
+
+.nav-links .dropdown li {
+    width: 100px;
+    margin: 0 !important;
+    font-size: var(--nav-dd-fs);
+    padding-top: 5px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
 }
 
 
@@ -318,8 +345,7 @@ footer a:hover:after {
 .tour h1,
 .gallery h1,
 .faq h1,
-.spinner h1,
-.contact-container h1 {
+.spinner h1 {
     color: var(--h1-c);
     text-transform: uppercase;
     font-weight: var(--h1-w);
@@ -816,7 +842,7 @@ text-decoration: none;
 .cta {
     position: relative;
     margin-top: 50px;
-    height: 20rem;
+    height: 22rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -924,134 +950,6 @@ text-decoration: none;
 
 
 
-.contact-container {
-    padding-top: 50px;
-    margin: 0 auto;
-    display: flex;
-    width: 80%;
-    background: var(--bg-color);
-    transition: all 0.3s ease-in-out;
-}
-
-.left-col {
-    width: 50%;
-    height: auto;
-    background-image: url("images_resized/gallery_4.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.right-col {
-    background: var(--bg-color);
-    max-width: 50%;
-    /* height: 100%; */
-    padding: 2rem 0 5rem 2rem;
-}
-
-/* .contact-container h1, */
-.contact-container label,
-.contact-container button,
-.description {
-
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-}
-
-.contact-container p {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-    letter-spacing: 0.01rem;
-    width: 40vw;
-    margin: 0.25rem 0;
-}
-
-.contact-container label,
-.description {
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    font-size: 0.625rem;
-}
-
-.contact-container form {
-    width: 31.25rem;
-    position: relative;
-    margin-top: 2rem;
-    padding: 1rem 0;
-}
-
-.contact-container input,
-.contact-container textarea,
-.contact-container label {
-    width: 40vw;
-    display: block;
-}
-
-
-.contact-container input::placeholder,
-.contact-container textarea::placeholder {
-    color: var(--primary-color);
-}
-
-.contact-container input,
-.contact-container textarea {
-    color: var(--primary-color);
-    font-weight: 500;
-    background: var(--bg-color);
-    border: none;
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    outline: none;
-}
-
-.contact-container textarea {
-    resize: none;
-}
-
-.contact-container button {
-    text-transform: uppercase;
-    font-weight: 300;
-    background: var(--button-color);
-    color: var(--bg-color);
-    width: 10rem;
-    height: 2.25rem;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-}
-
-.contact-container input:hover,
-.contact-container textarea:hover,
-.contact-container button:hover {
-    opacity: 0.5;
-}
-
-.contact-container button:active {
-    opacity: 0.8;
-}
-
-
-
-
-#error,
-#success-msg {
-    width: 40vw;
-    margin: 0.125rem 0;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-family: 'Jost';
-    color: var(--secondary-color);
-}
-
-
-#success-msg {
-    transition-delay: 3s;
-}
-
-
-
 footer {
     background-color: #fff;
     padding: 60px 0 20px 0;
@@ -1142,10 +1040,6 @@ footer img:hover {
         margin-bottom: 10px;
     }
 
-    .contact-container {
-        height: 48vh;
-    }
-
     .left-col {
         display: none;
     }
@@ -1155,22 +1049,7 @@ footer img:hover {
         height: 90%;
     }
 
-    .contact-container form {
-        padding: 0;
-        margin-top: 15px;
-
-
-    }
-
-    .contact-container input,
-    .contact-container textarea,
-    .contact-container button {
-        font-size: 12px;
-    }
-
-    .contact-container button {
-        width: 7rem;
-    }
+ 
 
     footer div:last-child {
         font-size: 12px;
@@ -1200,32 +1079,6 @@ footer img:hover {
 
     .spinner-item img {
         height: 270px;
-    }
-
-    .contact-container {
-        height: 48vh;
-    }
-
-    .right-col {
-        padding: 0rem 0 5rem 1rem;
-        height: 90%;
-    }
-
-    .contact-container form {
-        padding: 0;
-        margin-top: 15px;
-
-
-    }
-
-    .contact-container input,
-    .contact-container textarea,
-    .contact-container button {
-        font-size: 12px;
-    }
-
-    .contact-container button {
-        width: 7rem;
     }
 
     footer div:last-child {

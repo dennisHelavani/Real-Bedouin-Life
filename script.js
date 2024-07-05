@@ -38,11 +38,14 @@ window.addEventListener('scroll', function() {
   var header_logo_text_one= document.getElementById('logo-name-part-one');
   var header_logo_text_two= document.getElementById('logo-name-part-two');
   var headerLinks = header.querySelectorAll('a');
+  var dropdown = document.getElementById('dropdown');
+
 
 
   if (window.scrollY > window.innerHeight/2) {
     header.style.boxShadow = ' 0 4px 8px rgba(0, 0, 0, 0.2)';
       header.style.background = 'white';
+      dropdown.style.background='white';
       header_logo_text_one.style.color = 'black';
       header_logo_text_two.style.color = 'black';
       
@@ -51,6 +54,7 @@ window.addEventListener('scroll', function() {
     }
   } else {
       header.style.background = 'transparent';
+       dropdown.style.background='rgba(0, 0, 0, 0.7)';
       header_logo_text_one.style.color = '#fff';
       header_logo_text_two.style.color = '#fff';
       for (var i = 0; i < headerLinks.length; i++) {
