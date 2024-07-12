@@ -45,8 +45,9 @@ window.addEventListener('scroll', function() {
   if (window.scrollY > window.innerHeight/2) {
     header.style.boxShadow = ' 0 4px 8px rgba(0, 0, 0, 0.2)';
       header.style.background = 'white';
-      dropdown.style.background='white';
+      // dropdown.style.background='white';
       header_logo_text_one.style.color = 'black';
+
       header_logo_text_two.style.color = 'black';
       
       for (var i = 0; i < headerLinks.length; i++) {
@@ -54,7 +55,7 @@ window.addEventListener('scroll', function() {
     }
   } else {
       header.style.background = 'transparent';
-       dropdown.style.background='rgba(0, 0, 0, 0.7)';
+      //  header.style.boxShadow = 'none';
       header_logo_text_one.style.color = '#fff';
       header_logo_text_two.style.color = '#fff';
       for (var i = 0; i < headerLinks.length; i++) {
