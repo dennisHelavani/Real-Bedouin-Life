@@ -15,6 +15,7 @@
     --highlight: #D89F6F;
     --primary-color: #010712;
     --secondary-color: white;
+    --form-color:#818386;
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
@@ -793,7 +794,7 @@ footer a:hover:after {
 }
 
 .contact-container p {
-    color: var(--secondary-color);
+    color: var(--form-color);
     font-size: 0.9rem;
     letter-spacing: 0.01rem;
     width: 40vw;
@@ -802,7 +803,7 @@ footer a:hover:after {
 
 .contact-container label,
 .description {
-    color: var(--secondary-color);
+    color: var(--form-color);
     text-transform: uppercase;
     font-size: 0.625rem;
 }
@@ -833,7 +834,7 @@ footer a:hover:after {
     font-weight: 500;
     background: var(--bg-color);
     border: none;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--form-color);
     padding: 0.5rem 0;
     margin-bottom: 1rem;
     outline: none;
@@ -876,7 +877,7 @@ footer a:hover:after {
     font-size: 0.75rem;
     text-transform: uppercase;
 
-    color: var(--secondary-color);
+    color: var(--form-color);
 }
 
 
