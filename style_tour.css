@@ -5,7 +5,7 @@
     --text-fs: 18px;
     --h1-c: #b88255;
     --header-color: #b88255;
-    --h1-w: 400;
+    --h1-w: 500;
     --tour-link-fw: 400;
     --h1-fs: 30px;
     --h1-mb: 4%;
@@ -14,14 +14,17 @@
     --logo-name-w: 500;
     --highlight: #D89F6F;
     --primary-color: #010712;
-    --secondary-color: #818386;
+    --secondary-color: white;
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
     --animation-color: #f0a500;
+    --backgroud-div: #b88255;
     --price-fs: 24px;
     --form-fs: 16px;
     --nav-dd-fs: 13px;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 * {
@@ -304,6 +307,143 @@ footer a:hover:after {
     }
 }
 
+
+
+.tours_disclaimer{
+    width: 100%;
+    padding: 25px 0px 0px 0px;
+}
+
+.tours_disclaimer div{
+    color:var(--secondary-color);
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.tour {
+
+    padding-top: var(--section-margin-top);
+    text-align: center;
+    width: 100%;
+    scroll-margin-top: 40px;
+}
+
+
+.tour h1 {
+    color: var(--h1-c);
+    text-transform: uppercase;
+    font-weight: var(--h1-w);
+    font-size: var(--h1-fs);
+    margin-bottom: var(--h1-mb);
+}
+
+.tours {
+    margin-bottom: 0;
+}
+
+.tour-content {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0px 0 50px 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.product-card {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.7s ease;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    transition: filter 0.7s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: background-color calc(var(--d) * 1.5) var(--e);
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 25px;
+}
+.btn:hover {
+    background-color: var( --animation-color);
+}
+.btn:focus {
+    /* outline: 1px dashed yellow; */
+    outline-offset: 3px;
+}
+
+.card-image:hover img {
+    filter: brightness(70%);
+}
+
+.card-image:hover .overlay {
+    opacity: 1;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.card-content {
+    font-size: var(--text-fs);
+    color: var(--h1-color);
+    text-align: center;
+    height: 130px;
+    padding: 10px;
+}
+.title {
+    color:var( --h1-c);
+    padding-bottom: 5px;
+    font-size: var(--h2-fs);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+
+@media (min-width: 600px) {
+    .tour-content {
+        grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (min-width: 800px) {
+    .tour-content {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+
+
 .tour-intro {
     padding-top: 30px;
     font-weight: bold;
@@ -414,7 +554,7 @@ footer a:hover:after {
 .image-grid {
     width: 100%;
     position: relative;
-   
+
     min-height: 39rem;
 }
 
@@ -537,7 +677,7 @@ footer a:hover:after {
 
 .contact-links {
     width: 100%;
-    padding: 25px 0 50px 0 ; 
+    padding: 25px 0 50px 0;
 }
 
 
@@ -735,7 +875,7 @@ footer a:hover:after {
     margin: 0.125rem 0;
     font-size: 0.75rem;
     text-transform: uppercase;
-   
+
     color: var(--secondary-color);
 }
 
@@ -764,7 +904,8 @@ footer a:hover:after {
     height: 100%;
     background: url("images_resized/background-picture-2.jpeg") center center/cover no-repeat;
     filter: brightness(0.6);
-    z-index: 1; /* Ensure it is below the text */
+    z-index: 1;
+    /* Ensure it is below the text */
 }
 
 .cta-container {
@@ -818,7 +959,7 @@ footer a:hover:after {
 
 .cta-button:hover {
     background-color: var(--animation-color);
-   
+
 }
 
 .cta-image {
