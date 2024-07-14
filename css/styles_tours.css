@@ -178,7 +178,7 @@ footer a:hover:after {
     justify-content: flex-start;
     color: white;
     object-fit: cover;
-    animation: bgSlide 45s infinite;
+    /* animation: bgSlide 45s infinite; */
 }
 
 .hero-overlay {
@@ -815,9 +815,7 @@ footer img:hover {
         --form-fs: 12px;
     }
 
-    .hero {
-        height: 100vh;
-    }
+  
 
     .spinner-item img {
         height: 270px;
@@ -920,9 +918,6 @@ footer img:hover {
         --form-fs: 12px;
     }
 
-    .hero {
-        height: 100vh;
-    }
 
     .spinner-item img {
         height: 270px;
