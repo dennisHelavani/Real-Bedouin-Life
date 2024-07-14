@@ -171,7 +171,8 @@ footer a:hover:after {
     justify-content: flex-start;
     color: white;
     object-fit: cover;
-    animation: bgSlide 45s infinite;
+    background-image: url("/images_resized/background-picture-2.jpeg");
+    /* animation: bgSlide 45s infinite; */
 }
 
 .hero-overlay {
@@ -502,16 +503,16 @@ footer a:hover:after {
     transition: transform calc(var(--d) * 2) var(--e);
 }
 .tour-card:nth-child(1):before {
-    background-image: url('images_resized/background-picture-2.jpeg');
+    background-image: url('/images_resized/background-picture-2.jpeg');
 }
 .tour-card:nth-child(2):before {
-    background-image: url("images_resized/background-picture-3.jpeg");
+    background-image: url("/images_resized/background-picture-3.jpeg");
 }
 .tour-card:nth-child(3):before {
-    background-image: url("images_resized/background-picture-2.jpeg");
+    background-image: url("/images_resized/background-picture-2.jpeg");
 }
 .tour-card:nth-child(4):before {
-    background-image: url("images_resized/background-picture-4.jpeg");
+    background-image: url("/images_resized/background-picture-4.jpeg");
 }
 .tour-card-content {
     position: relative;
@@ -831,7 +832,7 @@ footer a:hover:after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("images_resized/background-picture-2.jpeg") center center/cover no-repeat;
+    background: url("/images_resized/background-picture-2.jpeg") center center/cover no-repeat;
     filter: brightness(0.6);
     z-index: 1; /* Ensure it is below the text */
 }
