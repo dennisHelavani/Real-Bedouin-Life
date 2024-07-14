@@ -731,6 +731,11 @@ footer a:hover:after {
     transition: all 0.3s ease-in-out;
 }
 
+.contact-f-button-wrapper{
+    /* width: 100%; */
+    /* display: block; */
+}
+
 
 .left-col {
     max-width: 40%;
@@ -1039,7 +1044,7 @@ footer img:hover {
         justify-content: space-between;
         color: black;
         padding: 0px;
-        width: 100%;
+        width: 98%;
         margin: 0 auto;
     
     }
@@ -1076,14 +1081,17 @@ footer img:hover {
 
     .contact-container {
         text-align: center;
+        width: 90%;
     }
 
     .contact-container label,
     .description {
         text-align: left;
     }
-    .contact-container button{
-    margin: 0 auto;
+    .contact-f-button-wrapper{
+        margin: 0 auto;
+        width: fit-content;
+    }
     }
 
     .spinner-container {
@@ -1145,6 +1153,10 @@ footer img:hover {
     .tour-links li {
         margin-left: 0;
         margin-bottom: 10px;
+    }
+
+    footer{
+        padding: 30px 0 20px 0;
     }
 }
 
