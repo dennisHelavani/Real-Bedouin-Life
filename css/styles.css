@@ -502,16 +502,16 @@ footer a:hover:after {
     transition: transform calc(var(--d) * 2) var(--e);
 }
 .tour-card:nth-child(1):before {
-    background-image: url('images_resized/background-picture-2.jpeg');
+    background-image: url('/images_resized/background-picture-2.jpeg');
 }
 .tour-card:nth-child(2):before {
-    background-image: url("images_resized/background-picture-3.jpeg");
+    background-image: url("/images_resized/background-picture-3.jpeg");
 }
 .tour-card:nth-child(3):before {
-    background-image: url("images_resized/background-picture-2.jpeg");
+    background-image: url("/images_resized/background-picture-2.jpeg");
 }
 .tour-card:nth-child(4):before {
-    background-image: url("images_resized/background-picture-4.jpeg");
+    background-image: url("/images_resized/background-picture-4.jpeg");
 }
 .tour-card-content {
     position: relative;
