@@ -176,8 +176,8 @@ footer a:hover:after {
     align-items: center;
     justify-content: flex-start;
     color: white;
-    /* object-fit: cover; */
-    background-image:url('../images_resized/bedouin.jpeg') ;
+    object-fit: cover;
+    background:url('../images_resized/bedouin.jpeg') center center/cover no-repeat ;
     /* animation: bgSlide 45s infinite; */
 }
 

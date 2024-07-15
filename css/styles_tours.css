@@ -177,6 +177,7 @@ footer a:hover:after {
     align-items: center;
     justify-content: flex-start;
     color: white;
+    background: url('../images_resized/background-picture-3.jpeg')  center center/cover no-repeat;
     object-fit: cover;
     /* animation: bgSlide 45s infinite; */
 }
