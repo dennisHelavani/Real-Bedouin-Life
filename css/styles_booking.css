@@ -254,17 +254,20 @@ footer a:hover:after {
 }
 
 label {
+  font-weight: 400;
   display: block;
   margin-bottom: 5px;
 }
 
-input, select, button {
+input, select, button,textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
-  font-size: 16px;
+  font-size: var(--form-fs);
+  /* letter-spacing: 0.1rem; */
+  font-weight: 400;
 }
 
 button {

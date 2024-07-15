@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking - Real Bedouin Life</title>
   <link rel="stylesheet" href="css/styles_booking.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+  <script>
+    (function(){
+        emailjs.init("YOUR_USER_ID"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
+    })();
+</script>
 </head>
 
 <body>
@@ -88,6 +93,9 @@
         <label for="check-out">Check-out Date:</label>
         <input type="date" id="check-out" name="check-out" required>
 
+        <label for="message">Comments To Booking:</label>
+        <textarea  id="message" name="message" required rows="6" cols="50"> </textarea>
+
         <button type="submit">Submit</button>
     </form>
 </section>
@@ -124,14 +132,14 @@
       &copy; 2024 Real Bedouin Life. All rights reserved.
     </div>
   </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="script_booking.js"></script>
-  <script>
+  <!-- <script>
     AOS.init({
       offset: 200,
       duration: 1000,
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

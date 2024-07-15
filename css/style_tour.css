@@ -919,7 +919,7 @@ footer a:hover:after {
 .description {
 
     font-weight: 400;
-    letter-spacing: 0.1rem;
+    /* letter-spacing: 0.1rem; */
 }
 
 .contact-container p {

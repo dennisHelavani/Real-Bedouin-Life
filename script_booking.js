@@ -136,27 +136,29 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-    document.getElementById('booking-form').addEventListener('submit', function (event) {
-        event.preventDefault();
+   
+  document.getElementById('booking-form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        const formData = new FormData(this);
-        const data = {};
+    const formData = new FormData(this);
 
-        formData.forEach((value, key) => {
-            data[key] = value;
+    const templateParams = {
+        first_name: formData.get('first-name'),
+        last_name: formData.get('last-name'),
+        email: formData.get('email'),
+        main_tour: formData.get('main-tour'),
+        sub_tour: formData.get('sub-tour'),
+        num_people: formData.get('num-people'),
+        check_in: formData.get('check-in'),
+        check_out: formData.get('check-out'),
+        message: formData.get('message')
+    };
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then((response) => {
+            alert('SUCCESS!', response.status, response.text);
+        }, (error) => {
+            alert('FAILED...', error);
         });
-
-        const emailBody = `
-            First Name: ${data['first-name']}
-            Last Name: ${data['last-name']}
-            Email: ${data['email']}
-            Tour Type: ${data['main-tour']}
-            Sub Tour: ${data['sub-tour']}
-            Number of People: ${data['num-people']}
-            Check-in Date: ${data['check-in']}
-            Check-out Date: ${data['check-out']}
-        `;
-
-        window.location.href = `mailto:your-email@example.com?subject=Tour Booking&body=${encodeURIComponent(emailBody)}`;
-    });
+});
 });
