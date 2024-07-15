@@ -137,30 +137,6 @@ footer a:hover:after {
     width: 100%;
 }
 
-.nav-links .dropdown {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: fit-content;
-    left: 0;
-    list-style: none;
-    padding:15px 0px 4px 0px;
-    margin:0px 0 0px -30px;
-}
-
-.nav-links .dropdown li {
-    width: 100px;
-    margin: 0 !important;
-    font-size: var(--nav-dd-fs);
-    padding-top: 5px;
-}
-
-.nav-links li:hover .dropdown {
-    display: block;
-}
-
 
 .hero {
     position: relative;
@@ -246,6 +222,7 @@ footer a:hover:after {
 }
 
 .hero-heading h1 {
+    text-transform: uppercase;
     animation: headingColors 45s linear infinite;
 }
 
