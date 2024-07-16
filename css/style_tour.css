@@ -805,16 +805,36 @@ footer a:hover:after {
 /* CONTACT FORM STYLING */
 /* START */
 .contact-links {
+    /* display: flex; */
     width: 100%;
     padding: 25px 0 50px 0;
 }
 
+
+@media (min-width: 600px) {
+    .contact-card  {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        justify-content: space-between;
+        color: black;
+        padding: 0%;
+        width: 50%;
+        margin: 0 auto;
+   }
+}
+@media (min-width: 780px) {
+    .contact-card {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+
 .contact-card {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     color: black;
-    padding: 0 30px;
-    width: 70%;
+    padding: 0 15%;
+    width: 100%;
+    
     margin: 0 auto;
 
 }
@@ -829,7 +849,7 @@ footer a:hover:after {
 .contact-item .icon {
     /* background-color: rgba(255, 255, 255, 0.2); */
     border-radius: 50%;
-    padding: 10px;
+   padding: 10px 10px 10px 0;
     margin-right: 10px;
 }
 
@@ -1172,18 +1192,19 @@ footer img:hover {
     }
 
     .contact-links{
-        padding: 25px 0 25px 0;
+        padding: 25px 10% 25px 10%;
     }
 
     .contact-card {
-        display: grid;
+      
         justify-content: space-between;
         color: black;
-        padding: 0px;
-        width: 90%;
+        padding: 0%;
         margin: 0 auto;
     
     }
+
+    
 
     .contact-item {
         vertical-align: middle;
@@ -1211,13 +1232,14 @@ footer img:hover {
     .right-col {
         padding: 0;
         margin: 0 auto;
-        width: 95%;
-        max-width: 95%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .contact-container {
         text-align: center;
         width: 100%;
+        padding: 0% 10%;
     }
 
     .contact-container label,
@@ -1326,15 +1348,16 @@ footer img:hover {
     }
 
     .contact-links{
-        padding: 25px 0 25px 0;
+        padding: 25px 5% 25px 5%;
     }
 
+
     .contact-card {
-        display: inline-flex;
+        display: grid;
         justify-content: space-between;
         color: black;
-        padding: 0px;
-        width: 90%;
+        padding: 0%;
+        
         margin: 0 auto;
     
     }
@@ -1371,7 +1394,7 @@ footer img:hover {
 
     .contact-container {
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
 
     .contact-container label,
@@ -1461,11 +1484,11 @@ footer img:hover {
         --form-fs:11px;
     }
     .contact-card {
-        display: flex;
+        display: grid;
         justify-content: space-between;
         color: black;
-        padding: 0 30px;
-        width: 100%;
+        padding: 0%;
+        /* width: 100%; */
         margin: 0 auto;
     
     }
@@ -1501,10 +1524,10 @@ footer img:hover {
 @media (min-width: 871px) and (max-width: 1024px) {
 
     .contact-card {
-        display: flex;
+        display: grid;
         justify-content: space-between;
         color: black;
-        padding: 0 30px;
+        /* padding: 0 30px; */
         width: 95%;
         margin: 0 auto;
     
@@ -1641,7 +1664,7 @@ footer img:hover {
         --tour-link-fw: 400;
         --form-fs: 12px;
     }
-    .contact-card {
+    /* .contact-card {
         display: flex;
         justify-content: space-between;
         color: black;
@@ -1649,7 +1672,7 @@ footer img:hover {
         width: 80%;
         margin: 0 auto;
     
-    }
+    } */
 
     .spinner-container {
         height: 80%;
