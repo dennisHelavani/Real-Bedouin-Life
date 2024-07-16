@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message: formData.get('message')
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_4ftk8hr', 'template_2913007', templateParams)
         .then((response) => {
             alert('SUCCESS!', response.status, response.text);
         }, (error) => {

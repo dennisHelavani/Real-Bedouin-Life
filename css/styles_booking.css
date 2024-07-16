@@ -28,7 +28,7 @@
   --e: cubic-bezier(0.19, 1, 0.22, 1);
   --h2-fs: 25px;
   --input-border: #dddfe1;
-  
+
 }
 
 * {
@@ -153,8 +153,7 @@ footer a:hover:after {
   justify-content: flex-start;
   color: white;
   object-fit: cover;
-  background: url("../images_resized/bedouin.jpeg") center center/cover
-    no-repeat;
+  background: url("../images_resized/bedouin.jpeg") center center/cover no-repeat;
   /* animation: bgSlide 45s infinite; */
 }
 
@@ -225,7 +224,7 @@ footer a:hover:after {
 
 
 .form-section {
- 
+
   max-width: 100%;
   width: 100%;
 }
@@ -233,13 +232,14 @@ footer a:hover:after {
 .form-section form {
   margin: 0 auto;
   margin-bottom: 10px;
-  max-width: 60%;
-   background-color: var(--bg-color);
+  max-width: 50%;
+  background-color: var(--bg-color);
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-.form-section div{
+
+.form-section div {
   width: 100%;
   text-align: center;
 }
@@ -250,7 +250,7 @@ footer a:hover:after {
   font-weight: var(--h1-w);
   font-size: var(--h1-fs);
   margin-bottom: 25px;
-  margin-top:  25px;
+  margin-top: 25px;
 }
 
 label {
@@ -259,15 +259,28 @@ label {
   margin-bottom: 5px;
 }
 
-input, select, button,textarea {
+input,
+select,
+button,
+textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid var(--input-border);
-  border-radius: 4px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid var(--input-border);
+  border-radius: 0px;
   font-size: var(--form-fs);
   /* letter-spacing: 0.1rem; */
   font-weight: 400;
+}
+
+input::placeholder,
+select::placeholder,
+button::placeholder,
+textarea::placeholder {
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 0;
 }
 
 button {
@@ -312,14 +325,12 @@ footer img {
 }
 
 footer img:hover {
-  filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg)
-    brightness(89%) contrast(90%);
+  filter: invert(99%) sepia(88%) saturate(3965%) hue-rotate(303deg) brightness(89%) contrast(90%);
   transform: scale(1.1);
   cursor: pointer;
 }
 
-@media (max-width: 320px) {
-}
+@media (max-width: 320px) {}
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
@@ -402,8 +413,7 @@ footer img:hover {
   }
 }
 
-@media (min-width: 871px) and (max-width: 1024px) {
-}
+@media (min-width: 871px) and (max-width: 1024px) {}
 
 /* Large Tablets (Landscape) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -444,6 +454,7 @@ footer img:hover {
     --form-fs: 12px;
   }
 }
+
 /* Medium Desktops */
 @media (min-width: 1285px) and (max-width: 1600px) {
   :root {
@@ -457,5 +468,4 @@ footer img:hover {
 }
 
 /* Large Desktops */
-@media (min-width: 1601px) {
-}
+@media (min-width: 1601px) {}
