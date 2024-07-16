@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking - Real Bedouin Life</title>
-  <link rel="stylesheet" href="css/styles_booking.css" />
+  <link rel="stylesheet" href="css/style_tour.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
   <script>
-    (function(){
-        emailjs.init("6CJDRuO8JLdMRqW1L"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
+    (function () {
+      emailjs.init("6CJDRuO8JLdMRqW1L"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
     })();
-</script>
+  </script>
 </head>
 
 <body>
@@ -33,59 +33,70 @@
           <a href="all-tours.html">TOURS</a>
         </li>
         <li><a href="index.html#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
         <li><a href="index.html#faq">FAQ</a></li>
         <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero" >
+  <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-text">
       <div class="hero-heading">
         <div class="hero-heading-wrap">
-          <h1 id="hero-heading-first">Booking</h1>
+          <h1 id="hero-heading-first">DESERT AWAITS</h1>
         </div>
         <div class="hero-description">
           <p>
-            Discover the magic of the Wadi Rum with our expert guides. From
-            sweeping dunes to ancient caravan routes, we'll show you sights
-            beyond your wildest dreams. Don't just visit the Wadi Rum -
-            experience it with us.
+            Ready for an unforgettable adventure? Book your desert tour today and discover the stunning landscapes, rich
+            culture, and exhilarating activities that await you. Don't miss out – secure your spot now and embark on the
+            journey of a lifetime!
           </p>
         </div>
       </div>
   </section>
-  <section class="form-section">
-   <div><h1>Book Your Tour</h1></div>
-    <form id="booking-form">
-       
+
+  <div class="contact-container" id="contact" style="padding-top: 50px;">
+
+    <div class="image-content">
+      <div class="image-grid">
+        <img src="images_resized/bedouin.jpeg" alt="Image 1" class="img1-contact" />
+        <img src="images_resized/bedouin_2.jpeg" alt="Image 2" class="img2-contact" />
+        <img src="images_resized/bedouin.jpeg" alt="Image 3" class="img3-contact" />
+      </div>
+    </div>
+
+    <div class="right-col">
+      <h1>Book Now and Start Your Adventure!</h1>
+      <form id="booking-form">
+        <!-- <h1>Book Your Tour</h1> -->
         <label for="first-name">First Name:</label>
         <input type="text" id="first-name" name="first-name" required placeholder="Name">
 
         <label for="last-name">Last Name:</label>
         <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
 
-        <label for="email" >Email:</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required placeholder="example@gmail.com">
 
         <label for="main-tour">Tour Type:</label>
         <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
-            <!-- <option value="">Select Tour Type</option> -->
-            <option value="one_d">1 Day Tour</option>
-            <option value="one_d_one_n">1 Day & 1 Night Tour</option>
-            <option value="two_d_one_n">2 Days & 1 Night Tour</option>
-            <option value="two_d_two_n">2 Days & 1 Nights Tour</option>
+          <!-- <option value="">Select Tour Type</option> -->
+          <option value="one_d">1 Day Tour</option>
+          <option value="one_d_one_n">1 Day & 1 Night Tour</option>
+          <option value="two_d_one_n">2 Days & 1 Night Tour</option>
+          <option value="two_d_two_n">2 Days & 1 Nights Tour</option>
         </select>
 
-        <label for="sub-tour" aria-placeholder="Select Tour"></label>
+        <label for="sub-tour" aria-placeholder="Select Tour">Select Tour</label>
         <select id="sub-tour" name="sub-tour" required>
-            <option value="">Select Sub Tour</option>
+          <option value="">Select Sub Tour</option>
         </select>
 
         <label for="num-people">Number of People:</label>
-        <input type="number" id="num-people" name="num-people" min="1" required placeholder="Type in Number of Travelers">
+        <input type="number" id="num-people" name="num-people" min="1" required
+          placeholder="Type in Number of Travelers">
 
         <label for="check-in">Check-in Date:</label>
         <input type="date" id="check-in" name="check-in" required placeholder="dd/mm/yyyy">
@@ -94,11 +105,12 @@
         <input type="date" id="check-out" name="check-out" required placeholder="dd/mm/yyyy">
 
         <label for="message">Comments To Booking:</label>
-        <textarea  id="message" name="message" required rows="6" cols="50"> </textarea>
+        <textarea id="message" name="message" required rows="6" cols="50"> </textarea>
 
-        <button type="submit">Submit</button>
-    </form>
-</section>
+        <button type="submit">Book</button>
+      </form>
+    </div>
+  </div>
 
 
   <footer style="

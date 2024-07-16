@@ -676,7 +676,7 @@ footer a:hover:after {
 .image-content {
     width: 40%;
     /* padding: 20px; */
-    display: flex;
+    /* display: flex; */
     align-items: center;
     position: relative;
 }
@@ -853,11 +853,12 @@ footer a:hover:after {
 
 .contact-container {
     text-align: unset;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
-    width: 70%;
+    width: 100%;
     background: var(--bg-color);
     transition: all 0.3s ease-in-out;
+    padding: 0% 15%;
 }
 
 .contact-f-button-wrapper{
@@ -909,7 +910,7 @@ footer a:hover:after {
 
 .right-col {
     background: var(--bg-color);
-    max-width: 50%;
+    width: 50%;
     text-align: left;
     padding: 0rem 0rem 0rem 2rem;
 }
@@ -945,19 +946,22 @@ footer a:hover:after {
 
 .contact-container input,
 .contact-container textarea,
-.contact-container label {
+.contact-container label,
+.contact-container select {
     width: 100%;
     display: block;
 }
 
 
 .contact-container input::placeholder,
-.contact-container textarea::placeholder {
+.contact-container textarea::placeholder ,
+.contact-container select::placeholder{
     color: var(--primary-color);
 }
 
 .contact-container input,
-.contact-container textarea {
+.contact-container textarea,
+.contact-container select {
     color: var(--primary-color);
     font-weight: 500;
     background: var(--bg-color);
@@ -1207,13 +1211,13 @@ footer img:hover {
     .right-col {
         padding: 0;
         margin: 0 auto;
-        width: 90%;
-        max-width: 90%;
+        width: 95%;
+        max-width: 95%;
     }
 
     .contact-container {
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
 
     .contact-container label,
