@@ -1244,6 +1244,12 @@ footer img:hover {
     .contact-container input,
 .contact-container textarea,
 .contact-container select {
+        -webkit-appearance: none;
+    }
+
+    .contact-container input,
+.contact-container textarea,
+.contact-container select {
     color: var(--primary-color);
     font-weight: 500;
     background: var(--bg-color);
