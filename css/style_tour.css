@@ -987,6 +987,7 @@ footer a:hover:after {
     border-bottom: 1px solid var(--form-color);
     padding: 0.5rem 0;
     margin-bottom: 1rem;
+    border-radius: 0;
     outline: none;
 }
 
