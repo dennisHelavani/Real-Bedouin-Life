@@ -118,37 +118,30 @@ window.addEventListener("scroll", function () {
 
 
 
+document.querySelectorAll('.faq-question-wrap').forEach(wrap => {
+  var questionElement = wrap.querySelector('.faq-question');
+  var answerId = questionElement.getAttribute('data-answer');
+  var answerElement = document.getElementById(answerId);
 
-// // FAQ Section
-// const answers = [
-//   "Make sure to pack lightweight clothing, sunscreen, a hat, and plenty of water.",
-//   "The typical tour lasts between 2 to 4 hours, depending on the package you choose.",
-//   "The best time to visit is from March to May and September to November, when the weather is mild.",
-//   "Yes, all meals are provided during the tour, including traditional Bedouin dishes.",
-//   "Yes, the tour is suitable for children. We offer family-friendly packages.",
-// ];
+  // Ensure initial display state is set
+  answerElement.style.display = 'none';
 
-// function showAnswer(index) {
-//   const faqItem = document.querySelector(`.faq-item:nth-child(${index})`);
-//   let answerElement = faqItem.querySelector(".faq-answer");
-//   const arrowElement = document.getElementById(`arrow-${index}`);
+  wrap.addEventListener('click', function() {
+    var arrowElement = this.querySelector('.arrow-img');
 
-//   // If the answer element doesn't exist, create it
-//   if (!answerElement) {
-//     answerElement = document.createElement("div");
-//     answerElement.classList.add("faq-answer");
-//     answerElement.innerHTML = `<p>${answers[index - 1]}</p>`;
-//     faqItem.appendChild(answerElement);
-//   }
-
-//   // Toggle the display of the answer
-//   if (answerElement.style.display === "block") {
-//     answerElement.style.display = "none";
-//     arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
-//   } else {
-//     answerElement.style.display = "block";
-//     arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
-//   }
-// }
+    if (answerElement.style.display === "block") {
+      answerElement.style.display = "none";
+      questionElement.style.color="#b88255";
+      arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
+      arrowElement.style.filter = " invert(57%) sepia(69%) saturate(302%) hue-rotate(346deg) brightness(84%) contrast(89%)";
+      
+    } else {
+      answerElement.style.display = "block";
+      questionElement.style.color="#f0a500";
+      arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
+      arrowElement.style.filter = "invert(75%) sepia(44%) saturate(4593%) hue-rotate(5deg) brightness(99%) contrast(102%)";
+    }
+  });
+});
 
 
