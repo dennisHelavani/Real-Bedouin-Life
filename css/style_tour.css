@@ -1241,6 +1241,20 @@ footer img:hover {
         padding: 0% 10%;
     }
 
+    .contact-container input,
+.contact-container textarea,
+.contact-container select {
+    color: var(--primary-color);
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--form-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    outline: none;
+}
+
     .contact-container label,
     .description {
         text-align: left;
