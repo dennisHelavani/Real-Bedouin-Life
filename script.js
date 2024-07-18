@@ -123,7 +123,6 @@ document.querySelectorAll('.faq-question-wrap').forEach(wrap => {
   var answerId = questionElement.getAttribute('data-answer');
   var answerElement = document.getElementById(answerId);
 
-  // Ensure initial display state is set
   answerElement.style.display = 'none';
 
   wrap.addEventListener('click', function() {

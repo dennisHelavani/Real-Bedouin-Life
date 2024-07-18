@@ -14,7 +14,6 @@
     --h2-fw: 400;
     --primary-color: white;
     --secondary-color: rgba(49, 47, 47, 0.7);
-
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
@@ -825,8 +824,13 @@ footer a:hover:after {
     margin-bottom: 5px;
 }
 
-.faq-question-wrap:hover img {
+.faq-question-wrap:hover img
+ { 
     filter: invert(75%) sepia(44%) saturate(4593%) hue-rotate(5deg) brightness(99%) contrast(102%);
+}
+
+.faq-question-wrap:hover
+ { color:var(--animation-color);
 }
 
 
