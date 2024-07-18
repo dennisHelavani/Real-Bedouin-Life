@@ -39,6 +39,7 @@ window.addEventListener('scroll', function() {
   var header_logo_text_two= document.getElementById('logo-name-part-two');
   var headerLinks = header.querySelectorAll('a');
   var dropdown = document.getElementById('dropdown');
+  const scroll = document.querySelector(".demo");
 
 
 
@@ -49,6 +50,8 @@ window.addEventListener('scroll', function() {
       header_logo_text_one.style.color = 'black';
 
       header_logo_text_two.style.color = 'black';
+      scroll.style.opacity='0';
+      
       
       for (var i = 0; i < headerLinks.length; i++) {
         headerLinks[i].style.color = '#b88255'; // Assuming you want black text on white background
@@ -57,6 +60,7 @@ window.addEventListener('scroll', function() {
       header.style.background = 'transparent';
       //  header.style.boxShadow = 'none';
       header_logo_text_one.style.color = '#fff';
+      scroll.style.opacity='1';
       header_logo_text_two.style.color = '#fff';
       for (var i = 0; i < headerLinks.length; i++) {
         headerLinks[i].style.color = '#fff'; 
@@ -66,23 +70,8 @@ window.addEventListener('scroll', function() {
 });
 
 
-const elements = document.querySelectorAll(".animate-on-scrollY");
+
 let lastScrollPosition = 0;
-function checkPosition() {
-  const windowHeight = window.innerHeight;
-  const scrollPosition = window.scrollY || window.pageYOffset;
-
-  elements.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top + scrollPosition;
-
-    if (elementTop - windowHeight <= 0) {
-      element.classList.add("showY");
-    } else {
-      element.classList.remove("showY");
-    }
-  });
-}
-
 window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY;
   let scrollDirection = scrollPosition > lastScrollPosition ? "down" : "up";
@@ -90,30 +79,25 @@ window.addEventListener("scroll", function () {
 
   let opacity = 1 - scrollPosition / 300;
   let opacity_slower = 1 - scrollPosition / 150;
+  
   let translateY = Math.min(scrollPosition / 3, 250); // Adjust the divisor to control the translation speed
-
+  // let translateY_scroll = Math.min(scrollPosition / 2, 250);
   const heroHeadingWrap = document.querySelector(".hero-heading-wrap");
   const heroHeadingSecond = document.getElementById("hero-heading-second");
   const heroHeadingDescription = document.querySelector(".hero-description");
+  // const scroll = document.querySelector(".demo");
 
   heroHeadingWrap.style.opacity = opacity;
   heroHeadingSecond.style.opacity = opacity;
   heroHeadingDescription.style.opacity = opacity_slower;
+  // scroll.style.opacity = opacity_slower;
 
   heroHeadingWrap.style.transform = `translateY(${translateY}px)`;
   heroHeadingSecond.style.transform = `translateY(${translateY}px)`;
   heroHeadingDescription.style.transform = `translateY(${translateY}px)`;
+  // scroll.style.transform = `translateY(${translateY}px)`;
+  
 
-  // Add class to elements when scrolling down, remove when scrolling up
-  if (scrollDirection === "down") {
-    elements.forEach((element) => {
-      if (element.classList.contains("showY")) {
-        element.classList.remove("showY");
-      }
-    });
-  } else {
-    checkPosition();
-  }
 });
 
 
