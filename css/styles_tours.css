@@ -846,12 +846,17 @@ footer img:hover {
 
     header {
         padding: 0 5px 0 5px;
+        background: white;
+        color:black;
     }
 
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
         display: flex;
         z-index: 16;
+    }
+    .logo-name-container{
+        color: black;
     }
 
     nav {

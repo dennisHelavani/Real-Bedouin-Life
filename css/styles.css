@@ -1039,6 +1039,11 @@ footer img:hover {
 
     header {
         padding: 0 5px 0 5px;
+        background: white;
+        color:black;
+    }
+    .logo-name-container{
+        color: black;
     }
 
     .hamburger-menu {
