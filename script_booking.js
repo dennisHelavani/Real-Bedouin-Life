@@ -4,22 +4,43 @@ window.addEventListener("scroll", function () {
   var header_logo_text_two = document.getElementById("logo-name-part-two");
   var headerLinks = header.querySelectorAll("a");
 
-  if (window.scrollY > window.innerHeight / 2) {
-    header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
-    header.style.background = "white";
-    header_logo_text_one.style.color = "black";
-    header_logo_text_two.style.color = "black";
+  var mediaQuery = window.matchMedia(
+    "(min-width: 321px) and (max-width: 480px)"
+  );
 
-    for (var i = 0; i < headerLinks.length; i++) {
-      headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
+  if (!mediaQuery.matches) {
+    if (window.scrollY > window.innerHeight / 2) {
+      header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
+      header.style.background = "white";
+      header_logo_text_one.style.color = "black";
+
+      header_logo_text_two.style.color = "black";
+      // scroll.style.opacity = "0";
+
+      for (var i = 0; i < headerLinks.length; i++) {
+        headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
+      }
+    } else {
+      header.style.background = "transparent";
+      //  header.style.boxShadow = 'none';
+      header_logo_text_one.style.color = "#fff";
+      // scroll.style.opacity = "1";
+      header_logo_text_two.style.color = "#fff";
+      for (var i = 0; i < headerLinks.length; i++) {
+        headerLinks[i].style.color = "#fff";
+        header.style.boxShadow = "none"; // Assuming you want black text on white background
+      }
     }
   } else {
-    header.style.background = "transparent";
-    header_logo_text_one.style.color = "#fff";
-    header_logo_text_two.style.color = "#fff";
+    header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
+    header.style.background = "white";
+    // dropdown.style.background='white';
+    header_logo_text_one.style.color = "black";
+
+    header_logo_text_two.style.color = "black";
+    // scroll.style.opacity = "0";
     for (var i = 0; i < headerLinks.length; i++) {
-      headerLinks[i].style.color = "#fff";
-      header.style.boxShadow = "none"; // Assuming you want black text on white background
+      headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
     }
   }
 });
@@ -166,11 +187,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
       emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
         (response) => {
-          alert("Your Bookign Request Has Been Sent!", response.status, response.text);
+          alert(
+            "Your Bookign Request Has Been Sent!",
+            response.status,
+            response.text
+          );
         },
         (error) => {
           alert("FAILED...", error);
         }
       );
     });
+});
+
+document
+  .getElementById("hamburger-menu")
+  .addEventListener("click", function () {
+    var nav = document.querySelector("nav");
+    var overlay = document.querySelector(".overlay");
+
+    if (
+      nav.classList.contains("active") &&
+      overlay.classList.contains("active")
+    ) {
+      nav.classList.remove("active");
+      overlay.classList.remove("active");
+    } else {
+      nav.classList.add("active");
+      overlay.classList.add("active");
+    }
+  });
+
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", function () {
+    var nav = document.querySelector("nav");
+    var overlay = document.querySelector(".overlay");
+    nav.classList.remove("active");
+    overlay.classList.remove("active");
+  });
 });
