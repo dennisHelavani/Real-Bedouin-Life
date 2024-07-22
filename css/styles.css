@@ -1203,6 +1203,18 @@ footer img:hover {
         width: 100%;
     }
 
+
+    .spinner-item:hover {
+        transform: translateY(o);
+    }
+    
+    .spinner-item img:hover {
+        /* transform: scale(1.05); */
+        filter: brightness(1);
+    
+    
+    }
+
 }
 
 /* Small Tablets (Portrait) */
