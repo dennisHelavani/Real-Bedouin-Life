@@ -1093,7 +1093,7 @@ footer img:hover {
         font-weight: 500;
     }
 
-    /* Overlay styles */
+  
 
     /* Overlay styles */
     .overlay {
@@ -1113,6 +1113,38 @@ footer img:hover {
         opacity: 1;
     }
 
+    .history-card{
+        display: block;
+       /* padding:  0 20px 20px 20px; */
+       width: 100%;
+    }
+    .history-card-image-2,
+    .history-card-image{
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+      
+
+    }
+    .history-card-image-2 img{
+        /* border-radius:8px ; */
+    }
+    .history-card-block{
+        /* background-color: #fff; */
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        left: 0;
+    }
+
+    .history-card-block-styling{
+        background-color: #fff;
+        padding:10px;
+        color:black;
+        min-height: fit-content;
+    }
+
+
     .faq-left {
         width: 100%;
         text-align: left;
@@ -1128,6 +1160,13 @@ footer img:hover {
     .row{
         padding: 0;
         flex-wrap:nowrap;
+    }
+
+    .column img{
+        margin-top: 2px;
+    }
+    .column{
+        padding: 0 2px;
     }
 
     .tour-content {
