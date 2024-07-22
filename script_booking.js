@@ -131,24 +131,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const subTour = document.getElementById("sub-tour");
 
   const tours = {
-    one_d: ["Mountain Climbing", "River Rafting", "Sky Diving", "Hiking"],
+    one_d: ["2 Hour Jeep Tour", "Half Day Jeep Tour", "Full Day Jeep Tour", "Camel Ride"],
     one_d_one_n: [
-      "Historical Sites",
-      "Cultural Festivals",
-      "City Tours",
-      "Museum Visits",
+      "Half Day Jeep Tour and Night in the Camp",
+      "Day Jeep Tour and Night in the Camp",
+      "Day Jeep Tour and Sleeping Under the Stars",
+      "Jeep Tour, Hiking, and a Night in the Camp",
+      "Jeep Tour, Hiking, and One Night in the Camp",
     ],
     two_d_one_n: [
-      "Spa Retreats",
-      "Beach Vacations",
-      "Cruises",
-      "Yoga Retreats",
+      "Jeep Tour, Sleeping in the Camp and Under the Stars",
     ],
     two_d_two_n: [
-      "Safari",
-      "Bird Watching",
-      "Nature Trails",
-      "Wildlife Photography",
+      "Jeep Tours, Hiking, and Sleeping in the Camp",
     ],
   };
 

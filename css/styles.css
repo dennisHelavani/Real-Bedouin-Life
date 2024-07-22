@@ -231,6 +231,7 @@ footer a:hover:after {
 
 
 .hero-heading {
+    margin-top: 30px;
     transition: opacity 0.5s ease-in-out;
     /* Smooth transition for opacity change */
 }
@@ -309,6 +310,7 @@ footer a:hover:after {
 }
 
 .history-card {
+    align-items: center;
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -348,7 +350,8 @@ footer a:hover:after {
     opacity: 1;
     object-fit: cover;
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    max-height: 30rem;
 }
 
 
@@ -1258,6 +1261,16 @@ footer img:hover {
     .nav-links a:after {
         height: 2px;
     }
+    .spinner-item:hover {
+        transform: translateY(o);
+    }
+    
+    .spinner-item img:hover {
+        /* transform: scale(1.05); */
+        filter: brightness(1);
+    
+    
+    }
 }
 
 /* Large Tablets (Landscape) */
@@ -1287,6 +1300,16 @@ footer img:hover {
     .tour-links a:after,
     .nav-links a:after {
         height: 2px;
+    }
+    .spinner-item:hover {
+        transform: translateY(o);
+    }
+    
+    .spinner-item img:hover {
+        /* transform: scale(1.05); */
+        filter: brightness(1);
+    
+    
     }
 }
 
