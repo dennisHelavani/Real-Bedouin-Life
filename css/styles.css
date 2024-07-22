@@ -1039,6 +1039,7 @@ footer img:hover {
 
     :root{
         --h1-mb:25px;
+        --secondary-color:rgb(0 0 0 / 70%);
     }
     .history h1, .tour h1, .gallery h1, .faq h1, .spinner h1{
         margin-top: 25px;
@@ -1137,10 +1138,14 @@ footer img:hover {
         left: 0;
     }
 
+    .history-card-block p{
+        line-height: 1.6;
+    }
+
     .history-card-block-styling{
         background-color: #fff;
         padding:10px;
-        color:black;
+        color:var(  --secondary-color);
         min-height: fit-content;
     }
 
