@@ -1,6 +1,6 @@
 :root {
     --font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --section-margin-top: 4%;
+    --section-margin-top: 30px;
     --nav-fs: 16px;
     --text-fs: 18px;
     --h1-c: #b88255;
@@ -167,14 +167,15 @@ footer a:hover:after {
 
 .hero {
     position: relative;
-    height: 50vh;
+    height: 25rem;
+    /* height: 50vh; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: white;
     object-fit: cover;
-    background: url('../images_resized/background-picture-3.jpeg') center center/cover no-repeat;
+    background: url('../images_resized/wadi\ rum.jpeg') center center/cover no-repeat;
     /* animation: bgSlide 45s infinite; */
 }
 
@@ -455,11 +456,12 @@ footer a:hover:after {
 
 
 .tour h1 {
+    
     color: var(--h1-c);
     text-transform: uppercase;
     font-weight: var(--h1-w);
     font-size: var(--h1-fs);
-    margin-bottom: var(--h1-mb);
+    margin-bottom: 40px;
 }
 
 .tours {
@@ -491,6 +493,7 @@ footer a:hover:after {
     width: 100%;
     height: 230px;
     display: block;
+    object-fit: cover;
     transition: filter 0.7s ease;
 }
 
@@ -546,21 +549,24 @@ footer a:hover:after {
     font-size: var(--text-fs);
     color: var(--h1-color);
     text-align: center;
-    height: 130px;
+    height: fit-content;
     padding: 10px;
 }
 
 .title {
     color: var(--h1-c);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding: 20px 0;
     font-size: var(--h2-fs) !important;
     /* font-weight: var(--tour-link-fw); */
     /* font-weight: bold; */
     /* line-height: 1.2;s */
 }
 
-.card-content p{
-    text-align: left;
+
+
+.card-content > p{
+    text-align: center;
     font-size: var(--form-fs);
 }
 
@@ -572,10 +578,12 @@ footer a:hover:after {
 
     .tour-content img {
         height: 200px;
+        object-fit: cover;
     }
 
     .tour-content {
         max-width: 90%;
+        object-fit: cover;
     }
 
 }
