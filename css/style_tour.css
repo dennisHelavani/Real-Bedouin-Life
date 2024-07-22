@@ -1203,6 +1203,11 @@ footer img:hover {
         --form-fs: 12px;
     }
 
+    .hero-description{
+        max-width: 80%;
+        margin-top: 25px;
+    }
+
     .logo-name-container{
         color: black;
     }
