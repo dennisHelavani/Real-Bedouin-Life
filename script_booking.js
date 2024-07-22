@@ -181,14 +181,14 @@ document.addEventListener("DOMContentLoaded", () => {
         sub_tour: formData.get("sub-tour"),
         num_people: formData.get("num-people"),
         check_in: formData.get("check-in"),
-        check_out: formData.get("check-out"),
+        // check_out: formData.get("check-out"),
         message: formData.get("message"),
       };
 
       emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
         (response) => {
           alert(
-            "Your Bookign Request Has Been Sent!",
+            "Your booking request has been sent!",
             response.status,
             response.text
           );

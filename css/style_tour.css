@@ -26,7 +26,7 @@
     --nav-dd-fs: 13px;
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
-    --h2-fs: 25px;
+    --h2-fs: 23px;
 }
 
 * {
@@ -173,7 +173,7 @@ footer a:hover:after {
     justify-content: flex-start;
     color: white;
     object-fit: cover;
-    background: url('../images_resized/bedouin.jpeg') center center/cover no-repeat;
+    background: url('../images_resized/background-picture-3.jpeg') center center/cover no-repeat;
     /* animation: bgSlide 45s infinite; */
 }
 
@@ -403,12 +403,7 @@ footer a:hover:after {
     color: var(--secondary-color);
 }
 
-.title {
 
-    font-size: var(--h2-fs);
-    font-weight: bold;
-    line-height: 1.2;
-}
 
 .copy {
     color: var(--secondary-color);
@@ -597,12 +592,17 @@ footer a:hover:after {
 
 .title {
     color: var(--h1-c);
-    padding-bottom: 5px;
-    font-size: var(--h2-fs);
-    font-weight: bold;
-    line-height: 1.2;
+    padding-bottom: 10px;
+    font-size: var(--h2-fs) !important;
+    /* font-weight: var(--tour-link-fw); */
+    /* font-weight: bold; */
+    /* line-height: 1.2;s */
 }
 
+.card-content p{
+    text-align: left;
+    font-size: var(--form-fs);
+}
 
 
 @media (min-width: 600px) {
@@ -898,7 +898,7 @@ footer a:hover:after {
     color: black;
     padding: 0 15%;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .contact-item {
@@ -1899,7 +1899,7 @@ footer img:hover {
         --tour-link-fw: 400;
         --form-fs: 12px;
     }
-
+/* 
     .contact-card {
         display: flex;
         justify-content: space-between;
@@ -1908,7 +1908,7 @@ footer img:hover {
         width: 80%;
         margin: 0 auto;
 
-    }
+    } */
 
     .image-grid {
         width: 100%;
@@ -1950,7 +1950,7 @@ footer img:hover {
         --form-fs: 14px;
     }
 
-    .contact-card {
+    /* .contact-card {
         display: flex;
         justify-content: space-between;
         color: black;
@@ -1958,7 +1958,7 @@ footer img:hover {
         width: 80%;
         margin: 0 auto;
 
-    }
+    } */
 
     .image-grid {
         width: 100%;
