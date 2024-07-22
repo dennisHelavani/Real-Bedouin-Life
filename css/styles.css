@@ -1037,12 +1037,19 @@ footer img:hover {
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
 
+    :root{
+        --h1-mb:25px;
+    }
+    .history h1, .tour h1, .gallery h1, .faq h1, .spinner h1{
+        margin-top: 25px;
+    }
     header {
         padding: 0 5px 0 5px;
         background: white;
-        color:black;
+        color: black;
     }
-    .logo-name-container{
+
+    .logo-name-container {
         color: black;
     }
 
@@ -1112,8 +1119,19 @@ footer img:hover {
     }
 
     .hero-description {
+
         width: 90%;
         padding-top: 20px;
+       
+    }
+
+    .row{
+        padding: 0;
+        flex-wrap:nowrap;
+    }
+
+    .tour-content {
+        padding: 0;
     }
 }
 
@@ -1265,16 +1283,11 @@ footer img:hover {
         animation: fadeInAnimation ease 3s;
         width: 90%;
         height: 310px;
-
     }
 
     .hero-description {
-        width: 39.5%;
-        text-align: left;
-        margin-left: 10%;
-        text-wrap: pretty;
+        margin-top: 40px;
     }
-
 }
 
 /* Large Desktops */

@@ -158,3 +158,24 @@ document.querySelectorAll("nav a").forEach((link) => {
     overlay.classList.remove("active");
   });
 });
+
+
+// modifyingc the text of the main page
+function adjustContent() {
+  var mediaQuery = window.matchMedia("(max-width: 480px)");
+  var descriptionText = document.getElementById("description-text");
+
+  if (mediaQuery.matches) {
+    // For screens smaller than 480px, change the content
+    descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Come and live the dream of Wadi Rum";
+  } else {
+    // For larger screens, revert to the original content
+    descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep, and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and ancient caravan routes, revealing sights that will surpass your wildest dreams. Come and live the magic of Wadi Rum with me.";
+  }
+}
+
+// Adjust content on initial load
+adjustContent();
+
+// Adjust content on window resize
+window.addEventListener("resize", adjustContent);
