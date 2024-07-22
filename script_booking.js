@@ -1,49 +1,49 @@
-window.addEventListener("scroll", function () {
-  var header = document.getElementById("navbar");
-  var header_logo_text_one = document.getElementById("logo-name-part-one");
-  var header_logo_text_two = document.getElementById("logo-name-part-two");
-  var headerLinks = header.querySelectorAll("a");
+// window.addEventListener("scroll", function () {
+//   var header = document.getElementById("navbar");
+//   var header_logo_text_one = document.getElementById("logo-name-part-one");
+//   var header_logo_text_two = document.getElementById("logo-name-part-two");
+//   var headerLinks = header.querySelectorAll("a");
 
-  var mediaQuery = window.matchMedia(
-    "(min-width: 321px) and (max-width: 480px)"
-  );
+//   var mediaQuery = window.matchMedia(
+//     "(min-width: 321px) and (max-width: 480px)"
+//   );
 
-  if (!mediaQuery.matches) {
-    if (window.scrollY > window.innerHeight / 2) {
-      header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
-      header.style.background = "white";
-      header_logo_text_one.style.color = "black";
+//   if (!mediaQuery.matches) {
+//     if (window.scrollY > window.innerHeight / 2) {
+//       header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
+//       header.style.background = "white";
+//       header_logo_text_one.style.color = "black";
 
-      header_logo_text_two.style.color = "black";
-      // scroll.style.opacity = "0";
+//       header_logo_text_two.style.color = "black";
+//       // scroll.style.opacity = "0";
 
-      for (var i = 0; i < headerLinks.length; i++) {
-        headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
-      }
-    } else {
-      header.style.background = "transparent";
-      //  header.style.boxShadow = 'none';
-      header_logo_text_one.style.color = "#fff";
-      // scroll.style.opacity = "1";
-      header_logo_text_two.style.color = "#fff";
-      for (var i = 0; i < headerLinks.length; i++) {
-        headerLinks[i].style.color = "#fff";
-        header.style.boxShadow = "none"; // Assuming you want black text on white background
-      }
-    }
-  } else {
-    header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
-    header.style.background = "white";
-    // dropdown.style.background='white';
-    header_logo_text_one.style.color = "black";
+//       for (var i = 0; i < headerLinks.length; i++) {
+//         headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
+//       }
+//     } else {
+//       header.style.background = "transparent";
+//       //  header.style.boxShadow = 'none';
+//       header_logo_text_one.style.color = "#fff";
+//       // scroll.style.opacity = "1";
+//       header_logo_text_two.style.color = "#fff";
+//       for (var i = 0; i < headerLinks.length; i++) {
+//         headerLinks[i].style.color = "#fff";
+//         header.style.boxShadow = "none"; // Assuming you want black text on white background
+//       }
+//     }
+//   } else {
+//     header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
+//     header.style.background = "white";
+//     // dropdown.style.background='white';
+//     header_logo_text_one.style.color = "black";
 
-    header_logo_text_two.style.color = "black";
-    // scroll.style.opacity = "0";
-    for (var i = 0; i < headerLinks.length; i++) {
-      headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
-    }
-  }
-});
+//     header_logo_text_two.style.color = "black";
+//     // scroll.style.opacity = "0";
+//     for (var i = 0; i < headerLinks.length; i++) {
+//       headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
+//     }
+//   }
+// });
 
 document.querySelectorAll(".header a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
