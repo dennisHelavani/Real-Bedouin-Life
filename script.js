@@ -109,27 +109,42 @@ document.querySelectorAll(".faq-question-wrap").forEach((wrap) => {
   var questionElement = wrap.querySelector(".faq-question");
   var answerId = questionElement.getAttribute("data-answer");
   var answerElement = document.getElementById(answerId);
+  var arrowElement = wrap.querySelector(".arrow-img");
 
-  answerElement.style.display = "none";
+  // Initially hide the answer
+  answerElement.classList.add('faq-answer');
 
   wrap.addEventListener("click", function () {
-    var arrowElement = this.querySelector(".arrow-img");
+    var parentItem = wrap.parentElement;
+    var isActive = parentItem.classList.contains('active');
 
-    if (answerElement.style.display === "block") {
-      answerElement.style.display = "none";
+    // Collapse all other items
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      item.classList.remove('active');
+      var otherAnswerId = item.querySelector(".faq-question").getAttribute("data-answer");
+      var otherAnswerElement = document.getElementById(otherAnswerId);
+      otherAnswerElement.style.maxHeight = '0';
+      otherAnswerElement.style.opacity = '0';
+    });
+
+    if (isActive) {
+      // Hide this one
+      parentItem.classList.remove('active');
+      answerElement.style.maxHeight = '0';
+      answerElement.style.opacity = '0';
       questionElement.style.color = "#b88255";
-      arrowElement.src = "images/arrow-down.png"; // Change back to original arrow image
-      arrowElement.style.filter =
-        " invert(57%) sepia(69%) saturate(302%) hue-rotate(346deg) brightness(84%) contrast(89%)";
+      arrowElement.src = "images/arrow-down.png";
     } else {
-      answerElement.style.display = "block";
+      // Show this one
+      parentItem.classList.add('active');
+      answerElement.style.maxHeight = answerElement.scrollHeight + "px";
+      answerElement.style.opacity = '1';
       questionElement.style.color = "#f0a500";
-      arrowElement.src = "images/arrow-up.png"; // Change to new arrow image
-      arrowElement.style.filter =
-        "invert(75%) sepia(44%) saturate(4593%) hue-rotate(5deg) brightness(99%) contrast(102%)";
+      arrowElement.src = "images/arrow-up.png";
     }
   });
 });
+
 
 // Mobile Menu
 document
