@@ -187,7 +187,8 @@ footer a:hover:after {
 }
 
 .hero-description {
-    margin: 0 auto;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
     width: 60%;
     text-align: center;
     /* margin-left: 10%; */
@@ -213,7 +214,7 @@ footer a:hover:after {
     text-transform: uppercase;
     /* animation: headingColors 45s linear infinite; */
     color: var(--h1-c);
-    letter-spacing: 7px;
+    letter-spacing: 1px;
     font-size: clamp(2rem, 9vw, 14rem);
 }
 
@@ -256,14 +257,13 @@ footer a:hover:after {
     }
 }
 
-
 .demo {
     margin: 0 auto;
     position: relative; /* Add this to position children correctly */
     text-align: center; /* Center align the text within the section */
-  }
-  
-  .demo a {
+}
+
+.demo a {
     display: inline-block;
     position: relative;
     color: #c6baba;
@@ -271,29 +271,36 @@ footer a:hover:after {
     text-decoration: none;
     transition: opacity .3s;
     z-index: 10;
-    border: 1px solid #fff;
+    border: 2px solid transparent; /* Make initial border transparent */
     padding: 10px 20px;
-    /* animation: snake 2s linear infinite;  */
-    /* border-image: linear-gradient(to right, #fff, var(--animation-color), #fff) 1;  */
+    background: transparent; /* Ensure background is transparent */
+    border-image: linear-gradient(to right, #fff, var(--animation-color), #fff) 1;
     border-image-slice: 1; /* Ensures full border is covered */
-  }
-  
-  .demo a:hover {
-    border-color: var(--animation-color);
-  }
-  
-  @keyframes snake {
+    animation: snake 5s linear infinite; /* Slower animation */
+}
+
+.demo a:hover {
+    border-color: transparent;
+}
+
+@keyframes snake {
     0% {
-      border-image: linear-gradient(to right, #fff, var(--animation-color), #fff) 1;
+        border-image-source: linear-gradient(to right, #fff, var(--animation-color), #fff);
+    }
+    25% {
+        border-image-source: linear-gradient(to right, var(--animation-color), #fff, #fff);
     }
     50% {
-      border-image: linear-gradient(to right, var(--animation-color), #fff, var(--animation-color)) 1;
+        border-image-source: linear-gradient(to right, #fff, var(--animation-color), #fff);
+    }
+    75% {
+        border-image-source: linear-gradient(to right, #fff, #fff, var(--animation-color));
     }
     100% {
-      border-image: linear-gradient(to right, #fff, var(--animation-color), #fff) 1;
+        border-image-source: linear-gradient(to right, #fff, var(--animation-color), #fff);
     }
-  }
- 
+}
+
 
 
 
