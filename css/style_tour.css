@@ -167,7 +167,7 @@ footer a:hover:after {
 
 .hero {
     position: relative;
-    height: 25rem;
+    height: 29rem;
     /* height: 50vh; */
     width: 100%;
     display: flex;
@@ -175,7 +175,7 @@ footer a:hover:after {
     justify-content: flex-start;
     color: white;
     object-fit: cover;
-    background: url('../images_resized/wadi\ rum.jpeg') center center/cover no-repeat;
+    background: url('../images/Main\ Wadi\ Rum\ Desert\ Picture.jpeg') center center/cover no-repeat;
     /* animation: bgSlide 45s infinite; */
 }
 
@@ -238,6 +238,7 @@ footer a:hover:after {
 
 
 .hero-description p {
+    line-height: 1.5;
     color: #c6baba;
     font-size: var(--text-fs);
 }

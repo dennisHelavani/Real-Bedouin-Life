@@ -227,6 +227,7 @@ footer a:hover:after {
 
 .hero-description p {
     color: #c6baba;
+    line-height: 1.5;
     font-size: 18px;
 }
 
@@ -407,7 +408,7 @@ footer a:hover:after {
     text-wrap: pretty;
     opacity: 1;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.5;
     text-align: left;
 }
 

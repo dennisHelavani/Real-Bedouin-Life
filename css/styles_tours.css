@@ -212,6 +212,7 @@ footer a:hover:after {
 }
 
 #hero-heading-first {
+    
     letter-spacing: 2px;
     font-size: 80px;
 }
@@ -230,6 +231,7 @@ footer a:hover:after {
 
 
 .hero-description p {
+    line-height: 1.5;
     color: #c6baba;
     font-size: var(--text-fs);
 }

@@ -94,7 +94,7 @@
           <option value="one_d">1 Day Tour</option>
           <option value="one_d_one_n">1 Day & 1 Night Tour</option>
           <option value="two_d_one_n">2 Days & 1 Night Tour</option>
-          <option value="two_d_two_n">2 Days & 1 Nights Tour</option>
+          <option value="two_d_two_n">2 Days & 2 Nights Tour</option>
         </select>
 
         <label for="sub-tour" aria-placeholder="Select Tour">Select Tour</label>
@@ -154,6 +154,114 @@
   </footer>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="script_booking.js"></script>
+  
+  <script>
+    const mainTour = document.getElementById("main-tour");
+    const subTour = document.getElementById("sub-tour");
+
+    const tours = {
+        one_d: ["2 Hour Jeep Tour", "Half Day Jeep Tour", "Full Day Jeep Tour", "Camel Ride"],
+        one_d_one_n: [
+            "Half Day Jeep Tour and Night in the Camp",
+            "Day Jeep Tour and Night in the Camp",
+            "Day Jeep Tour and Sleeping Under the Stars",
+            "Jeep Tour, Hiking, and a Night in the Camp",
+            "Jeep Tour, Hiking, and One Night in the Camp",
+        ],
+        two_d_one_n: [
+            "Jeep Tour, Sleeping in the Camp and Under the Stars",
+        ],
+        two_d_two_n: [
+            "Jeep Tours, Hiking, and Sleeping in the Camp",
+        ],
+    };
+
+    // Function to get query parameters from URL
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            category: params.get('category'),
+            tour: params.get('tour')
+        };
+    }
+
+    // Function to set dropdown values based on URL parameters
+    function setDropdownValues() {
+        const { category, tour } = getQueryParams();
+
+        if (category) {
+            setDropdownValue('main-tour', category);
+            updateSubTourOptions(); // Ensure sub-tour options are updated based on main-tour
+        }
+
+        if (tour) {
+            setDropdownValue('sub-tour', tour);
+        }
+    }
+
+    // Helper function to set the selected value of a dropdown
+    function setDropdownValue(elementId, value) {
+        const dropdown = document.getElementById(elementId);
+        for (let i = 0; i < dropdown.options.length; i++) {
+            if (dropdown.options[i].value === value) {
+                dropdown.selectedIndex = i;
+                break;
+            }
+        }
+    }
+
+    // Function to update sub-tour options based on selected main tour
+    function updateSubTourOptions() {
+        const selectedMainTour = mainTour.value;
+        subTour.innerHTML = '<option value="">Select Sub Tour</option>'; // Reset sub tour options
+
+        if (selectedMainTour && tours[selectedMainTour]) {
+            tours[selectedMainTour].forEach((tour) => {
+                const option = document.createElement("option");
+                option.value = tour.toLowerCase().replace(/\s+/g, "-");
+                option.textContent = tour;
+                subTour.appendChild(option);
+            });
+        }
+    }
+
+    // Event listener for main tour dropdown change
+    mainTour.addEventListener("change", updateSubTourOptions);
+
+    // Initialize dropdowns and then set values based on URL parameters
+    window.onload = function() {
+        setDropdownValues(); // This will also call updateSubTourOptions
+    };
+
+    // Handle form submission
+    document
+        .getElementById("booking-form")
+        .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            const templateParams = {
+                first_name: formData.get("first-name"),
+                last_name: formData.get("last-name"),
+                email: formData.get("email"),
+                main_tour: formData.get("main-tour"),
+                sub_tour: formData.get("sub-tour"),
+                num_people: formData.get("num-people"),
+                check_in: formData.get("check-in"),
+                message: formData.get("message"),
+            };
+
+            emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
+                (response) => {
+                    alert("Your booking request has been sent!", response.status, response.text);
+                },
+                (error) => {
+                    alert("FAILED...", error);
+                }
+            );
+        });
+</script>
   <!-- <script>
     AOS.init({
       offset: 200,
