@@ -58,6 +58,7 @@ window.addEventListener("scroll", function () {
   var header_logo_text_one = document.getElementById("logo-name-part-one");
   var header_logo_text_two = document.getElementById("logo-name-part-two");
   var headerLinks = header.querySelectorAll("a");
+  var language_selector = document.getElementById('language-select');
 
   var mediaQuery = window.matchMedia(
     "(min-width: 321px) and (max-width: 480px)"
@@ -68,8 +69,11 @@ window.addEventListener("scroll", function () {
       header.style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
       header.style.background = "white";
       header_logo_text_one.style.color = "black";
-
       header_logo_text_two.style.color = "black";
+
+      language_selector.style.background = "transparent";
+      language_selector.style.border = 'none';
+      language_selector.style.color = 'black';
       // scroll.style.opacity = "0";
 
       for (var i = 0; i < headerLinks.length; i++) {
@@ -79,11 +83,15 @@ window.addEventListener("scroll", function () {
       header.style.background = "transparent";
       //  header.style.boxShadow = 'none';
       header_logo_text_one.style.color = "#fff";
+      language_selector.style.background = "transparent";
+      // language_selector.style.border = '2px solid #fff';
+      language_selector.style.color = '#fff';
       // scroll.style.opacity = "1";
       header_logo_text_two.style.color = "#fff";
       for (var i = 0; i < headerLinks.length; i++) {
         headerLinks[i].style.color = "#fff";
         header.style.boxShadow = "none"; // Assuming you want black text on white background
+       
       }
     }
   } else {
@@ -93,6 +101,10 @@ window.addEventListener("scroll", function () {
     header_logo_text_one.style.color = "black";
 
     header_logo_text_two.style.color = "black";
+
+    language_selector.style.background = "transparent";
+      language_selector.style.border = '2px solid #fff';
+      language_selector.style.color = '#fff';
     // scroll.style.opacity = "0";
     for (var i = 0; i < headerLinks.length; i++) {
       headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background

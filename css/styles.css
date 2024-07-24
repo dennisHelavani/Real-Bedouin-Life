@@ -146,17 +146,23 @@ footer a:hover:after {
 }
 
 .language-selector select {
+    cursor: pointer;
     /* padding: 5px; */
-    border: none;
+    /* border: none; */
     border-radius: 5px;
     height: 20px;
-    background-color: #fff;
-    color: #333;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    /* color: #333; */
     width: 50px;
     z-index: 15;
     /* font-size: 14px; */
 }
-
+.language-selector {
+ border: noone;
+ border-bottom: 2.5px solid var(--animation-color);
+}
 
 .hamburger-menu {
     display: none;
@@ -1110,11 +1116,15 @@ footer img:hover {
         display: flex;
         z-index: 16;
     }
+/* 
     .language-selector {
+        background-color: transparent;
+        color:white;
+        border:2px solid white;
         margin-left: 0px;
         width: auto;
         z-index: 15;
-    }
+    } */
     
 
     nav {
