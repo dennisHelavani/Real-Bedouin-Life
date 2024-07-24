@@ -5,90 +5,128 @@ async function loadTranslation(lang) {
   const data = await response.json();
   translations[lang] = data;
 }
+function setTextContent(id, text) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.textContent = text;
+  }
+}
 
 async function setLanguage(lang) {
   if (!translations[lang]) {
     await loadTranslation(lang);
   }
 
+  // Helper function to safely set text content
+
+
   // Set header translations
-  document.getElementById("nav-about").textContent = translations[lang].header.about;
-  // document.getElementById("nav-home").textContent = translations[lang].header.home;
-  document.getElementById("nav-tours").textContent = translations[lang].header.tours;
-  document.getElementById("nav-faq").textContent = translations[lang].header.faq;
-  document.getElementById("nav-contact").textContent = translations[lang].header.contact;
-  document.getElementById("nav-book-tour").textContent = translations[lang].header.book_tour;
+  setTextContent("nav-about", translations[lang].header.about);
+  setTextContent("nav-home", translations[lang].header.home);
+  setTextContent("nav-tours", translations[lang].header.tours);
+  setTextContent("nav-faq", translations[lang].header.faq);
+  setTextContent("nav-contact", translations[lang].header.contact);
+  setTextContent("nav-book-tour", translations[lang].header.book_tour);
 
   // Set hero translations
-  document.getElementById("hero-heading-first").textContent = translations[lang].hero.heading_first;
-  document.getElementById("hero-heading-second").textContent = translations[lang].hero.heading_second;
-  document.getElementById("hero-description-text").textContent = translations[lang].hero.description_text;
-  document.getElementById("hero-button").textContent = translations[lang].hero.button;
+  setTextContent("hero-heading-first", translations[lang].hero.heading_first);
+  setTextContent("hero-heading-second", translations[lang].hero.heading_second);
+  setTextContent("hero-description-text", translations[lang].hero.description_text);
+  setTextContent("hero-button", translations[lang].hero.button);
 
   // Set about translations
-  document.getElementById("about-heading").textContent = translations[lang].about.about_heading;
-  document.getElementById("about_paragraph").textContent = translations[lang].about.about_paragraph;
+  setTextContent("about-heading", translations[lang].about.about_heading);
+  setTextContent("about_paragraph", translations[lang].about.about_paragraph);
 
   // Set history translation
-  document.getElementById("history_heading").textContent = translations[lang].history.history_heading;
-  document.getElementById("history_paragraph").textContent = translations[lang].history.history_paragraph;
+  setTextContent("history_heading", translations[lang].history.history_heading);
+  setTextContent("history_paragraph", translations[lang].history.history_paragraph);
 
   // Set tour translations
-  document.getElementById("tour_heading").textContent = translations[lang].tour.tour_heading;
-  document.getElementById("tour_title_1").textContent = translations[lang].tour.tour_title_1;
-  document.getElementById("tour_title_2").textContent = translations[lang].tour.tour_title_2;
-  document.getElementById("tour_title_3").textContent = translations[lang].tour.tour_title_3;
-  document.getElementById("tour_title_4").textContent = translations[lang].tour.tour_title_4;
-  document.getElementById("tour_paragraph_1").textContent = translations[lang].tour.tour_paragraph_1;
-  document.getElementById("tour_paragraph_2").textContent = translations[lang].tour.tour_paragraph_2;
-  document.getElementById("tour_paragraph_3").textContent = translations[lang].tour.tour_paragraph_3;
-  document.getElementById("tour_paragraph_4").textContent = translations[lang].tour.tour_paragraph_4;
-  document.getElementById("tour_button").textContent = translations[lang].tour.tour_button;
+  setTextContent("tour_heading", translations[lang].tour.tour_heading);
+  setTextContent("tour_title_1", translations[lang].tour.tour_title_1);
+  setTextContent("tour_title_2", translations[lang].tour.tour_title_2);
+  setTextContent("tour_title_3", translations[lang].tour.tour_title_3);
+  setTextContent("tour_title_4", translations[lang].tour.tour_title_4);
+  setTextContent("tour_paragraph_1", translations[lang].tour.tour_paragraph_1);
+  setTextContent("tour_paragraph_2", translations[lang].tour.tour_paragraph_2);
+  setTextContent("tour_paragraph_3", translations[lang].tour.tour_paragraph_3);
+  setTextContent("tour_paragraph_4", translations[lang].tour.tour_paragraph_4);
+  setTextContent("tour_button", translations[lang].tour.tour_button);
 
   // Set spinner translations
-  document.getElementById("spinner_heading").textContent = translations[lang].spinner.spinner_heading;
-  document.getElementById("spinner_title_1").textContent = translations[lang].spinner.spinner_title_1;
-  document.getElementById("spinner_title_2").textContent = translations[lang].spinner.spinner_title_2;
-  document.getElementById("spinner_title_3").textContent = translations[lang].spinner.spinner_title_3;
-  document.getElementById("spinner_title_4").textContent = translations[lang].spinner.spinner_title_4;
-  document.getElementById("spinner_title_5").textContent = translations[lang].spinner.spinner_title_5;
+  setTextContent("spinner_heading", translations[lang].spinner.spinner_heading);
+  setTextContent("spinner_title_1", translations[lang].spinner.spinner_title_1);
+  setTextContent("spinner_title_2", translations[lang].spinner.spinner_title_2);
+  setTextContent("spinner_title_3", translations[lang].spinner.spinner_title_3);
+  setTextContent("spinner_title_4", translations[lang].spinner.spinner_title_4);
+  setTextContent("spinner_title_5", translations[lang].spinner.spinner_title_5);
 
   // Set FAQ translations
-  document.getElementById("faq_heading").textContent = translations[lang].faq.faq_heading;
-  document.getElementById("faq_question_1").textContent = translations[lang].faq.faq_question_1;
-  document.getElementById("faq_question_2").textContent = translations[lang].faq.faq_question_2;
-  document.getElementById("faq_question_3").textContent = translations[lang].faq.faq_question_3;
-  document.getElementById("faq_question_4").textContent = translations[lang].faq.faq_question_4;
-  document.getElementById("faq_question_5").textContent = translations[lang].faq.faq_question_5;
-  document.getElementById("faq_question_6").textContent = translations[lang].faq.faq_question_6;
-  document.getElementById("faq_question_7").textContent = translations[lang].faq.faq_question_7;
-  document.getElementById("faq_question_8").textContent = translations[lang].faq.faq_question_8;
-  document.getElementById("answer1").textContent = translations[lang].faq.faq_answer_1;
-  document.getElementById("answer2").textContent = translations[lang].faq.faq_answer_2;
-  document.getElementById("answer3").textContent = translations[lang].faq.faq_answer_3;
-  document.getElementById("answer4").textContent = translations[lang].faq.faq_answer_4;
-  document.getElementById("answer5").textContent = translations[lang].faq.faq_answer_5;
-  document.getElementById("answer6").textContent = translations[lang].faq.faq_answer_6;
-  document.getElementById("answer7").textContent = translations[lang].faq.faq_answer_7;
-  document.getElementById("answer8").textContent = translations[lang].faq.faq_answer_8;
+  setTextContent("faq_heading", translations[lang].faq.faq_heading);
+  setTextContent("faq_question_1", translations[lang].faq.faq_question_1);
+  setTextContent("faq_question_2", translations[lang].faq.faq_question_2);
+  setTextContent("faq_question_3", translations[lang].faq.faq_question_3);
+  setTextContent("faq_question_4", translations[lang].faq.faq_question_4);
+  setTextContent("faq_question_5", translations[lang].faq.faq_question_5);
+  setTextContent("faq_question_6", translations[lang].faq.faq_question_6);
+  setTextContent("faq_question_7", translations[lang].faq.faq_question_7);
+  setTextContent("faq_question_8", translations[lang].faq.faq_question_8);
+  setTextContent("answer1", translations[lang].faq.faq_answer_1);
+  setTextContent("answer2", translations[lang].faq.faq_answer_2);
+  setTextContent("answer3", translations[lang].faq.faq_answer_3);
+  setTextContent("answer4", translations[lang].faq.faq_answer_4);
+  setTextContent("answer5", translations[lang].faq.faq_answer_5);
+  setTextContent("answer6", translations[lang].faq.faq_answer_6);
+  setTextContent("answer7", translations[lang].faq.faq_answer_7);
+  setTextContent("answer8", translations[lang].faq.faq_answer_8);
 
   // Set gallery translations
-  document.getElementById("gallery_heading").textContent = translations[lang].gallery.heading;
-  document.getElementById("gallery-button").textContent = translations[lang].gallery.button;
+  setTextContent("gallery_heading", translations[lang].gallery.heading);
+  setTextContent("gallery-button", translations[lang].gallery.button);
 
   // Set CTA translations
-  document.getElementById("cta-heading").textContent = translations[lang].cta.heading;
-  document.getElementById("cta-paragraph").textContent = translations[lang].cta.paragraph;
-  document.getElementById("cta-button").textContent = translations[lang].cta.button;
+  setTextContent("cta-heading", translations[lang].cta.heading);
+  setTextContent("cta-paragraph", translations[lang].cta.paragraph);
+  setTextContent("cta-button", translations[lang].cta.button);
 
   // Set footer translations
-  document.getElementById("footer-home").textContent = translations[lang].footer.home;
-  document.getElementById("footer-tours").textContent = translations[lang].footer.tours;
-  document.getElementById("footer-about").textContent = translations[lang].footer.about;
-  document.getElementById("footer-contact").textContent = translations[lang].footer.contact;
+  setTextContent("footer-home", translations[lang].footer.home);
+  setTextContent("footer-tours", translations[lang].footer.tours);
+  setTextContent("footer-about", translations[lang].footer.about);
+  setTextContent("footer-contact", translations[lang].footer.contact);
+
+  setTextContent("contact-page-heading", translations[lang].contact_page.header);
+  setTextContent("contact-page-paragraph", translations[lang].contact_page.paragraph);
+  setTextContent("contact-page-website", translations[lang].contact_page.website);
+  setTextContent("contact-page-address", translations[lang].contact_page.address);
+  setTextContent("contact-page-question", translations[lang].contact_page.question);
+  setTextContent("contact-page-button", translations[lang].contact_page.button);
+  setTextContent("contact-page-full-name", translations[lang].contact_page.full_name);
+  setTextContent("contact-page-email-address", translations[lang].contact_page.email_adress);
+  setTextContent("contact-page-message", translations[lang].contact_page.message);
+  setTextContent("contact-page-phone", translations[lang].contact_page.phone);
+
+
+  setTextContent("booking-page-heading", translations[lang].booking_page.heading);
+  setTextContent("booking-page-paragraph", translations[lang].booking_page.paragraph);
+  setTextContent("booking-page-cta", translations[lang].booking_page.cta);
+  setTextContent("booking-page-type-heading", translations[lang].booking_page.tour_type_heading);
+  setTextContent("tour_type_1", translations[lang].booking_page.tour_type_1);
+  setTextContent("tour_type_2", translations[lang].booking_page.tour_type_2);
+  setTextContent("tour_type_3", translations[lang].booking_page.tour_type_3);
+  setTextContent("tour_type_4", translations[lang].booking_page.tour_type_4);
+  setTextContent("sub-tour-heading", translations[lang].booking_page.sub_tour_heading);
+  setTextContent("booking-page-number-people", translations[lang].booking_page.num_people);
+  setTextContent("booking-page-check-in", translations[lang].booking_page.check_in);
+  setTextContent("booking-page-comments", translations[lang].booking_page.comments);
+
+
+
+
 
   // Set copyright translations
-  document.getElementById("copyright").textContent = translations[lang].copy_right;
+  setTextContent("copyright", translations[lang].copy_right);
 
   // Save the selected language to localStorage
   localStorage.setItem('selectedLanguage', lang);
@@ -112,14 +150,12 @@ function adjustContent() {
   const lang = getSavedLanguage();
   const mediaQuery = window.matchMedia("(max-width: 480px)");
 
-  var descriptionText = document.getElementById("description-text");
-
   if (mediaQuery.matches) {
     // For screens smaller than 480px, change the content
-    document.getElementById("hero-description-text").innerHTML = translations[lang].hero.description_text_short;
+    setTextContent("hero-description-text", translations[lang].hero.description_text_short);
   } else {
     // For larger screens, revert to the original content
-    document.getElementById("hero-description-text").innerHTML = translations[lang].hero.description_text;
+    setTextContent("hero-description-text", translations[lang].hero.description_text);
   }
 }
 

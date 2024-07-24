@@ -38,6 +38,16 @@
         <li><a href="index.html#faq">FAQ</a></li>
         <li><a href="contact.html">CONTACT</a></li>
         <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li>
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">ENG</option>
+            <option value="de">DE</option>
+            <option value="esp">ESP</option>
+            <option value="it">IT</option>
+            <option value="fr">FR</option>
+            <!-- Add more languages here -->
+          </select>
+        </div>
       </ul>
     </nav>
   </header>
@@ -290,10 +300,10 @@
         color: #d89f6f;
       ">
     <div style="margin-bottom: 10px">
-      <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Home</a>
-      <a href="all_tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Tours</a>
-      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px">About</a>
-      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Contact</a>
+      <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home">Home</a>
+      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours">Tours</a>
+      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about">About</a>
+      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact">Contact</a>
     </div>
 
     <div style="margin-bottom: 10px">
@@ -310,7 +320,7 @@
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/tripadvisor.png"
           title="Tripadvisor" /></a>
     </div>
-    <div style="font-size: 14px">
+    <div style="font-size: 14px" id="copyright">
       &copy; 2024 Real Bedouin Life. All rights reserved.
     </div>
   </footer>

@@ -235,7 +235,7 @@ footer a:hover:after {
 
 
 
-.hero-heading h1 {
+.hero-heading {
     text-transform: uppercase;
     /* animation: headingColors 45s linear infinite; */
     color: var(--h1-c);
@@ -1079,7 +1079,12 @@ footer img:hover {
 
 
 /* Extra Small Devices (Portrait Phones) */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .language-selector {
+        margin-left: 0;
+     }
+     
+}
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
@@ -1116,15 +1121,10 @@ footer img:hover {
         display: flex;
         z-index: 16;
     }
-/* 
+
     .language-selector {
-        background-color: transparent;
-        color:white;
-        border:2px solid white;
-        margin-left: 0px;
-        width: auto;
-        z-index: 15;
-    } */
+       margin-left: 0;
+    }
     
 
     nav {

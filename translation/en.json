@@ -77,5 +77,31 @@
         "about":"About",
         "contact":"Contact"
     },
-    "copy_right": "&copy; 2024 Real Bedouin Life. All rights reserved."
+    "copy_right": "&copy; 2024 Real Bedouin Life. All rights reserved.",
+    "contact_page":{
+        "header":"CONTACT ME",
+        "paragraph":"Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep, and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and ancient caravan routes, revealing sights that will surpass your wildest dreams. Come and live the magic of Wadi Rum with me.",
+        "website":"Website",
+        "phone":"Phone",
+        "address":"Address",
+        "question":" Do you have a question? You can leave your message here, and I will write you back as soon as I can.",
+        "button":"Send",
+        "full_name":"Full name",
+        "email_adress":"Email Address",
+        "message":"Message"
+    },
+    "booking_page":{
+        "heading":"BOOKING",
+        "paragraph":"Ready for an unforgettable adventure? Book your desert tour today and discover the stunning landscapes, rich culture, and exhilarating activities that await you. Don't miss out – secure your spot now and embark on the journey of a lifetime!",
+        "cta":"Book Now and Start Your Adventure!",
+        "tour_type_heading":"Tour Type:",
+        "tour_type_1":"1 Day Tour",
+        "tour_type_2":"1 Day & 1 Night Tour",
+        "tour_type_3":"2 Days & 1 Night Tour",
+        "tour_type_4":"2 Days & 2 Nights Tour",
+        "sub_tour_heading":"Select Tour",
+        "num_people":"Number of People:",
+        "check_in":"Check-in Date:",
+        "comments":"Comments To Booking:"
+    }
 }

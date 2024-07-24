@@ -162,6 +162,32 @@ footer a:hover:after {
     transition: all 0.3s ease;
 }
 
+.language-selector {
+    margin-left: 30px;
+    width: auto;
+    z-index: 15;
+}
+
+.language-selector select {
+    cursor: pointer;
+    /* padding: 5px; */
+    /* border: none; */
+    border-radius: 5px;
+    height: 20px;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    color:black;
+    /* color: #333; */
+    width: 50px;
+    z-index: 15;
+    /* font-size: 14px; */
+}
+.language-selector {
+ border: noone;
+ border-bottom: 2.5px solid var(--animation-color);
+}
+
+
 
 .hero {
     position: relative;
@@ -851,7 +877,10 @@ footer img:hover {
         background: white;
         color:black;
     }
-
+    .language-selector {
+        margin-left: 0;
+     }
+     
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
         display: flex;

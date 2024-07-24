@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Real Bedouin Life</title>
   <link rel="stylesheet" href="css/style_tour.css" />
+  <script src="translations.js"></script>
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 </head>
 
@@ -30,15 +31,25 @@
 
     <nav>
       <ul class="nav-links">
-        <li id="first-child"><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about">ABOUT</a></li>
+        <li id="first-child"><a href="index.html" id="nav-home">HOME</a></li>
+        <li><a href="index.html#about" id="nav-about">ABOUT</a></li>
         <li>
-          <a href="all-tours.html">TOURS</a>
+          <a href="all-tours.html" id="nav-tours">TOURS</a>
 
         </li>
-        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#faq" id="nav-faq">FAQ</a></li>
         <!-- <li><a href="contact.html">CONTACT</a></li> -->
-        <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li>
+        <li><a href="booking-form.html" id="nav-book-tour">BOOK TOUR</a></li>
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">ENG</option>
+            <option value="de">DE</option>
+            <option value="esp">ESP</option>
+            <option value="it">IT</option>
+            <option value="fr">FR</option>
+            <!-- Add more languages here -->
+          </select>
+        </div>
       </ul>
     </nav>
   </header>
@@ -50,10 +61,11 @@
     <div class="hero-text">
       <div class="hero-heading">
         <div class="hero-heading-wrap">
-          <h1 id="hero-heading-first">CONTACT ME</h1>
+          <div  class="hero-heading-first">
+          <h1 id="contact-page-heading">CONTACT ME</h1></div>
         </div>
         <div class="hero-description">
-          <p>
+          <p id="contact-page-paragraph">
             Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the
             footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep,
             and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and
@@ -71,7 +83,7 @@
         <img src="images_resized/icon_location.png" />
       </div>
       <div class="details">
-        <strong>Address:</strong> Wadi Rum Village, Aqaba, Jordan
+        <strong id="contact-page-address">Address:</strong> Wadi Rum Village, Aqaba, Jordan
       </div>
     </div>
     <div class="contact-item">
@@ -79,7 +91,7 @@
         <img src="images_resized/icon_phone.png" />
       </div>
       <div class="details">
-        <strong>Phone:</strong> +962 7 7566 1511
+        <strong id="content-page-phone">Phone:</strong> +962 7 7566 1511
       </div>
     </div>
     <div class="contact-item">
@@ -95,7 +107,7 @@
         <img src="images_resized/icon_website.png" />
       </div>
       <div class="details">
-        <strong>Website</strong> www.realbedouinlife.com
+        <strong id="contact-page-website">Website</strong> www.realbedouinlife.com
       </div>
     </div>
   </div>
@@ -115,19 +127,19 @@
     <div class="right-col">
       <div class="theme-switch-wrapper"></div>
 
-      <p>
+      <p id="contact-page-question">
         Do you have a question? You can leave your message here, and I will write you back as soon as I can.
       </p>
 
       <form id="contact-form" method="post">
-        <label for="name">Full name</label>
+        <label for="name" id="contact-page-full-name">Full name</label>
         <input type="text" id="name" name="name" placeholder="Your Full Name" required />
-        <label for="email">Email Address</label>
+        <label for="email" id="contact-page-email-address">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Your Email Address" required />
-        <label for="message">Message</label>
+        <label for="message" id="contact-page-message">Message</label>
         <textarea rows="5" placeholder="Your Message" id="message" name="message" required></textarea>
 
-        <div class="contact-f-button-wrapper"> <button type="submit" id="submit" name="submit">
+        <div class="contact-f-button-wrapper"> <button type="submit" id="submit" name="submit" id="contact-page-button">
             Send</button><!--</a>--></div>
       </form>
       <div id="error"></div>
@@ -141,10 +153,10 @@
         color: #d89f6f;
       ">
     <div style="margin-bottom: 10px">
-      <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Home</a>
-      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Tours</a>
-      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px">About</a>
-      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Contact</a>
+      <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home">Home</a>
+      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours">Tours</a>
+      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about">About</a>
+      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact">Contact</a>
     </div>
 
     <div style="margin-bottom: 10px">
@@ -161,7 +173,7 @@
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/tripadvisor.png"
           title="Tripadvisor" /></a>
     </div>
-    <div style="font-size: 14px">
+    <div style="font-size: 14px" id="copyright">
       &copy; 2024 Real Bedouin Life. All rights reserved.
     </div>
   </footer>
