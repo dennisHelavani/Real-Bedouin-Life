@@ -240,7 +240,7 @@ footer a:hover:after {
     /* animation: headingColors 45s linear infinite; */
     color: var(--h1-c);
     letter-spacing: 1px;
-    font-size: clamp(2rem, 9vw, 14rem);
+    font-size:clamp(2rem, 7rem, 10rem);
 }
 
 .hero-heading-desert {
