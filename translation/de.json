@@ -1,0 +1,80 @@
+{
+  "header": {
+      "about": "Über uns",
+      "tours": "Touren",
+      "faq": "FAQ",
+      "contact": "Kontakt",
+      "book_tour": "Tour buchen",
+      "home": "Startseite"
+  },
+  "hero": {
+      "heading_first": "ECHTES BEDUINEN",
+      "heading_second": "LEBEN",
+      "description_text": "Entdecken Sie die Magie von Wadi Rum mit mir, Mohammad. Geboren und aufgewachsen in dieser mystischen Wüste, folge ich den Spuren meiner Vorfahren, die in diesen alten Bergen Jäger waren. Meine Liebe zur Wüste ist tief und ich möchte diese Leidenschaft für Wadi Rum mit Ihnen teilen. Lassen Sie mich Sie durch die Felsen, Dünen, den Sand und die alten Karawanenrouten führen, um Ihnen Sehenswürdigkeiten zu zeigen, die Ihre wildesten Träume übertreffen werden. Kommen Sie und erleben Sie die Magie von Wadi Rum mit mir.",
+      "description_text_short": "Entdecken Sie die Magie von Wadi Rum mit mir, Mohammad. Kommen Sie und erleben Sie den Traum von Wadi Rum.",
+      "button": "Tour buchen"
+  },
+  "about": {
+      "about_heading": "ÜBER MICH",
+      "about_paragraph": "Hallo! Ich bin Mohammad, Ihr Führer in der magischen Wüste Wadi Rum. Ich wurde hier geboren, genau wie mein Vater, Großvater und viele Vorfahren vor mir, die die Wüstenwege gingen und in den Bergen jagten, die ich Ihnen zeigen möchte. Als echter Beduine ist die Wüste in meinem Herzen und Blut. Ich möchte Ihnen zeigen, wie echte Beduinen leben, ihre Traditionen und ihre Verbindung zu diesem Land. Gemeinsam werden wir die Geheimnisse des Sands enthüllen. Begleiten Sie mich auf einer Reise, die Ihr Leben verändern wird."
+  },
+  "history": {
+      "history_heading": "GESCHICHTE VON WADI RUM",
+      "history_paragraph": "Wadi Rum ist ein atemberaubendes Wüstental im Süden Jordaniens. Diese UNESCO-Welterbestätte ist bekannt für ihre unglaublichen Felsformationen, die durch Wind und Erosion geformt wurden. Mit hohen Sandsteinbergen, tiefen Tälern und weiten Sanddünen ist die Landschaft wirklich beeindruckend. Bekannt als das \"Tal der Sande\", ist Wadi Rum reich an Geschichte und Kultur, Heimat von nomadischen Beduinen und alten Felsgravuren. Diese einzigartige Wüste war Kulisse für Filme wie \"Lawrence von Arabien\", \"Der Marsianer\" und \"Star Wars: Der Aufstieg Skywalkers.\""
+  },
+  "tour": {
+      "tour_heading": "MEINE SPEZIALTOUREN",
+      "tour_title_1": "1 Tag",
+      "tour_title_2": "1 Tag & 1 Nacht",
+      "tour_title_3": "2 Tage & 1 Nacht",
+      "tour_title_4": "2 Tage & 2 Nächte",
+      "tour_button": "Entdecken",
+      "tour_paragraph_1": "Wenn Sie wenig Zeit in Wadi Rum haben, können Sie dennoch die wichtigsten Attraktionen sehen und das Beste aus Ihrem Besuch machen.",
+      "tour_paragraph_2": "Wenn Sie nur einen Tag und eine Nacht haben, um Wadi Rum zu erkunden, werde ich sicherstellen, dass Sie das Beste davon sehen. Genießen Sie eine aufregende Jeeptour und schlafen Sie unter den Sternen oder in einem Wüstencamp.",
+      "tour_paragraph_3": "Wenn Sie zwei Tage und eine Nacht in Wadi Rum verbringen, werde ich Ihnen das Beste dieses unglaublichen Ortes zeigen. Sie werden Wüstensonnenuntergänge sehen, eine magische Nacht in der Wüste verbringen und die atemberaubenden Landschaften meiner Heimat lieben.",
+      "tour_paragraph_4": "Ich verspreche Ihnen, dass Sie sich in Wadi Rum verlieben werden. Wir werden die abgelegenen Ecken der Wüste erkunden und unsere Nächte unter den Sternen campen. Sie haben genügend Zeit, die Magie von Wadi Rum wirklich zu erleben."
+  },
+  "spinner": {
+      "spinner_heading": "WAS SIE SEHEN WERDEN",
+      "spinner_title_1": "Rote Düne",
+      "spinner_title_2": "Lawrence's Quelle",
+      "spinner_title_3": "Burdah-Felsbrücke",
+      "spinner_title_4": "Khazali-Canyon",
+      "spinner_title_5": "Pilzfelsen"
+  },
+  "faq": {
+      "faq_heading": "FAQ",
+      "faq_question_1": "Wie komme ich nach Wadi Rum?",
+      "faq_question_2": "Wie kann ich mit dem Bus nach Wadi Rum kommen?",
+      "faq_question_3": "Was sollte ich für einen Besuch in Wadi Rum mitbringen?",
+      "faq_question_4": "Wann ist die beste Zeit, um Wadi Rum zu besuchen?",
+      "faq_question_5": "Welche Aktivitäten kann ich in Wadi Rum unternehmen?",
+      "faq_question_6": "Was ist in einer Wadi Rum Wüstentour enthalten?",
+      "faq_question_7": "Ist es sicher, Wadi Rum auf einer Tour zu besuchen?",
+      "faq_question_8": "Wie zahle ich in Wadi Rum?",
+      "faq_answer_1": "Um nach Wadi Rum zu gelangen, können Sie etwa 4 Stunden von Amman oder 1 Stunde von Aqaba nach Wadi Rum Dorf fahren. Es gibt einen Busdienst nach Wadi Rum Dorf, aber bitte beachten Sie, dass die Busse recht selten sind und in der Regel einmal täglich fahren. Sobald Sie im Dorf ankommen, werde ich Sie persönlich in meinem Jeep abholen und auf die Tour mitnehmen. Am Ende der Tour werde ich sicherstellen, dass Sie sicher zurück ins Dorf gebracht werden.",
+      "faq_answer_2": "Busse nach Wadi Rum werden oft von der JETT (Jordan Express Tourist Transportation) Gesellschaft vom South Bus Station (Mujamma Janoub) in Amman betrieben. JETT ist ein zuverlässiger Betreiber, der planmäßige Dienste zu verschiedenen Zielen in Jordanien, einschließlich Wadi Rum, anbietet. Diese Busse fahren normalerweise einmal täglich. Es wird empfohlen, den aktuellen Fahrplan und die Verfügbarkeit im Voraus zu überprüfen, da sie selten sein können. Sobald Sie im Wadi Rum Dorf ankommen, werde ich dort sein, um Sie in meinem Jeep für Ihre Wüstentour abzuholen.",
+      "faq_answer_3": "Wesentliches sind bequeme Kleidung, feste Schuhe, ein Hut, Sonnencreme, Sonnenbrille und eine Kamera. Für Übernachtungen bringen Sie bitte warme Kleidung mit, da die Temperaturen in der Wüste nachts sinken können.",
+      "faq_answer_4": "Sie können Wadi Rum das ganze Jahr über besuchen, da seine Schönheit zu jeder Jahreszeit erstrahlt. Im Frühling (März bis Mai) und Herbst (September bis November) sind die Temperaturen mild und ideal, um die Wüste zu erkunden. Die Schönheit von Wadi Rum kann jedoch in jeder Jahreszeit geschätzt werden, jede bietet ihren eigenen einzigartigen Charme und Erlebnis.",
+      "faq_answer_5": "Sie können Jeeptouren, Kamelritte, Wandern, Klettern, Heißluftballonfahrten und Sternenhimmel genießen. Es gibt auch Möglichkeiten, die Beduinenkultur zu erleben und in traditionellen Wüstencamps zu übernachten.",
+      "faq_answer_6": "Eine typische Wadi Rum Wüstentour umfasst den Transport von und nach Wadi Rum, geführte Jeeptouren zur Erkundung der Wüste, Besuche ikonischer Orte wie Lawrence's Quelle und antike Felsformationen, Mahlzeiten (je nach Tourpaket) und optionale Aktivitäten wie Kamelritte oder Übernachtungen in Beduinenlagern.",
+      "faq_answer_7": "Ja, Wadi Rum ist ein sehr sicheres Reiseziel für Touristen. Lokale Führer kennen sich in der Gegend gut aus und sorgen während der Touren für Ihre Sicherheit. Es ist wichtig, ihren Anweisungen zu folgen und die natürliche Umgebung zu respektieren.",
+      "faq_answer_8": "Um Zahlungen in Wadi Rum zu tätigen, stellen Sie bitte sicher, dass Sie Jordanische Dinar (JD) in bar haben, da es in der Wüste keine Geldautomaten oder Kreditkarteneinrichtungen gibt."
+  },
+  "gallery": {
+      "heading": "GALERIE",
+      "button": "Mehr Sehen"
+  },
+  "cta": {
+      "heading": "Buchen Sie Ihre Wüstentour",
+      "paragraph": "Schaffen Sie Erinnerungen für den Rest Ihres Lebens",
+      "button": "Die Tour Buchen"
+  },
+  "footer":{
+    "home":"Startseite",
+    "tours":"Touren",
+    "about":"Über uns",
+    "contact":"Kontakt"
+},
+  "copy_right": "&copy; 2024 Real Bedouin Life. Alle Rechte vorbehalten."
+}

@@ -32,14 +32,21 @@
     <nav>
       <ul class="nav-links">
         <!-- <li id="first-child"><a href="#home">HOME</a></li> -->
-        <li><a href="#about">ABOUT</a></li>
-        <li>
-          <a href="#tours">TOURS</a>
-
-        </li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li>
+        <li><a href="#about" id="nav-about">ABOUT</a></li>
+        <li><a href="#tours" id="nav-tours">TOURS</a></li>
+        <li><a href="#faq" id="nav-faq">FAQ</a></li>
+        <li><a href="contact.html" id="nav-contact">CONTACT</a></li>
+        <li><a href="booking-form.html" id="nav-book-tour">BOOK TOUR</a></li>
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">ENG</option>
+            <option value="de">DE</option>
+            <option value="esp">ESP</option>
+            <option value="it">IT</option>
+            <option value="fr">FR</option>
+            <!-- Add more languages here -->
+          </select>
+        </div>
       </ul>
     </nav>
   </header>
@@ -64,7 +71,7 @@
         </div>
       </div>
       <div class="hero-description">
-        <p id="description-text">
+        <p id="hero-description-text">
           Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the
           footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep,
           and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and
@@ -74,12 +81,12 @@
       </div>
     </div>
     <section id="section07" class="demo">
-      <a href="booking-form.html"><span class="text">Book A Tour</span><span class="arrow"></span></a>
+      <a href="booking-form.html" id="hero-button"><span class="text">Book A Tour</span><span class="arrow"></span></a>
     </section>
   </section>
 
   <section class="history" id="about">
-    <h1>ABOUT ME</h1>
+    <h1 id="about-heading">ABOUT ME</h1>
     <div class="history-card">
       <div class="history-card-image-2">
         <img src="images_resized/Mohammad1 2.jpeg" alt="" srcset="" />
@@ -87,7 +94,7 @@
       <div class="history-card-block">
         <div class="history-card-block-styling">
           <!-- <h2>GET TO KNOW ME</h2> -->
-          <p class="history-card-text">
+          <p class="history-card-text" id="about_paragraph">
             Hello! I'm Mohammad, your guide in the magical Wadi Rum desert. I
             was born here, just like my father, grandfather, and many
             ancestors before me, who walked the desert roads and hunted in the
@@ -144,14 +151,14 @@
 
   </section>
   <section class="history">
-    <h1>HISTORY OF WADI RUM</h1>
+    <h1 id="history_heading">HISTORY OF WADI RUM</h1>
     <div class="history-card">
       <div class="history-card-image">
         <img src="images_resized/wadi rum.jpeg" alt="" srcset="" />
       </div>
       <div class="history-card-block">
         <div class="history-card-block-styling">
-          <p class="history-card-text">
+          <p class="history-card-text" id='history_paragraph'>
             Wadi Rum is a stunning desert valley in southern Jordan. This UNESCO World Heritage Site is famous for its
             incredible rock formations shaped by wind and
             erosion. With towering sandstone mountains, deep valleys, and wide sand dunes, the landscape is truly
@@ -164,70 +171,73 @@
     </div>
   </section>
   <section class="tour" id="tours">
-    <h1>MY SPECIAL TOURS</h1>
+    <h1 id="tour_heading">MY SPECIAL TOURS</h1>
     <section class="tour-content">
       <div class="tour-card">
         <div class="tour-card-content">
-          <h2 class="title">1 Day</h2>
-          <p class="copy">If you have little time in Wadi Rum, you can still see the top attractions
+          <h2 class="title" id="tour_title_1">1 Day</h2>
+          <p class="copy" id="tour_paragraph_1">If you have little time in Wadi Rum, you can still see the top
+            attractions
             and make the most of your visit.</p><button class="btn"
-            onclick="window.location.href = 'all-tours.html#tours_1d';">Discover</button>
+            onclick="window.location.href = 'all-tours.html#tours_1d';" id="tour_button">Discover</button>
         </div>
       </div>
       <div class="tour-card">
         <div class="tour-card-content">
-          <h2 class="title">1 Day & 1 Night</h2>
-          <p class="copy">If you have only one day and one night to explore Wadi Rum, I’ll make sure you see the best of
+          <h2 class="title" id="tour_title_2">1 Day & 1 Night</h2>
+          <p class="copy" id="tour_paragraph_2">If you have only one day and one night to explore Wadi Rum, I’ll make
+            sure you see the best of
             it. Enjoy an exciting jeep tour, and sleep under the stars or in a desert camp.</p><button class="btn"
-            onclick="window.location.href = 'all-tours.html#tours_1d_1n';">Discover</button>
+            onclick="window.location.href = 'all-tours.html#tours_1d_1n';" id="tour_button">Discover</button>
         </div>
       </div>
       <div class="tour-card">
         <div class="tour-card-content">
-          <h2 class="title">2 Days & 1 Night</h2>
-          <p class="copy">If you have two days and one night to spend in Wadi Rum, I’ll show you the best of this
+          <h2 class="title" id="tour_title_3">2 Days & 1 Night</h2>
+          <p class="copy" id="tour_paragraph_3">If you have two days and one night to spend in Wadi Rum, I’ll show you
+            the best of this
             incredible place. You'll see desert sunsets, spend a magical night in
             the desert, and will love the stunning landscapes of my home.</p><button class="btn"
-            onclick="window.location.href = 'all-tours.html#tours_2d_1n';">Discover</button>
+            onclick="window.location.href = 'all-tours.html#tours_2d_1n';" id="tour_button">Discover</button>
         </div>
       </div>
       <div class="tour-card">
         <div class="tour-card-content">
-          <h2 class="title">2 Days & 2 Nights</h2>
-          <p class="copy">I promise you will fall in love with Wadi Rum. We’ll
+          <h2 class="title" id="tour_title_4">2 Days & 2 Nights</h2>
+          <p class="copy" id="tour_paragraph_4">I promise you will fall in love with Wadi Rum. We’ll
             explore the remote corners of the desert and spend our nights camping under the stars. You'll have plenty of
             time to truly experience the magic of
-            Wadi Rum.</p><button class="btn"
-            onclick="window.location.href = 'all-tours.html#tours_2d_2n';">Discover</button>
+            Wadi Rum.</p><button class="btn" onclick="window.location.href = 'all-tours.html#tours_2d_2n';"
+            id="tour_button">Discover</button>
         </div>
       </div>
     </section>
 
   </section>
   <section class="spinner">
-    <h1>WHAT YOU WILL SEE</h1>
+    <h1 id="spinner_heading">WHAT YOU WILL SEE</h1>
 
     <div class="spinner-container">
       <div class="spinner-items">
         <div class="spinner-item">
           <img src="images_resized/Red Dune.jpeg" alt="Place 1" />
-          <p>Red Dune</p>
+          <p id="spinner_title_1">Red Dune</p>
         </div>
         <div class="spinner-item">
           <img src="images_resized/Lawrences's Spring.jpeg" alt="Place 2" />
-          <p>Lawrence's Spring</p>
+          <p id="spinner_title_2">Lawrence's Spring</p>
         </div>
         <div class="spinner-item">
           <img src="images_resized/Burdah Rock Bridge.jpeg" alt="Place 3" />
-          <p>Burdah Rock Bridge</p>
+          <p id="spinner_title_3">Burdah Rock Bridge</p>
         </div>
         <div class="spinner-item">
           <img src="images_resized/Khazali Canyon.jpeg" alt="Place 4" />
-          <p>Khazali Canyon</p>
+          <p id="spinner_title_4">Khazali Canyon</p>
         </div>
         <div class="spinner-item">
           <img src="images_resized/Mushroom Rock.jpeg" alt="Place 5" />
-          <p>Mushroom Rock</p>
+          <p id="spinner_title_5">Mushroom Rock</p>
         </div>
       </div>
     </div>
@@ -235,13 +245,13 @@
 
   <section class="faq" id="faq">
     <div style="text-align: center">
-      <h1>FAQ</h1>
+      <h1 id="faq_heading">FAQ</h1>
     </div>
     <div class="faq-container">
       <div class="faq-left">
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer1">How do I get to Wadi Rum?</div>
+            <div class="faq-question" data-answer="answer1" id="faq_question_1">How do I get to Wadi Rum?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
           <div class="faq-answer" id="answer1">
@@ -256,7 +266,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer2">How can I get to Wadi Rum by bus?</div>
+            <div class="faq-question" data-answer="answer2" id="faq_question_2">How can I get to Wadi Rum by bus?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -274,7 +284,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer3">What should I bring for a visit to Wadi Rum?</div>
+            <div class="faq-question" data-answer="answer3" id="faq_question_3">What should I bring for a visit to Wadi Rum?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -287,7 +297,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer4">When is the best time to visit Wadi Rum?</div>
+            <div class="faq-question" data-answer="answer4" id="faq_question_4">When is the best time to visit Wadi Rum?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -303,7 +313,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer5">What activities can I do in Wadi Rum?</div>
+            <div class="faq-question" data-answer="answer5" id="faq_question_5">What activities can I do in Wadi Rum?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -317,7 +327,7 @@
 
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer6">What is included in a Wadi Rum desert tour?</div>
+            <div class="faq-question" data-answer="answer6" id="faq_question_6">What is included in a Wadi Rum desert tour?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -332,7 +342,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer7">Is it safe to visit Wadi Rum on a tour?</div>
+            <div class="faq-question" data-answer="answer7" id="faq_question_7">Is it safe to visit Wadi Rum on a tour?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="arrow-down">
           </div>
 
@@ -345,7 +355,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question-wrap">
-            <div class="faq-question" data-answer="answer8">How to pay in Wadi Rum?</div>
+            <div class="faq-question" data-answer="answer8" id="faq_question_8">How to pay in Wadi Rum?</div>
             <img class="arrow-img" src="images/arrow-down.png" alt="">
           </div>
           <div class="faq-answer" id="answer8">
@@ -358,7 +368,7 @@
     </div>
   </section>
   <section class="gallery">
-    <h1>GALLERY</h1>
+    <h1 id="gallery_heading">GALLERY</h1>
     <div class="row">
       <div class="column">
         <img src="images_resized/1n t4.jpeg" style="width: 100%" />
@@ -381,7 +391,7 @@
       </div>
     </div>
     <div class="more-images">
-      <button  onclick="window.location.href='https://www.instagram.com/b9_v5'">
+      <button onclick="window.location.href='https://www.instagram.com/b9_v5'" id="gallery-button">
         See More
       </button>
     </div>
@@ -389,9 +399,9 @@
   <section class="cta" id="cta">
     <div class="cta-container">
       <div class="cta-content">
-        <h2>Book Your Desert Tou</h2>
-        <p>Create memories for the rest of your life</p>
-        <button class="cta-button" onclick="window.location.href='booking-form.html'">
+        <h2 id="cta-heading">Book Your Desert Tou</h2>
+        <p id="cta-paragraph">Create memories for the rest of your life</p>
+        <button class="cta-button" onclick="window.location.href='booking-form.html'" id="cta-button">
           Book The Tour
         </button>
       </div>
@@ -409,10 +419,10 @@
         color: #d89f6f;
       ">
     <div style="margin-bottom: 10px">
-      <a href="#home" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Home</a>
-      <a href="#tours" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Tours</a>
-      <a href="#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px">About</a>
-      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Contact</a>
+      <a href="#home" style="text-decoration: none; color: #d89f6f; margin: 0 15px"  id="footer-home">Home</a>
+      <a href="#tours" style="text-decoration: none; color: #d89f6f; margin: 0 15px"  id="footer-tours">Tours</a>
+      <a href="#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px"  id="footer-about">About</a>
+      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact">Contact</a>
     </div>
 
     <div style="margin-bottom: 10px">
@@ -429,11 +439,11 @@
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/tripadvisor.png"
           title="Tripadvisor" /></a>
     </div>
-    <div style="font-size: 14px">
+    <div style="font-size: 14px" id="copyright">
       &copy; 2024 Real Bedouin Life. All rights reserved.
     </div>
   </footer>
-
+  <script src="translations.js"></script>
   <script src="script.js"></script>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

@@ -1,3 +1,25 @@
+// document.getElementById("language-select").addEventListener("change", (event) => {
+//   const selectedLanguage = event.target.value;
+//   setLanguage(selectedLanguage);
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Retrieve the language preference from localStorage
+//   const savedLanguage = localStorage.getItem('preferredLanguage');
+
+//   if (savedLanguage) {
+//     // Set the language select box to the saved language
+//     document.getElementById("language-select").value = savedLanguage;
+//     // Apply the saved language preference
+//     setLanguage(savedLanguage);
+//   }
+// });
+// function setLanguage(languageCode) {
+//   // Implement your logic to switch the language here
+//   console.log(`Language changed to: ${languageCode}`);
+//   // For example, you might want to load specific content or apply language-specific settings
+// }
+
 document.querySelectorAll(".header a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -175,22 +197,22 @@ document.querySelectorAll("nav a").forEach((link) => {
 });
 
 
-// modifyingc the text of the main page
-function adjustContent() {
-  var mediaQuery = window.matchMedia("(max-width: 480px)");
-  var descriptionText = document.getElementById("description-text");
+// // modifyingc the text of the main page
+// function adjustContent() {
+//   var mediaQuery = window.matchMedia("(max-width: 480px)");
+//   var descriptionText = document.getElementById("description-text");
 
-  if (mediaQuery.matches) {
-    // For screens smaller than 480px, change the content
-    descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Come and live the dream of Wadi Rum";
-  } else {
-    // For larger screens, revert to the original content
-    descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep, and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and ancient caravan routes, revealing sights that will surpass your wildest dreams. Come and live the magic of Wadi Rum with me.";
-  }
-}
+//   if (mediaQuery.matches) {
+//     // For screens smaller than 480px, change the content
+//     descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Come and live the dream of Wadi Rum";
+//   } else {
+//     // For larger screens, revert to the original content
+//     descriptionText.innerHTML = "Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep, and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and ancient caravan routes, revealing sights that will surpass your wildest dreams. Come and live the magic of Wadi Rum with me.";
+//   }
+// }
 
-// Adjust content on initial load
-adjustContent();
+// // Adjust content on initial load
+// adjustContent();
 
-// Adjust content on window resize
-window.addEventListener("resize", adjustContent);
+// // Adjust content on window resize
+// window.addEventListener("resize", adjustContent);

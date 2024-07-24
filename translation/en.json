@@ -1,0 +1,81 @@
+{
+    "header": {
+        "about": "About",
+        "tours": "Tours",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "book_tour": "Book Tour",
+        "home": "Home"
+    },
+    "hero": {
+        "heading_first": "REAL BEDOUIN",
+        "heading_second": "LIFE",
+        "description_text": "Discover the magic of Wadi Rum with me, Mohammad. Born and raised in this mystical desert, I follow the footsteps of my ancestors, who were hunters in these ancient mountains. My love for the desert runs deep, and I want to share this passion for Wadi Rum with you. Let me guide you through the rocks, dunes, sand, and ancient caravan routes, revealing sights that will surpass your wildest dreams. Come and live the magic of Wadi Rum with me.",
+        "description_text_short":"Discover the magic of Wadi Rum with me, Mohammad. Come and live the dream of Wadi Rum",
+        "button": "Book A Tour"
+    },
+    "about": {
+        "about_heading": "ABOUT ME",
+        "about_paragraph": "Hello! I'm Mohammad, your guide in the magical Wadi Rum desert. I was born here, just like my father, grandfather, and many ancestors before me, who walked the desert roads and hunted in the mountains I want to show you. As a real Bedouin, the desert is in my heart and blood. I want to share with you the way real Bedouins live, their traditions, and their connection to this land. Together, we'll uncover the secrets of the sands. Join me on a journey that will change your life."
+    },
+    "history": {
+        "history_heading": "HISTORY OF WADI RUM",
+        "history_paragraph": "Wadi Rum is a stunning desert valley in southern Jordan. This UNESCO World Heritage Site is famous for its incredible rock formations shaped by wind and erosion. With towering sandstone mountains, deep valleys, and wide sand dunes, the landscape is truly breathtaking. Known as the \"Valley of the Sands,\" Wadi Rum is rich in history and culture, home to nomadic Bedouins and ancient rock carvings. This unique desert has been the backdrop for movies like \"Lawrence of Arabia,\" \"The Martian,\" and \"Star Wars: The Rise of Skywalker.\""
+    },
+    "tour": {
+        "tour_heading": "MY SPECIAL TOURS",
+        "tour_title_1": "1 Day",
+        "tour_title_2": "1 Day & 1 Night",
+        "tour_title_3": "2 Days & 1 Night",
+        "tour_title_4": "2 Days & 2 Nights",
+        "tour_button": "Discover",
+        "tour_paragraph_1": "If you have little time in Wadi Rum, you can still see the top attractions and make the most of your visit.",
+        "tour_paragraph_2": "If you have only one day and one night to explore Wadi Rum, I’ll make sure you see the best of it. Enjoy an exciting jeep tour, and sleep under the stars or in a desert camp.",
+        "tour_paragraph_3": "If you have two days and one night to spend in Wadi Rum, I’ll show you the best of this incredible place. You'll see desert sunsets, spend a magical night in the desert, and will love the stunning landscapes of my home.",
+        "tour_paragraph_4": "I promise you will fall in love with Wadi Rum. We’ll explore the remote corners of the desert and spend our nights camping under the stars. You'll have plenty of time to truly experience the magic of Wadi Rum."
+    },
+    "spinner": {
+        "spinner_heading": "WHAT YOU WILL SEE",
+        "spinner_title_1": "Red Dune",
+        "spinner_title_2": "Lawrence's Spring",
+        "spinner_title_3": "Burdah Rock Bridge",
+        "spinner_title_4": "Khazali Canyon",
+        "spinner_title_5": "Mushroom Rock"
+    },
+    "faq": {
+        "faq_heading": "FAQ",
+        "faq_question_1": "How do I get to Wadi Rum?",
+        "faq_question_2": "How can I get to Wadi Rum by bus?",
+        "faq_question_3": "What should I bring for a visit to Wadi Rum?",
+        "faq_question_4": "When is the best time to visit Wadi Rum?",
+        "faq_question_5": "What activities can I do in Wadi Rum?",
+        "faq_question_6": "What is included in a Wadi Rum desert tour?",
+        "faq_question_7": "Is it safe to visit Wadi Rum on a tour?",
+        "faq_question_8": "How to pay in Wadi Rum?",
+        "faq_answer_1": " To get to Wadi Rum, you can drive approximately 4 hours from Amman or 1 hour from Aqaba to Wadi Rum village. there is a bus service to Wadi Rum village, but please note that buses are quite rare, typically running once a day. Once you arrive at the village, I will personally pick you up in my jeep and take you on the tour. At the end of the tour, I'll ensure you're safely transported back to the village.",
+        "faq_answer_2": "Buses to Wadi Rum are often operated by the JETT (Jordan Express Tourist Transportation) company from the South Bus Station (Mujamma Janoub) in Amman. JETT is a reliable operator that provides scheduled services to various destinations across Jordan, including Wadi Rum. These buses usually run once a day. It's advisable to check the current schedule and availability beforehand, as they can be infrequent. Once you arrive at Wadi Rum village, I'll be there to pick you up in my jeep for your desert tour.",
+        "faq_answer_3": "Essentials include comfortable clothing, sturdy shoes, a hat, sunscreen, sunglasses, and a camera. For overnight stays, bring warm clothes as desert temperatures can drop at night.",
+        "faq_answer_4": "You can visit Wadi Rum throughout the year, as its beauty shines in every season. During spring (March to May) and autumn (September to November) temperatures are mild and ideal for exploring the desert. However, Wadi Rum's beauty can be appreciated in any season, each offering its own unique charm and experience.",
+        "faq_answer_5": "You can enjoy jeep tours, camel rides, hiking, rock climbing, hot air balloon rides, and stargazing. There are also opportunities to experience Bedouin culture and stay in traditional desert camps.",
+        "faq_answer_6": "A typical Wadi Rum desert tour includes transportation to and from Wadi Rum, guided jeep tour to explore the desert, visits to iconic sites like Lawrence's Spring and ancient rock formations, meals (depending on the tour package), and optional activities such as camel rides or overnight stays in Bedouin camps.",
+        "faq_answer_7": "Yes, Wadi Rum is a very safe destination for tourists. Local guides are knowledgeable about the area and will ensure your safety during tours. It's important to follow their instructions and respect the natural environment.",
+        "faq_answer_8": "To make payments in Wadi Rum, please ensure you have Jordan Dinars (JD) in cash as there are no ATM or credit card facilities available in the desert."
+    },
+    "gallery": {
+        "heading": "GALLERY",
+        "button": "See More"
+    },
+    "cta": {
+        "heading": "Book Your Desert Tou",
+        "paragraph": "Create memories for the rest of your life",
+        "button": "Book The Tour"
+    },
+
+    "footer":{
+        "home":"Home",
+        "tours":"Tours",
+        "about":"About",
+        "contact":"Contact"
+    },
+    "copy_right": "&copy; 2024 Real Bedouin Life. All rights reserved."
+}

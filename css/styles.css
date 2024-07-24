@@ -112,6 +112,7 @@ nav {
 }
 
 .nav-links a {
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--header-color);
     font-size: var(--nav-fs);
@@ -136,6 +137,24 @@ footer a:after {
 footer a:hover:after {
     cursor: pointer !important;
     width: 100%;
+}
+
+.language-selector {
+    margin-left: 30px;
+    width: auto;
+    z-index: 15;
+}
+
+.language-selector select {
+    /* padding: 5px; */
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #fff;
+    color: #333;
+    width: 50px;
+    z-index: 15;
+    /* font-size: 14px; */
 }
 
 
@@ -261,8 +280,10 @@ footer a:hover:after {
 
 .demo {
     margin: 0 auto;
-    position: relative; /* Add this to position children correctly */
-    text-align: center; /* Center align the text within the section */
+    position: relative;
+    /* Add this to position children correctly */
+    text-align: center;
+    /* Center align the text within the section */
 }
 
 .demo a {
@@ -276,9 +297,11 @@ footer a:hover:after {
     transition: opacity .3s;
     color: #fff;
     z-index: 10;
-    border: 2px solid #fff; /* Make initial border transparent */
+    border: 2px solid #fff;
+    /* Make initial border transparent */
     padding: 15px 30px;
-    background: transparent; /* Ensure background is transparent */
+    background: transparent;
+    /* Ensure background is transparent */
     /* border-image: linear-gradient(to right, #fff, var(--button-color), #fff) 1; */
     /* border-image-slice: 1;  */
     /* animation: snake 5s linear infinite;  */
@@ -286,28 +309,32 @@ footer a:hover:after {
 }
 
 .demo a:hover {
-     background: #b88255; 
-  /* border-color: #b88255; */
+    background: #b88255;
+    /* border-color: #b88255; */
     border-image: none;
-    animation:none;
+    animation: none;
     border-color: var(--button-color);
     /* border-color: var(--animation-color); */
-    color:white;
+    color: white;
 }
 
 @keyframes snake {
     0% {
         border-image-source: linear-gradient(to right, #fff, var(--button-color), #fff);
     }
+
     25% {
         border-image-source: linear-gradient(to right, var(--button-color), #fff, #fff);
     }
+
     50% {
         border-image-source: linear-gradient(to right, #fff, var(--button-color), #fff);
     }
+
     75% {
         border-image-source: linear-gradient(to right, #fff, #fff, var(--button-color));
     }
+
     100% {
         border-image-source: linear-gradient(to right, #fff, var(--button-color), #fff);
     }
@@ -350,7 +377,7 @@ footer a:hover:after {
     margin-bottom: var(--h1-mb);
 }
 
-.history-card-image-2{
+.history-card-image-2 {
     background-image: url('../images_resized/Mohammad1.jpeg');
 }
 
@@ -700,7 +727,8 @@ footer a:hover:after {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background: #b88255; /* Updated background color */
+    background: #b88255;
+    /* Updated background color */
     border: 2px solid #b88255;
     border-radius: 25px;
     text-decoration: none;
@@ -708,8 +736,9 @@ footer a:hover:after {
 }
 
 .more-images button:hover {
-   
-    background: #a3714d; /* Darken the background color on hover */
+
+    background: #a3714d;
+    /* Darken the background color on hover */
     color: #fff;
 }
 
@@ -830,15 +859,15 @@ footer a:hover:after {
     padding: 10px 0 0px 0;
     display: flex;
     flex-direction: column;
-  }
-  
-  .faq-question-wrap img {
+}
+
+.faq-question-wrap img {
     filter: invert(57%) sepia(69%) saturate(302%) hue-rotate(346deg) brightness(84%) contrast(89%);
     width: 25px;
     height: 25px;
-  }
-  
-  .faq-question-wrap {
+}
+
+.faq-question-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -846,17 +875,17 @@ footer a:hover:after {
     cursor: pointer;
     margin-bottom: 5px;
     color: #b88255;
-  }
-  
-  .faq-question-wrap:hover img {
+}
+
+.faq-question-wrap:hover img {
     filter: invert(75%) sepia(44%) saturate(4593%) hue-rotate(5deg) brightness(99%) contrast(102%);
-  }
-  
-  .faq-question-wrap:hover {
+}
+
+.faq-question-wrap:hover {
     color: var(--animation-color);
-  }
-  
-  .faq-answer {
+}
+
+.faq-answer {
     /* display: none; */
     margin-top: 10px;
     color: var(--secondary-color);
@@ -867,13 +896,14 @@ footer a:hover:after {
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-  }
-  
-  .faq-item.active .faq-answer {
-    max-height: 1000px; /* Adjust based on your content */
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    /* Adjust based on your content */
     opacity: 1;
-  }
-  
+}
+
 
 
 
@@ -944,21 +974,23 @@ footer a:hover:after {
 
 .cta-button {
     display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background: #b88255; /* Updated background color */
-  border: 2px solid #b88255;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #b88255;
+    /* Updated background color */
+    border: 2px solid #b88255;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #a3714d; /* Darken the background color on hover */
+    background: #a3714d;
+    /* Darken the background color on hover */
     color: #fff;
     border-color: var(--animation-color);
-  }
+}
 
 /* .cta-button:hover {
     background-color: var(--animation-color);
@@ -1046,17 +1078,23 @@ footer img:hover {
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
 
-    :root{
-        --h1-mb:25px;
-        --secondary-color:rgb(0 0 0 / 70%);
+    :root {
+        --h1-mb: 25px;
+        --secondary-color: rgb(0 0 0 / 70%);
     }
-    .history h1, .tour h1, .gallery h1, .faq h1, .spinner h1{
+
+    .history h1,
+    .tour h1,
+    .gallery h1,
+    .faq h1,
+    .spinner h1 {
         margin-top: 25px;
     }
 
-    .hero{
-        background:url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
+    .hero {
+        background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
     }
+
     header {
         padding: 0 5px 0 5px;
         background: white;
@@ -1072,6 +1110,12 @@ footer img:hover {
         display: flex;
         z-index: 16;
     }
+    .language-selector {
+        margin-left: 0px;
+        width: auto;
+        z-index: 15;
+    }
+    
 
     nav {
         display: none;
@@ -1102,12 +1146,13 @@ footer img:hover {
     }
 
     .nav-links a {
+
         /* color: black; */
         font-size: var(--nav-fs);
         font-weight: 500;
     }
 
-  
+
 
     /* Overlay styles */
     .overlay {
@@ -1127,22 +1172,24 @@ footer img:hover {
         opacity: 1;
     }
 
-    .history-card{
+    .history-card {
         display: block;
-       /* padding:  0 20px 20px 20px; */
-       width: 100%;
+        /* padding:  0 20px 20px 20px; */
+        width: 100%;
     }
+
     .history-card-image-2,
-    .history-card-image{
+    .history-card-image {
         position: relative;
         max-width: 100%;
         width: 100%;
     }
-    .history-card-image-2{
+
+    .history-card-image-2 {
         display: none;
     }
-  
-    .history-card-block{
+
+    .history-card-block {
         /* background-color: #fff; */
         position: relative;
         max-width: 100%;
@@ -1150,14 +1197,14 @@ footer img:hover {
         left: 0;
     }
 
-    .history-card-block p{
+    .history-card-block p {
         line-height: 1.6;
     }
 
-    .history-card-block-styling{
+    .history-card-block-styling {
         background-color: #fff;
-        padding:10px;
-        color:var(  --secondary-color);
+        padding: 10px;
+        color: var(--secondary-color);
         min-height: fit-content;
     }
 
@@ -1171,18 +1218,19 @@ footer img:hover {
 
         width: 90%;
         padding-top: 20px;
-       
+
     }
 
-    .row{
+    .row {
         padding: 0;
         /* flex-wrap:nowrap; */
     }
 
-    .column img{
+    .column img {
         margin-top: 2px;
     }
-    .column{
+
+    .column {
         padding: 0 2px;
     }
 
@@ -1190,24 +1238,24 @@ footer img:hover {
         padding: 0;
     }
 
-    .cta{
+    .cta {
         height: 20rem;
-       
+
     }
-    
-    .cta::before{
+
+    .cta::before {
         background: url("../images_resized/background-picture-3.jpeg") center center/cover no-repeat;
     }
 
-    .cta-content h2{
+    .cta-content h2 {
         font-size: var(--h2-fs);
     }
 
-    .spinner-items{
+    .spinner-items {
         overflow-x: auto;
     }
 
-    .spinner-item{
+    .spinner-item {
         width: 100%;
     }
 
@@ -1215,12 +1263,12 @@ footer img:hover {
     .spinner-item:hover {
         transform: translateY(o);
     }
-    
+
     .spinner-item img:hover {
         /* transform: scale(1.05); */
         filter: brightness(1);
-    
-    
+
+
     }
 
 }
@@ -1295,15 +1343,16 @@ footer img:hover {
     .nav-links a:after {
         height: 2px;
     }
+
     .spinner-item:hover {
         transform: translateY(o);
     }
-    
+
     .spinner-item img:hover {
         /* transform: scale(1.05); */
         filter: brightness(1);
-    
-    
+
+
     }
 }
 
@@ -1335,15 +1384,16 @@ footer img:hover {
     .nav-links a:after {
         height: 2px;
     }
+
     .spinner-item:hover {
         transform: translateY(o);
     }
-    
+
     .spinner-item img:hover {
         /* transform: scale(1.05); */
         filter: brightness(1);
-    
-    
+
+
     }
 }
 
