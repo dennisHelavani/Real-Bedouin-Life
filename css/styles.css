@@ -1,6 +1,7 @@
 :root {
     --font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --section-margin-top: 4%;
+    --hh-fs:6.2rem;
     --h1-c: #b88255;
     --header-color: #b88255;
     --backgroud-div: #b88255;
@@ -26,6 +27,7 @@
     --nav-dd-fs: 13px;
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
 * {
@@ -140,29 +142,25 @@ footer a:hover:after {
 }
 
 .language-selector {
+    font-size: var(--nav-fs);
     margin-left: 30px;
-    width: auto;
+    width: fit-content;
     z-index: 15;
+    border: none;
+    border-bottom: 2.5px solid var(--animation-color);
 }
 
 .language-selector select {
     cursor: pointer;
-    /* padding: 5px; */
-    /* border: none; */
     border-radius: 5px;
     height: 20px;
     background-color: transparent;
-    border: 1px solid white;
-    color:white;
-    /* color: #333; */
+    border: none;
+    color: white;
     width: 50px;
     z-index: 15;
-    /* font-size: 14px; */
 }
-.language-selector {
- border: noone;
- border-bottom: 2.5px solid var(--animation-color);
-}
+
 
 .hamburger-menu {
     display: none;
@@ -240,7 +238,7 @@ footer a:hover:after {
     /* animation: headingColors 45s linear infinite; */
     color: var(--h1-c);
     letter-spacing: 1px;
-    font-size:clamp(2rem, 7rem, 10rem);
+    font-size: var(--hh-fs);
 }
 
 .hero-heading-desert {
@@ -1082,8 +1080,8 @@ footer img:hover {
 @media (max-width: 320px) {
     .language-selector {
         margin-left: 0;
-     }
-     
+    }
+
 }
 
 /* Small Devices (Landscape Phones) */
@@ -1092,6 +1090,7 @@ footer img:hover {
     :root {
         --h1-mb: 25px;
         --secondary-color: rgb(0 0 0 / 70%);
+        --hh-fs:2.5rem;
     }
 
     .history h1,
@@ -1123,9 +1122,9 @@ footer img:hover {
     }
 
     .language-selector {
-       margin-left: 0;
+        margin-left: 0;
     }
-    
+
 
     nav {
         display: none;
@@ -1292,6 +1291,10 @@ footer img:hover {
         --price-fs: 15px;
         --tour-link-fw: 300;
         --form-fs: 12px;
+        --hh-fs:2.5rem;
+    }
+    .logo-name-container {
+        color: black;
     }
 
     .hero {
@@ -1302,6 +1305,13 @@ footer img:hover {
         height: 270px;
     }
 
+    .hamburger-menu {
+        filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
+        display: flex;
+        z-index: 16;
+    }
+
+
     .container {
         flex-direction: column;
         width: 90%;
@@ -1311,21 +1321,54 @@ footer img:hover {
         display: none;
     }
 
-    header {
-        /* flex-direction: column; */
-        align-items: flex-start;
-        padding: 10px;
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 70%;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 15;
+    }
+
+    nav.active {
+        z-index: 15;
+        display: block;
+        right: 0;
     }
 
     .nav-links {
         flex-direction: column;
-        width: 100%;
+        padding: 50px 20px;
     }
 
-    .nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
+
+    header {
+        padding: 0 5px 0 5px;
+        background: white;
+        color: black;
     }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+        z-index: 10;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
 
     .left-col {
         display: none;
@@ -1375,6 +1418,19 @@ footer img:hover {
         --price-fs: 17px;
         --tour-link-fw: 400;
         --form-fs: 12px;
+        --hh-fs:3.8rem;
+    }
+
+    .history-card-block-styling{
+        padding: 25px 15px 25px 35px;
+        min-height: auto;
+    }
+
+    .tour-card{
+        padding: 10px;
+    }
+    .tour-card-content{
+        padding: 10px;
     }
 
     .spinner-item img {
@@ -1400,17 +1456,22 @@ footer img:hover {
     }
 
     .spinner-item img:hover {
-        /* transform: scale(1.05); */
         filter: brightness(1);
-
-
     }
 }
 
 /* Small Desktops */
 @media (min-width: 1025px) and (max-width: 1200px) {
     :root {
-        --h2-fs: 19px
+        --h2-fs: 19px;
+        --hh-fs:4.5rem;
+    }
+
+    .tour-card{
+        padding: 10px;
+    }
+    .tour-card-content{
+        padding: 10px;
     }
 
     .history-card-block h2 {
@@ -1448,6 +1509,11 @@ footer img:hover {
 
 /* Medium Desktops */
 @media (min-width: 1201px) and (max-width: 1600px) {
+    
+    :root{
+        --hh-fs:5.5rem;
+    }
+
     .spinner-item img {
         object-fit: cover;
         animation: fadeInAnimation ease 3s;

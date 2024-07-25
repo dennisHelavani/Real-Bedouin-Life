@@ -1203,6 +1203,10 @@ footer img:hover {
 /* Small Desktops */
 @media (min-width: 1025px) and (max-width: 1200px) {
 
+    :root {
+        --h2-fs: 19px;
+        --hh-fs:4.5rem;
+    }
     .spinner-container {
         height: 80%;
     }
@@ -1218,7 +1222,15 @@ footer img:hover {
 }
 
 /* Medium Desktops */
-@media (min-width: 1201px) and (max-width: 1600px) {}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    :root{
+        --hh-fs:5.5rem;
+    }
+}
 
 /* Large Desktops */
-@media (min-width: 1601px) {}
+@media (min-width: 1601px) {
+    :root{
+        --hh-fs:5.5rem;
+    }
+}

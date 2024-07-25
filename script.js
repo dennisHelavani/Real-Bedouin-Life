@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
   var language_selector = document.getElementById('language-select');
 
   var mediaQuery = window.matchMedia(
-    "(min-width: 321px) and (max-width: 480px)"
+    "(min-width: 321px) and (max-width: 768px)"
   );
 
   if (!mediaQuery.matches) {
