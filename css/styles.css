@@ -152,8 +152,8 @@ footer a:hover:after {
 
 .language-selector select {
     cursor: pointer;
-    border-radius: 5px;
-    height: 20px;
+    /* border-radius: 5px; */
+    height:fit-content;
     background-color: transparent;
     border: none;
     color: white;
@@ -668,8 +668,8 @@ footer a:hover:after {
 
 
 .row {
-    max-height: 90vh;
-    height: 90vh;
+    /* max-height: 90vh;
+    height: 90vh; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1122,8 +1122,18 @@ footer img:hover {
     }
 
     .language-selector {
+        color:black;
+        height: 30px;
+        margin-top: 10px;
         margin-left: 0;
+        width: max-content;
     }
+
+    .language-selector select{
+        color: black;
+    }
+
+
 
 
     nav {
@@ -1151,7 +1161,7 @@ footer img:hover {
     }
 
     .nav-links li {
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     .nav-links a {
@@ -1293,6 +1303,91 @@ footer img:hover {
         --form-fs: 12px;
         --hh-fs:2.5rem;
     }
+    header {
+        padding: 0 5px 0 5px;
+        background: white;
+        color: black;
+    }
+
+    .logo-name-container {
+        color: black;
+    }
+
+    .hamburger-menu {
+        filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
+        display: flex;
+        z-index: 16;
+    }
+
+    .language-selector {
+        color:black;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: max-content;
+    }
+
+    .language-selector select{
+        color: black;
+    }
+
+
+
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 70%;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 15;
+    }
+
+    nav.active {
+        z-index: 15;
+        display: block;
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+
+        /* color: black; */
+        font-size: var(--nav-fs);
+        font-weight: 500;
+    }
+
+
+
+    /* Overlay styles */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+        z-index: 10;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
     .logo-name-container {
         color: black;
     }
@@ -1319,6 +1414,9 @@ footer img:hover {
 
     .spinner-container {
         display: none;
+    }
+    .language-selector select{
+        color: black;
     }
 
     nav {

@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
   var language_selector = document.getElementById('language-select');
 
   var mediaQuery = window.matchMedia(
-    "(min-width: 321px) and (max-width: 768px)"
+    "(min-width: 321px) and (max-width: 769px)"
   );
 
   if (!mediaQuery.matches) {
@@ -103,8 +103,8 @@ window.addEventListener("scroll", function () {
     header_logo_text_two.style.color = "black";
 
     language_selector.style.background = "transparent";
-      language_selector.style.border = '2px solid #fff';
-      language_selector.style.color = '#fff';
+      language_selector.style.border = 'none';
+      language_selector.style.color = '#black';
     // scroll.style.opacity = "0";
     for (var i = 0; i < headerLinks.length; i++) {
       headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
