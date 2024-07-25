@@ -175,13 +175,14 @@ footer a:hover:after {
     cursor: pointer;
     height: 20px;
     border: none;
-    color:balck;
+    color: balck;
     width: 50px;
     z-index: 15;
 }
+
 .language-selector {
- border: noone;
- border-bottom: 2.5px solid var(--animation-color);
+    border: noone;
+    border-bottom: 2.5px solid var(--animation-color);
 }
 
 
@@ -237,7 +238,7 @@ footer a:hover:after {
 }
 
 .hero-heading-first h1 {
-    color:var(--h1-c);
+    color: var(--h1-c);
     letter-spacing: 5px;
     font-size: clamp(2rem, 9vw, 14rem);
 }
@@ -483,7 +484,7 @@ footer a:hover:after {
 
 
 .tour h1 {
-    
+
     color: var(--h1-c);
     text-transform: uppercase;
     font-weight: var(--h1-w);
@@ -592,7 +593,7 @@ footer a:hover:after {
 
 
 
-.card-content > p{
+.card-content>p {
     text-align: center;
     font-size: var(--form-fs);
 }
@@ -1238,19 +1239,19 @@ footer img:hover {
         --form-fs: 12px;
     }
 
-    .hero-description{
+    .hero-description {
         max-width: 80%;
         margin-top: 25px;
     }
 
-    .logo-name-container{
+    .logo-name-container {
         color: black;
     }
 
     .language-selector {
         margin-left: 0;
-     }
-     
+    }
+
 
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
@@ -1282,7 +1283,7 @@ footer img:hover {
         padding: 50px 20px;
     }
 
-   
+
 
     .nav-links a {
         /* color: black; */
@@ -1440,7 +1441,7 @@ footer img:hover {
     }
 
     header {
-        
+
         align-items: center;
         padding: 0 5px;
         max-width: 100vw;
@@ -1489,7 +1490,7 @@ footer img:hover {
         --price-fs: 13px;
         --tour-link-fw: 300;
         --form-fs: 11px;
-        --hh-fs:2.5rem;
+        --hh-fs: 2.5rem;
     }
 
     .tour-content {
@@ -1613,9 +1614,9 @@ footer img:hover {
 
     .language-selector {
         margin-left: 0;
-     }
-     
-    
+    }
+
+
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
         display: flex;
@@ -1647,7 +1648,7 @@ footer img:hover {
         /* padding: 10px; */
         max-width: 100vw;
         padding: 0 5px;
-        
+
     }
 
     .overlay {
@@ -1701,7 +1702,7 @@ footer img:hover {
         --price-fs: 17px;
         --tour-link-fw: 400;
         --form-fs: 11px;
-        --hh-fs:3.8rem;
+        --hh-fs: 3.8rem;
     }
 
     .contact-card {
@@ -1796,9 +1797,10 @@ footer img:hover {
 /* Large Tablets (Landscape) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    :root{
-        --hh-fs:3.8rem;
+    :root {
+        --hh-fs: 3.8rem;
     }
+
     .tour-content img {
         height: 200px;
     }
@@ -1887,7 +1889,7 @@ footer img:hover {
         --price-fs: 17px;
         --tour-link-fw: 400;
         --form-fs: 12px;
-        --hh-fs:4.5rem;
+        --hh-fs: 4.5rem;
     }
 
     /* .contact-card {
@@ -1951,7 +1953,8 @@ footer img:hover {
         --tour-link-fw: 400;
         --form-fs: 12px;
     }
-/* 
+
+    /* 
     .contact-card {
         display: flex;
         justify-content: space-between;
@@ -2000,7 +2003,7 @@ footer img:hover {
         --price-fs: 17px;
         --tour-link-fw: 400;
         --form-fs: 14px;
-        --hh-fs:5.5rem;
+        --hh-fs: 5.5rem;
     }
 
     /* .contact-card {
