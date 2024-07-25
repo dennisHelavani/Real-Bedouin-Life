@@ -157,6 +157,10 @@ footer a:hover:after {
     width: 50px;
     z-index: 15;
 }
+select:focus {
+    outline: none;
+}
+
 
 
 .hamburger-menu {
@@ -781,8 +785,6 @@ footer a:hover:after {
 .spinner-item img:hover {
     /* transform: scale(1.05); */
     filter: brightness(1.2);
-
-
 }
 
 
@@ -1250,7 +1252,7 @@ footer img:hover {
 
 
     .spinner-item:hover {
-        transform: translateY(o);
+        transform: none;
     }
 
     .spinner-item img:hover {
@@ -1405,6 +1407,11 @@ footer img:hover {
         width: 200px;
     }
 
+
+    .spinner-item:hover {
+        transform: none;
+    }
+
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
         display: flex;
@@ -1494,10 +1501,6 @@ footer img:hover {
     .tour-links a:after,
     .nav-links a:after {
         height: 2px;
-    }
-
-    .spinner-item:hover {
-        transform: translateY(o);
     }
 
     .spinner-item img:hover {
