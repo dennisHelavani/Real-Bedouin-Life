@@ -33,7 +33,7 @@
       <span></span>
       <span></span>
     </div>
-  
+
 
     <nav>
       <ul class="nav-links">
@@ -64,18 +64,19 @@
     <div class="hero-text">
       <div class="hero-heading">
         <div class="hero-heading-wrap">
-          <div  class="hero-heading-first">
-            <h1 id="booking-page-heading">BOOKING</h1></div>
+          <div class="hero-heading-first">
+            <h1 id="booking-page-heading">BOOKING</h1>
           </div>
         </div>
-        <div class="hero-description">
-          <p id="booking-page-paragraph">
-            Ready for an unforgettable adventure? Book your desert tour today and discover the stunning landscapes, rich
-            culture, and exhilarating activities that await you. Don't miss out – secure your spot now and embark on the
-            journey of a lifetime!
-          </p>
-        </div>
       </div>
+      <div class="hero-description">
+        <p id="booking-page-paragraph">
+          Ready for an unforgettable adventure? Book your desert tour today and discover the stunning landscapes, rich
+          culture, and exhilarating activities that await you. Don't miss out – secure your spot now and embark on the
+          journey of a lifetime!
+        </p>
+      </div>
+    </div>
   </section>
 
   <div class="contact-container" id="contact" style="padding-top: 50px;">
@@ -100,7 +101,8 @@
 
         <label for="main-tour" id="booking-page-tour-type-heading">Tour Type:</label>
         <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
-          <option value="" id="tour_type_1" >Select Tour Type</option>
+          <option value="" id="tour_type_1">Select Tour Type</option>
+          <option value="one_d" id="tour_type_2">1 Day Tour</option>
           <option value="one_d_one_n" id="tour_type_2">1 Day & 1 Night Tour</option>
           <option value="two_d_one_n" id="tour_type_3">2 Days & 1 Night Tour</option>
           <option value="two_d_two_n" id="tour_type_4">2 Days & 2 Nights Tour</option>
@@ -139,8 +141,10 @@
     <div style="margin-bottom: 10px">
       <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home">Home</a>
       <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours">Tours</a>
-      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about">About</a>
-      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact">Contact</a>
+      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px"
+        id="footer-about">About</a>
+      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px"
+        id="footer-contact">Contact</a>
     </div>
 
     <div style="margin-bottom: 10px">
@@ -163,114 +167,179 @@
   </footer>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="script_booking.js"></script>
-  
+
   <script>
     const mainTour = document.getElementById("main-tour");
     const subTour = document.getElementById("sub-tour");
-
+  
     const tours = {
-        one_d: ["2 Hour Jeep Tour", "Half Day Jeep Tour", "Full Day Jeep Tour", "Camel Ride"],
-        one_d_one_n: [
-            "Half Day Jeep Tour and Night in the Camp",
-            "Day Jeep Tour and Night in the Camp",
-            "Day Jeep Tour and Sleeping Under the Stars",
-            "Jeep Tour, Hiking, and a Night in the Camp",
-            "Jeep Tour, Hiking, and One Night in the Camp",
+      one_d: {
+        en: ["2 Hour Jeep Tour", "Half Day Jeep Tour", "Full Day Jeep Tour", "Camel Ride"],
+        de: ["2 Stunden Jeep-Tour", "Halbtägige Jeep-Tour", "Ganztägige Jeep-Tour", "Kamelritt"],
+        esp: ["Tour en jeep de 2 horas", "Tour en jeep de medio día", "Tour en jeep de un día completo", "Paseo en camello"],
+        it: ["Tour in jeep di 2 ore", "Tour in jeep di mezza giornata", "Tour in jeep di un giorno intero", "Giro in cammello"],
+        fr: ["Tour en jeep de 2 heures", "Tour en jeep d'une demi-journée", "Tour en jeep d'une journée complète", "Promenade à dos de chameau"]
+      },
+      one_d_one_n: {
+        en: [
+          "Half Day Jeep Tour and Night in the Camp",
+          "Day Jeep Tour and Night in the Camp",
+          "Day Jeep Tour and Sleeping Under the Stars",
+          "Jeep Tour, Hiking, and a Night in the Camp",
+          "Jeep Tour, Hiking, and One Night in the Camp"
         ],
-        two_d_one_n: [
-            "Jeep Tour, Sleeping in the Camp and Under the Stars",
+        de: [
+          "Halbtägige Jeep-Tour und Nacht im Camp",
+          "Tägliche Jeep-Tour und Nacht im Camp",
+          "Tägliche Jeep-Tour und Übernachtung unter den Sternen",
+          "Jeep-Tour, Wandern und eine Nacht im Camp",
+          "Jeep-Tour, Wandern und eine Nacht im Camp"
         ],
-        two_d_two_n: [
-            "Jeep Tours, Hiking, and Sleeping in the Camp",
+        esp: [
+          "Tour en jeep de medio día y noche en el campamento",
+          "Tour en jeep de un día y noche en el campamento",
+          "Tour en jeep de un día y dormir bajo las estrellas",
+          "Tour en jeep, senderismo y una noche en el campamento",
+          "Tour en jeep, senderismo y una noche en el campamento"
         ],
+        it: [
+          "Tour in jeep di mezza giornata e notte nel campo",
+          "Tour in jeep di un giorno e notte nel campo",
+          "Tour in jeep di un giorno e dormire sotto le stelle",
+          "Tour in jeep, escursionismo e una notte nel campo",
+          "Tour in jeep, escursionismo e una notte nel campo"
+        ],
+        fr: [
+          "Tour en jeep d'une demi-journée et nuit dans le camp",
+          "Tour en jeep d'une journée et nuit dans le camp",
+          "Tour en jeep d'une journée et dormir sous les étoiles",
+          "Tour en jeep, randonnée et une nuit dans le camp",
+          "Tour en jeep, randonnée et une nuit dans le camp"
+        ]
+      },
+      two_d_one_n: {
+        en: ["Jeep Tour, Sleeping in the Camp and Under the Stars"],
+        de: ["Jeep-Tour, Übernachtung im Camp und unter den Sternen"],
+        esp: ["Tour en jeep, dormir en el campamento y bajo las estrellas"],
+        it: ["Tour in jeep, dormire nel campo e sotto le stelle"],
+        fr: ["Tour en jeep, dormir dans le camp et sous les étoiles"]
+      },
+      two_d_two_n: {
+        en: ["Jeep Tours, Hiking, and Sleeping in the Camp"],
+        de: ["Jeep-Touren, Wandern und Übernachtung im Camp"],
+        esp: ["Tours en Jeep, senderismo y dormir en el campamento"],
+        it: ["Tour in jeep, escursioni e pernottamento nel campo"],
+        fr: ["Tours en jeep, randonnée et nuit au camp"]
+      }
     };
-
+  
     // Function to get query parameters from URL
     function getQueryParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-            category: params.get('category'),
-            tour: params.get('tour')
-        };
+      const params = new URLSearchParams(window.location.search);
+      return {
+        category: params.get('category'),
+        tour: params.get('tour')
+      };
     }
-
+  
     // Function to set dropdown values based on URL parameters
     function setDropdownValues() {
-        const { category, tour } = getQueryParams();
-
-        if (category) {
-            setDropdownValue('main-tour', category);
-            updateSubTourOptions(); // Ensure sub-tour options are updated based on main-tour
-        }
-
-        if (tour) {
-            setDropdownValue('sub-tour', tour);
-        }
+      const { category, tour } = getQueryParams();
+      const lang = getCurrentLanguage();
+  
+      if (category) {
+        setDropdownValue('main-tour', category);
+        updateSubTourOptions(); // Ensure sub-tour options are updated based on main-tour
+      }
+  
+      if (tour) {
+        const translatedTour = translateTourValue(tour, lang);
+        setDropdownValue('sub-tour', translatedTour);
+      }
     }
-
+  
     // Helper function to set the selected value of a dropdown
     function setDropdownValue(elementId, value) {
-        const dropdown = document.getElementById(elementId);
-        for (let i = 0; i < dropdown.options.length; i++) {
-            if (dropdown.options[i].value === value) {
-                dropdown.selectedIndex = i;
-                break;
-            }
+      const dropdown = document.getElementById(elementId);
+      for (let i = 0; i < dropdown.options.length; i++) {
+        if (dropdown.options[i].value === value) {
+          dropdown.selectedIndex = i;
+          break;
         }
+      }
     }
-
+  
+    // Function to translate tour value based on current language
+    function translateTourValue(tour, lang) {
+      for (const key in tours) {
+        if (tours[key]['en'].includes(tour.replace(/-/g, " "))) {
+          return tours[key][lang].find(t => t.toLowerCase().replace(/\s+/g, "-") === tour);
+        }
+      }
+      return tour; // Return the original value if no translation is found
+    }
+  
     // Function to update sub-tour options based on selected main tour
     function updateSubTourOptions() {
-        const selectedMainTour = mainTour.value;
-        subTour.innerHTML = '<option value="">Select Sub Tour</option>'; // Reset sub tour options
-
-        if (selectedMainTour && tours[selectedMainTour]) {
-            tours[selectedMainTour].forEach((tour) => {
-                const option = document.createElement("option");
-                option.value = tour.toLowerCase().replace(/\s+/g, "-");
-                option.textContent = tour;
-                subTour.appendChild(option);
-            });
-        }
+      const selectedMainTour = mainTour.value;
+      const lang = getCurrentLanguage(); // Implement this function to get the current language
+  
+      subTour.innerHTML = '<option value="">Select Sub Tour</option>'; // Reset sub tour options
+  
+      if (selectedMainTour && tours[selectedMainTour] && tours[selectedMainTour][lang]) {
+        tours[selectedMainTour][lang].forEach((tour) => {
+          const option = document.createElement("option");
+          option.value = tour.toLowerCase().replace(/\s+/g, "-");
+          option.textContent = tour;
+          subTour.appendChild(option);
+        });
+      }
     }
-
+  
+    // Function to get the current language from localStorage or default to 'en'
+    function getCurrentLanguage() {
+      return localStorage.getItem('selectedLanguage') || 'en';
+    }
+  
     // Event listener for main tour dropdown change
     mainTour.addEventListener("change", updateSubTourOptions);
-
+  
     // Initialize dropdowns and then set values based on URL parameters
-    window.onload = function() {
-        setDropdownValues(); // This will also call updateSubTourOptions
+    window.onload = async function () {
+      await setLanguage(getCurrentLanguage()); // Set the language first
+      setDropdownValues(); // This will also call updateSubTourOptions
     };
-
+  
     // Handle form submission
     document
-        .getElementById("booking-form")
-        .addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const formData = new FormData(this);
-
-            const templateParams = {
-                first_name: formData.get("first-name"),
-                last_name: formData.get("last-name"),
-                email: formData.get("email"),
-                main_tour: formData.get("main-tour"),
-                sub_tour: formData.get("sub-tour"),
-                num_people: formData.get("num-people"),
-                check_in: formData.get("check-in"),
-                message: formData.get("message"),
-            };
-
-            emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
-                (response) => {
-                    alert("Your booking request has been sent!", response.status, response.text);
-                },
-                (error) => {
-                    alert("FAILED...", error);
-                }
-            );
-        });
-</script>
+      .getElementById("booking-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+  
+        const templateParams = {
+          first_name: formData.get("first-name"),
+          last_name: formData.get("last-name"),
+          email: formData.get("email"),
+          main_tour: formData.get("main-tour"),
+          sub_tour: formData.get("sub-tour"),
+          num_people: formData.get("num-people"),
+          check_in: formData.get("check-in"),
+          message: formData.get("message"),
+        };
+  
+        emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
+          (response) => {
+            alert("Your booking request has been sent!", response.status, response.text);
+          },
+          (error) => {
+            alert("FAILED...", error);
+          }
+        );
+      });
+  </script>
+  
   <!-- <script>
     AOS.init({
       offset: 200,
