@@ -1173,9 +1173,11 @@ footer img:hover {
 
     .history-card-image-2,
     .history-card-image {
+        box-shadow: none;
         position: relative;
         max-width: 100%;
         width: 100%;
+       
     }
 
    
@@ -1183,13 +1185,15 @@ footer img:hover {
     .history-card-block {
         /* background-color: #fff; */
         position: relative;
-        max-width: 100%;
-        width: 100%;
+        max-width: 80%;
+        width: 80%;
+        margin: 0 auto;
         left: 0;
     }
 
     .history-card-block p {
         line-height: 1.6;
+        text-align: justify
     }
 
     .history-card-block-styling {
@@ -1197,6 +1201,7 @@ footer img:hover {
         padding: 10px;
         color: var(--secondary-color);
         min-height: fit-content;
+        box-shadow: none;
     }
 
 
@@ -1382,6 +1387,7 @@ footer img:hover {
     }
 
     .history-card-block-styling {
+        text-align: justify;
         padding: 25px 15px 25px 0px;
         min-height: auto;
         background-color: white;
@@ -1536,6 +1542,7 @@ footer img:hover {
     }
 
     .history-card-block-styling {
+        text-align: justify;
         padding: 25px 15px 25px 0px;
         min-height: auto;
         background-color: white;
