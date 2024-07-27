@@ -29,11 +29,12 @@
     "tour_title_3": "2 Giorni e 1 Notte",
     "tour_title_4": "2 Giorni e 2 Notti",
     "tour_button": "Scopri",
-    "tour_paragraph_1": "Se hai poco tempo a Wadi Rum, puoi comunque vedere le principali attrazioni e sfruttare al massimo la tua visita.",
-    "tour_paragraph_2": "Se hai solo un giorno e una notte per esplorare Wadi Rum, mi assicurerò che tu veda il meglio di esso. Goditi un emozionante tour in jeep e dormi sotto le stelle o in un campo nel deserto.",
-    "tour_paragraph_3": "Se hai due giorni e una notte da trascorrere a Wadi Rum, ti mostrerò il meglio di questo posto incredibile. Vedrai i tramonti nel deserto, passerai una notte magica nel deserto e adorerai i panorami mozzafiato della mia casa.",
-    "tour_paragraph_4": "Ti prometto che ti innamorerai di Wadi Rum. Esploreremo gli angoli più remoti del deserto e passeremo le nostre notti campeggiando sotto le stelle. Avrai tutto il tempo per vivere veramente la magia di Wadi Rum."
+    "tour_paragraph_1": "Massimizza il tuo breve soggiorno con un'avventura vorticosa attraverso le principali attrazioni di Wadi Rum. Perfetto per chi ha poco tempo, questo tour garantisce che tu non perda nulla.",
+    "tour_paragraph_2": "Scopri il meglio di Wadi Rum con un emozionante tour in jeep durante il giorno e una magica notte sotto le stelle o in un accogliente campo nel deserto. Ti aspetta un'indimenticabile avventura di 24 ore nel deserto!",
+    "tour_paragraph_3": "Immergiti nella bellezza di Wadi Rum per due giorni e una notte incantevole. Ammira tramonti mozzafiato, esplora paesaggi stupefacenti e goditi una notte di tranquillità nel deserto.",
+    "tour_paragraph_4": "Innamorati degli angoli remoti di Wadi Rum con questo tour prolungato. Trascorri due giorni interi esplorando e due notti accampandoti sotto le stelle, dandoti tutto il tempo per assaporare la magia del deserto."
   },
+
   "spinner": {
     "spinner_heading": "COSA VEDRAI",
     "spinner_title_1": "Duna Rossa",
@@ -102,5 +103,5 @@
     "num_people": "Numero di Persone:",
     "check_in": "Data di Arrivo:",
     "comments": "Commenti alla Prenotazione:"
-}
+  }
 }
