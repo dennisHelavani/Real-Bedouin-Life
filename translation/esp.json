@@ -1,22 +1,22 @@
 {
   "header": {
-    "about": "Sobre",
+    "about": "Sobre Mi",
     "tours": "Tours",
-    "faq": "FAQ",
+    "faq": "Preguntas Frequentes",
     "contact": "Contacto",
     "book_tour": "Reservar Tour",
     "home": "Inicio"
   },
   "hero": {
-    "heading_first": "REAL BEDUINO",
-    "heading_second": "VIDA",
+    "heading_first": "REAL BEDOUIN",
+    "heading_second": "LIFE",
     "description_text": "Descubre la magia de Wadi Rum conmigo, Mohammad. Nacido y criado en este desierto místico, sigo los pasos de mis antepasados, que eran cazadores en estas montañas antiguas. Mi amor por el desierto es profundo, y quiero compartir esta pasión por Wadi Rum contigo. Permíteme guiarte a través de las rocas, dunas, arena y rutas de caravanas antiguas, revelando vistas que superarán tus sueños más salvajes. Ven y vive la magia de Wadi Rum conmigo.",
     "description_text_short": "Descubre la magia de Wadi Rum conmigo, Mohammad. Ven y vive el sueño de Wadi Rum",
     "button": "Reservar Un Tour"
   },
   "about": {
     "about_heading": "SOBRE MÍ",
-    "about_paragraph": "¡Hola! Soy Mohammad, tu guía en el mágico desierto de Wadi Rum. Nací aquí, al igual que mi padre, abuelo y muchos antepasados antes que yo, que recorrieron las rutas del desierto y cazaron en las montañas que quiero mostrarte. Como un verdadero beduino, el desierto está en mi corazón y mi sangre. Quiero compartir contigo la forma en que viven los verdaderos beduinos, sus tradiciones y su conexión con esta tierra. Juntos, desvelaremos los secretos de las arenas. Únete a mí en un viaje que cambiará tu vida."
+    "about_paragraph": "¡Hola! Soy Mohammad, tu guía en el mágico desierto de Wadi Rum. Nací aquí, al igual que mi padre, abuelo y muchos antepasados antes que yo, que recorrieron las rutas del desierto y cazaron en las montañas que quiero mostrarte. Como un verdadero beduino, el desierto está en mi corazón y mi sangre. Quiero compartir contigo la forma en que viven los verdaderos beduinos, nuestras tradiciones y nuestra conexión con esta tierra. Únete a mí en un viaje que cambiará tu vida."
   },
   "history": {
     "history_heading": "HISTORIA DE WADI RUM",
@@ -43,7 +43,7 @@
     "spinner_title_5": "Roca Hongo"
   },
   "faq": {
-    "faq_heading": "FAQ",
+    "faq_heading": "Preguntas Frequentes",
     "faq_question_1": "¿Cómo llego a Wadi Rum?",
     "faq_question_2": "¿Cómo puedo llegar a Wadi Rum en autobús?",
     "faq_question_3": "¿Qué debo llevar para una visita a Wadi Rum?",
@@ -73,7 +73,7 @@
   "footer": {
     "home": "Inicio",
     "tours": "Tours",
-    "about": "Sobre",
+    "about": "Sobre Mi",
     "contact": "Contacto"
   },
   "copy_right": "&copy; 2024 Real Bedouin Life. Todos los derechos reservados.",

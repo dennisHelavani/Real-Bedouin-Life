@@ -16,7 +16,7 @@
     },
     "about": {
         "about_heading": "ABOUT ME",
-        "about_paragraph": "Hello! I'm Mohammad, your guide in the magical Wadi Rum desert. I was born here, just like my father, grandfather, and many ancestors before me, who walked the desert roads and hunted in the mountains I want to show you. As a real Bedouin, the desert is in my heart and blood. I want to share with you the way real Bedouins live, their traditions, and their connection to this land. Together, we'll uncover the secrets of the sands. Join me on a journey that will change your life."
+        "about_paragraph": "Hello! I'm Mohammad, your guide in the magical Wadi Rum desert. I was born here, just like my father, grandfather, and many ancestors before me, who walked the desert roads and hunted in the mountains I want to show you. As a real Bedouin, the desert is in my heart and blood. I want to share with you the way real Bedouins live, our traditions, and our connection to this land. Join me on a journey that will change your life."
     },
     "history": {
         "history_heading": "HISTORY OF WADI RUM",
@@ -66,7 +66,7 @@
         "button": "See More"
     },
     "cta": {
-        "heading": "Book Your Desert Tou",
+        "heading": "Book Your Desert Tour",
         "paragraph": "Create memories for the rest of your life",
         "button": "Book The Tour"
     },
