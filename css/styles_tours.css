@@ -170,17 +170,13 @@ footer a:hover:after {
 
 .language-selector select {
     cursor: pointer;
-    /* padding: 5px; */
-    /* border: none; */
+    border: none;
     border-radius: 5px;
     height: 20px;
     background-color: transparent;
-    /* border: 1px solid white; */
-    color:black;
-    /* color: #333; */
+    color:white;
     width: 50px;
     z-index: 15;
-    /* font-size: 14px; */
 }
 .language-selector {
  border: noone;
