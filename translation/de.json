@@ -1,6 +1,6 @@
 {
   "header": {
-    "about": "Über uns",
+    "about": "Über mich",
     "tours": "Touren",
     "faq": "FAQ",
     "contact": "Kontakt",
@@ -8,8 +8,8 @@
     "home": "Startseite"
   },
   "hero": {
-    "heading_first": "ECHTES BEDUINEN",
-    "heading_second": "LEBEN",
+    "heading_first": "REAL BEDOUIN",
+    "heading_second": "LIFE",
     "description_text": "Entdecken Sie die Magie von Wadi Rum mit mir, Mohammad. Geboren und aufgewachsen in dieser mystischen Wüste, folge ich den Spuren meiner Vorfahren, die in diesen alten Bergen Jäger waren. Meine Liebe zur Wüste ist tief und ich möchte diese Leidenschaft für Wadi Rum mit Ihnen teilen. Lassen Sie mich Sie durch die Felsen, Dünen, den Sand und die alten Karawanenrouten führen, um Ihnen Sehenswürdigkeiten zu zeigen, die Ihre wildesten Träume übertreffen werden. Kommen Sie und erleben Sie die Magie von Wadi Rum mit mir.",
     "description_text_short": "Entdecken Sie die Magie von Wadi Rum mit mir, Mohammad. Kommen Sie und erleben Sie den Traum von Wadi Rum.",
     "button": "Tour buchen"
@@ -73,7 +73,7 @@
   "footer": {
     "home": "Startseite",
     "tours": "Touren",
-    "about": "Über uns",
+    "about": "Über mich",
     "contact": "Kontakt"
   },
   "copy_right": "&copy; 2024 Real Bedouin Life. Alle Rechte vorbehalten.",
