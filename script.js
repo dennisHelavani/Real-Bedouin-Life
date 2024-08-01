@@ -74,19 +74,15 @@ window.addEventListener("scroll", function () {
       language_selector.style.background = "transparent";
       language_selector.style.border = 'none';
       language_selector.style.color = 'black';
-      // scroll.style.opacity = "0";
 
       for (var i = 0; i < headerLinks.length; i++) {
         headerLinks[i].style.color = "#b88255"; // Assuming you want black text on white background
       }
     } else {
       header.style.background = "transparent";
-      //  header.style.boxShadow = 'none';
       header_logo_text_one.style.color = "#fff";
       language_selector.style.background = "transparent";
-      // language_selector.style.border = '2px solid #fff';
       language_selector.style.color = '#fff';
-      // scroll.style.opacity = "1";
       header_logo_text_two.style.color = "#fff";
       for (var i = 0; i < headerLinks.length; i++) {
         headerLinks[i].style.color = "#fff";
