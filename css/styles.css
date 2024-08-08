@@ -1446,42 +1446,6 @@ footer img:hover {
         z-index: 15;
     }
 
-    nav.active {
-        z-index: 15;
-        display: block;
-        right: 0;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        padding: 50px 20px;
-    }
-
-
-    header {
-        padding: 0 5px 0 5px;
-        background: white;
-        color: black;
-    }
-
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
-        z-index: 10;
-        transition: opacity 0.3s ease;
-    }
-
-    .overlay.active {
-        display: block;
-        opacity: 1;
-    }
-
-
     .left-col {
         display: none;
     }
@@ -1510,10 +1474,7 @@ footer img:hover {
     }
 
     .spinner-item img:hover {
-        /* transform: scale(1.05); */
         filter: brightness(1);
-
-
     }
 }
 
