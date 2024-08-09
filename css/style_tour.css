@@ -1239,6 +1239,9 @@ footer img:hover {
         --tour-link-fw: 300;
         --form-fs: 12px;
     }
+    .hero {
+        background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
+    }
 
     .hero-description {
         max-width: 80%;

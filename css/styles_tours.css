@@ -45,8 +45,8 @@ body {
     color: #333;
 }
 
+
 header {
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     position: fixed;
     top: 0;
     width: 100%;
@@ -57,8 +57,8 @@ header {
     background: transparent;
     z-index: 11;
     transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
+}
 
 .logo-link {
     display: flex;
@@ -66,12 +66,12 @@ header {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease;
-
 }
 
 .logo-name-container {
     color: white;
 }
+
 
 #logo-name-part-two {
     font-size: var(--logo-name-font-two);
@@ -97,21 +97,15 @@ nav {
     margin-left: auto;
 }
 
-.nav-links,
-.tour-links {
-    position: relative;
+.nav-links {
     list-style: none;
     display: flex;
+    position: relative;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 30px;
     position: relative;
-}
-
-
-#firs-child {
-    margin-left: 0 !important;
 }
 
 .first-child {
@@ -119,10 +113,11 @@ nav {
 }
 
 .nav-links a {
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--header-color);
     font-size: var(--nav-fs);
-    font-weight: var(--logo-name-w);
+    font-weight: 500;
     position: relative;
     padding-bottom: 5px;
 }
@@ -145,6 +140,28 @@ footer a:hover:after {
     width: 100%;
 }
 
+.language-selector {
+    font-size: var(--nav-fs);
+    margin-left: 30px;
+    width: fit-content;
+    z-index: 15;
+    border: none;
+    border-bottom: 2.5px solid var(--animation-color);
+}
+
+.language-selector select {
+    cursor: pointer;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 50px;
+    z-index: 15;
+}
+select:focus {
+    outline: none;
+}
+
 
 
 .hamburger-menu {
@@ -160,31 +177,6 @@ footer a:hover:after {
     margin: 4px 0;
     width: 25px;
     transition: all 0.3s ease;
-}
-
-.language-selector {
-    margin-left: 30px;
-    width: auto;
-    z-index: 15;
-}
-
-.language-selector select {
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    height: 20px;
-    background-color: transparent;
-    color:white;
-    width: 50px;
-    z-index: 15;
-}
-.language-selector {
- border: noone;
- border-bottom: 2.5px solid var(--animation-color);
-}
-
-select:focus {
-    outline: none;
 }
 
 
@@ -635,10 +627,8 @@ select:focus {
 }
 
 .spinner {
-    padding-bottom: var(--section-margin-top);
-    text-align: center;
-    padding-top: 50px;
     /* height: 20%; */
+    text-align: center;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
@@ -656,7 +646,7 @@ select:focus {
 .spinner-items {
     display: flex;
     width: 100%;
-
+    /* width: 500%;  */
 }
 
 .spinner-item {
@@ -669,15 +659,13 @@ select:focus {
 .spinner-item img {
     object-fit: cover;
     animation: fadeInAnimation ease 3s;
-    width: 90%;
-    height: 330px;
-    border-radius: 8px;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease-in-out;
     z-index: 1;
 }
-
-
 
 .spinner-item p {
     text-align: center;
@@ -688,7 +676,7 @@ select:focus {
     transform: translateX(-50%);
     background-color: transparent;
     filter: brightness(1);
-    font-size: var(--nav-fs);
+    font-size: var(--text-fs);
     color: #fff;
     text-transform: uppercase;
     opacity: 1;
@@ -703,9 +691,8 @@ select:focus {
 .spinner-item img:hover {
     /* transform: scale(1.05); */
     filter: brightness(1.2);
-
-
 }
+
 
 
 @keyframes fadeInAnimation {
@@ -858,36 +845,68 @@ footer img:hover {
 }
 
 
-@media (max-width: 320px) {}
+
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 320px) {
+    .language-selector {
+        margin-left: 0;
+    }
+
+}
+
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
     :root {
-        --nav-fs: 12px;
-        --text-fs: 12px;
-        --h1-fs: 20px;
-        --price-fs: 15px;
-        --tour-link-fw: 300;
-        --form-fs: 12px;
+        --h1-mb: 25px;
+        --secondary-color: rgb(0 0 0 / 70%);
+        --hh-fs: 2.5rem;
     }
+    .hero {
+        background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
+        /* height: 100VH; */
+    }
+
+    .history h1,
+    .tour h1,
+    .gallery h1,
+    .faq h1,
+    .spinner h1 {
+        margin-top: 25px;
+    }
+
 
     header {
         padding: 0 5px 0 5px;
         background: white;
-        color:black;
+        color: black;
     }
-    .language-selector {
-        margin-left: 0;
-     }
-     
+
+    .logo-name-container {
+        color: black;
+    }
+
     .hamburger-menu {
         filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
         display: flex;
         z-index: 16;
     }
-    .logo-name-container{
+
+    .language-selector {
+        color: black;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: max-content;
+    }
+
+    .language-selector select {
         color: black;
     }
+
+
+
 
     nav {
         display: none;
@@ -914,16 +933,17 @@ footer img:hover {
     }
 
     .nav-links li {
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     .nav-links a {
+
         /* color: black; */
         font-size: var(--nav-fs);
         font-weight: 500;
     }
 
-    /* Overlay styles */
+
 
     /* Overlay styles */
     .overlay {
@@ -960,18 +980,24 @@ footer img:hover {
 
     .container {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+    }
+    .text-content {
+        color:rgb(0 0 0 / 70%);
+        width: 100%;
+        padding: 0;
     }
 
-
-
+    .tour-container{
+        padding: 0% 10%;
+    }
 
     .description {
         text-align: left;
     }
 
-    .spinner-container {
-        visibility: hidden;
+    .tour-content {
+        padding: 25px 0 0 0 ;
     }
 
     .image-content {
@@ -979,10 +1005,7 @@ footer img:hover {
         padding: 10px;
     }
 
-    .text-content {
-        width: 100%;
-        padding: 10px;
-    }
+   
 
     .tour-container h1,
     #tour-heading {
@@ -1042,11 +1065,117 @@ footer img:hover {
         --price-fs: 15px;
         --tour-link-fw: 300;
         --form-fs: 12px;
+        --hh-fs: 2.5rem;
+    }
+
+    header {
+        padding: 0 5px 0 5px;
+        background: white;
+        color: black;
+    }
+
+    .logo-name-container {
+        color: black;
+    }
+
+    .hamburger-menu {
+        filter: invert(57%) sepia(21%) saturate(943%) hue-rotate(345deg) brightness(93%) contrast(87%);
+        display: flex;
+        z-index: 16;
+    }
+
+    .language-selector {
+        color: black;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: max-content;
+    }
+
+    .language-selector select {
+        color: black;
     }
 
 
+
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 70%;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 15;
+    }
+
+    nav.active {
+        z-index: 15;
+        display: block;
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+
+        /* color: black; */
+        font-size: var(--nav-fs);
+        font-weight: 500;
+    }
+
+    /* Overlay styles */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+        z-index: 10;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .logo-name-container {
+        color: black;
+    }
+
+    .spinner-items {
+        overflow-x: auto;
+    }
+
+    .spinner-item {
+        width: auto;
+    }
+
     .spinner-item img {
         height: 270px;
+        width: 200px;
+    }
+
+
+    .spinner-item:hover {
+        transform: none;
+    }
+    
+    .hero {
+        background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
     }
 
     .price {
@@ -1060,14 +1189,14 @@ footer img:hover {
 
     }
 
+    .tour-container{
+        padding: 0% 10%
+    }
+
     .container {
         flex-direction: column;
         width: 90%;
-    }
-
-    .spinner-container {
-        display: none;
-    }
+    }   
 
     .image-content {
         width: 100%;
@@ -1097,22 +1226,6 @@ footer img:hover {
         width: 100%;
         top: 0;
         left: 0;
-    }
-
-    header {
-        /* flex-direction: column; */
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
     }
 
     .tour-links {
