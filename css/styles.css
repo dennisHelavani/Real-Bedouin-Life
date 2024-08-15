@@ -1108,8 +1108,6 @@ footer img:hover {
     }
 
 
-
-
     nav {
         display: none;
         position: fixed;
@@ -1146,7 +1144,6 @@ footer img:hover {
     }
 
 
-
     /* Overlay styles */
     .overlay {
         display: none;
@@ -1179,8 +1176,6 @@ footer img:hover {
         width: 100%;
        
     }
-
-   
 
     .history-card-block {
         /* background-color: #fff; */
