@@ -1319,10 +1319,7 @@ footer img:hover {
         background-image: url('../images_resized/backgroud_mobile.jpg');
     }
 
-    .spinner-item img {
-        height: 270px;
-    }
-
+   
     .price {
         font-size: 18px;
     }
@@ -1410,13 +1407,16 @@ footer img:hover {
         text-align: center;
     }
 
+    .spinner-item img {
+        height: 270px;
+    }
+
     .spinner-container {
         visibility: hidden;
     }
 
     .image-content {
         display: none;
-
     }
 
     .text-content {
