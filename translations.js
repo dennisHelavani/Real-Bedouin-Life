@@ -12,6 +12,14 @@ function setTextContent(id, text) {
   }
 }
 
+function setTextContentByClass(className, text) {
+  const elements = document.querySelectorAll(`.${className}`);
+  elements.forEach(element => {
+      element.textContent = text;
+  });
+}
+
+
 async function setLanguage(lang) {
   if (!translations[lang]) {
     await loadTranslation(lang);
@@ -52,7 +60,7 @@ async function setLanguage(lang) {
   setTextContent("tour_paragraph_2", translations[lang].tour.tour_paragraph_2);
   setTextContent("tour_paragraph_3", translations[lang].tour.tour_paragraph_3);
   setTextContent("tour_paragraph_4", translations[lang].tour.tour_paragraph_4);
-  setTextContent("tour_button", translations[lang].tour.tour_button);
+  setTextContentByClass("tour_button", translations[lang].tour.tour_button);
 
   // Set spinner translations
   setTextContent("spinner_heading", translations[lang].spinner.spinner_heading);
@@ -101,25 +109,29 @@ async function setLanguage(lang) {
   setTextContent("contact-page-website", translations[lang].contact_page.website);
   setTextContent("contact-page-address", translations[lang].contact_page.address);
   setTextContent("contact-page-question", translations[lang].contact_page.question);
-  setTextContent("contact-page-button", translations[lang].contact_page.button);
+  setTextContent("submit", translations[lang].contact_page.submit);
   setTextContent("contact-page-full-name", translations[lang].contact_page.full_name);
-  setTextContent("contact-page-email-address", translations[lang].contact_page.email_adress);
+  setTextContent("contact-page-email-address-form", translations[lang].contact_page.email_adress);
+  setTextContent("contact-page-email-address", translations[lang].contact_page.email);
   setTextContent("contact-page-message", translations[lang].contact_page.message);
   setTextContent("contact-page-phone", translations[lang].contact_page.phone);
 
 
   setTextContent("booking-page-heading", translations[lang].booking_page.heading);
   setTextContent("booking-page-paragraph", translations[lang].booking_page.paragraph);
+  
   setTextContent("booking-page-cta", translations[lang].booking_page.cta);
-  setTextContent("booking-page-type-heading", translations[lang].booking_page.tour_type_heading);
+  setTextContent("booking-page-tour-type-heading", translations[lang].booking_page.tour_type_heading);
   setTextContent("tour_type_1", translations[lang].booking_page.tour_type_1);
   setTextContent("tour_type_2", translations[lang].booking_page.tour_type_2);
   setTextContent("tour_type_3", translations[lang].booking_page.tour_type_3);
   setTextContent("tour_type_4", translations[lang].booking_page.tour_type_4);
   setTextContent("sub-tour-heading", translations[lang].booking_page.sub_tour_heading);
+  setTextContent("sub-tour-placeholder", translations[lang].booking_page.sub_tour_placeholder);
   setTextContent("booking-page-number-people", translations[lang].booking_page.num_people);
   setTextContent("booking-page-check-in", translations[lang].booking_page.check_in);
   setTextContent("booking-page-comments", translations[lang].booking_page.comments);
+  setTextContent("book", translations[lang].booking_page.booking_button);
 
 
 

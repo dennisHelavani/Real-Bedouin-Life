@@ -73,9 +73,9 @@ header {
 
 
 #logo-name-part-two {
-    font-size: var(--logo-name-font-two);
+    font-size: var(--logo-name-font-one);
     font-weight: var(--logo-name-w);
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     margin: 0;
     padding: 0;
 }
@@ -83,6 +83,7 @@ header {
 #logo-name-part-one {
     margin: 0;
     padding: 0;
+    letter-spacing: 2px;
     font-size: var(--logo-name-font-one);
     font-weight: var(--h1-w);
 }
@@ -563,7 +564,7 @@ select:focus {
     line-height: 1.35;
 }
 
-.btn {
+.tour_button {
     cursor: pointer;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -578,11 +579,11 @@ select:focus {
     border-radius: 25px;
 }
 
-.btn:hover {
+.tour_button:hover {
     background-color: var(--animation-color);
 }
 
-.btn:focus {
+.tour_button:focus {
     /* outline: 1px dashed yellow; */
     outline-offset: 3px;
 }
