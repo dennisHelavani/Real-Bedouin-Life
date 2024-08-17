@@ -346,11 +346,11 @@ select:focus {
     width: 80%;
 }
 
-.history h1,
-.tour h1,
-.gallery h1,
-.faq h1,
-.spinner h1 {
+.history h2,
+.tour h2,
+.gallery h2,
+.faq h2,
+.spinner h2 {
     color: var(--h1-c);
     text-transform: uppercase;
     font-weight: var(--h1-w);
@@ -452,7 +452,7 @@ select:focus {
 .tour-content {
     display: grid;
     grid-gap: 20px;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -460,18 +460,49 @@ select:focus {
     .tour-content {
         grid-template-columns: repeat(2, 1fr);
     }
+    .tour-content {
+        display: grid;
+        grid-gap: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1024px) {
     .tour-content {
         grid-template-columns: repeat(3, 1fr);
     }
+    .tour-content {
+        display: grid;
+        grid-gap: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tour-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tour-content {
+        display: grid;
+        grid-gap: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1500px) {
     .tour-content {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
+    .tour-content {
+        display: grid;
+        grid-gap: 20px;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
 }
 
 .tour-card {
@@ -762,7 +793,7 @@ select:focus {
     z-index: 1;
 }
 
-.spinner-item p {
+.spinner-item h3 {
     text-align: center;
     animation: fadeInAnimation ease 3s;
     position: absolute;
@@ -776,6 +807,7 @@ select:focus {
     text-transform: uppercase;
     opacity: 1;
     z-index: 2;
+    font-weight: var(--h2-fw);
     /* Ensure text is above images */
 }
 
@@ -1068,11 +1100,11 @@ footer img:hover {
         --hh-fs: 2.5rem;
     }
 
-    .history h1,
-    .tour h1,
-    .gallery h1,
-    .faq h1,
-    .spinner h1 {
+    .history h2,
+    .tour h2,
+    .gallery h2,
+    .faq h2,
+    .spinner h2 {
         margin-top: 25px;
     }
 
