@@ -588,7 +588,7 @@ select:focus {
     /* padding-bottom: 10px; */
     padding: 20px 0;
     font-size: var(--h2-fs) !important;
-    /* font-weight: var(--tour-link-fw); */
+    font-weight: var(--tour-link-fw);
     /* font-weight: bold; */
     /* line-height: 1.2;s */
 }
@@ -1335,8 +1335,24 @@ footer img:hover {
         color: black;
         padding: 20px 10%;
         margin: 0 auto;
-
     }
+
+    .product-card{
+        box-shadow: none;
+    }
+
+    .title{
+        padding: 10px 0 5px 0;
+    }
+
+    .card-content,
+    .card-content>p{
+        /* text-align: left; */
+        text-align: justify;
+        padding: 0;
+    }
+
+    
 
     .contact-item {
         vertical-align: middle;
@@ -1477,8 +1493,14 @@ footer img:hover {
     }
 
     .tour h2 {
-        padding: 0 0 25px 0;
+        padding: 0 10% 20px 10%;
         margin-bottom: 0;
+    }
+
+    .cta-content h2{
+        font-size:var(--h1-fs) ;
+        padding: 0 0 20px 0 !important;
+
     }
 
     footer {
