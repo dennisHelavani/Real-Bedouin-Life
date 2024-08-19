@@ -74,10 +74,11 @@ header {
 }
 
 
+
 #logo-name-part-two {
-    font-size: var(--logo-name-font-two);
+    font-size: var(--logo-name-font-one);
     font-weight: var(--logo-name-w);
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     margin: 0;
     padding: 0;
 }
@@ -85,6 +86,7 @@ header {
 #logo-name-part-one {
     margin: 0;
     padding: 0;
+    letter-spacing: 2px;
     font-size: var(--logo-name-font-one);
     font-weight: var(--h1-w);
 }
