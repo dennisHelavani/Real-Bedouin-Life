@@ -663,6 +663,13 @@ select:focus {
     object-fit: cover;
 }
 
+#tour-image{
+    max-height: 350px;
+    width: 30%;
+    padding-left: 15px;
+    object-fit: cover;
+}
+
 .gallery{
     padding-top: var(--section-margin-top);
     text-align: center;
