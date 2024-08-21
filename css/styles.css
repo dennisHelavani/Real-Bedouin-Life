@@ -904,6 +904,7 @@ select:focus {
     text-align: left;
     line-height: 1.3rem;
     max-height: 0;
+    text-align: justify;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease;

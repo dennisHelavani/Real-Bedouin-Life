@@ -581,7 +581,7 @@ select:focus {
     margin-top: 25px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: 27% 17.5% 22.5% 33%;
     justify-items: stretch;
     align-items: start;
 }
