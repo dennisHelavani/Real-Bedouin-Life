@@ -184,6 +184,65 @@ select:focus {
 }
 
 
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header-background-color, #333); /* Adjust color as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    /* min-width: 150px;  */
+    width: max-content; 
+    /* max-width: 300px; */
+    list-style: none;
+    z-index: 10; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 7px 3px;
+    text-decoration:none;
+    color: var(--header-color);
+    font-size: var(--nav--dd-fs);
+    text-transform: capitalize !important;
+    /* font-weight: 500; */
+    transition: background-color 0.8s ease;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    /* background-color: var(--animation-color); */
+    color: white; /* Adjust text color on hover */
+}
+
+.dropdown-menu img{
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
 .hero {
     position: relative;
     height: 50vh;
@@ -978,6 +1037,41 @@ footer img:hover {
     }
 
 
+    .dropdown-menu {
+        background-color: transparent;
+        position: static; /* Ensure the dropdown is positioned correctly */
+        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
+        transform: none; /* No slide effect on mobile */
+        opacity: 1; /* Always visible */
+        visibility: visible; /* Always visible */
+        transition: none; /* No transition for mobile */
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding-left: 10px; /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        border-bottom: none !important;
+    }
+
+    /* Optional: Style the dropdown trigger for mobile */
+    .nav-item-dropdown 
+     {
+        display: block;
+        text-align: left;
+        /* border-bottom: 1px solid var(--header-border-color, #ccc); */
+    }
+    .dropdown-menu img{
+        display: block;
+    }
+
+    .nav-item-dropdown li{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: none !important;
+    }
+
     /* Overlay styles */
     .overlay {
         display: none;
@@ -1201,6 +1295,42 @@ footer img:hover {
     }
 
 
+    .dropdown-menu {
+        background-color: transparent;
+        position: static; /* Ensure the dropdown is positioned correctly */
+        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
+        transform: none; /* No slide effect on mobile */
+        opacity: 1; /* Always visible */
+        visibility: visible; /* Always visible */
+        transition: none; /* No transition for mobile */
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding-left: 10px; /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        border-bottom: none !important;
+    }
+
+    /* Optional: Style the dropdown trigger for mobile */
+    .nav-item-dropdown 
+     {
+        display: block;
+        text-align: left;
+        /* border-bottom: 1px solid var(--header-border-color, #ccc); */
+    }
+    .dropdown-menu img{
+        display: block;
+    }
+
+    .nav-item-dropdown li{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: none !important;
+    }
+
+
     /* Overlay styles */
     .overlay {
         display: none;
@@ -1396,6 +1526,41 @@ footer img:hover {
         font-weight: 500;
     }
 
+
+    .dropdown-menu {
+        background-color: transparent;
+        position: static; /* Ensure the dropdown is positioned correctly */
+        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
+        transform: none; /* No slide effect on mobile */
+        opacity: 1; /* Always visible */
+        visibility: visible; /* Always visible */
+        transition: none; /* No transition for mobile */
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding-left: 10px; /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        border-bottom: none !important;
+    }
+
+    /* Optional: Style the dropdown trigger for mobile */
+    .nav-item-dropdown 
+     {
+        display: block;
+        text-align: left;
+        /* border-bottom: 1px solid var(--header-border-color, #ccc); */
+    }
+    .dropdown-menu img{
+        display: block;
+    }
+
+    .nav-item-dropdown li{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: none !important;
+    }
     /* Overlay styles */
     .overlay {
         display: none;

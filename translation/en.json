@@ -5,7 +5,12 @@
         "faq": "FAQ",
         "contact": "Contact",
         "book_tour": "Book Tour",
-        "home": "Home"
+        "home": "Home",
+        "nav_subtour1":"1 Day",
+        "nav_subtour2":"1 Day & 1 Night",
+        "nav_subtour3":"Hiking Adventures",
+        "nav_subtour4":"2 Days & 2 Nights"
+
     },
     "hero": {
         "heading_first": "WADI RUM",
@@ -98,7 +103,7 @@
         "tour_type_heading":"Tour Type:",
         "tour_type_1":"1 Day Tour",
         "tour_type_2":"1 Day & 1 Night Tour",
-        "tour_type_3":"2 Days & 1 Night Tour",
+        "tour_type_3":"Hiking Adventures",
         "tour_type_4":"2 Days & 2 Nights Tour",
         "sub_tour_heading":"Select Tour:",
         "sub_tour_placeholder":"Select Sub Tour",

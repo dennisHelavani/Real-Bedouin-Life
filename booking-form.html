@@ -43,7 +43,15 @@
       <ul class="nav-links">
         <li id="first-child"><a href="index.html" id="nav-home"></a></li>
         <li><a href="index.html#about" id="nav-about"></a></li>
-        <li> <a href="all-tours.html" id="nav-tours"></a></li>
+        <li class="nav-item-dropdown">
+          <a href="all-tours.html" id="nav-tours"></a>
+          <ul class="dropdown-menu">
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html" id ="nav-subtour1"></a></li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html" id ="nav-subtour2"></a></li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id ="nav-subtour3"></a></li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html" id ="nav-subtour4"></a></li>
+        </ul>
+        </li>
         <li><a href="index.html#faq" id="nav-faq"></a></li>
         <li><a href="contact.html" id="nav-contact"></a></li>
         <div class="language-selector">
@@ -106,9 +114,9 @@
         <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
           <option value="one_d" id="tour_type_1"></option>
           <option value="one_d_one_n" id="tour_type_2"></option>
-
+          <option value="hiking" id="tour_type_3"></option>
           <option value="two_d_two_n" id="tour_type_4"></option>
-          <!-- <option value="two_d_one_n" id="tour_type_3">2 Days & 1 Night Tour</option> -->
+
 
         </select>
 
@@ -222,13 +230,13 @@
           // "Tour en jeep, randonnée et une nuit dans le camp"
         ]
       },
-      // two_d_one_n: {
-      //   en: ["Jeep Tour, Sleeping in the Camp and Under the Stars"],
-      //   de: ["Jeep-Tour, Übernachtung im Camp und unter den Sternen"],
-      //   esp: ["Tour en jeep, dormir en el campamento y bajo las estrellas"],
-      //   it: ["Tour in jeep, dormire nel campo e sotto le stelle"],
-      //   fr: ["Tour en jeep, dormir dans le camp et sous les étoiles"]
-      // },
+      hiking: {
+        en: ["Jebel Umm Al-Dami: Summit of the Stars Expedition", "Jebel Al-Hish: Desert Mirage Trail Challenge", "Jebel Barada: Ancient Echoes Path Journey"],
+        //   de: ["Jeep-Tour, Übernachtung im Camp und unter den Sternen"],
+        //   esp: ["Tour en jeep, dormir en el campamento y bajo las estrellas"],
+        //   it: ["Tour in jeep, dormire nel campo e sotto le stelle"],
+        //   fr: ["Tour en jeep, dormir dans le camp et sous les étoiles"]
+      },
       two_d_two_n: {
         en: ["Desert Duo: Jeep Tour and Hike with Two Nights", "Starlit Serenity: One Day and One Night in the Desert"],
         de: ["Jeep-Touren, Wandern und Übernachtung im Camp"],

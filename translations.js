@@ -35,6 +35,11 @@ async function setLanguage(lang) {
   setTextContent("nav-faq", translations[lang].header.faq);
   setTextContent("nav-contact", translations[lang].header.contact);
   setTextContent("nav-book-tour", translations[lang].header.book_tour);
+  setTextContent("nav-subtour1", translations[lang].header.nav_subtour1);
+  setTextContent("nav-subtour2", translations[lang].header.nav_subtour2);
+  setTextContent("nav-subtour3", translations[lang].header.nav_subtour3);
+  setTextContent("nav-subtour4", translations[lang].header.nav_subtour4);
+
 
   // Set hero translations
   setTextContent("hero-heading-first", translations[lang].hero.heading_first);
