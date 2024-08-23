@@ -535,7 +535,7 @@ select:focus {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     /* Adjust opacity as needed */
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -919,8 +919,18 @@ select:focus {
     filter: invert(51%) sepia(45%) saturate(443%) hue-rotate(345deg) brightness(97%) contrast(89%);
 }
 
-.contact-item .details {
+.contact-item .details a,
+.contact-item .details
+{
+    cursor: pointer;
     font-size: var(--form-fs);
+    text-decoration: none;
+    color: black;
+}
+
+.details a:hover{
+    cursor: pointer;
+    
 }
 
 .contact-item .details strong {
