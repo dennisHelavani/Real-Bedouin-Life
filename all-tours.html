@@ -34,8 +34,8 @@
 
     <nav>
       <ul class="nav-links">
-        <li id="first-child"><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about">ABOUT</a></li>
+        <li id="first-child"><a href="index.html"  id="nav-home"></a></li>
+        <li><a href="index.html#about" id="nav-about"></a></li>
         <li class="nav-item-dropdown">
           <a href="all-tours.html" id="nav-tours"></a>
           <ul class="dropdown-menu">
@@ -45,9 +45,9 @@
             <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html" id ="nav-subtour4"></a></li>
         </ul>
         </li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li>
+        <li><a href="index.html#faq"  id="nav-faq"></a></li>
+        <li><a href="contact.html"  id="nav-contact"></a></li>
+        <li><a href="booking-form.html"  id="nav-book-tour"></a></li>
         <div class="language-selector">
           <select id="language-select">
             <option value="en">ENG</option>
@@ -70,16 +70,11 @@
       <div class="hero-heading">
         <div class="hero-heading-wrap">
           <div class="hero-heading-first">
-            <h1>TOURS</h1>
+            <h1 id="all-tours-heading"></h1>
           </div>
         </div>
         <div class="hero-description">
-          <p>
-            Step into the heart of the desert with our guided tours and experience the unparalleled beauty of Wadi Rum.
-            Whether it's a thrilling jeep ride across golden dunes, a serene camel journey under the vast desert sky, or
-            an unforgettable night beneath a blanket of stars,
-            our tours offer something truly special for every adventurer. Let the ancient landscape and our rich Bedouin
-            heritage leave you with memories that last a lifetime.
+          <p id="all-tours-paragraph">
           </p>
         </div>
       </div>
@@ -88,40 +83,9 @@
   </section>
 
   <div class="tour">
-    <!-- <h1>Choose You Next Trip</h1></div> -->
-    <!-- <section class="tour-content">
    
-    <div class="tour-card">
-      <div class="tour-card-content">
-        <h2 class="title">1 Day</h2>
-        <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
-          the mountains</p><button class="btn" onclick="window.location.href = '#tours_1d';">Discover</button>
-      </div>
-    </div>
-    <div class="tour-card">
-      <div class="tour-card-content">
-        <h2 class="title">1 Day & 1 Night</h2>
-        <p class="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn"
-          onclick="window.location.href = '#tours_1d_1n';">Discover</button>
-      </div>
-    </div>
-    <div class="tour-card">
-      <div class="tour-card-content">
-        <h2 class="title">2 Days & 1 Night</h2>
-        <p class="copy">It's the desert you've always dreamed of</p><button class="btn"
-          onclick="window.location.href = '#tours_2d_1n';">Discover</button>
-      </div>
-    </div>
-    <div class="tour-card">
-      <div class="tour-card-content">
-        <h2 class="title">2 Days & 2 Nigts</h2>
-        <p class="copy">Seriously, straight up, just blast off into outer space today</p><button class="btn"
-          onclick="window.location.href = '#tours_2d_2n';">Discover</button>
-      </div>
-    </div>
-  </section> -->
     <section class="tour" id="tours_1d">
-      <h2>DAY TOURS</h2>
+      <h2 id="all-tours-h2-1"></h2>
       <div class="tour-content">
         <div class="product-card">
           <div class="card-image">
@@ -129,15 +93,13 @@
                 src="images_resized/Jeep Tour.jpeg" alt="Jeep Tour in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour1';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour1';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Desert Dash: 2-Hour Jeep Safari</h3>
-            <p>A quick yet thrilling sprint across the iconic dunes and hidden gems of Wadi Rum—perfect for a taste of
-              adventure</p>
+            <h3 class="title"  id="all_tours_title_1"></h3>
+            <p id="all_tours_parahraph_1"></p>
           </div>
         </div>
         <div class="product-card">
@@ -146,15 +108,14 @@
                 src="images_resized/jeep tour 2.jpg" alt="Jeep Tour in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour2';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour2';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Wadi Wonders: Half-Day Jeep Adventure</h3>
-            <p>
-              Explore the mesmerizing landscapes and top sights of Wadi Rum on this unforgettable four-hour jeep journey
+            <h3 class="title"  id="all_tours_title_2"></h3>
+            <p id="all_tours_parahraph_2">
+              
             </p>
           </div>
         </div>
@@ -164,15 +125,13 @@
               <img src="images_resized/Tea.jpeg" alt="Product Image">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour3';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour3';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Red Sands Odyssey: Full-Day Jeep Exploration</h3>
-            <p>Delve deep into the heart of the desert with a full-day tour that reveals Wadi Rum’s most spectacular and
-              secluded spots</p>
+            <h3 class="title"  id="all_tours_title_3"></h3>
+            <p id="all_tours_parahraph_3"></p>
           </div>
         </div>
         <div class="product-card">
@@ -181,21 +140,19 @@
               <img src="images_resized/wadi rum.jpeg" alt="Jeep Tour in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour4';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour4';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Bedouin Trail: Camel Ride Experience</h3>
-            <p>Experience the desert like a true Bedouin as you ride a camel through Wadi Rum’s vast and awe-inspiring
-              scenery</p>
+            <h3 class="title"  id="all_tours_title_4"></h3>
+            <p id="all_tours_parahraph_4"></p>
           </div>
         </div>
       </div>
     </section>
     <section class="tour" id="tour_hiking">
-      <h2>HIKING ADVENTURES</h2>
+      <h2 id="all-tours-h2-2"></h2>
       <div class="tour-content">
         <div class="product-card">
           <div class="card-image">
@@ -203,15 +160,13 @@
               <img src="images_resized/hiking 1.jpg" alt="Jeep Tour in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour1';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour1';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Jebel Umm Al-Dami: Summit of the Stars Expedition</h3>
-            <p>Embark on a thrilling ascent to the highest peak in Wadi Rum, where the stars seem within reach and the
-              desert views are breathtaking</p>
+            <h3 class="title"  id="all_tours_title_5"></h3>
+            <p id="all_tours_parahraph_5"></p>
           </div>
         </div>
         <div class="product-card">
@@ -220,15 +175,13 @@
               <img src="images_resized/hiking 2.jpg" alt="Product Image">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour2';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour2';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Jebel Al-Hish: Desert Mirage Trail Challenge</h3>
-            <p>Conquer the rugged terrain of Jebel Al-Hish for panoramic views of the desert that will make you feel
-              like you're walking through a mirage</p>
+            <h3 class="title"  id="all_tours_title_6"></h3>
+            <p id="all_tours_parahraph_6"></p>
           </div>
         </div>
         <div class="product-card">
@@ -237,22 +190,20 @@
               <img src="images_resized/hiking 3.jpg" alt="Jeep Tour in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour3';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html#tour3';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Jebel Barada: Ancient Echoes Path Journey</h3>
-            <p>Discover the ancient whispers of the desert on the Jebel Barada trail, where history and nature
-              intertwine to offer a truly unforgettable experience</p>
+            <h3 class="title"  id="all_tours_title_7"></h3>
+            <p id="all_tours_parahraph_7"></p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="tour" id="tours_1d_1n">
-      <h2>TOURS WITH ONE NIGHT IN THE DESERT</h2>
+      <h2 id="all-tours-h2-3"></h2>
       <div class="tour-content">
         <div class="product-card">
           <div class="card-image">
@@ -260,16 +211,14 @@
                 src="images_resized/1n t1.jpeg" alt="Camel Ride in Wadi Rum Desert">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours//1-day-1-night-tours.html#tour1';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours//1-day-1-night-tours.html#tour1';"></button>
               </div>
             </a>
 
           </div>
           <div class="card-content">
-            <h3 class="title">Twilight Trails: Half-Day Jeep & Overnight</h3>
-            <p>Begin your journey with a half-day jeep tour, then settle into the desert for a magical night under the
-              stars</p>
+            <h3 class="title" id="all_tours_title_8"></h3>
+            <p id="all_tours_parahraph_8"></p>
           </div>
         </div>
         <div class="product-card">
@@ -279,64 +228,29 @@
               <div class="overlay">
 
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour2';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour2';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Sunset to Sunrise: Full-Day Jeep & Camp</h3>
-            <p>A full day of exploration followed by a cozy night in a desert camp, where the stars light up the sky</p>
+            <h3 class="title" id="all_tours_title_9"></h3>
+            <p id="all_tours_parahraph_9"></p>
           </div>
         </div>
-        <!-- <div class="product-card">
-          <div class="card-image">
-            <a href="/tours/1-day-1-night-tours.html#tour3">
-              <img src="images_resized/2n t2.jpg" alt="Product Image">
-              <div class="overlay">
-                <button class="btn" onclick="window.location.href = 'tours/1-day-1-night-tours.html#tour3';">View
-                  details</button>
-              </div>
-            </a>
-          </div>
-          <div class="card-content">
-            <p class="title">Day Jeep Tour and Sleeping Under the Stars</p>
-            <p>1D1N Enjoy a full day jeep tour of Wadi Rum and spend the night camping under the stars for an
-              unforgettable
-              desert adventure</p>
-          </div>
-        </div>-->
-        <!-- <div class="product-card">
-          <div class="card-image">
-            <a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/tours/1-day-1-night-tours.html#tour3">
-              <img src="images_resized/1d t5.jpg" alt="Full Day adventure in Wadi Rum Desert">
-              <div class="overlay">
-                <button class="btn" onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour3';">View
-                  details</button>
-              </div>
-            </a>
-          </div>
-          <div class="card-content">
-            <h3 class="title">Desert Dreams: Jeep Tour, Hike & Night Under Stars</h3>
-            <p>An adventurous full day combining jeep tours and hiking, capped off with a serene night under Wadi Rum’s
-              starry canopy</p>
-          </div>
-        </div> -->
+       
         <div class="product-card">
           <div class="card-image">
             <a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour3">
               <img src="images_resized/2n t4.jpg" alt="Overnight desert camping in Wadi Rump">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour4';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html#tour4';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Epic Expedition: Jeep Tour, Camp, and Full-Day Hike</h3>
-            <p>A thrilling blend of a full-day jeep adventure, a peaceful night in a desert camp, and an immersive
-              full-day hike, showcasing the best of Wadi Rum</p>
+            <h3 class="title" id="all_tours_title_10"></h3>
+            <p id="all_tours_parahraph_10"></p>
           </div>
         </div>
 
@@ -344,7 +258,7 @@
       </div>
     </section>
     <section class="tour" id="tours_2d_1n">
-      <h2>TOURS WITH TWO NIGHTS IN THE DESERT</h2>
+      <h2 id="all-tours-h2-4"></h2>
       <div class="tour-content">
         <div class="product-card">
           <div class="card-image">
@@ -352,15 +266,13 @@
               <img src="images_resized/2d t3.jpg" alt="Overnight desert camping in Wadi Rump">
               <div class="overlay">
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html#tour1';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html#tour1';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Desert Duo: Jeep Tour & Hike with Two Nights</h3>
-            <p>Experience Wadi Rum’s best with two days of adventure—jeep tours, scenic hikes, and unforgettable nights
-              in the desert</p>
+            <h3 class="title"  id="all_tours_title_11"></h3>
+            <p id="all_tours_parahraph_11"></p>
           </div>
         </div>
 
@@ -373,53 +285,29 @@
               <div class="overlay">
 
                 <button class="btn"
-                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html#tour2';">View
-                  details</button>
+                  onclick="window.location.href = 'https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html#tour2';"></button>
               </div>
             </a>
           </div>
           <div class="card-content">
-            <h3 class="title">Starlit Serenity: Two Nights in the Desert</h3>
-            <p>Immerse yourself in the desert with a full day of exploration, a night in a camp, and another under the
-              stars</p>
+            <h3 class="title" id="all_tours_title_12"></h3>
+            <p id="all_tours_parahraph_12"></p>
           </div>
         </div>
       </div>
     </section>
-    <section class="tour" id="tours_2d_2n">
-      <!--<h1>2 DAYS & 2 NIGHTS TOURS</h1>
-      <div class="tour-content">
-        <div class="product-card">
-          <div class="card-image">
-            <a href="/tours/2-days-2-nights-tours.html#tour1">
-              <img src="images_resized/2n t4.webp" alt="Product Image">
-              <div class="overlay">
-                <button class="btn" onclick="window.location.href = 'tours/2-days-2-nights-tours.html#tour1';">View
-                  details</button>
-              </div>
-            </a>
-          </div>
-          <div class="card-content">
-            <p class="title">Jeep Tours, Hiking, and Sleeping in the Camp</p>
-            <p>2D2N Experience the best of Wadi Rum with exciting jeep tours, scenic hikes, and a cozy night spent
-              sleeping in a desert camp</p>
-          </div>
-        </div>
-      </div>
-    </section>-->
+
 
       <section class="cta" id="cta">
         <div class="cta-container">
           <div class="cta-content">
-            <h2>Want to experience all that WADI RUM has to offer?</h2>
-            <p>Book your unforgettable tour in Wadi Rum Desert now!</p>
-            <button class="cta-button" onclick="window.location.href='booking.html'">
-              Book a Tour
+            <h2 id="cta-heading"></h2>
+            <p id="cta-paragraph"></p>
+            <button class="cta-button" onclick="window.location.href='booking.html'"  id="cta-button">
+             
             </button>
           </div>
-          <!-- <div class="cta-image">
-              <img src="images/bedouin_1.jpeg" alt="Wadi Rum Desert">
-          </div> -->
+        
         </div>
       </section>
 
@@ -430,13 +318,13 @@
         color: #d89f6f;
       ">
         <div style="margin-bottom: 10px">
-          <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home">Home</a>
+          <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home"></a>
           <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px"
-            id="footer-tours">Tours</a>
+            id="footer-tours"></a>
           <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px"
-            id="footer-about">About</a>
+            id="footer-about"></a>
           <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px"
-            id="footer-contact">Contact</a>
+            id="footer-contact"></a>
         </div>
 
         <div style="margin-bottom: 10px">
@@ -457,14 +345,10 @@
 
         </div>
       </footer>
-      <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+   
       <script src="script_tours.js"></script>
-      <!-- <script>
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-    });
-  </script> -->
+      <script src="translations.js"></script>
+   
 </body>
 
 </html>

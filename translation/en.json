@@ -111,5 +111,40 @@
         "check_in":"Check-in Date:",
         "comments":"Comments To Booking:",
         "booking_button":"Book"
+    },
+    "all_tours":{
+        "heading":"TOURS",
+        "paragraph":"Step into the heart of the desert with our guided tours and experience the unparalleled beauty of Wadi Rum. Whether it's a thrilling jeep ride across golden dunes, a serene camel journey under the vast desert sky, or an unforgettable night beneath a blanket of stars, our tours offer something truly special for every adventurer. Let the ancient landscape and our rich Bedouin heritage leave you with memories that last a lifetime.",
+        "h2_1":"DAY TOURS",
+        "h2_2":"HIKING ADVENTURES",
+        "h2_3":"TOURS WITH ONE NIGHT IN THE DESERT",
+        "h2_4":"TOURS WITH TWO NIGHTS IN THE DESERT",
+        "btn":"View details",
+        "h3_1":"Desert Dash: 2-Hour Jeep Safari",
+        "h3_2":"Wadi Wonders: Half-Day Jeep Adventure",
+        "h3_3":"Red Sands Odyssey: Full-Day Jeep Exploration",
+        "h3_4":"Bedouin Trail: Camel Ride Experience",
+        "h3_5":"Jebel Umm Al-Dami: Summit of the Stars Expedition",
+        "h3_6":"Jebel Al-Hish: Desert Mirage Trail Challenge",
+        "h3_7":"Jebel Barada: Ancient Echoes Path Journey",
+        "h3_8":"Twilight Trails: Half-Day Jeep & Overnight",
+        "h3_9":"Sunset to Sunrise: Full-Day Jeep & Camp",
+        "h3_10":"Epic Expedition: Jeep Tour, Camp, and Full-Day Hike",
+        "h3_11":"Desert Duo: Jeep Tour & Hike with Two Nights",
+        "h3_12":"Starlit Serenity: Two Nights in the Desert",
+        "tour_paragraph_1":"A quick yet thrilling sprint across the iconic dunes and hidden gems of Wadi Rum—perfect for a taste of adventure",
+        "tour_paragraph_2":"Explore the mesmerizing landscapes and top sights of Wadi Rum on this unforgettable four-hour jeep journey",
+        "tour_paragraph_3":"Delve deep into the heart of the desert with a full-day tour that reveals Wadi Rum’s most spectacular and secluded spots",
+        "tour_paragraph_4":"Experience the desert like a true Bedouin as you ride a camel through Wadi Rum’s vast and awe-inspiring scenery",
+        "tour_paragraph_5":"Embark on a thrilling ascent to the highest peak in Wadi Rum, where the stars seem within reach and the desert views are breathtaking",
+        "tour_paragraph_6":"Conquer the rugged terrain of Jebel Al-Hish for panoramic views of the desert that will make you feel like you're walking through a mirage",
+        "tour_paragraph_7":"Discover the ancient whispers of the desert on the Jebel Barada trail, where history and nature intertwine to offer a truly unforgettable experience",
+        "tour_paragraph_8":"Begin your journey with a half-day jeep tour, then settle into the desert for a magical night under the stars",
+        "tour_paragraph_9":"A full day of exploration followed by a cozy night in a desert camp, where the stars light up the sky",
+        "tour_paragraph_10":"A thrilling blend of a full-day jeep adventure, a peaceful night in a desert camp, and an immersive full-day hike, showcasing the best of Wadi Rum",
+        "tour_paragraph_11":"Experience Wadi Rum’s best with two days of adventure—jeep tours, scenic hikes, and unforgettable nights in the desert",
+        "tour_paragraph_12":"Immerse yourself in the desert with a full day of exploration, a night in a camp, and another under the stars"
+        
+
     }
 }

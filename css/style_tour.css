@@ -629,10 +629,17 @@ select:focus {
     filter: brightness(70%);
 }
 
-.card-image:hover .overlay {
+.card-image:hover .overlay,
+.card-image:hover .btn
+ {
     opacity: 1;
-    transition: background-color 0.7s ease, color 0.7s ease;
+    display: flex;
+    outline-offset: 3px;
+    transition: background-color 1s ease, color 1s ease;
+   
 }
+
+
 
 .card-content {
     font-size: var(--text-fs);

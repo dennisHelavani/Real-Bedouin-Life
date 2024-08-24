@@ -139,6 +139,40 @@ async function setLanguage(lang) {
   setTextContent("book", translations[lang].booking_page.booking_button);
 
 
+  setTextContent("all-tours-heading",translations[lang].all_tours.heading),
+  setTextContent("all-tours-paragraph",translations[lang].all_tours.paragraph),
+  setTextContent("all-tours-h2-1",translations[lang].all_tours.h2_1),
+  setTextContent("all-tours-h2-2",translations[lang].all_tours.h2_2),
+  setTextContent("all-tours-h2-3",translations[lang].all_tours.h2_3),
+  setTextContent("all-tours-h2-4",translations[lang].all_tours.h2_4),
+  setTextContentByClass("btn",translations[lang].all_tours.btn),
+  setTextContent("all_tours_title_1",translations[lang].all_tours.h3_1),
+  setTextContent("all_tours_title_2",translations[lang].all_tours.h3_2),
+  setTextContent("all_tours_title_3",translations[lang].all_tours.h3_3),
+  setTextContent("all_tours_title_4",translations[lang].all_tours.h3_4),
+  setTextContent("all_tours_title_5",translations[lang].all_tours.h3_5),
+  setTextContent("all_tours_title_6",translations[lang].all_tours.h3_6),
+  setTextContent("all_tours_title_7",translations[lang].all_tours.h3_7),
+  setTextContent("all_tours_title_8",translations[lang].all_tours.h3_8),
+  setTextContent("all_tours_title_9",translations[lang].all_tours.h3_9),
+  setTextContent("all_tours_title_10",translations[lang].all_tours.h3_10),
+  setTextContent("all_tours_title_11",translations[lang].all_tours.h3_11),
+  setTextContent("all_tours_title_12",translations[lang].all_tours.h3_12),
+  setTextContent("all_tours_parahraph_1",translations[lang].all_tours.tour_paragraph_1),
+  setTextContent("all_tours_parahraph_2",translations[lang].all_tours.tour_paragraph_2),
+  setTextContent("all_tours_parahraph_3",translations[lang].all_tours.tour_paragraph_3),
+  setTextContent("all_tours_parahraph_4",translations[lang].all_tours.tour_paragraph_4),
+  setTextContent("all_tours_parahraph_5",translations[lang].all_tours.tour_paragraph_5),
+  setTextContent("all_tours_parahraph_6",translations[lang].all_tours.tour_paragraph_6),
+  setTextContent("all_tours_parahraph_7",translations[lang].all_tours.tour_paragraph_7),
+  setTextContent("all_tours_parahraph_8",translations[lang].all_tours.tour_paragraph_8),
+  setTextContent("all_tours_parahraph_9",translations[lang].all_tours.tour_paragraph_9),
+  setTextContent("all_tours_parahraph_10",translations[lang].all_tours.tour_paragraph_10),
+  setTextContent("all_tours_parahraph_11",translations[lang].all_tours.tour_paragraph_11),
+  setTextContent("all_tours_parahraph_12",translations[lang].all_tours.tour_paragraph_12),
+
+
+
 
 
 

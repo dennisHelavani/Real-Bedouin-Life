@@ -11,7 +11,12 @@
     content="Wadi Rum, desert adventures, contact, Wadi Rum contact, desert tours, Bedouin tours, Wadi Rum village, Wadi Rum jeep tours">
 
   <link rel="stylesheet" href="css/style_tour.css" />
-  <script src="translations.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("6CJDRuO8JLdMRqW1L"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
+    })();
+  </script>
 </head>
 
 <body>
@@ -182,15 +187,39 @@
 
     </div>
   </footer>
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="translations.js"></script>
   <script src="script_tours.js"></script>
-  <!-- <script>
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-    });
-  </script> -->
+  <script>
+        window.onload = async function () {
+      await setLanguage(getCurrentLanguage()); // Set the language first
+      setDropdownValues(); // This will also call updateSubTourOptions
+    };
+
+    // Handle form submission
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        const templateParams = {
+          full_name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        };
+
+        emailjs.send("service_4ftk8hr", "template_m8g29wd", templateParams).then(
+          (response) => {
+            alert("Your message has been sent!", response.status, response.text);
+          },
+          (error) => {
+            alert("FAILED...", error);
+          }
+        );
+      });
+  </script>
+
 </body>
 
 </html>
