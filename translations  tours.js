@@ -8,7 +8,7 @@ async function loadTranslation(lang) {
 function setTextContent(id, text) {
   const element = document.getElementById(id);
   if (element) {
-    element.textContent = text;
+    element.innerHTML = text;
   }
 }
 
@@ -269,6 +269,77 @@ async function setLanguage(lang) {
   setTextContent("one_day_one_night_h12",translations[lang].one_day_one_night_tours.highlight_12),
   setTextContent("one_day_one_night_h13",translations[lang].one_day_one_night_tours.highlight_13),
   setTextContent("one_day_one_night_h14",translations[lang].one_day_one_night_tours.highlight_14),
+  setTextContent("one_d_one_n_description_one",translations[lang].one_day_one_night_tours.description_tour_1),
+  setTextContent("one_d_one_n_description_two",translations[lang].one_day_one_night_tours.description_tour_2),
+  setTextContent("one_d_one_n_description_three",translations[lang].one_day_one_night_tours.description_tour_3),
+
+  setTextContent("hike_general_hike_1",translations[lang].hiking.hike_hike_1),
+  setTextContent("hike_general_hike_2",translations[lang].hiking.hike_hike_2),
+  setTextContent("hike_general_hike_3",translations[lang].hiking.hike_hike_3),
+
+  setTextContent("hh_1",translations[lang].hiking.hike_hike_1),
+  setTextContent("hh_2",translations[lang].hiking.hike_hike_2),
+  setTextContent("hh_3",translations[lang].hiking.hike_hike_3),
+  setTextContent("hike_title_1",translations[lang].all_tours.h3_5),
+  setTextContent("hike_title_2",translations[lang].all_tours.h3_6),
+  setTextContent("hike_title_3",translations[lang].all_tours.h3_7),
+  setTextContentByClass("hiking-duration",translations[lang].hiking.duration),
+  setTextContentByClass("hiking-price",translations[lang].hiking.price),
+  setTextContent("hh_descption_one",translations[lang].hiking.description_tour_1),
+  setTextContent("hh_descption_two",translations[lang].hiking.description_tour_2),
+  setTextContent("hh_descption_three",translations[lang].hiking.description_tour_3),
+  setTextContent("hiking-tour-page-heading",translations[lang].hiking.header),
+  setTextContent("hiking-tour-page-paragraph",translations[lang].hiking.paragraph),
+  
+  setTextContent("hiking_gallery_heading_1",translations[lang].hiking.gallery),
+  setTextContent("hiking_gallery_heading_2",translations[lang].hiking.gallery),
+  setTextContent("hiking_gallery_heading_3",translations[lang].hiking.gallery),
+  setTextContentByClass("included_lunch_two",translations[lang].two_nights_tours.included_lunch_two),
+  setTextContent("two_nights_gallery_heading_1",translations[lang].two_nights_tours.gallery),
+
+  setTextContent("two_nights_gallery_heading_2",translations[lang].two_nights_tours.gallery),
+  setTextContent("2nights-tour-page-heading",translations[lang].two_nights_tours.heading),
+  setTextContent("2night-paragraph",translations[lang].two_nights_tours.paragraph),
+  setTextContent("two_n_tour_one",translations[lang].two_nights_tours.tour_1),
+  setTextContent("two_n_tour_two",translations[lang].two_nights_tours.tour_2),
+  setTextContent("two_n_tour_tour_one",translations[lang].two_nights_tours.tour_2),
+  setTextContent("two_n_tour_tour_two",translations[lang].two_nights_tours.tour_2),
+  setTextContent("two_n_description_one",translations[lang].two_nights_tours.description_tour_1),
+  setTextContent("two_n_description_two",translations[lang].two_nights_tours.description_tour_2),
+  setTextContentByClass("included_camping_starts",translations[lang].two_nights_tours.included_camping_starts),
+  
+  setTextContent("highlight_1",translations[lang].two_nights_tours.highlight_1),
+  setTextContent("highlight_2",translations[lang].two_nights_tours.highlight_2),
+  setTextContent("highlight_3",translations[lang].two_nights_tours.highlight_3),
+  setTextContent("highlight_4",translations[lang].two_nights_tours.highlight_4),
+  setTextContent("highlight_5",translations[lang].two_nights_tours.highlight_5),
+  setTextContent("highlight_6",translations[lang].two_nights_tours.highlight_6),
+  setTextContent("highlight_7",translations[lang].two_nights_tours.highlight_7),
+  setTextContent("highlight_8",translations[lang].two_nights_tours.highlight_8),
+  setTextContent("highlight_9",translations[lang].two_nights_tours.highlight_9),
+  setTextContent("highlight_10",translations[lang].two_nights_tours.highlight_10),
+  
+  setTextContent("two_n_price_1",translations[lang].two_nights_tours.price_1),
+  setTextContent("two_n_price_2",translations[lang].two_nights_tours.price_2),
+  setTextContent("two_n_price_3",translations[lang].two_nights_tours.price_3),
+  setTextContent("two_n_price_4",translations[lang].two_nights_tours.price_4),
+  setTextContent("two_n_price_5",translations[lang].two_nights_tours.price_5),
+  setTextContent("two_n_price_6",translations[lang].two_nights_tours.price_6),
+  setTextContent("two_n_price_7",translations[lang].two_nights_tours.price_7),
+  setTextContent("two_n_price_8",translations[lang].two_nights_tours.price_8)
+
+  
+   
+
+  
+
+  
+
+
+
+
+  
+
 
 
 
