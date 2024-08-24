@@ -172,6 +172,9 @@ async function setLanguage(lang) {
   setTextContent("all_tours_parahraph_12",translations[lang].all_tours.tour_paragraph_12),
 
 
+  
+
+
 
 
 

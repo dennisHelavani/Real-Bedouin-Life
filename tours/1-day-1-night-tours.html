@@ -36,19 +36,27 @@
     <nav>
       <ul class="nav-links">
         <!-- <li id="first-child"><a href="#home">HOME</a></li> -->
-        <li><a href="../index.html#about">ABOUT</a></li>
+        <li><a href="../index.html#about" id="nav-about"></a></li>
         <li class="nav-item-dropdown">
-          <a href="all-tours.html" id="nav-tours"></a>
+          <a href="../all-tours.html" id="nav-tours"></a>
           <ul class="dropdown-menu">
-            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html" id ="nav-subtour1"></a></li>
-            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html" id ="nav-subtour2"></a></li>
-            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id ="nav-subtour3"></a></li>
-            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html" id ="nav-subtour4"></a></li>
-        </ul>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html"
+                id="nav-subtour1"></a></li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html"
+                id="nav-subtour2"></a></li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id="nav-subtour3"></a>
+            </li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html"
+                id="nav-subtour4"></a></li>
+          </ul>
         </li>
-        <li><a href="../index.html#faq">FAQ</a></li>
-        <li><a href="../contact.html">CONTACT</a></li>
-        <li><a href="../booking-form.html" id="book-tour">BOOK TOUR</a></li>
+        <li><a href="../index.html#faq" id="nav-faq"></a></li>
+        <li><a href="../contact.html" id="nav-contact"></a></li>
+        <li><a href="../booking-form.html" id="nav-book-tour"></a></li>
         <div class="language-selector">
           <select id="language-select">
             <option value="en">ENG</option>
@@ -69,13 +77,12 @@
     <div class="hero-text">
       <div class="hero-heading">
         <div class="hero-heading-wrap">
-
-          <h1 id="hero-heading-first">1 DAY & 1 NIGHT TOURS</h1>
-
+          <div class="hero-heading-first">
+            <h1 id="1day-1night-tour-page-heading"></h1>
+          </div>
         </div>
         <div class="hero-description">
-          <p>
-            Discover the magic of Wadi Rum
+          <p id="1day-tours-page-paragraph">
           </p>
         </div>
       </div>
@@ -85,26 +92,24 @@
   <section class="tour-content">
     <div class="tour-card">
       <div class="tour-card-content">
-        <h1 class="title">Tour 1</h2>
-          <p class="copy">Begin your journey with a half-day jeep tour, then settle into the desert for a magical night
-            under the stars</p><button class="btn" onclick="window.location.href = '#tour1';">View Tour</button>
+        <h1 class="title" id="tour_general_tour_1">
+          </h2>
+          <p class="copy" id="all_tours_parahraph_8"></p><button class="btn"
+            onclick="window.location.href = '#tour1';"></button>
       </div>
     </div>
     <div class="tour-card">
       <div class="tour-card-content">
-        <h2 class="title">Tour 2</h2>
-        <p class="copy">A full day of exploration followed by a cozy night in a desert camp, where the stars light up
-          the sky</p><button class="btn" onclick="window.location.href = '#tour2;'">View
-          Tour</button>
+        <h2 class="title" id="tour_general_tour_2"></h2>
+        <p class="copy" id="all_tours_parahraph_9"></p><button class="btn"
+          onclick="window.location.href = '#tour2;'"></button>
       </div>
     </div>
     <div class="tour-card">
       <div class="tour-card-content">
-        <h2 class="title">Tour 3</h2>
-        <p class="copy">An adventurous full day combining jeep tours and hiking, capped off with a serene night under
-          Wadi Rum’s starry canopy
-        </p><button class="btn" onclick="window.location.href = '#tour3';">View
-          Tour</button>
+        <h2 class="title" id="tour_general_tour_3"></h2>
+        <p class="copy" id="all_tours_parahraph_10">
+        </p><button class="btn" onclick="window.location.href = '#tour3';"></button>
       </div>
     </div>
     <!-- <div class="tour-card">
@@ -117,8 +122,8 @@
   <section class="tour-container" id="tour1">
     <div class="container">
       <div class="text-content">
-        <h2>Tour 1</h2>
-        <h3>Twilight Trails: Half-Day Jeep & Overnight</h3>
+        <h2 id="tour_tour_1"></h2>
+        <h3 id="all_tours_title_8"></h3>
         <img src="../images_resized/booking-2 PM (4).jpeg" id='tour-image'
           alt="Tourist lookign at Wadi Rum's Desert dunes" style="float: right;">
         <p>
@@ -160,68 +165,60 @@
 
 
           <div class='tour-list-wrapper'>
-            <h4>You Visit:</h4>
+            <h4 class="list_visit_header"></h4>
             <ul class="locations-list">
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khor Al Ajram Valley">Khor Al Ajram
-                Valley</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Lawrence’s Spring">Ain Abu Aina
-                (Lawrence’s Spring)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khazali Canyon">Wadi Khazali
-                (Khazali
-                Canyon)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Red Sand Dune">The Red Sand Dune
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khor Al Ajram Valley"><span
+                  class="visit_khor"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Lawrence’s Spring"><span
+                  class="visit_ain_abu"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Red Sand Dune"><span
+                  class="visit_red_sand"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Little Rock Bridge">The Little
-                Rock Bridge</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Anfishiyeh Inscriptions">Anfishiyeh
-                Inscriptions</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Umm Fruth Rock Bridge">Umm Fruth
-                Rock
-                Bridge</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Geber Amra Canyon">Geber Amra Canyon
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Little Rock Bridge"><span
+                  class="visit_little_rock"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Anfishiyeh Inscriptions"><span
+                  class="visit_anfishieyh"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Umm Fruth Rock Bridge"><span
+                  class="visit_umm_bridge"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Geber Amra Canyon"><span
+                  class="visit_geber_amra"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Abu Khashaba Canyon">Abu Khashaba
-                Canyon</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Sunset viewing">Sunset viewing</li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for "><span
+                  class="visit_khashaba"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Included:</h4>
+            <h4 class="list_price_included"></h4>
             <ul class="included-list">
-              <li><img src="../images_resized/icon-included.png" alt="Icon for Bedouin tea">Bedouin Tea</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for water">Water</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast">Breakfast</li>
-              <!-- <li><img src="../images_resized/icon-included.png" alt="Icon for lunch">Lunch</li> -->
-              <li><img src="../images_resized/icon-included.png" alt="Icon for dinner">Dinner</li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for Bedouin tea"><span
+                  class="included_tea"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for water"><span
+                  class="included_water"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast"><span
+                  class="included_breakfast"></span></li>
+              <!-- <li><img src="../images_resized/icon-included.png" alt="Icon for lunch"><span class="included_lunch"></span></li> -->
+              <li><img src="../images_resized/icon-included.png" alt="Icon for dinner"><span
+                  class="included_dinner"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Price:</h4>
+            <h4 class="list_price_header"></h4>
             <ul class="price-list">
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">1 Person 70
-                JOD
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span id="one_day_one_night_tour_price_1"></span>
               </li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">2-3 Person 50
-                JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">4-5 Person 40
-                JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">5+ Person 35
-                JOD</li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span id="one_day_one_night_tour_price_2"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span id="one_day_one_night_tour_price_3"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span id="one_day_one_night_tour_price_4"></span></li>
             </ul>
           </div>
 
           <div class='tour-list-wrapper'>
-            <h4>Highlights:</h4>
+            <h4 class="list_highlight_header"></h4>
             <ul class="price-list">
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting a scenic jeep tour">Scenic
-                jeep
-                tour through iconic Wadi Rum sites</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting exploration">Exploration of
-                Lawrence’s Spring, Khazali Canyon, and Red Sand Dunes</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting Bedouin tea and meals">Bedouin
-                tea, dinner, and breakfast included</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting overnight stay">Overnight stay
-                in the desert under the stars or in a comfortable camp</li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting a scenic jeep tour"><span id="one_day_one_night_h1"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting exploration"><span id="one_day_one_night_h2"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting Bedouin tea and meals"><span id="one_day_one_night_h3"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon highlighting overnight stay"><span id="one_day_one_night_h4"></span></li>
             </ul>
           </div>
         </div>
@@ -229,7 +226,7 @@
         <div class="action-container">
 
           <a href="../booking-form.html?category=one_d_one_n&tour=twilight-trails:-half-day-jeep-and-overnight"><button
-              class="book-button">Book Tour</button></a>
+              class="book-button"></button></a>
         </div>
       </div>
       <!-- <div class="image-content">
@@ -264,8 +261,8 @@
   <section class="tour-container" id="tour3">
     <div class="container">
       <div class="text-content">
-        <h2>Tour 2</h2>
-        <h3>Sunset to Sunrise: Full-Day Jeep & Camp</h3>
+        <h2 id="tour_tour_2"></h2>
+        <h3 id="all_tours_title_9"></h3>
         <img src="../images_resized/Khor Al Ajram Valley.jpeg" id="tour-image"
           alt="Scenic view of Khor Al Ajram Valley in Wadi Rum" style="float: right;">
 
@@ -284,7 +281,8 @@
           carvings. This passageway reveals stories from the past, etched into the rock walls. The jeep then brings you
           to the <span style="font-weight: bold;">Little Rock Bridge</span>, where the natural arch formation provides a
           stunning backdrop for photos.
-          Continuing on, you’ll explore the <span style="font-weight: bold;">Abu Khashaba Canyon</span>, a secluded spot
+          Continuing on, you’ll explore the <span style="font-weight: bold;"><span
+              class="visit_khashaba"></span></span>, a secluded spot
           where you can take a short hike through
           the canyon’s narrow passages.
           </br></br>
@@ -302,82 +300,84 @@
         <div class="tour-lists">
 
           <div class='tour-list-wrapper'>
-            <h4>You Visit:</h4>
+            <h4 class="list_visit_header"></h4>
             <ul class="locations-list">
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khor Al Ajram Valley">Khor Al Ajram
-                Valley</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Lawrence’s Spring">Ain Abu Aina
-                (Lawrence’s Spring)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khazali Canyon">Wadi Khazali
-                (Khazali
-                Canyon)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Red Sand Dune">The Red Sand Dune
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khor Al Ajram Valley"><span
+                  class="visit_khor"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Lawrence’s Spring"><span
+                  class="visit_ain_abu"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khazali Canyon"><span
+                  class="visit_wadi_khazali"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Red Sand Dune"><span
+                  class="visit_red_sand"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Little Rock Bridge">The Little
-                Rock Bridge</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Anfishiyeh Inscriptions">Anfishiyeh
-                Inscriptions</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Umm Fruth Rock Bridge">Umm Fruth
-                Rock
-                Bridge</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Geber Amra Canyon">Geber Amra Canyon
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Little Rock Bridge"><span
+                  class="visit_little_rock"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Anfishiyeh Inscriptions"><span
+                  class="visit_anfishieyh"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Umm Fruth Rock Bridge"><span
+                  class="visit_umm_bridge"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Geber Amra Canyon"><span
+                  class="visit_geber_amra"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Burdah Rock Bridge">Burdah Rock
-                Bridge
-                (largest natural arch)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khashaba Canyon">Khashaba Canyon
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Burdah Rock Bridge"><span
+                  class="visit_burda_rock"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khashaba Canyon"><span
+                  class="visit_khashaba"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon for South Desert">South Desert (optional
-                for a quieter experience)</li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon for South Desert"><span class="included_south_desert"></span></li>
             </ul>
           </div>
 
 
 
           <div class='tour-list-wrapper'>
-            <h4>Included:</h4>
+            <h4 class="list_price_included"></h4>
             <ul class="included-list">
-              <li><img src="../images_resized/icon-included.png" alt="Icon for Bedouin tea">Bedouin Tea</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for water">Water</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for sunset">Sunset</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for South Desert option">South Desert
-                (optional)</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast">Breakfast</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for lunch">Lunch</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for dinner">Dinner</li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for Bedouin tea"><span
+                  class="included_tea"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for water"><span
+                  class="included_water"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for sunset"><span
+                  class="included_sunset"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for South Desert option"><span
+                  class="included_south_desert"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast"><span
+                  class="included_breakfast"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for lunch"><span
+                  class="included_lunch"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for dinner"><span
+                  class="included_dinner"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Price:</h4>
+            <h4 class="list_price_header"></h4>
             <ul class="price-list">
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">1 Person 90
-                JOD
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span
+                  id="one_day_one_night_tour_price_5"></span>
               </li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">2-3 Person 50
-                JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">4-5 Person 40
-                JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details">5+ Person 35
-                JOD</li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span
+                  id="one_day_one_night_tour_price_6"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span
+                  id="one_day_one_night_tour_price_7"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon representing pricing details"><span
+                  id="one_day_one_night_tour_price_8"></span></li>
             </ul>
           </div>
 
           <div class='tour-list-wrapper'>
-            <h4>Highlights:</h4>
+            <h4 class="list_highlight_header"></h4>
             <ul class="price-list">
               <li><img src="../images_resized/icon-price-list.png"
-                  alt="Icon highlighting a comprehensive jeep tour">Comprehensive jeep tour covering all major Wadi Rum
-                sites</li>
+                  alt="Icon highlighting a comprehensive jeep tour"><span id="one_day_one_night_h5"></span></li>
               <li><img src="../images_resized/icon-price-list.png"
-                  alt="Icon highlighting exploration of natural sites">Exploration of Burdah Rock Bridge, Khazali
-                Canyon, and Mushroom Rock</li>
+                  alt="Icon highlighting exploration of natural sites"><span id="one_day_one_night_h6"></span></li>
               <li><img src="../images_resized/icon-price-list.png"
-                  alt="Icon highlighting sunset and sunrise viewing">Sunset and sunrise viewing in the desert</li>
+                  alt="Icon highlighting sunset and sunrise viewing"><span id="one_day_one_night_h7"></span></li>
               <li><img src="../images_resized/icon-price-list.png"
-                  alt="Icon highlighting included meals and Bedouin tea">Bedouin tea, lunch, dinner, and breakfast
-                included</li>
+                  alt="Icon highlighting included meals and Bedouin tea"><span id="one_day_one_night_h8"></span></li>
               <li><img src="../images_resized/icon-price-list.png"
-                  alt="Icon highlighting overnight stay options">Overnight stay under the stars or in a Bedouin camp
+                  alt="Icon highlighting overnight stay options"><span id="one_day_one_night_h9"></span>
               </li>
             </ul>
           </div>
@@ -386,7 +386,7 @@
         <div class="action-container">
 
           <a href="../booking-form.html?category=one_d_one_n&tour=sunset-to-sunrise:-full-day-jeep-and-camp"><button
-              class="book-button">Book Tour</button></a>
+              class="book-button"></button></a>
         </div>
       </div>
       <!-- <div class="image-content">
@@ -416,167 +416,12 @@
       </div>
     </div>
   </section>
-  <!-- <section class="tour-container" id="tour3">
-    <div class="container">
-      <div class="text-content">
-        <h2>Tour 3</h1>
-          <h3>Desert Dreams: Jeep Tour, Hike & Night Under Stars</h3>
-          <img src="../images_resized/2d t1.jpg" id="tour-image" alt="Tourists enjoying a desert landscape view"
-            style="float: right;">
-          <p>
-            Embark on an unforgettable journey through the heart of Wadi Rum, where the rugged beauty of the desert is
-            paired with thrilling adventures and tranquil moments. This two-day, two-night experience offers the perfect
-            blend of exploration and relaxation, with jeep tours, scenic hikes, and starlit nights in the desert.
-            </br></br>
-            <span style="font-weight: bold;">Day 1: Jeep Tour & First Night in the Desert</span></br>
-            Your adventure begins with a full-day <span style="font-weight: bold;">jeep tour</span> that takes you deep
-            into the mesmerizing landscapes of Wadi Rum. The journey starts at <span style="font-weight: bold;">Khor Al
-              Ajram Valley</span>, where towering cliffs and expansive sand plains set the stage for the epic adventure
-            ahead. The first stop is <span style="font-weight: bold;">Lawrence’s Spring</span>, a historic site rich in
-            both natural beauty and cultural significance. Here, you’ll learn about the legendary Lawrence of Arabia and
-            the Bedouin tribes who have lived in this harsh but beautiful environment for centuries.
-            </br> </br>
-            Next, you’ll venture to <span style="font-weight: bold;">Wadi Khazali (Khazali Canyon)</span>, a narrow
-            gorge adorned with ancient petroglyphs and inscriptions that tell the stories of the desert’s early
-            inhabitants. As you navigate the canyon’s winding passageways, you’ll be captivated by the sense of history
-            and mystery that permeates the air. The tour continues to the iconic <span style="font-weight: bold;">Red
-              Sand Dune</span>, where you can climb to the top for breathtaking views of the desert. This is a perfect
-            spot to capture stunning photos and appreciate the vastness of Wadi Rum.
-            </br> </br>
-            The adventure doesn’t stop there. You’ll visit the natural wonders of <span
-              style="font-weight: bold;">Little Rock Bridge</span> and <span style="font-weight: bold;">Umm Fruth Rock
-              Bridge</span>, where centuries of wind and erosion have sculpted incredible rock formations. These sites
-            offer unique opportunities for exploration and photography. The jeep tour also includes stops at remote
-            areas, where you can enjoy the solitude and silence of the desert while savoring a traditional Bedouin
-            lunch.
-            </br> </br>
-            As the sun begins to set, you’ll arrive at your desert camp, where warm <span
-              style="font-weight: bold;">Bedouin hospitality</span> awaits. Relax with a cup of sweet tea and enjoy a
-            traditional dinner around a crackling campfire. The evening offers a chance to gaze at the night sky, filled
-            with countless stars that illuminate the desert in a soft, ethereal glow. You can choose to sleep in a cozy
-            Bedouin tent or under the open sky, surrounded by the tranquil beauty of the desert.
-            </br> </br>
-            <span style="font-weight: bold;">Day 2: Scenic Hike & Second Night in the Desert</span></br>
-            The second day begins with a hearty breakfast to prepare you for a full day of hiking. The hike starts with
-            a trek to <span style="font-weight: bold;">Jebel Al Hash</span>, a challenging climb that offers panoramic
-            views of the desert. As you ascend, you’ll pass through varied terrain, from sandy plains to rocky outcrops,
-            showcasing the diverse landscapes of Wadi Rum. The summit rewards you with a stunning vista that stretches
-            as far as the eye can see, a true highlight of the journey.
-            </br> </br>
-            After descending from Jebel Al Hash, the hike continues through the serene and secluded <span
-              style="font-weight: bold;">Khashaba Canyon</span>, a place of profound peace and beauty. Here, you can
-            enjoy a packed lunch amidst the stunning scenery, with plenty of time to relax and take in the sights and
-            sounds of the desert. The hike offers a deeper connection to the natural world, away from the usual tourist
-            paths, allowing you to experience Wadi Rum in its purest form.
-            </br> </br>
-            As the day draws to a close, you’ll return to your camp for a second night under the stars. Enjoy a
-            delicious dinner and another opportunity to stargaze in the clear desert sky, reflecting on the day’s
-            adventures.
-            </br> </br>
-            <span style="font-weight: bold;">Day 3: Morning Departure</span></br>
-            On the third day, wake up to the peaceful sounds of the desert and enjoy a final breakfast at your camp.
-            After packing up, you’ll have time for a short walk or simply relax before heading back to your starting
-            point, leaving Wadi Rum with unforgettable memories of your desert duo adventure.
-          </p>
-          <div class="tour-lists">
-            <div class='tour-list-wrapper'>
-              <h4>Highlights:</h4>
-              <ul class="price-list">
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for jeep tour">Full-day <span
-                    style="font-weight: bold;">jeep tour</span> covering iconic and remote Wadi Rum sites</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for Bedouin camp">Two nights in a Bedouin
-                  camp with dinner and stargazing</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for hiking">Full-day <span
-                    style="font-weight: bold;">hike</span> to <span style="font-weight: bold;">Jebel Al Hash</span> and
-                  through <span style="font-weight: bold;">Khashaba Canyon</span></li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for included meals"> <span
-                    style="font-weight: bold;">Bedouin tea</span>, lunch, dinner, and breakfast included</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for views and petroglyphs">Stunning views,
-                  ancient petroglyphs, and natural rock formations</li>
-              </ul>
-            </div>
-            <div class='tour-list-wrapper'>
-              <h4>Price:</h4>
-              <ul class="price-list">
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for pricing details">1 Person 90 JOD</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for pricing details">2-3 Person 50 JOD</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for pricing details">4-5 Person 40 JOD</li>
-                <li><img src="../images_resized/icon-price-list.png" alt="Icon for pricing details">5+ Person 35 JOD</li>
-              </ul>
-            </div>
-            <div class='tour-list-wrapper'>
-              <h4>You Visit:</h4>
-              <ul class="locations-list">
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khor Al Ajram Valley">Khor Al Ajram
-                  Valley</li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for Lawrence’s Spring">Ain Abu Aina
-                  (Lawrence’s Spring)</li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khazali Canyon">Wadi Khazali
-                  (Khazali Canyon)</li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Red Sand Dune">The Red Sand Dune
-                </li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for The Little Rock Bridge">The Little
-                  Rock Bridge</li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for Umm Fruth Rock Bridge">Umm Fruth
-                  Rock Bridge</li>
-                  <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Full-day hike to Jebel Al
-                    Hash</li>
-                <li><img src="../images_resized/icon-location-list.png" alt="Icon for Khashaba Canyon">Khashaba Canyon
-                </li>
-              </ul>
-            </div>
-            <div class='tour-list-wrapper'>
-              <h4>Included:</h4>
-              <ul class="included-list">
-                <li><img src="../images_resized/icon-included.png" alt="Icon for Bedouin tea">Bedouin Tea</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for water">Water</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for sunset">Sunset</li>
-                <li><img src="../images_resized/icon-included.png" alt="Icon for meals included">Lunch, dinner, breakfast,
-                  and water!</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="action-container">
-            <a href="../booking-form.html?category=one_d_one_n&tour=jeep-tour,-hiking,-and-a-night-in-the-camp"><button
-                class="book-button">Book Tour</button></a>
-          </div>
-      </div>
-       <div class="image-content">
-        <img src="../images_resized/1d t5.jpg" alt=""> 
-    </div>
-    </div>
-  </section>
-
-  <section class="gallery">
-    <h3 id="gallery_heading">GALLERY</h3>
-    <div class="row">
-      <div class="column">
-        <img src="../images_resized/red dunes 3.jpeg" alt="Red sand dunes in Wadi Rum"
-          style="width: 100%; object-fit: cover;" />
-        <img src="../images_resized/surfing.jpg" alt="Person surfing on a sand dune"
-          style="width: 100%; object-fit: cover;" />
-      </div>
-      <div class="column">
-        <img src="../images_resized/camel ride. 1.jpg" alt="Camel ride in the desert"
-          style="width: 100%; object-fit: cover;" />
-        <img src="../images_resized/Lawrences's Spring.jpeg" alt="Lawrence’s Spring with desert landscape"
-          style="width: 100%; object-fit: cover;" />
-      </div>
-      <div class="column">
-        <img src="../images_resized/sunset2.jpg" alt="Sunset view over the desert"
-          style="width: 100%; object-fit: cover;" />
-        <img src="../images_resized/WadiRum1.jpeg" alt="View of Wadi Rum landscape"
-          style="width: 100%; object-fit: cover;" />
-      </div>
-    </div>
-  </section> -->
 
   <section class="tour-container" id="tour3">
     <div class="container">
       <div class="text-content">
-        <h2>Tour 3</h2>
-        <h3>Epic Expedition: Jeep Tour, Camp, and Full-Day Hike</h3>
+        <h2 id="tour_tour_3"></h2>
+        <h3 id="all_tours_title_10"></h3>
         <img src="../images_resized/2d t1.jpg" id='tour-image' alt="Wide view of the Red Sand Dunes in Wadi Rum"
           style="float: right;">
         <p>
@@ -628,72 +473,78 @@
           peace that comes from exploring its remote corners.
         </p>
         <div class="tour-lists">
-          
-         
+
+
           <div class='tour-list-wrapper'>
-            <h4>You Visit:</h4>
+            <h4 class="list_visit_header"></h4>
             <ul class="locations-list">
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Khor Al Ajram Valley
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_khor"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Ain Abu Aina (Lawrence’s
-                Spring)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Wadi Khazali (Khazali
-                Canyon)</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> The Red Sand Dune</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> The Little Rock Bridge
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_ain_abu"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_wadi_khazali"></span> </li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_red_sand"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_little_rock"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_umm_bridge"></span>
               </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Umm Fruth Rock Bridge
-              </li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Burdah Rock Bridge, the
-                largest natural arch in Wadi Rum</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Full-day hike to Jebel
-                Al
-                Hash</li>
-              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"> Khashaba Canyon</li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_burda_rock"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_jebel_al_hash"></span></li>
+              <li><img src="../images_resized/icon-location-list.png" alt="Icon location list"><span
+                  class="visit_khashaba"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Included:</h4>
+            <h4 class="list_price_included"></h4>
             <ul class="included-list">
-              <li><img src="../images_resized/icon-included.png" alt="Icon included"> Bedouin Tea</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon included"> Water</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon included"> Sunset viewing</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast">Breakfast</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for lunch">Lunch</li>
-              <li><img src="../images_resized/icon-included.png" alt="Icon for dinner">Dinner</li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon included"><span class="included_tea"></span>
+              </li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon included"><span
+                  class="included_water"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon included"><span
+                  class="included_sunset"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for breakfast"><span
+                  class="included_breakfast"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for lunch"><span
+                  class="included_lunch"></span></li>
+              <li><img src="../images_resized/icon-included.png" alt="Icon for dinner"><span
+                  class="included_dinner"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Price:</h4>
+            <h4 class="list_price_header"></h4>
             <ul class="price-list">
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> 1 Person 140 JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> 2-3 Person 120 JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> 4-5 Person 100 JOD</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> 5+ Person 80 JOD</li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span
+                  id="one_day_one_night_tour_price_9"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span
+                  id="one_day_one_night_tour_price_10"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span
+                  id="one_day_one_night_tour_price_11"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span
+                  id="one_day_one_night_tour_price_12"></span></li>
             </ul>
           </div>
           <div class='tour-list-wrapper'>
-            <h4>Highlights:</h4>
+            <h4 class="list_highlight_header"></h4>
             <ul class="price-list">
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> Full-day jeep tour covering
-                iconic and remote Wadi Rum sites</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> Overnight stay in a Bedouin
-                camp
-                with dinner and stargazing</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> Full-day hike to Jebel Al Hash
-                and through Khashaba Canyon</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> Bedouin tea, lunch, dinner,
-                and
-                breakfast included</li>
-              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"> Stunning views, ancient
-                petroglyphs, and natural rock formations</li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span id="one_day_one_night_h10"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span id="one_day_one_night_h11"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span id="one_day_one_night_h12"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span id="one_day_one_night_h13"></span></li>
+              <li><img src="../images_resized/icon-price-list.png" alt="Icon price list"><span id="one_day_one_night_h14"></span></li>
             </ul>
           </div>
         </div>
 
         <div class="action-container">
           <a href="../booking-form.html?category=one_d_one_n&tour=epic-expedition:-jeep-tour,-camp,-and-full-day-hikes"><button
-              class="book-button">Book Tour</button></a>
+              class="book-button"></button></a>
         </div>
       </div>
       <!-- <div class="image-content">
@@ -729,18 +580,15 @@
   <section class="cta" id="cta">
     <div class="cta-container">
       <div class="cta-content">
-        <h2>Want to experience all that Wadi Rum has to offer?</h2>
-        <p>Book your unforgettable tour in Wadi Rum Desert now!</p>
-        <button class="cta-button" onclick="window.location.href='booking.html'">
-          Book a Tour
+        <h2 id="cta-heading"></h2>
+        <p id="cta-paragraph"></p>
+        <button class="cta-button" onclick="window.location.href='booking.html'" id="cta-button">
+
         </button>
       </div>
-      <!-- <div class="cta-image">
-              <img src="images/bedouin_1.jpeg" alt="Wadi Rum Desert">
-          </div> -->
+
     </div>
   </section>
-
   <footer style="
         background-color: #fff;
        
@@ -748,10 +596,10 @@
         color: #d89f6f;
       ">
     <div style="margin-bottom: 10px">
-      <a href="../index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Home</a>
-      <a href="../all_tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Tours</a>
-      <a href="../index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px">About</a>
-      <a href="../contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px">Contact</a>
+      <a href="../index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home"></a>
+      <a href="../all_tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours"></a>
+      <a href="../index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about"></a>
+      <a href="../contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact"></a>
     </div>
 
     <div style="margin-bottom: 10px">
@@ -768,8 +616,7 @@
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="../images/tripadvisor.png"
           title="Tripadvisor" alt="Visit is on Tripadvisor" /></a>
     </div>
-    <div style="font-size: 14px">
-      &copy; 2024 Real Bedouin Life. All rights reserved.
+    <div style="font-size: 14px" id="copyright">
     </div>
   </footer>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->

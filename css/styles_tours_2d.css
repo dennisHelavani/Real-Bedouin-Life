@@ -291,11 +291,23 @@ select:focus {
     text-align: left;
 }
 
-#hero-heading-first {
-    font-size: clamp(2rem, 7.5vw, 10rem);
-    letter-spacing: 2px;
-    /* font-size: 80px; */
+.hero-heading-wrap {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+
+.heading-name-rum {
+    text-align: left;
+}
+
+.hero-heading-first h1 {
+    color: var(--h1-c);
+    letter-spacing: 5px;
+    font-size: clamp(2rem, 8vw, 12rem);
+}
+
 
 
 .hero-heading-desert {
@@ -663,6 +675,10 @@ select:focus {
 .tour-list-wrapper{
    width: 95%;
    text-align: justify;
+}
+.tour-lists li{
+    align-items: center;
+    display: flex;
 }
 
 .text-content ul {
