@@ -108,6 +108,8 @@ async function setLanguage(lang) {
   setTextContent("footer-tours", translations[lang].footer.tours);
   setTextContent("footer-about", translations[lang].footer.about);
   setTextContent("footer-contact", translations[lang].footer.contact);
+  setTextContent("footer-book", translations[lang].footer.book);
+  setTextContent("footer-faq", translations[lang].footer.faq);
 
   setTextContent("contact-page-heading", translations[lang].contact_page.header);
   setTextContent("contact-page-paragraph", translations[lang].contact_page.paragraph);

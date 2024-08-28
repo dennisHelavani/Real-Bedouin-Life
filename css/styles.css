@@ -410,6 +410,7 @@ select:focus {
 .faq h2,
 .spinner h2 {
     color: var(--h1-c);
+     text-transform: uppercase;
     text-transform: uppercase;
     font-weight: var(--h1-w);
     font-size: var(--h1-fs);
@@ -1034,6 +1035,7 @@ select:focus {
     margin: 0 0 20px;
     opacity: 1 !important;
     z-index: 2;
+    text-transform: uppercase;
 }
 
 .cta-content p {

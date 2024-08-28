@@ -108,6 +108,8 @@ async function setLanguage(lang) {
   setTextContent("footer-tours", translations[lang].footer.tours);
   setTextContent("footer-about", translations[lang].footer.about);
   setTextContent("footer-contact", translations[lang].footer.contact);
+  setTextContent("footer-book", translations[lang].footer.book);
+  setTextContent("footer-faq", translations[lang].footer.faq);
 
   setTextContent("contact-page-heading", translations[lang].contact_page.header);
   setTextContent("contact-page-paragraph", translations[lang].contact_page.paragraph);
@@ -224,15 +226,15 @@ async function setLanguage(lang) {
   setTextContent("one_day_one_night_tour_price_1",translations[lang].one_day_one_night_tours.price_1),
   setTextContent("one_day_one_night_tour_price_2",translations[lang].one_day_one_night_tours.price_2),
   setTextContent("one_day_one_night_tour_price_3",translations[lang].one_day_one_night_tours.price_3),
-  setTextContent("one_day_one_night_tour_price_4",translations[lang].one_day_one_night_tours.price_4),
+  // setTextContent("one_day_one_night_tour_price_4",translations[lang].one_day_one_night_tours.price_4),
   setTextContent("one_day_one_night_tour_price_5",translations[lang].one_day_one_night_tours.price_5),
   setTextContent("one_day_one_night_tour_price_6",translations[lang].one_day_one_night_tours.price_6),
   setTextContent("one_day_one_night_tour_price_7",translations[lang].one_day_one_night_tours.price_7),
-  setTextContent("one_day_one_night_tour_price_8",translations[lang].one_day_one_night_tours.price_8),
+  // setTextContent("one_day_one_night_tour_price_8",translations[lang].one_day_one_night_tours.price_8),
   setTextContent("one_day_one_night_tour_price_9",translations[lang].one_day_one_night_tours.price_9),
   setTextContent("one_day_one_night_tour_price_10",translations[lang].one_day_one_night_tours.price_10),
   setTextContent("one_day_one_night_tour_price_11",translations[lang].one_day_one_night_tours.price_11),
-  setTextContent("one_day_one_night_tour_price_12",translations[lang].one_day_one_night_tours.price_12),
+  // setTextContent("one_day_one_night_tour_price_12",translations[lang].one_day_one_night_tours.price_12),
 
 
 
@@ -302,7 +304,7 @@ async function setLanguage(lang) {
   setTextContent("2night-paragraph",translations[lang].two_nights_tours.paragraph),
   setTextContent("two_n_tour_one",translations[lang].two_nights_tours.tour_1),
   setTextContent("two_n_tour_two",translations[lang].two_nights_tours.tour_2),
-  setTextContent("two_n_tour_tour_one",translations[lang].two_nights_tours.tour_2),
+  setTextContent("two_n_tour_tour_one",translations[lang].two_nights_tours.tour_1),
   setTextContent("two_n_tour_tour_two",translations[lang].two_nights_tours.tour_2),
   setTextContent("two_n_description_one",translations[lang].two_nights_tours.description_tour_1),
   setTextContent("two_n_description_two",translations[lang].two_nights_tours.description_tour_2),
@@ -322,11 +324,11 @@ async function setLanguage(lang) {
   setTextContent("two_n_price_1",translations[lang].two_nights_tours.price_1),
   setTextContent("two_n_price_2",translations[lang].two_nights_tours.price_2),
   setTextContent("two_n_price_3",translations[lang].two_nights_tours.price_3),
-  setTextContent("two_n_price_4",translations[lang].two_nights_tours.price_4),
+  // setTextContent("two_n_price_4",translations[lang].two_nights_tours.price_4),
   setTextContent("two_n_price_5",translations[lang].two_nights_tours.price_5),
   setTextContent("two_n_price_6",translations[lang].two_nights_tours.price_6),
   setTextContent("two_n_price_7",translations[lang].two_nights_tours.price_7),
-  setTextContent("two_n_price_8",translations[lang].two_nights_tours.price_8)
+  // setTextContent("two_n_price_8",translations[lang].two_nights_tours.price_8)
 
   
    

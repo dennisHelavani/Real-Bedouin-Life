@@ -42,7 +42,7 @@
     "spinner_heading": "WHAT YOU WILL SEE",
     "spinner_title_1": "Red Dune",
     "spinner_title_2": "Lawrence's Spring",
-    "spinner_title_3": "Burdah Rock Bridge",
+    "spinner_title_3": "Um Fruth Bridge",
     "spinner_title_4": "Khazali Canyon",
     "spinner_title_5": "Mushroom Rock"
   },
@@ -72,14 +72,16 @@
   "cta": {
     "heading": "Book Your Adventure in Wadi Rum Today!",
     "paragraph": "Create memories for the rest of your life",
-    "button": "Book The Tour"
+    "button": "Book A Tour"
   },
 
   "footer": {
     "home": "Home",
     "tours": "Tours",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq":"FaQ",
+    "book":"Book"
   },
   "copy_right": "© 2024 Wadi Rum Sha'ar Night. All rights reserved.",
   "contact_page": {
@@ -195,18 +197,15 @@
   },
   "one_day_one_night_tours": {
     "heading": "1 Day & 1 Night Tours",
-    "price_1": "1 Person 70 JOD",
-    "price_2": "2-3 Person 50 JOD",
-    "price_3": "4-5 Person 40 JOD",
-    "price_4": "5+ Person 35 JOD",
-    "price_5": "1 Person 90 JOD",
-    "price_6": "2-3 Person 50 JOD",
-    "price_7": "4-5 Person 40 JOD",
-    "price_8": "5+ Person 35 JOD",
-    "price_9": "1 Person 140 JOD",
-    "price_10": "2-3 Person 120 JOD",
-    "price_11": "4-5 Person 100 JOD",
-    "price_12": "5+ Person 80 JOD",
+    "price_1": "1 Person 75 JOD",
+    "price_2": "2-3 Person 70 JOD",
+    "price_3": "4-5 Person 65 JOD",
+    "price_5": "1 Person 85 JOD",
+    "price_6": "2-3 Person 80 JOD",
+    "price_7": "4-5 Person 75 JOD",
+    "price_9": "1 Person 110 JOD",
+    "price_10": "2-3 Person 100 JOD",
+    "price_11": "4-5 Person 90 JOD",
     "list_highlight_header": "Highlights:",
     "highlight_1": "Scenic jeep tour through iconic Wadi Rum sites",
     "highlight_2": "Exploration of Lawrence’s Spring, Khazali Canyon, and Red Sand Dunes",
@@ -214,12 +213,12 @@
     "highlight_4": "Overnight stay in the desert under the stars or in a comfortable camp",
     "highlight_5": "Comprehensive jeep tour covering all major Wadi Rum sites",
     "highlight_6": "Exploration of Burdah Rock Bridge, Khazali Canyon, and Mushroom Rock",
-    "highlight_7": "Sunset and sunrise viewing in the desert",
+    "highlight_7": "Sunset viewing in the desert",
     "highlight_8": "Bedouin tea, lunch, dinner, and breakfast included",
     "highlight_9": "Overnight stay under the stars or in a Bedouin camp",
     "highlight_10": "Full-day jeep tour covering iconic and remote Wadi Rum sites",
     "highlight_11": "Overnight stay in a Bedouin camp with dinner and stargazing",
-    "highlight_12": "Full-day hike to Jebel Al Hash and through Khashaba Canyon",
+    "highlight_12": "Full-day hike",
     "highlight_13": "Bedouin tea, lunch, dinner, and breakfast included",
     "highlight_14": "Stunning views, ancient petroglyphs, and natural rock formations",
     "description_tour_1": "Step into the enchanting Wadi Rum desert with a half-day jeep tour, perfect for those arriving in the late afternoon or evening. As you begin your journey, the desert's golden hues begin to shift as the sun starts to set, casting a magical glow over the rugged landscape. Your adventure kicks off with a visit to <span style=\"font-weight: bold;\">Khor Al Ajram Valley</span>, where you'll traverse through wide-open expanses surrounded by towering sandstone cliffs. The jeep takes you to <span style=\"font-weight: bold;\">Lawrence’s Spring</span>, a historic site with natural water sources where you can enjoy a serene pause. From here, the route leads to <span style=\"font-weight: bold;\">Wadi Khazali (Khazali Canyon)</span>, a narrow gorge adorned with ancient inscriptions and petroglyphs that tell stories of the desert's past inhabitants. </br></br> The journey continues to the <span style=\"font-weight: bold;\">Red Sand Dune</span>, where you can climb to the top for a panoramic view of the surrounding desert. The route then brings you to the <span style=\"font-weight: bold;\">Little Rock Bridge</span>, a natural sandstone arch, and <span style=\"font-weight: bold;\">Anfishiyeh Inscriptions</span>, where centuries-old carvings in the rock are a testament to the region’s rich history. Next, you'll traverse the <span style=\"font-weight: bold;\">Umm Fruth Rock Bridge</span>, a larger and more iconic arch that offers an exhilarating opportunity for a short climb. </br></br> As the day draws to a close, you'll witness the sunset over the dunes, painting the desert in a palette of reds and purples. After a day of exploration, unwind with a warm Bedouin tea by a crackling fire, followed by a hearty Bedouin dinner. You’ll spend the night under a canopy of stars or in a cozy desert camp, lulled to sleep by the tranquil sounds of the desert. Wake up to a peaceful morning and enjoy a delicious breakfast surrounded by the serene beauty of the desert, completing a truly unforgettable experience.",
@@ -259,14 +258,12 @@
     "highlight_9":"One night in the desert with options to sleep under the stars or in Bedouin tents",
     "highlight_10":"Traditional Bedouin tea, lunch, dinner, and breakfast included",
     "included_camping_starts":"Camping under the stars or in Bedouin tents",
-    "price_1":"1 Person 200 JOD",
-    "price_2":"2-3 Persons 50 JOD",
-    "price_3":"4-5 Persons 40 JOD",
-    "price_4":"5+ Persons 35 JOD",
-    "price_5":"1 Person 140 JOD",
-    "price_6":"2-3 Persons 50 JOD",
-    "price_7":"4-5 Persons 40 JOD",
-    "price_8":"5+ Persons 35 JOD"
+    "price_1":"1 Person 190 JOD",
+    "price_2":"2-3 Persons 170 JOD",
+    "price_3":"4-5 Persons 150 JOD",
+    "price_5":"1 Person 190 JOD",
+    "price_6":"2-3 Persons 170 JOD",
+    "price_7":"4-5 Persons 150 JOD"
 
 }
 }

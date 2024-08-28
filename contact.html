@@ -45,11 +45,19 @@
         <li class="nav-item-dropdown">
           <a href="all-tours.html" id="nav-tours"></a>
           <ul class="dropdown-menu">
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html" id ="nav-subtour1"></a></li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html" id ="nav-subtour2"></a></li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id ="nav-subtour3"></a></li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html" id ="nav-subtour4"></a></li>
-        </ul>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html"
+                id="nav-subtour1"></a></li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html"
+                id="nav-subtour2"></a></li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id="nav-subtour3"></a>
+            </li>
+            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html"
+                id="nav-subtour4"></a></li>
+          </ul>
         </li>
         <li><a href="index.html#faq" id="nav-faq"></a></li>
         <!-- <li><a href="contact.html">CONTACT</a></li> -->
@@ -164,21 +172,17 @@
       ">
     <div style="margin-bottom: 10px">
       <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home"></a>
-      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours"></a>
       <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about"></a>
-      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact"></a>
+      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours"></a>
+      <a href="index.html#faq" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-faq"></a>
+      <a href="booking-form.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-book"></a>
     </div>
 
     <div style="margin-bottom: 10px">
-      <a href="https://www.facebook.com" target="_blank"
+      <a href="https://www.instagram.com" target="_blank"
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/instagram.png" title="Instagram"
           alt="Visit is on Instagram" /></a>
-      <a href="https://www.instagram.com" target="_blank"
-        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/facebook.png" title="Facebook"
-          alt="Visit is on Facebook" /></a>
-      <!-- <a href="https://www.twitter.com" target="_blank"
-        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/telegram.png" title="Telegram"
-          alt="Visit is on Telegram" /></a> -->
+
       <a href="https://www.tripadvisor.com" target="_blank"
         style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/tripadvisor.png"
           title="Tripadvisor" alt="Visit is on Tripadvisor" /></a>
@@ -190,7 +194,7 @@
   <script src="translations.js"></script>
   <script src="script_tours.js"></script>
   <script>
-        window.onload = async function () {
+    window.onload = async function () {
       await setLanguage(getCurrentLanguage()); // Set the language first
       setDropdownValues(); // This will also call updateSubTourOptions
     };
