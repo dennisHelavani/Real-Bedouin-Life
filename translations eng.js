@@ -25,7 +25,7 @@ async function loadTranslation(lang) {
   let basePath = `/${lang}/`;
 
   try {
-    const response = await fetch(`${lang}.json`);
+    const response = await fetch(`en/${lang}.json`);
     if (!response.ok) {
       throw new Error(`Could not load ${lang}.json`);
     }
