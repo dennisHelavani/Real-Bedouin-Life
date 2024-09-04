@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Desert Adventure | WADI RUM Sha'ar Night</title>
+  <meta name="description"
+    content="Secure your spot for an unforgettable desert adventure with WADI RUM Sha'ar Night. Book your tour now with options for jeep tours, camel rides, and more.">
+  <meta name="keywords"
+    content="Wadi Rum, camping wadi rum, wadi rum hiking, Wadi Rum jeep tours, camel rides, desert tours, Wadi Rum tours, Wadi Rum guided tours">
+  <link rel="stylesheet" href="../css/style_tour.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+  <script>
+    (function () {
+      emailjs.init("6CJDRuO8JLdMRqW1L"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
+    })();
+  </script>
+  <script src="../translations.js"></script>
+</head>
+
+<body>
+  <header id="navbar">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <img src="../images/logo_1.png" alt="WADI RUM Sha'ar Night Logo" />
+      </div>
+      <div class="logo-name-container">
+        <p id="logo-name-part-one">WADI RUM</p>
+        <p id="logo-name-part-two">SHA'AR NIGHT</p>
+      </div>
+    </a>
+
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <nav>
+      <ul class="nav-links">
+        <li id="first-child"><a href="index.html" id="nav-home"></a></li>
+        <li><a href="index.html#about" id="nav-about"></a></li>
+        <li class="nav-item-dropdown">
+          <a href="all-tours.html" id="nav-tours"></a>
+          <ul class="dropdown-menu">
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html"
+                id="nav-subtour1"></a></li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html"
+                id="nav-subtour2"></a></li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id="nav-subtour3"></a>
+            </li>
+            <li><img src="../images_resized/icon-mountain.png" alt="Icon incluced"><a
+                href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html"
+                id="nav-subtour4"></a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#faq" id="nav-faq"></a></li>
+        <li><a href="contact.html" id="nav-contact"></a></li>
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">ENG</option>
+            <option value="de">DE</option>
+            <option value="esp">ESP</option>
+            <option value="it">IT</option>
+            <option value="fr">FR</option>
+            <!-- Add more languages here -->
+          </select>
+        </div>
+        <!-- <li><a href="booking-form.html" id="book-tour">BOOK TOUR</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="overlay"></div>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <div class="hero-heading">
+        <div class="hero-heading-wrap">
+          <div class="hero-heading-first">
+            <h1 id="booking-page-heading"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="hero-description">
+        <p id="booking-page-paragraph">
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-container" id="contact" style="padding-top: 50px;">
+
+    <div class="image-content">
+      <div class="image-grid">
+        <img src="../images_resized/wadi rum.jpeg" alt="Scenic view of Wadi Rum desert" class="img1-contact" />
+        <img src="../images_resized/background-picture-4.jpeg" alt="Desert landscape of Wadi Rum" class="img2-contact" />
+        <img src="../images_resized/booking 3 Burdah Rock Bridge (1).jpg" alt="Burdah Rock Bridge in Wadi Rum"
+          class="img3-contact" />
+      </div>
+    </div>
+
+    <div class="right-col">
+      <h1 id="booking-page-cta"></h1>
+      <form id="booking-form">
+        <!-- <h1>Book Your Tour</h1> -->
+        <label for="first-name" id="contact-page-full-name"></label>
+        <input type="text" id="first-name" name="first-name" required placeholder="Name">
+
+        <label for="email" id="contact-page-email-address"></label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+        <label for="main-tour" id="booking-page-tour-type-heading"></label>
+        <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
+          <option value="one_d" id="tour_type_1"></option>
+          <option value="one_d_one_n" id="tour_type_2"></option>
+          <option value="hiking" id="tour_type_3"></option>
+          <option value="two_d_two_n" id="tour_type_4"></option>
+
+
+        </select>
+
+        <label for="sub-tour" aria-placeholder="Select Tour" id="sub-tour-heading">Select Tour</label>
+        <select id="sub-tour" name="sub-tour" required>
+          <option value="" id="sub-tour-placeholder"></option>
+        </select>
+
+        <label for="num-people" id="booking-page-number-people"></label>
+        <input type="number" id="num-people" name="num-people" min="1" required
+          placeholder="Type in Number of Travelers">
+
+        <label for="check-in" id="booking-page-check-in"></label>
+        <input type="date" id="check-in" name="check-in" required placeholder="dd/mm/yyyy">
+
+        <!-- <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required placeholder="dd/mm/yyyy"> -->
+
+        <label for="message" id="booking-page-comments"></label>
+        <textarea id="message" name="message" required rows="6" cols="50"> </textarea>
+
+        <button type="submit" id="book"></button>
+      </form>
+    </div>
+  </div>
+
+
+  <footer style="
+        background-color: #fff;
+        text-align: center;
+        color: #d89f6f;">
+    <div style="margin-bottom: 10px">
+      <a href="index.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-home"></a>
+      <a href="index.html#about" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-about"></a>
+      <a href="all-tours.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-tours"></a>
+      <a href="index.html#faq" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-faq"></a>
+      <a href="contact.html" style="text-decoration: none; color: #d89f6f; margin: 0 15px" id="footer-contact"></a>
+    </div>
+
+
+    <div style="margin-bottom: 10px">
+      <a href="https://www.instagram.com" target="_blank"
+        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="../images/instagram.png" title="Instagram"
+          alt="Visit is on Instagram" /></a>
+
+      <a href="https://www.tripadvisor.com" target="_blank"
+        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="../images/tripadvisor.png"
+          title="Tripadvisor" alt="Visit is on Tripadvisor" /></a>
+    </div>
+    <div style="font-size: 14px" id="copyright">
+
+    </div>
+  </footer>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="../script_booking.js"></script>
+
+
+  <script>
+    const mainTour = document.getElementById("main-tour");
+    const subTour = document.getElementById("sub-tour");
+
+    const tours = {
+      one_d: {
+        en: ["Desert Dash: 2-Hour Jeep Safari", "Wadi Wonders: Half-Day Jeep Adventure", "Red Sands Odyssey: Full-Day Jeep Exploration"],
+        // de: ["2 Stunden Jeep-Tour", "Halbtägige Jeep-Tour", "Ganztägige Jeep-Tour", "Kamelritt"],
+        // esp: ["Tour en jeep de 2 horas", "Tour en jeep de medio día", "Tour en jeep de un día completo", "Paseo en camello"],
+        // it: ["Tour in jeep di 2 ore", "Tour in jeep di mezza giornata", "Tour in jeep di un giorno intero", "Giro in cammello"],
+        // fr: ["Tour en jeep de 2 heures", "Tour en jeep d'une demi-journée", "Tour en jeep d'une journée complète", "Promenade à dos de chameau"]
+      },
+      one_d_one_n: {
+        en: [
+          "Twilight Trails: Half-Day Jeep and Overnight",
+          "Sunset to Sunrise: Full-Day Jeep and Camp",
+          "Epic Expedition: Jeep Tour, Camp, and Full-Day Hikes"
+          // "Jeep Tour, Hiking, and a Night in the Camp",
+          // "Jeep Tour, Hiking, and One Night in the Camp"
+        ],
+        de: [
+          "Halbtägige Jeep-Tour und Nacht im Camp",
+          "Tägliche Jeep-Tour und Nacht im Camp",
+          "Tägliche Jeep-Tour und Übernachtung unter den Sternen"
+          // "Jeep-Tour, Wandern und eine Nacht im Camp",
+          // "Jeep-Tour, Wandern und eine Nacht im Camp"
+        ],
+        esp: [
+          "Tour en jeep de medio día y noche en el campamento",
+          "Tour en jeep de un día y noche en el campamento",
+          "Tour en jeep de un día y dormir bajo las estrellas"
+          // ,
+          // "Tour en jeep, senderismo y una noche en el campamento",
+          // "Tour en jeep, senderismo y una noche en el campamento"
+        ],
+        it: [
+          "Tour in jeep di mezza giornata e notte nel campo",
+          "Tour in jeep di un giorno e notte nel campo",
+          "Tour in jeep di un giorno e dormire sotto le stelle"
+          // ,
+          // "Tour in jeep, escursionismo e una notte nel campo",
+          // "Tour in jeep, escursionismo e una notte nel campo"
+        ],
+        fr: [
+          "Tour en jeep d'une demi-journée et nuit dans le camp",
+          "Tour en jeep d'une journée et nuit dans le camp",
+          "Tour en jeep d'une journée et dormir sous les étoiles"
+          // ,
+          // "Tour en jeep, randonnée et une nuit dans le camp",
+          // "Tour en jeep, randonnée et une nuit dans le camp"
+        ]
+      },
+      hiking: {
+        en: ["Jebel Umm Al-Dami: Summit of the Stars Expedition", "Jebel Al-Hish: Desert Mirage Trail Challenge", "Jebel Barada: Ancient Echoes Path Journey", "Bedouin Trail: Camel Ride Experience"],
+        //   de: ["Jeep-Tour, Übernachtung im Camp und unter den Sternen"],
+        //   esp: ["Tour en jeep, dormir en el campamento y bajo las estrellas"],
+        //   it: ["Tour in jeep, dormire nel campo e sotto le stelle"],
+        //   fr: ["Tour en jeep, dormir dans le camp et sous les étoiles"]
+      },
+      two_d_two_n: {
+        en: ["Desert Duo: Jeep Tour and Hike with Two Nights", "Starlit Serenity: One Day and One Night in the Desert"],
+        de: ["Jeep-Touren, Wandern und Übernachtung im Camp"],
+        esp: ["Tours en Jeep, senderismo y dormir en el campamento"],
+        it: ["Tour in jeep, escursioni e pernottamento nel campo"],
+        fr: ["Tours en jeep, randonnée et nuit au camp"]
+      }
+    };
+
+    // Function to get query parameters from URL
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        category: params.get('category'),
+        tour: params.get('tour')
+      };
+    }
+
+    // Function to set dropdown values based on URL parameters
+    function setDropdownValues() {
+      const { category, tour } = getQueryParams();
+      const lang = getCurrentLanguage();
+
+      if (category) {
+        setDropdownValue('main-tour', category);
+        updateSubTourOptions(); // Ensure sub-tour options are updated based on main-tour
+      }
+
+      if (tour) {
+        const translatedTour = translateTourValue(tour, lang);
+        setDropdownValue('sub-tour', translatedTour);
+      }
+    }
+
+    // Helper function to set the selected value of a dropdown
+    function setDropdownValue(elementId, value) {
+      const dropdown = document.getElementById(elementId);
+      for (let i = 0; i < dropdown.options.length; i++) {
+        if (dropdown.options[i].value === value) {
+          dropdown.selectedIndex = i;
+          break;
+        }
+      }
+    }
+
+    // Function to translate tour value based on current language
+    function translateTourValue(tour, lang) {
+      for (const key in tours) {
+        if (tours[key]['en'].includes(tour.replace(/-/g, " "))) {
+          return tours[key][lang].find(t => t.toLowerCase().replace(/\s+/g, "-") === tour);
+        }
+      }
+      return tour; // Return the original value if no translation is found
+    }
+
+    // Function to update sub-tour options based on selected main tour
+    function updateSubTourOptions() {
+      const selectedMainTour = mainTour.value;
+      const lang = getCurrentLanguage(); // Implement this function to get the current language
+
+      subTour.innerHTML = '<option value="">Select Sub Tour</option>'; // Reset sub tour options
+
+      if (selectedMainTour && tours[selectedMainTour] && tours[selectedMainTour][lang]) {
+        tours[selectedMainTour][lang].forEach((tour) => {
+          const option = document.createElement("option");
+          option.value = tour.toLowerCase().replace(/\s+/g, "-");
+          option.textContent = tour;
+          subTour.appendChild(option);
+        });
+      }
+    }
+
+    // Function to get the current language from localStorage or default to 'en'
+    function getCurrentLanguage() {
+      return localStorage.getItem('selectedLanguage') || 'en';
+    }
+
+    // Event listener for main tour dropdown change
+    mainTour.addEventListener("change", updateSubTourOptions);
+
+    // Initialize dropdowns and then set values based on URL parameters
+    window.onload = async function () {
+      await setLanguage(getCurrentLanguage()); // Set the language first
+      setDropdownValues(); // This will also call updateSubTourOptions
+    };
+
+    // Handle form submission
+    document
+      .getElementById("booking-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        const templateParams = {
+          first_name: formData.get("first-name"),
+          last_name: formData.get("last-name"),
+          email: formData.get("email"),
+          main_tour: formData.get("main-tour"),
+          sub_tour: formData.get("sub-tour"),
+          num_people: formData.get("num-people"),
+          check_in: formData.get("check-in"),
+          message: formData.get("message"),
+        };
+
+        emailjs.send("service_4ftk8hr", "template_2913007", templateParams).then(
+          (response) => {
+            alert("Your booking request has been sent!", response.status, response.text);
+          },
+          (error) => {
+            alert("FAILED...", error);
+          }
+        );
+      });
+  </script>
+
+  <!-- <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  </script> -->
+</body>
+
+</html>

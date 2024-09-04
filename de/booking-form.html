@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Your Desert Adventure | WADI RUM Sha'ar Night</title>
-  <meta name="description"
-    content="Secure your spot for an unforgettable desert adventure with WADI RUM Sha'ar Night. Book your tour now with options for jeep tours, camel rides, and more.">
-  <meta name="keywords"
-    content="Wadi Rum, camping wadi rum, wadi rum hiking, Wadi Rum jeep tours, camel rides, desert tours, Wadi Rum tours, Wadi Rum guided tours">
-  <link rel="stylesheet" href="css/style_tour.css" />
+  <title>Buche Dein Wüstenabenteuer | WADI RUM Sha'ar Night</title>
+  <meta name="description" content="Sichere dir deinen Platz für ein unvergessliches Wüstenabenteuer mit WADI RUM Sha'ar Night. Buche jetzt deine Tour mit Optionen für Jeep-Touren, Kamelritte und mehr.">
+  <meta name="keywords" content="Wadi Rum, Camping Wadi Rum, Wadi Rum Wandern, Wadi Rum Jeep-Touren, Kamelritte, Wüstentouren, Wadi Rum Touren, Wadi Rum geführte Touren">
+  
+  <link rel="stylesheet" href="../css/style_tour.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
   <script>
@@ -17,14 +16,14 @@
       emailjs.init("6CJDRuO8JLdMRqW1L"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
     })();
   </script>
-  <script src="translations.js"></script>
+  <script src="../translations.js"></script>
 </head>
 
 <body>
   <header id="navbar">
     <a href="index.html" class="logo-link">
       <div class="logo">
-        <img src="images/logo_1.png" alt="WADI RUM Sha'ar Night Logo" />
+        <img src="../images/logo_1.png" alt="WADI RUM Sha'ar Night Logo" />
       </div>
       <div class="logo-name-container">
         <p id="logo-name-part-one">WADI RUM</p>
@@ -46,16 +45,16 @@
         <li class="nav-item-dropdown">
           <a href="all-tours.html" id="nav-tours"></a>
           <ul class="dropdown-menu">
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+            <li><img src="../images_resized/icon-mountain.png" alt="Symbol enthalten"><a
                 href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-tours.html"
                 id="nav-subtour1"></a></li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+            <li><img src="../images_resized/icon-mountain.png" alt="Symbol enthalten"><a
                 href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/1-day-1-night-tours.html"
                 id="nav-subtour2"></a></li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+            <li><img src="../images_resized/icon-mountain.png" alt="Symbol enthalten"><a
                 href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/hiking.html" id="nav-subtour3"></a>
             </li>
-            <li><img src="images_resized/icon-mountain.png" alt="Icon incluced"><a
+            <li><img src="../images_resized/icon-mountain.png" alt="Symbol enthalten"><a
                 href="https://dennishelavani.github.io/wadi-rum-shaar-night/tours/2-days-2-nights-tours.html"
                 id="nav-subtour4"></a></li>
           </ul>
@@ -101,9 +100,9 @@
 
     <div class="image-content">
       <div class="image-grid">
-        <img src="images_resized/wadi rum.jpeg" alt="Scenic view of Wadi Rum desert" class="img1-contact" />
-        <img src="images_resized/background-picture-4.jpeg" alt="Desert landscape of Wadi Rum" class="img2-contact" />
-        <img src="images_resized/booking 3 Burdah Rock Bridge (1).jpg" alt="Burdah Rock Bridge in Wadi Rum"
+        <img src="../images_resized/wadi rum.jpeg" alt="Scenic view of Wadi Rum desert" class="img1-contact" />
+        <img src="../images_resized/background-picture-4.jpeg" alt="Desert landscape of Wadi Rum" class="img2-contact" />
+        <img src="../images_resized/booking 3 Burdah Rock Bridge (1).jpg" alt="Burdah Rock Bridge in Wadi Rum"
           class="img3-contact" />
       </div>
     </div>
@@ -114,40 +113,39 @@
         <!-- <h1>Book Your Tour</h1> -->
         <label for="first-name" id="contact-page-full-name"></label>
         <input type="text" id="first-name" name="first-name" required placeholder="Name">
-
+    
         <label for="email" id="contact-page-email-address"></label>
-        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
-
+        <input type="email" id="email" name="email" required placeholder="beispiel@gmail.com">
+    
         <label for="main-tour" id="booking-page-tour-type-heading"></label>
-        <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
+        <select id="main-tour" name="main-tour" required aria-placeholder="Tour-Kategorie auswählen">
           <option value="one_d" id="tour_type_1"></option>
           <option value="one_d_one_n" id="tour_type_2"></option>
           <option value="hiking" id="tour_type_3"></option>
           <option value="two_d_two_n" id="tour_type_4"></option>
-
-
         </select>
-
-        <label for="sub-tour" aria-placeholder="Select Tour" id="sub-tour-heading">Select Tour</label>
+    
+        <label for="sub-tour" aria-placeholder="Tour auswählen" id="sub-tour-heading">Tour auswählen</label>
         <select id="sub-tour" name="sub-tour" required>
           <option value="" id="sub-tour-placeholder"></option>
         </select>
-
+    
         <label for="num-people" id="booking-page-number-people"></label>
         <input type="number" id="num-people" name="num-people" min="1" required
-          placeholder="Type in Number of Travelers">
-
+          placeholder="Anzahl der Reisenden">
+    
         <label for="check-in" id="booking-page-check-in"></label>
-        <input type="date" id="check-in" name="check-in" required placeholder="dd/mm/yyyy">
-
+        <input type="date" id="check-in" name="check-in" required placeholder="tt/mm/jjjj">
+    
         <!-- <label for="check-out">Check-out Date:</label>
         <input type="date" id="check-out" name="check-out" required placeholder="dd/mm/yyyy"> -->
-
+    
         <label for="message" id="booking-page-comments"></label>
-        <textarea id="message" name="message" required rows="6" cols="50"> </textarea>
-
+        <textarea id="message" name="message" required rows="6" cols="50"></textarea>
+    
         <button type="submit" id="book"></button>
-      </form>
+    </form>
+    
     </div>
   </div>
 
@@ -166,20 +164,21 @@
 
 
     <div style="margin-bottom: 10px">
-      <a href="https://www.instagram.com" target="_blank"
-        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/instagram.png" title="Instagram"
-          alt="Visit is on Instagram" /></a>
 
-      <a href="https://www.tripadvisor.com" target="_blank"
-        style="text-decoration: none; color: #d89f6f; margin: 0 10px"><img src="images/tripadvisor.png"
-          title="Tripadvisor" alt="Visit is on Tripadvisor" /></a>
-    </div>
+      <a href="https://www.instagram.com" target="_blank" style="text-decoration: none; color: #d89f6f; margin: 0 10px">
+          <img src="../images/instagram.png" title="Instagram" alt="Besuche uns auf Instagram" />
+      </a>
+
+      <a href="https://www.tripadvisor.com" target="_blank" style="text-decoration: none; color: #d89f6f; margin: 0 10px">
+          <img src="../images/tripadvisor.png" title="Tripadvisor" alt="Besuche uns auf Tripadvisor" />
+      </a>
+  </div>
     <div style="font-size: 14px" id="copyright">
 
     </div>
   </footer>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-  <script src="script_booking.js"></script>
+  <script src="../script_booking.js"></script>
 
 
   <script>
