@@ -368,7 +368,7 @@ function adjustContent() {
 document.addEventListener("DOMContentLoaded", async () => {
   const lang = getSavedLanguage();
 
-  await setLanguage(`en/${lang}`);
+  await setLanguage(`en/en.json`);
 
   // Adjust content on initial load and on window resize
   adjustContent();
