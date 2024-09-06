@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-async function loadTranslation(lang) {
+async function loadTranslation(lang, url_path) {
   if (translations[lang]) {
     // If the translations for the selected language are already loaded, no need to fetch again
     currentLanguage = lang;
@@ -27,9 +27,9 @@ async function loadTranslation(lang) {
   let basePath = `/${lang}/`;
 
   try {
-    const response = await fetch(`${basePath}${lang}.json`);
+    const response = await fetch(`${url_path}/${lang}.json`);
     if (!response.ok) {
-      throw new Error(`Could not load ${basePath}${lang}.json`);
+      throw new Error(`Could not load ${url_path}${lang}.json`);
     }
     const data = await response.json();
     translations[lang] = data;
@@ -849,14 +849,28 @@ function adjustContent() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  // Get the current URL path
   const currentPath = window.location.pathname;
-  const langFromPath = currentPath.split("/")[2];
-  const lang = langFromPath || getSavedLanguage();
 
-  await setLanguage(lang);
+  // Extract the language part from the path (e.g., 'en' from '/wadi-rum-shaar-night/en/index.html')
+  const langFromPath = currentPath.split('/')[2];
+  
+  // Determine the language from the path or fallback to saved language
+  const lang = langFromPath || getSavedLanguage();
+  
+  // Store the full URL up to and including the language directory
+  const url_path = window.location.origin + currentPath.substring(0, currentPath.indexOf(langFromPath) + langFromPath.length);
+
+  // Call setLanguage with the determined language
+  await setLanguage(lang, url_path);
 
   // Adjust content on initial load and on window resize
   adjustContent();
+  
+  // Re-adjust content on resize and click events
   window.addEventListener("resize", adjustContent);
   window.addEventListener("click", adjustContent);
+
+  console.log(url_path); // For debugging, this will output the constructed URL path
 });
+
