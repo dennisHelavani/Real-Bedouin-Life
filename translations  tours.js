@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Save the selected language to localStorage before redirecting
         localStorage.setItem('selectedLanguage', selectedLanguage);
         window.location.href = `https://dennishelavani.github.io/wadi-rum-shaar-night/${selectedLanguage}/index.html`;
+        console.log( window.location.href);
       }
     });
   }
