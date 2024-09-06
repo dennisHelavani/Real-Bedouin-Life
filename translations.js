@@ -367,7 +367,7 @@ function adjustContent() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const currentPath = window.location.pathname;
-  const langFromPath = currentPath.split('/')[1];
+  const langFromPath = currentPath.split('/')[2];
   const lang = langFromPath || getSavedLanguage();
 
   await setLanguage(lang);
