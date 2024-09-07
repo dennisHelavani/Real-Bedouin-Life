@@ -27,7 +27,7 @@ async function loadTranslation(lang, url_path) {
   let basePath = `/${lang}/`;
 
   try {
-    const response = await fetch(`${url_path}/tours/${lang}.json`);
+    const response = await fetch(`${url_path}/${lang}.json`);
     if (!response.ok) {
       throw new Error(`Could not load ${url_path}${lang}.json`);
     }
@@ -53,8 +53,8 @@ function setTextContentByClass(className, text) {
   });
 }
 
-async function setLanguage(lang) {
-  await loadTranslation(lang);
+async function setLanguage(lang, url_path) {
+  await loadTranslation(lang, url_path);
 
   if (translations[lang]) {
     const t = translations[lang];
