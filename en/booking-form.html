@@ -120,6 +120,7 @@
 
         <label for="main-tour" id="booking-page-tour-type-heading"></label>
         <select id="main-tour" name="main-tour" required aria-placeholder="Select Tour Category">
+          <option value=""></option>
           <option value="one_d" id="tour_type_1"></option>
           <option value="one_d_one_n" id="tour_type_2"></option>
           <option value="hiking" id="tour_type_3"></option>
@@ -324,8 +325,7 @@
     // Initialize dropdowns and then set values based on URL parameters
     window.onload = async function () {
       await setLanguage(getCurrentLanguage()); // Set the language first
-      setDropdownValues();
-      updateSubTourOptions(); // This will also call updateSubTourOptions
+      setDropdownValues(); // This will also call updateSubTourOptions
     };
 
     // Handle form submission
