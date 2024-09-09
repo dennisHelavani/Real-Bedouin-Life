@@ -42,14 +42,14 @@ async function loadTranslation(lang, url_path) {
 function setTextContent(id, text) {
   const element = document.getElementById(id);
   if (element) {
-    element.textContent = text;
+    element.innerHTML = text;
   }
 }
 
 function setTextContentByClass(className, text) {
   const elements = document.querySelectorAll(`.${className}`);
   elements.forEach((element) => {
-    element.textContent = text;
+    element.innerHTML = text;
   });
 }
 
@@ -344,24 +344,23 @@ async function setLanguage(lang, url_path) {
       ),
       setTextContent(
         "tour_general_tour_1",
-        translations[lang].one_day_tours.tour_1
+        translations[lang].all_tours.h3_5
       ),
       setTextContent(
         "tour_general_tour_2",
-        translations[lang].one_day_tours.tour_2
+        translations[lang].all_tours.h3_6
       ),
       setTextContent(
         "tour_general_tour_3",
-        translations[lang].one_day_tours.tour_3
+        translations[lang].all_tours.h3_7
       ),
       setTextContent(
         "tour_general_tour_4",
-        translations[lang].one_day_tours.tour_4
+        translations[lang].all_tours.tour_4
       ),
-      setTextContent("tour_tour_1", translations[lang].one_day_tours.tour_1),
-      setTextContent("tour_tour_2", translations[lang].one_day_tours.tour_2),
-      setTextContent("tour_tour_3", translations[lang].one_day_tours.tour_3),
-      setTextContent("tour_tour_4", translations[lang].one_day_tours.tour_4),
+      setTextContent("tour_tour_2", translations[lang].all_tours.h3_5),
+      setTextContent("tour_tour_3", translations[lang].all_tours.h3_6),
+      setTextContent("tour_tour_4", translations[lang].all_tours.h3_7),
       setTextContentByClass(
         "list_price_header",
         translations[lang].one_day_tours.list_price_header

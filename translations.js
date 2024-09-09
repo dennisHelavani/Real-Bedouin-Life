@@ -40,14 +40,14 @@ async function loadTranslation(lang, url_path) {
 function setTextContent(id, text) {
   const element = document.getElementById(id);
   if (element) {
-    element.textContent = text;
+    element.innerHTML = text;
   }
 }
 
 function setTextContentByClass(className, text) {
   const elements = document.querySelectorAll(`.${className}`);
   elements.forEach(element => {
-    element.textContent = text;
+    element.innerHTML = text;
   });
 }
 
