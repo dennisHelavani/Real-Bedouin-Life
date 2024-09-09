@@ -319,12 +319,13 @@
     }
 
     // Event listener for main tour dropdown change
-    mainTour.addEventListener("change", updateSubTourOptions);
+    // mainTour.addEventListener("change", updateSubTourOptions);
 
     // Initialize dropdowns and then set values based on URL parameters
     window.onload = async function () {
       await setLanguage(getCurrentLanguage()); // Set the language first
-      setDropdownValues(); // This will also call updateSubTourOptions
+      setDropdownValues();
+      updateSubTourOptions(); // This will also call updateSubTourOptions
     };
 
     // Handle form submission
