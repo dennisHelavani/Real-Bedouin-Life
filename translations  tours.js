@@ -511,8 +511,6 @@ async function setLanguage(lang, url_path) {
 
      // Camel Ride and Hiking tours 
       // Tour 1
-
-    
       setTextContent("hike_general_hike_1",translations[lang].all_tours.h3_5),
       setTextContent("hike_general_hike_2",translations[lang].all_tours.h3_6),
       setTextContent("hike_general_hike_3",translations[lang].all_tours.h3_7),
@@ -524,21 +522,61 @@ async function setLanguage(lang, url_path) {
       setTextContent("hike_name_1",translations[lang].hiking.hike_name_1),
       setTextContent("hike_name_1_subname",translations[lang].hiking.hike_name_1_subname),
       setTextContent("hike_name_1_paragraph",translations[lang].hiking.description_hike_1),
-// Tour 2
+      //  Tour 2
       setTextContent("hike_name_2",translations[lang].hiking.hike_name_2),
       setTextContent("hike_name_2_subname",translations[lang].hiking.hike_name_2_subname),
       setTextContent("hike_name_2_paragraph",translations[lang].hiking.description_hike_2),
       
-// Tour 3
+      // Tour 3
       setTextContent("hike_name_3",translations[lang].hiking.hike_name_3),
       setTextContent("hike_name_3_subname",translations[lang].hiking.hike_name_3_subname),
       setTextContent("hike_name_3_paragraph",translations[lang].hiking.description_hike_3),
 
       setTextContentByClass("hiking-duration",translations[lang].hiking.duration),
       setTextContentByClass("hiking-price",translations[lang].hiking.price_hike),
-
+      // Tour 4
       setTextContent("camel-price",translations[lang].hiking.price_camel_ride),
       setTextContent("camel_ride_paragraph",translations[lang].hiking.description_camel_ride),
+
+
+
+      // 2 Days & 2 Nights Tours
+      //Tour 1
+      setTextContent("2nights-tour-page-heading",translations[lang].two_nights_tours.heading),
+      setTextContent("2night-paragraph",translations[lang].two_nights_tours.paragraph),
+
+      setTextContent("two_d_tour_name_1",translations[lang].two_nights_tours.tour_name_3),
+      setTextContent("two_d_tour_name_1_subname",translations[lang].two_nights_tours.tour_name_3_subname),
+      setTextContent("two_d_tour_name_1_paragraph",translations[lang].two_nights_tours.tour_parahraph_3),
+      setTextContent("two_d_tour_name_1_visit_1",translations[lang].two_nights_tours.tour_name_3_visit_1),
+      setTextContent("two_d_tour_name_1_visit_2",translations[lang].two_nights_tours.tour_name_3_visit_2),
+      setTextContent("two_d_tour_name_1_visit_3",translations[lang].two_nights_tours.tour_name_3_visit_3),
+      setTextContent("two_d_tour_name_1_visit_4",translations[lang].two_nights_tours.tour_name_3_visit_4),
+      setTextContent("two_d_tour_name_1_visit_5",translations[lang].two_nights_tours.tour_name_3_visit_5),
+      setTextContent("two_d_tour_name_1_visit_6",translations[lang].two_nights_tours.tour_name_3_visit_6),
+      setTextContent("two_d_tour_name_1_visit_7",translations[lang].two_nights_tours.tour_name_3_visit_7),
+      setTextContent("two_d_tour_name_1_visit_8",translations[lang].two_nights_tours.tour_name_3_visit_8),
+      setTextContent("two_d_tour_name_1_visit_9",translations[lang].two_nights_tours.tour_name_3_visit_9),
+      setTextContent("two_d_tour_name_1_visit_10",translations[lang].two_nights_tours.tour_name_3_visit_10),
+
+      setTextContent("two_d_tour_name_1_price_1",translations[lang].two_nights_tours.tour_name_3_price_1),
+      setTextContent("two_d_tour_name_1_price_2",translations[lang].two_nights_tours.tour_name_3_price_2),
+      setTextContent("two_d_tour_name_1_price_3",translations[lang].two_nights_tours.tour_name_3_price_3),
+
+      setTextContent("two_d_tour_name_1_included_1",translations[lang].two_nights_tours.tour_name_3_included_1),
+      setTextContent("two_d_tour_name_1_included_2",translations[lang].two_nights_tours.tour_name_3_included_2),
+      setTextContent("two_d_tour_name_1_included_3",translations[lang].two_nights_tours.tour_name_3_included_3),
+      setTextContent("two_d_tour_name_1_included_4",translations[lang].two_nights_tours.tour_name_3_included_4),
+
+      setTextContent("two_d_tour_name_1_highlight_1",translations[lang].two_nights_tours.tour_name_3_highlight_1),
+      setTextContent("two_d_tour_name_1_highlight_2",translations[lang].two_nights_tours.tour_name_3_highlight_2),
+      setTextContent("two_d_tour_name_1_highlight_3",translations[lang].two_nights_tours.tour_name_3_highlight_3),
+      setTextContent("two_d_tour_name_1_highlight_4",translations[lang].two_nights_tours.tour_name_3_highlight_4),
+      setTextContent("two_d_tour_name_1_highlight_5",translations[lang].two_nights_tours.tour_name_3_highlight_5),
+      setTextContent("two_d_tour_name_1_highlight_6",translations[lang].two_nights_tours.tour_name_3_highlight_6),
+      setTextContent("two_d_tour_name_1_highlight_7",translations[lang].two_nights_tours.tour_name_3_highlight_7),
+      setTextContent("two_d_tour_name_1_highlight_8",translations[lang].two_nights_tours.tour_name_3_highlight_8),
+
 
       localStorage.setItem("selectedLanguage", lang);
 
