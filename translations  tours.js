@@ -413,7 +413,98 @@ async function setLanguage(lang, url_path) {
       setTextContent("gallery_heading_2",translations[lang].one_day_tours.gallery_heading),
       setTextContent("gallery_heading_3",translations[lang].one_day_tours.gallery_heading),
 
+      
+      // 1 Day and 1 Night tours 
+      setTextContent("1day-1night-tour-page-heading",translations[lang].one_day_one_night_tours.heading),
+      setTextContent("one_n_tour_name_1",translations[lang].one_day_one_night_tours.tour_name_1),
+      setTextContent("one_n_tour_name_1_subname",translations[lang].one_day_one_night_tours.tour_name_1_subname),
+      setTextContent("one_n_tour_name_1_paragraph",translations[lang].one_day_one_night_tours.tour_parahraph_1),
+      setTextContent("one_n_tour_name_1_visit_1",translations[lang].one_day_one_night_tours.tour_name_1_visit_1),
+      setTextContent("one_n_tour_name_1_visit_2",translations[lang].one_day_one_night_tours.tour_name_1_visit_2),
+      setTextContent("one_n_tour_name_1_visit_3",translations[lang].one_day_one_night_tours.tour_name_1_visit_3),
+      setTextContent("one_n_tour_name_1_visit_4",translations[lang].one_day_one_night_tours.tour_name_1_visit_4),
+      setTextContent("one_n_tour_name_1_visit_5",translations[lang].one_day_one_night_tours.tour_name_1_visit_5),
+      setTextContent("one_n_tour_name_1_visit_6",translations[lang].one_day_one_night_tours.tour_name_1_visit_6),
+      setTextContent("one_n_tour_name_1_visit_7",translations[lang].one_day_one_night_tours.tour_name_1_visit_7),
+      setTextContent("one_n_tour_name_1_visit_8",translations[lang].one_day_one_night_tours.tour_name_1_visit_8),
+      setTextContent("one_n_tour_name_1_price_1",translations[lang].one_day_one_night_tours.tour_name_1_price_1),
+      setTextContent("one_n_tour_name_1_price_2",translations[lang].one_day_one_night_tours.tour_name_1_price_2),
+      setTextContent("one_n_tour_name_1_price_3",translations[lang].one_day_one_night_tours.tour_name_1_price_3),
+      setTextContent("one_n_tour_name_1_included_1",translations[lang].one_day_one_night_tours.tour_name_1_included_1),
+      setTextContent("one_n_tour_name_1_included_2",translations[lang].one_day_one_night_tours.tour_name_1_included_2),
+      setTextContent("one_n_tour_name_1_included_3",translations[lang].one_day_one_night_tours.tour_name_1_included_3),
+      setTextContent("one_n_tour_name_1_included_4",translations[lang].one_day_one_night_tours.tour_name_1_included_4),
+      setTextContent("one_n_tour_name_1_highlight_1",translations[lang].one_day_one_night_tours.tour_name_1_highlight_1),
+      setTextContent("one_n_tour_name_1_highlight_2",translations[lang].one_day_one_night_tours.tour_name_1_highlight_2),
+      setTextContent("one_n_tour_name_1_highlight_3",translations[lang].one_day_one_night_tours.tour_name_1_highlight_3),
+      setTextContent("one_n_tour_name_1_highlight_4",translations[lang].one_day_one_night_tours.tour_name_1_highlight_4),
+      setTextContent("one_n_tour_name_1_highlight_5",translations[lang].one_day_one_night_tours.tour_name_1_highlight_5),
+     
 
+      setTextContent("one_n_tour_name_2",translations[lang].one_day_one_night_tours.tour_name_2),
+      setTextContent("one_n_tour_name_2_subname",translations[lang].one_day_one_night_tours.tour_name_2_subname),
+      setTextContent("one_n_tour_name_2_paragraph",translations[lang].one_day_one_night_tours.tour_parahraph_2),
+      setTextContent("one_n_tour_name_2_visit_1",translations[lang].one_day_one_night_tours.tour_name_2_visit_1),
+      setTextContent("one_n_tour_name_2_visit_2",translations[lang].one_day_one_night_tours.tour_name_2_visit_2),
+      setTextContent("one_n_tour_name_2_visit_3",translations[lang].one_day_one_night_tours.tour_name_2_visit_3),
+      setTextContent("one_n_tour_name_2_visit_4",translations[lang].one_day_one_night_tours.tour_name_2_visit_4),
+      setTextContent("one_n_tour_name_2_visit_5",translations[lang].one_day_one_night_tours.tour_name_2_visit_5),
+      setTextContent("one_n_tour_name_2_visit_6",translations[lang].one_day_one_night_tours.tour_name_2_visit_6),
+      setTextContent("one_n_tour_name_2_visit_7",translations[lang].one_day_one_night_tours.tour_name_2_visit_7),
+      setTextContent("one_n_tour_name_2_visit_8",translations[lang].one_day_one_night_tours.tour_name_2_visit_8),
+      setTextContent("one_n_tour_name_2_visit_9",translations[lang].one_day_one_night_tours.tour_name_2_visit_9),
+      setTextContent("one_n_tour_name_2_visit_10",translations[lang].one_day_one_night_tours.tour_name_2_visit_10),
+      setTextContent("one_n_tour_name_2_visit_11",translations[lang].one_day_one_night_tours.tour_name_2_visit_11),
+
+      setTextContent("one_n_tour_name_2_price_1",translations[lang].one_day_one_night_tours.tour_name_2_price_1),
+      setTextContent("one_n_tour_name_2_price_2",translations[lang].one_day_one_night_tours.tour_name_2_price_2),
+      setTextContent("one_n_tour_name_2_price_3",translations[lang].one_day_one_night_tours.tour_name_2_price_3),
+
+      setTextContent("one_n_tour_name_2_included_1",translations[lang].one_day_one_night_tours.tour_name_2_included_1),
+      setTextContent("one_n_tour_name_2_included_2",translations[lang].one_day_one_night_tours.tour_name_2_included_2),
+      setTextContent("one_n_tour_name_2_included_3",translations[lang].one_day_one_night_tours.tour_name_2_included_3),
+      setTextContent("one_n_tour_name_2_included_4",translations[lang].one_day_one_night_tours.tour_name_2_included_4),
+      setTextContent("one_n_tour_name_2_included_5",translations[lang].one_day_one_night_tours.tour_name_2_included_5),
+      setTextContent("one_n_tour_name_2_included_6",translations[lang].one_day_one_night_tours.tour_name_2_included_6),
+
+      setTextContent("one_n_tour_name_2_highlight_1",translations[lang].one_day_one_night_tours.tour_name_2_highlight_1),
+      setTextContent("one_n_tour_name_2_highlight_2",translations[lang].one_day_one_night_tours.tour_name_2_highlight_2),
+      setTextContent("one_n_tour_name_2_highlight_3",translations[lang].one_day_one_night_tours.tour_name_2_highlight_3),
+      setTextContent("one_n_tour_name_2_highlight_4",translations[lang].one_day_one_night_tours.tour_name_2_highlight_4),
+      setTextContent("one_n_tour_name_2_highlight_5",translations[lang].one_day_one_night_tours.tour_name_2_highlight_5),
+
+
+      setTextContent("one_n_tour_name_3",translations[lang].one_day_one_night_tours.tour_name_3),
+      setTextContent("one_n_tour_name_3_subname",translations[lang].one_day_one_night_tours.tour_name_3_subname),
+      setTextContent("one_n_tour_name_3_paragraph",translations[lang].one_day_one_night_tours.tour_parahraph_3),
+      setTextContent("one_n_tour_name_3_visit_1",translations[lang].one_day_one_night_tours.tour_name_3_visit_1),
+      setTextContent("one_n_tour_name_3_visit_2",translations[lang].one_day_one_night_tours.tour_name_3_visit_2),
+      setTextContent("one_n_tour_name_3_visit_3",translations[lang].one_day_one_night_tours.tour_name_3_visit_3),
+      setTextContent("one_n_tour_name_3_visit_4",translations[lang].one_day_one_night_tours.tour_name_3_visit_4),
+      setTextContent("one_n_tour_name_3_visit_5",translations[lang].one_day_one_night_tours.tour_name_3_visit_5),
+      setTextContent("one_n_tour_name_3_visit_6",translations[lang].one_day_one_night_tours.tour_name_3_visit_6),
+      setTextContent("one_n_tour_name_3_visit_7",translations[lang].one_day_one_night_tours.tour_name_3_visit_7),
+      setTextContent("one_n_tour_name_3_visit_8",translations[lang].one_day_one_night_tours.tour_name_3_visit_8),
+      setTextContent("one_n_tour_name_3_visit_9",translations[lang].one_day_one_night_tours.tour_name_3_visit_9),
+
+      setTextContent("one_n_tour_name_3_price_1",translations[lang].one_day_one_night_tours.tour_name_3_price_1),
+      setTextContent("one_n_tour_name_3_price_2",translations[lang].one_day_one_night_tours.tour_name_3_price_2),
+      setTextContent("one_n_tour_name_3_price_3",translations[lang].one_day_one_night_tours.tour_name_3_price_3),
+
+      setTextContent("one_n_tour_name_3_included_1",translations[lang].one_day_one_night_tours.tour_name_3_included_1),
+      setTextContent("one_n_tour_name_3_included_2",translations[lang].one_day_one_night_tours.tour_name_3_included_2),
+      setTextContent("one_n_tour_name_3_included_3",translations[lang].one_day_one_night_tours.tour_name_3_included_3),
+      setTextContent("one_n_tour_name_3_included_4",translations[lang].one_day_one_night_tours.tour_name_3_included_4),
+      setTextContent("one_n_tour_name_3_included_5",translations[lang].one_day_one_night_tours.tour_name_3_included_5),
+
+      setTextContent("one_n_tour_name_3_highlight_1",translations[lang].one_day_one_night_tours.tour_name_3_highlight_1),
+      setTextContent("one_n_tour_name_3_highlight_2",translations[lang].one_day_one_night_tours.tour_name_3_highlight_2),
+      setTextContent("one_n_tour_name_3_highlight_3",translations[lang].one_day_one_night_tours.tour_name_3_highlight_3),
+      setTextContent("one_n_tour_name_3_highlight_4",translations[lang].one_day_one_night_tours.tour_name_3_highlight_4),
+      setTextContent("one_n_tour_name_3_highlight_5",translations[lang].one_day_one_night_tours.tour_name_3_highlight_5),
+
+     
+     
       
       localStorage.setItem("selectedLanguage", lang);
 
