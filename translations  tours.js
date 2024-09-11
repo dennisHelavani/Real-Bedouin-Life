@@ -346,7 +346,7 @@ async function setLanguage(lang, url_path) {
       
 
       setTextContent("one_d_tour_name_1",translations[lang].one_day_tours.tour_name_1),
-      setTextContent("one_d_tour_nam_1_paragraph",translations[lang].one_day_tours.tour_parahraph_1),
+      setTextContent("one_d_tour_name_1_paragraph",translations[lang].one_day_tours.tour_parahraph_1),
       setTextContent("one_d_tour_name_1_subname",translations[lang].one_day_tours.tour_name_1_subname),
       setTextContent("one_d_tour_name_1_price_1",translations[lang].one_day_tours.tour_name_1_price_1),
       setTextContent("one_d_tour_name_1_price_2",translations[lang].one_day_tours.tour_name_1_price_2),
@@ -360,7 +360,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_d_tour_name_1_included_2",translations[lang].one_day_tours.tour_name_1_included_2),
       setTextContent("one_d_tour_name_2",translations[lang].one_day_tours.tour_name_2),
       setTextContent("one_d_tour_name_2_subname",translations[lang].one_day_tours.tour_name_2_subname),
-      setTextContent("one_d_tour_nam_2_paragraph",translations[lang].one_day_tours.tour_parahraph_2),
+      setTextContent("one_d_tour_name_2_paragraph",translations[lang].one_day_tours.tour_parahraph_2),
       setTextContent("one_d_tour_name_2_price_1",translations[lang].one_day_tours.tour_name_2_price_1),
       setTextContent("one_d_tour_name_2_price_2",translations[lang].one_day_tours.tour_name_2_price_2),
       setTextContent("one_d_tour_name_2_price_3",translations[lang].one_day_tours.our_name_2_price_3),
@@ -376,7 +376,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_d_tour_name_2_included_2",translations[lang].one_day_tours.tour_name_2_included_2),
       setTextContent("one_d_tour_name_3",translations[lang].one_day_tours.tour_name_3),
       setTextContent("one_d_tour_name_3_subname",translations[lang].one_day_tours.tour_name_3_subname),
-      setTextContent("one_d_tour_nam_3_paragraph",translations[lang].one_day_tours.tour_parahraph_3),
+      setTextContent("one_d_tour_name_3_paragraph",translations[lang].one_day_tours.tour_parahraph_3),
       setTextContent("one_d_tour_name_3_price_1",translations[lang].one_day_tours.tour_name_3_price_1),
       setTextContent("one_d_tour_name_3_price_2",translations[lang].one_day_tours.tour_name_3_price_2),
       setTextContent("one_d_tour_name_3_price_3",translations[lang].one_day_tours.tour_name_3_price_3),
