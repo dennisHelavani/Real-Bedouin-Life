@@ -418,6 +418,7 @@ async function setLanguage(lang, url_path) {
 
       
       // 1 Day and 1 Night tours 
+      // Tour 1 
       setTextContent("1day-1night-tour-page-heading",translations[lang].one_day_one_night_tours.heading),
       setTextContent("one_n_tour_name_1",translations[lang].one_day_one_night_tours.tour_name_1),
       setTextContent("one_n_tour_name_1_subname",translations[lang].one_day_one_night_tours.tour_name_1_subname),
@@ -443,7 +444,8 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_n_tour_name_1_highlight_4",translations[lang].one_day_one_night_tours.tour_name_1_highlight_4),
       setTextContent("one_n_tour_name_1_highlight_5",translations[lang].one_day_one_night_tours.tour_name_1_highlight_5),
      
-
+      // 1 Day and 1 Night tours 
+      // Tour 2
       setTextContent("one_n_tour_name_2",translations[lang].one_day_one_night_tours.tour_name_2),
       setTextContent("one_n_tour_name_2_subname",translations[lang].one_day_one_night_tours.tour_name_2_subname),
       setTextContent("one_n_tour_name_2_paragraph",translations[lang].one_day_one_night_tours.tour_parahraph_2),
@@ -476,7 +478,8 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_n_tour_name_2_highlight_4",translations[lang].one_day_one_night_tours.tour_name_2_highlight_4),
       setTextContent("one_n_tour_name_2_highlight_5",translations[lang].one_day_one_night_tours.tour_name_2_highlight_5),
 
-
+       // 1 Day and 1 Night tours 
+      // Tour 3
       setTextContent("one_n_tour_name_3",translations[lang].one_day_one_night_tours.tour_name_3),
       setTextContent("one_n_tour_name_3_subname",translations[lang].one_day_one_night_tours.tour_name_3_subname),
       setTextContent("one_n_tour_name_3_paragraph",translations[lang].one_day_one_night_tours.tour_parahraph_3),
@@ -506,9 +509,37 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_n_tour_name_3_highlight_4",translations[lang].one_day_one_night_tours.tour_name_3_highlight_4),
       setTextContent("one_n_tour_name_3_highlight_5",translations[lang].one_day_one_night_tours.tour_name_3_highlight_5),
 
-     
-     
+     // Camel Ride and Hiking tours 
+      // Tour 1
+
+    
+      setTextContent("hike_general_hike_1",translations[lang].all_tours.h3_5),
+      setTextContent("hike_general_hike_2",translations[lang].all_tours.h3_6),
+      setTextContent("hike_general_hike_3",translations[lang].all_tours.h3_7),
+      setTextContent("hike_general_hike_4",translations[lang].all_tours.h3_4),
+
+      setTextContent("hiking-tour-page-heading",translations[lang].hiking.header),
+      setTextContent("hiking-tour-page-paragraph",translations[lang].hiking.paragraph),
+
+      setTextContent("hike_name_1",translations[lang].hiking.hike_name_1),
+      setTextContent("hike_name_1_subname",translations[lang].hiking.hike_name_1_subname),
+      setTextContent("hike_name_1_paragraph",translations[lang].hiking.description_hike_1),
+// Tour 2
+      setTextContent("hike_name_2",translations[lang].hiking.hike_name_2),
+      setTextContent("hike_name_2_subname",translations[lang].hiking.hike_name_2_subname),
+      setTextContent("hike_name_2_paragraph",translations[lang].hiking.description_hike_2),
       
+// Tour 3
+      setTextContent("hike_name_3",translations[lang].hiking.hike_name_3),
+      setTextContent("hike_name_3_subname",translations[lang].hiking.hike_name_3_subname),
+      setTextContent("hike_name_3_paragraph",translations[lang].hiking.description_hike_3),
+
+      setTextContent("hiking-duration",translations[lang].hiking.duration),
+      setTextContent("hiking-price",translations[lang].hiking.price_hike),
+
+      setTextContent("camel-price",translations[lang].hiking.price_camel_ride),
+      setTextContent("camel_ride_paragraph",translations[lang].hiking.description_camel_ride),
+
       localStorage.setItem("selectedLanguage", lang);
 
     // Update the dropdown to reflect the selected language
