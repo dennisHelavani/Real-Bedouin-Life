@@ -409,9 +409,12 @@ async function setLanguage(lang, url_path) {
       setTextContentByClass("list_price_included",translations[lang].one_day_tours.list_price_included),
       setTextContentByClass("list_visit_header",translations[lang].one_day_tours.list_visit_header),
       setTextContentByClass("book-button",translations[lang].one_day_tours.book_tour),
+      setTextContentByClass("list_highlight_header",translations[lang].one_day_tours.list_highlight_header),
       setTextContent("gallery_heading_1",translations[lang].one_day_tours.gallery_heading),
       setTextContent("gallery_heading_2",translations[lang].one_day_tours.gallery_heading),
       setTextContent("gallery_heading_3",translations[lang].one_day_tours.gallery_heading),
+      setTextContentByClass("gallery_heading",translations[lang].one_day_tours.gallery_heading),
+
 
       
       // 1 Day and 1 Night tours 
