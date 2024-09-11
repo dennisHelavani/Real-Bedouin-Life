@@ -343,8 +343,20 @@ async function setLanguage(lang, url_path) {
         "1day-tours-page-paragraph",
         translations[lang].one_day_tours.paragraph
       ),
-      
 
+ setTextContent(
+        "tour_general_tour_1",
+        translations[lang].all_tours.h3_1
+      ),
+      setTextContent(
+        "tour_general_tour_2",
+        translations[lang].all_tours.h3_2
+      ),
+      setTextContent(
+        "tour_general_tour_3",
+        translations[lang].all_tours.h3_3
+      ),
+      
       setTextContent("one_d_tour_name_1",translations[lang].one_day_tours.tour_name_1),
       setTextContent("one_d_tour_name_1_paragraph",translations[lang].one_day_tours.tour_parahraph_1),
       setTextContent("one_d_tour_name_1_subname",translations[lang].one_day_tours.tour_name_1_subname),
