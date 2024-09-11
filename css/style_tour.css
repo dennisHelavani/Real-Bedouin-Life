@@ -1413,6 +1413,7 @@ footer img:hover {
     /* Overlay styles */
     .overlay {
         display: none;
+        opacity: 0;
         position: fixed;
         top: 0;
         left: 0;
@@ -1731,6 +1732,7 @@ footer img:hover {
     .overlay {
         display: none;
         position: fixed;
+        opacity: 0;
         top: 0;
         left: 0;
         height: 100%;
@@ -2110,6 +2112,7 @@ footer img:hover {
     .overlay {
         display: none;
         position: fixed;
+        opacity: 0;
         top: 0;
         left: 0;
         height: 100%;
