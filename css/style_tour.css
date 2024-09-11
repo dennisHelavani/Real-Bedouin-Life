@@ -1424,8 +1424,8 @@ footer img:hover {
     }
 
     .overlay.active {
-        display: block;
-        opacity: 1;
+        display: none;
+        /* opacity: 1; */
     }
 
     .hero {
@@ -1741,8 +1741,8 @@ footer img:hover {
     }
 
     .overlay.active {
-        display: block;
-        opacity: 1;
+        display: none;
+        /* opacity: 1; */
     }
 
     .hero {
@@ -2120,8 +2120,8 @@ footer img:hover {
     }
 
     .overlay.active {
-        display: block;
-        opacity: 1;
+        display: none;
+        /* opacity: 1; */
     }
 
     .nav-links {
