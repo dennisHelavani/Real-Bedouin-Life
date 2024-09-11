@@ -610,6 +610,11 @@ async function setLanguage(lang, url_path) {
       setTextContent("two_d_tour_name_2_highlight_7",translations[lang].two_nights_tours.tour_name_2_highlight_7),
       setTextContent("two_d_tour_name_2_highlight_8",translations[lang].two_nights_tours.tour_name_2_highlight_8),
 
+
+      setTextContent("two_n_tour_one",translations[lang].all_tours.h3_11),
+      setTextContent("two_n_tour_two",translations[lang].all_tours.h3_12),
+
+
       localStorage.setItem("selectedLanguage", lang);
 
     // Update the dropdown to reflect the selected language
