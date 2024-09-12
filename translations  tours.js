@@ -544,6 +544,15 @@ async function setLanguage(lang, url_path) {
       setTextContent("camel-price",translations[lang].hiking.price_camel_ride),
       setTextContent("camel_ride_paragraph",translations[lang].hiking.description_camel_ride),
 
+      setTextContent("camel_ride_visit_1",translations[lang].hiking.camel_ride_visit_1),
+      setTextContent("camel_ride_visit_2",translations[lang].hiking.camel_ride_visit_2),
+      setTextContent("camel_ride_visit_3",translations[lang].hiking.camel_ride_visit_3),
+      setTextContent("camel_ride_visit_4",translations[lang].hiking.camel_ride_visit_4),
+      setTextContent("camel_ride_visit_5",translations[lang].hiking.camel_ride_visit_5),
+      setTextContent("camel_ride_visit_6",translations[lang].hiking.camel_ride_visit_6),
+      setTextContent("camel_ride_visit_7",translations[lang].hiking.camel_ride_visit_7),
+
+
 
 
       // 2 Days & 2 Nights Tours

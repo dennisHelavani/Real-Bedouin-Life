@@ -300,7 +300,14 @@
     "description_hike_2": "Jebel Al-Hish is a prominent peak known for its grandeur and historical significance. This striking mountain is part of the larger Jebel Rum massif and is a landmark of the region. The name \"Al-Hish\" translates to \"the ridge\" in Arabic.</br></br>Historically, Jebel Al-Hish has been a waypoint for desert travelers and Bedouins. It has been a part of local folklore and a beacon for those navigating the ancient trade routes.</br></br>Begin your half-day adventure from Wadi Rum village with your guide. After a short drive, you'll arrive at the base of Jebel Al-Hish.</br></br>The hike features a blend of sandy stretches and rocky paths, showing Wadi Rum’s diverse landscape. As you ascend, your guide will share stories about the mountain’s historical significance and its role in ancient desert trade.</br></br>Reaching the summit, you'll be rewarded with breathtaking views that make the desert appear like a mirage. This hike is a perfect blend of history, challenge, and stunning scenery.",
     "description_hike_3": "Jebel Barada, known for its distinctive rock formations and ancient significance, stands proudly in the heart of Wadi Rum. The name \"Barada\" translates to \"the waterfall\" in Arabic, because the area’s water sources once sustained the desert's inhabitants. This peak has served as a landmark guiding caravans and nomads across the desert landscape.</br></br>Start your half-day adventure from Wadi Rum village, where you’ll meet your guide and prepare for an exciting trek. You'll drive to the base of Jebel Barada, where the journey begins.</br></br>The trail goes through a fascinating mix of sandy paths and rugged rock, reflecting the diverse beauty of the desert. As you hike, your guide will share stories and legends about Jebel Barada and its role for ancient trade routes.</br></br>Reaching the summit, you'll be rewarded with panoramic views that reveal the serene beauty of the desert.",
     "description_camel_ride":"Step back in time and experience Wadi Rum the traditional way — on camelback. This way you can explore the desert at a leisurely pace, just as we the Bedouins have done for centuries. Enjoy stunning views from atop your camel as you cross sand dunes and visit the beautiful places of the desert. This is a perfect way to enjoy serene desert landscapes. You can easily add camel ride to any of the tours.</br></br></br> <span style=\"font-weight: bold;\">Optional Add-On:</span> Camel Ride and Hiking Tours can be added to any tour at any time.",
-    "gallery": "GALLERY"
+    "gallery": "GALLERY",
+    "camel_ride_visit_1":"Khor Al Ajram Valley",
+    "camel_ride_visit_2":"The Little Rock Bridge",
+    "camel_ride_visit_3":"Anfishiyeh Inscriptions",
+    "camel_ride_visit_4":"Geber Amra Canyon",
+    "camel_ride_visit_5":"Burdah Rock Bridge, the largest natural arch in Wadi Rum",
+    "camel_ride_visit_6":"Khashaba Canyon",
+    "camel_ride_visit_7":"South Desert"
   },
   "two_nights_tours": {
     "heading": "Tours with Two Nights in the Desert",
