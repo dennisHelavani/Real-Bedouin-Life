@@ -659,7 +659,7 @@ select:focus {
     line-height: 1.35;
 }
 
-/* .tour_button {
+.tour_button {
     cursor: pointer;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -668,11 +668,10 @@ select:focus {
     letter-spacing: 0.025rem;
     text-transform: uppercase;
     color: white;
-
     background-color: var(--button-color);
     border: none;
     border-radius: 25px;
-} */
+}
 
 .tour_button:hover {
     background-color: var(--animation-color);
@@ -1047,7 +1046,7 @@ select:focus {
 }
 .more-images button,
 .cta-button,
-.tour_button {
+ {
     padding:var( --buttons-padding);
     background: var(--buttons-background);
     color: white;
@@ -1057,7 +1056,7 @@ select:focus {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: backgr 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover,
