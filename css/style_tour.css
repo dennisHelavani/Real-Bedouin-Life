@@ -1070,7 +1070,7 @@ select:focus {
 
 .contact-container p {
     color: var(--form-color);
-    font-size: var(--form-fs);
+    font-size: var(--text-fs);
     letter-spacing: 0.01rem;
     margin: 0.25rem 0;
 }
@@ -1112,10 +1112,11 @@ select:focus {
     background: var(--bg-color);
     border: none;
     border-bottom: 1px solid var(--form-color);
-    padding: 0.5rem 0;
+    padding: 12px 15px;
     margin-bottom: 1rem;
     border-radius: 0;
     outline: none;
+    transition: all 0.3s ease;
 }
 
 .contact-container textarea {
