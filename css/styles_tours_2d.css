@@ -1126,8 +1126,8 @@ footer img:hover {
 
     .book-button {
         font-size: var(--text-fs);
-        width: 9rem;
-        height: 2.25rem;
+        /* width: 9rem;
+        height: 2.25rem; */
 
     }
 
@@ -1385,8 +1385,8 @@ footer img:hover {
 
     .book-button {
         font-size: var(--text-fs);
-        width: 9rem;
-        height: 2.25rem;
+        /* width: 9rem;
+        height: 2.25rem; */
 
     }
 
@@ -1624,8 +1624,8 @@ footer img:hover {
 
     .book-button {
         font-size: var(--text-fs);
-        width: 9rem;
-        height: 2.25rem;
+        /* width: 9rem;
+        height: 2.25rem; */
 
     }
 
@@ -1706,10 +1706,10 @@ footer img:hover {
     }
 
 
-    .book-button {
+    /* .book-button {
         width: 9rem;
         height: 2.25rem;
-    }
+    } */
 
     footer div:last-child {
         font-size: 12px;
