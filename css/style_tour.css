@@ -19,7 +19,7 @@
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
-    --animation-color: #f0a500;
+    --animation-color: #FF6F61;
     --backgroud-div: #b88255;
     --price-fs: 24px;
     --form-fs: 16px;
@@ -199,15 +199,16 @@ select:focus {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--header-background-color, #333); /* Adjust color as needed */
+    background-color: var(--header-background-color, #333);
+    /* Adjust color as needed */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 0;
     margin: 0;
     /* min-width: 150px;  */
-    width: max-content; 
+    width: max-content;
     /* max-width: 300px; */
     list-style: none;
-    z-index: 10; 
+    z-index: 10;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -221,7 +222,7 @@ select:focus {
 .dropdown-menu a {
     display: block;
     padding: 7px 3px;
-    text-decoration:none;
+    text-decoration: none;
     color: var(--header-color);
     font-size: var(--nav--dd-fs);
     text-transform: capitalize !important;
@@ -232,10 +233,11 @@ select:focus {
 
 .dropdown-menu a:hover {
     /* background-color: var(--animation-color); */
-    color: white; /* Adjust text color on hover */
+    color: white;
+    /* Adjust text color on hover */
 }
 
-.dropdown-menu img{
+.dropdown-menu img {
     display: none;
     width: 15px;
     height: 15px;
@@ -462,27 +464,37 @@ select:focus {
 }
 
 .btn {
-    cursor: pointer;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.65rem;
-    font-weight: bold;
-    letter-spacing: 0.025rem;
-    text-transform: uppercase;
+    padding: 8px 12px;
+    background: var(--buttons-background);
     color: white;
-
-    background-color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var(--animation-color);
+    background: white;
+    /* White background on hover */
+    color: #FF6F61;
+    /* Text color becomes orange to contrast */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF6F61;
 }
 
 .btn:focus {
     /* outline: 1px dashed yellow; */
-    outline-offset: 3px;
+    background: white;
+    /* White background on hover */
+    color: #FF6F61;
+    /* Text color becomes orange to contrast */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF6F61;
 }
 
 @media (hover: hover) and (min-width: 600px) {
@@ -630,13 +642,12 @@ select:focus {
 }
 
 .card-image:hover .overlay,
-.card-image:hover .btn
- {
+.card-image:hover .btn {
     opacity: 1;
     display: flex;
     outline-offset: 3px;
     transition: background-color 1s ease, color 1s ease;
-   
+
 }
 
 
@@ -986,17 +997,16 @@ select:focus {
 }
 
 .contact-item .details a,
-.contact-item .details
-{
+.contact-item .details {
     cursor: pointer;
     font-size: var(--form-fs);
     text-decoration: none;
     color: black;
 }
 
-.details a:hover{
+.details a:hover {
     cursor: pointer;
-    
+
 }
 
 .contact-item .details strong {
@@ -1313,6 +1323,7 @@ footer img:hover {
         --tour-link-fw: 300;
         --form-fs: 12px;
     }
+
     .hero {
         background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
     }
@@ -1375,33 +1386,41 @@ footer img:hover {
 
     .dropdown-menu {
         background-color: transparent;
-        position: static; /* Ensure the dropdown is positioned correctly */
-        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
-        transform: none; /* No slide effect on mobile */
-        opacity: 1; /* Always visible */
-        visibility: visible; /* Always visible */
-        transition: none; /* No transition for mobile */
+        position: static;
+        /* Ensure the dropdown is positioned correctly */
+        box-shadow: none;
+        /* Optional: Remove shadow on mobile for simplicity */
+        transform: none;
+        /* No slide effect on mobile */
+        opacity: 1;
+        /* Always visible */
+        visibility: visible;
+        /* Always visible */
+        transition: none;
+        /* No transition for mobile */
         display: block;
     }
 
     .dropdown-menu a {
-        padding-left: 10px; /* Adjust padding for touch screens */
-        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        padding-left: 10px;
+        /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px);
+        /* Adjust font size for mobile if needed */
         border-bottom: none !important;
     }
 
     /* Optional: Style the dropdown trigger for mobile */
-    .nav-item-dropdown 
-     {
+    .nav-item-dropdown {
         display: block;
         text-align: left;
         /* border-bottom: 1px solid var(--header-border-color, #ccc); */
     }
-    .dropdown-menu img{
+
+    .dropdown-menu img {
         display: block;
     }
 
-    .nav-item-dropdown li{
+    .nav-item-dropdown li {
         margin: 0;
         display: flex;
         align-items: center;
@@ -1428,21 +1447,21 @@ footer img:hover {
         display: none;
         opacity: 0;
     }
+
     .card-image:hover .overlay,
-.card-image:hover .btn
- {
-    opacity: 0;
-    display: flex;
-    outline-offset: 3px;
-    transition: background-color 1s ease, color 1s ease;
-   
-}
+    .card-image:hover .btn {
+        opacity: 0;
+        display: flex;
+        outline-offset: 3px;
+        transition: background-color 1s ease, color 1s ease;
+
+    }
 
     .hero {
         background-image: url('../images_resized/backgroud_mobile.jpg');
     }
 
-   
+
     .price {
         font-size: 18px;
     }
@@ -1459,22 +1478,22 @@ footer img:hover {
         margin: 0 auto;
     }
 
-    .product-card{
+    .product-card {
         box-shadow: none;
     }
 
-    .title{
+    .title {
         padding: 10px 0 5px 0;
     }
 
     .card-content,
-    .card-content>p{
+    .card-content>p {
         /* text-align: left; */
         text-align: justify;
         padding: 0;
     }
 
-    
+
 
     .contact-item {
         vertical-align: middle;
@@ -1619,8 +1638,8 @@ footer img:hover {
         margin-bottom: 0;
     }
 
-    .cta-content h2{
-        font-size:var(--h1-fs) ;
+    .cta-content h2 {
+        font-size: var(--h1-fs);
         padding: 0 0 20px 0 !important;
 
     }
@@ -1640,6 +1659,7 @@ footer img:hover {
         --tour-link-fw: 300;
         --form-fs: 12px;
     }
+
     .hero {
         background: url("../images_resized/backgroud_mobile.jpg") center center/cover no-repeat;
     }
@@ -1702,33 +1722,41 @@ footer img:hover {
 
     .dropdown-menu {
         background-color: transparent;
-        position: static; /* Ensure the dropdown is positioned correctly */
-        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
-        transform: none; /* No slide effect on mobile */
-        opacity: 1; /* Always visible */
-        visibility: visible; /* Always visible */
-        transition: none; /* No transition for mobile */
+        position: static;
+        /* Ensure the dropdown is positioned correctly */
+        box-shadow: none;
+        /* Optional: Remove shadow on mobile for simplicity */
+        transform: none;
+        /* No slide effect on mobile */
+        opacity: 1;
+        /* Always visible */
+        visibility: visible;
+        /* Always visible */
+        transition: none;
+        /* No transition for mobile */
         display: block;
     }
 
     .dropdown-menu a {
-        padding-left: 10px; /* Adjust padding for touch screens */
-        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        padding-left: 10px;
+        /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px);
+        /* Adjust font size for mobile if needed */
         border-bottom: none !important;
     }
 
     /* Optional: Style the dropdown trigger for mobile */
-    .nav-item-dropdown 
-     {
+    .nav-item-dropdown {
         display: block;
         text-align: left;
         /* border-bottom: 1px solid var(--header-border-color, #ccc); */
     }
-    .dropdown-menu img{
+
+    .dropdown-menu img {
         display: block;
     }
 
-    .nav-item-dropdown li{
+    .nav-item-dropdown li {
         margin: 0;
         display: flex;
         align-items: center;
@@ -1753,23 +1781,23 @@ footer img:hover {
 
     .overlay.active {
         display: none;
-        opacity:0;
+        opacity: 0;
     }
+
     .card-image:hover .overlay,
-    .card-image:hover .btn
-     {
+    .card-image:hover .btn {
         opacity: 0;
         display: flex;
         outline-offset: 3px;
         transition: background-color 1s ease, color 1s ease;
-       
+
     }
 
     .hero {
         background-image: url('../images_resized/backgroud_mobile.jpg');
     }
 
-   
+
     .price {
         font-size: 18px;
     }
@@ -1786,22 +1814,22 @@ footer img:hover {
         margin: 0 auto;
     }
 
-    .product-card{
+    .product-card {
         box-shadow: none;
     }
 
-    .title{
+    .title {
         padding: 10px 0 5px 0;
     }
 
     .card-content,
-    .card-content>p{
+    .card-content>p {
         /* text-align: left; */
         text-align: justify;
         padding: 0;
     }
 
-    
+
 
     .contact-item {
         vertical-align: middle;
@@ -1946,8 +1974,8 @@ footer img:hover {
         margin-bottom: 0;
     }
 
-    .cta-content h2{
-        font-size:var(--h1-fs) ;
+    .cta-content h2 {
+        font-size: var(--h1-fs);
         padding: 0 0 20px 0 !important;
 
     }
@@ -2144,14 +2172,14 @@ footer img:hover {
         display: none;
         opacity: 0;
     }
+
     .card-image:hover .overlay,
-    .card-image:hover .btn
-     {
+    .card-image:hover .btn {
         opacity: 0;
         display: flex;
         outline-offset: 3px;
         transition: background-color 1s ease, color 1s ease;
-       
+
     }
 
     .nav-links {
@@ -2170,38 +2198,47 @@ footer img:hover {
 
     .dropdown-menu {
         background-color: transparent;
-        position: static; /* Ensure the dropdown is positioned correctly */
-        box-shadow: none; /* Optional: Remove shadow on mobile for simplicity */
-        transform: none; /* No slide effect on mobile */
-        opacity: 1; /* Always visible */
-        visibility: visible; /* Always visible */
-        transition: none; /* No transition for mobile */
+        position: static;
+        /* Ensure the dropdown is positioned correctly */
+        box-shadow: none;
+        /* Optional: Remove shadow on mobile for simplicity */
+        transform: none;
+        /* No slide effect on mobile */
+        opacity: 1;
+        /* Always visible */
+        visibility: visible;
+        /* Always visible */
+        transition: none;
+        /* No transition for mobile */
         display: block;
     }
 
     .dropdown-menu a {
-        padding-left: 10px; /* Adjust padding for touch screens */
-        font-size: var(--nav-fs-mobile, 16px); /* Adjust font size for mobile if needed */
+        padding-left: 10px;
+        /* Adjust padding for touch screens */
+        font-size: var(--nav-fs-mobile, 16px);
+        /* Adjust font size for mobile if needed */
         border-bottom: none !important;
     }
 
     /* Optional: Style the dropdown trigger for mobile */
-    .nav-item-dropdown 
-     {
+    .nav-item-dropdown {
         display: block;
         text-align: left;
         /* border-bottom: 1px solid var(--header-border-color, #ccc); */
     }
-    .dropdown-menu img{
+
+    .dropdown-menu img {
         display: block;
     }
 
-    .nav-item-dropdown li{
+    .nav-item-dropdown li {
         margin: 0;
         display: flex;
         align-items: center;
         border-bottom: none !important;
     }
+
     .tour-links {
         flex-direction: column;
     }

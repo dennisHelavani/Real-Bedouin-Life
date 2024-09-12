@@ -1050,8 +1050,9 @@ select:focus {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
+
 .more-images button,
-.cta-button,
+.cta-button
  {
     padding: var(--buttons-padding);
     background: var(--buttons-background);
