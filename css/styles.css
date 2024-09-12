@@ -1059,10 +1059,11 @@ select:focus {
 
 .cta-button:hover,
 .more-images button:hover {
-    background: var(--buttons-background-hover);
+    background: white; /* White background on hover */
+    color: #FF6F61; /* Text color becomes orange to contrast */
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-
+    border: 1px solid #FF6F61;
 }
 
 /* .cta-button:hover {
