@@ -538,6 +538,9 @@ async function setLanguage(lang, url_path) {
       setTextContentByClass("hiking-duration",translations[lang].hiking.duration),
       setTextContentByClass("hiking-price",translations[lang].hiking.price_hike),
       // Tour 4
+      
+      setTextContent("camel_ride_name",translations[lang].hiking.camel_ride_name),
+      setTextContent("camel_ride_name_subname",translations[lang].hiking.camel_ride_subname),
       setTextContent("camel-price",translations[lang].hiking.price_camel_ride),
       setTextContent("camel_ride_paragraph",translations[lang].hiking.description_camel_ride),
 
