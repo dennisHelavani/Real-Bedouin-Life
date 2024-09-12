@@ -1647,12 +1647,12 @@ footer img:hover {
 /* Small Devices (Landscape Phones) */
 @media (min-width: 321px) and (max-width: 480px) {
     :root {
-        --nav-fs: 14px;
+        --nav-fs: 18px;
         --text-fs: 14px;
-        --h1-fs: 20px;
+        --h1-fs: 22px;
         --price-fs: 15px;
         --tour-link-fw: 300;
-        --form-fs: 14px;
+        --form-fs: 18px;
     }
 
     .hero {
