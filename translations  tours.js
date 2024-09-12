@@ -375,7 +375,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_d_tour_name_2_paragraph",translations[lang].one_day_tours.tour_parahraph_2),
       setTextContent("one_d_tour_name_2_price_1",translations[lang].one_day_tours.tour_name_2_price_1),
       setTextContent("one_d_tour_name_2_price_2",translations[lang].one_day_tours.tour_name_2_price_2),
-      setTextContent("one_d_tour_name_2_price_3",translations[lang].one_day_tours.еour_name_2_price_3),
+      setTextContent("one_d_tour_name_2_price_3",translations[lang].one_day_tours.tour_name_2_price_3),
       setTextContent("one_d_tour_name_2_visit_1",translations[lang].one_day_tours.tour_name_2_visit_1),
       setTextContent("one_d_tour_name_2_visit_2",translations[lang].one_day_tours.tour_name_2_visit_2),
       setTextContent("one_d_tour_name_2_visit_3",translations[lang].one_day_tours.tour_name_2_visit_3),
@@ -470,7 +470,7 @@ async function setLanguage(lang, url_path) {
 
       setTextContent("one_n_tour_name_2_included_1",translations[lang].one_day_one_night_tours.tour_name_2_included_1),
       setTextContent("one_n_tour_name_2_included_2",translations[lang].one_day_one_night_tours.tour_name_2_included_2),
-      setTextContent("one_n_tour_name_2_included_3",translations[lang].one_day_one_night_tours.tour_name_2_included_3),
+      // setTextContent("one_n_tour_name_2_included_3",translations[lang].one_day_one_night_tours.tour_name_2_included_3),
       setTextContent("one_n_tour_name_2_included_4",translations[lang].one_day_one_night_tours.tour_name_2_included_4),
       setTextContent("one_n_tour_name_2_included_5",translations[lang].one_day_one_night_tours.tour_name_2_included_5),
       setTextContent("one_n_tour_name_2_included_6",translations[lang].one_day_one_night_tours.tour_name_2_included_6),
@@ -479,7 +479,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("one_n_tour_name_2_highlight_2",translations[lang].one_day_one_night_tours.tour_name_2_highlight_2),
       setTextContent("one_n_tour_name_2_highlight_3",translations[lang].one_day_one_night_tours.tour_name_2_highlight_3),
       setTextContent("one_n_tour_name_2_highlight_4",translations[lang].one_day_one_night_tours.tour_name_2_highlight_4),
-      setTextContent("one_n_tour_name_2_highlight_5",translations[lang].one_day_one_night_tours.tour_name_2_highlight_5),
+      // setTextContent("one_n_tour_name_2_highlight_5",translations[lang].one_day_one_night_tours.tour_name_2_highlight_5),
 
        // 1 Day and 1 Night tours 
       // Tour 3
@@ -577,7 +577,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("two_d_tour_name_1_highlight_4",translations[lang].two_nights_tours.tour_name_1_highlight_4),
       setTextContent("two_d_tour_name_1_highlight_5",translations[lang].two_nights_tours.tour_name_1_highlight_5),
       setTextContent("two_d_tour_name_1_highlight_6",translations[lang].two_nights_tours.tour_name_1_highlight_6),
-      setTextContent("two_d_tour_name_1_highlight_7",translations[lang].two_nights_tours.tour_name_1_highlight_7),
+      // setTextContent("two_d_tour_name_1_highlight_7",translations[lang].two_nights_tours.tour_name_1_highlight_7),
       setTextContent("two_d_tour_name_1_highlight_8",translations[lang].two_nights_tours.tour_name_1_highlight_8),
 
 
@@ -593,7 +593,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("two_d_tour_name_2_visit_6",translations[lang].two_nights_tours.tour_name_2_visit_6),
       setTextContent("two_d_tour_name_2_visit_7",translations[lang].two_nights_tours.tour_name_2_visit_7),
       setTextContent("two_d_tour_name_2_visit_8",translations[lang].two_nights_tours.tour_name_2_visit_8),
-      setTextContent("two_d_tour_name_2_visit_9",translations[lang].two_nights_tours.tour_name_2_visit_9),
+      // setTextContent("two_d_tour_name_2_visit_9",translations[lang].two_nights_tours.tour_name_2_visit_9),
 2
       setTextContent("two_d_tour_name_2_price_1",translations[lang].two_nights_tours.tour_name_2_price_1),
       setTextContent("two_d_tour_name_2_price_2",translations[lang].two_nights_tours.tour_name_2_price_2),
