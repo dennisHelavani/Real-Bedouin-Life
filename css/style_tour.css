@@ -652,7 +652,7 @@ select:focus {
 
 .card-content>p {
     text-align: center;
-    font-size: var(--form-fs);
+    font-size: var(--text-fs);
 }
 
 
