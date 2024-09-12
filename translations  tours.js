@@ -610,7 +610,7 @@ async function setLanguage(lang, url_path) {
       setTextContent("two_d_tour_name_2_highlight_4",translations[lang].two_nights_tours.tour_name_2_highlight_4),
       setTextContent("two_d_tour_name_2_highlight_5",translations[lang].two_nights_tours.tour_name_2_highlight_5),
       setTextContent("two_d_tour_name_2_highlight_6",translations[lang].two_nights_tours.tour_name_2_highlight_6),
-      setTextContent("two_d_tour_name_2_highlight_7",translations[lang].two_nights_tours.tour_name_2_highlight_7),
+      // setTextContent("two_d_tour_name_2_highlight_7",translations[lang].two_nights_tours.tour_name_2_highlight_7),
       setTextContent("two_d_tour_name_2_highlight_8",translations[lang].two_nights_tours.tour_name_2_highlight_8),
 
 

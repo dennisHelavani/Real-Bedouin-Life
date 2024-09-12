@@ -310,7 +310,7 @@ padding: 0 15px 0 15px;
 .hero-heading-first h1 {
     color: var(--h1-c);
     letter-spacing: 5px;
-    font-size: clamp(2rem, 7vw, 10rem);
+    font-size: clamp(2rem, 5.5vw, 9rem);
 }
 
 
