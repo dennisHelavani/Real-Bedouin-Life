@@ -162,15 +162,15 @@ document.querySelectorAll(".faq-question-wrap").forEach((wrap) => {
       parentItem.classList.remove('active');
       answerElement.style.maxHeight = '0';
       answerElement.style.opacity = '0';
-      questionElement.style.color = "#FF6F61";
-      arrowElement.src = "images/arrow-down.png";
+      questionElement.style.color = "#b88255";
+      arrowElement.src = "../images/arrow-down.png";
     } else {
       // Show this one
       parentItem.classList.add('active');
       answerElement.style.maxHeight = answerElement.scrollHeight + "px";
       answerElement.style.opacity = '1';
-      questionElement.style.color = "#f0a500";
-      arrowElement.src = "images/arrow-up.png";
+      questionElement.style.color = "#FF6F61";
+      arrowElement.src = "../images/arrow-up.png";
     }
   });
 });
