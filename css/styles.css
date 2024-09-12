@@ -660,26 +660,32 @@ select:focus {
 }
 
 .tour_button {
-    cursor: pointer;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.65rem;
-    font-weight: bold;
-    letter-spacing: 0.025rem;
-    text-transform: uppercase;
+    padding: 8px 12px;
+    background: var(--buttons-background);
     color: white;
-    background-color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .tour_button:hover {
-    background-color: var(--animation-color);
+    background: white; /* White background on hover */
+    color: #FF6F61; /* Text color becomes orange to contrast */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF6F61;
 }
 
 .tour_button:focus {
-    /* outline: 1px dashed yellow; */
-    outline-offset: 3px;
+    background: white; /* White background on hover */
+    color: #FF6F61; /* Text color becomes orange to contrast */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF6F61;
 }
 
 @media (hover: hover) and (min-width: 600px) {
@@ -1047,7 +1053,7 @@ select:focus {
 .more-images button,
 .cta-button,
  {
-    padding:var( --buttons-padding);
+    padding: var(--buttons-padding);
     background: var(--buttons-background);
     color: white;
     font-size: 16px;
