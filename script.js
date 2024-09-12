@@ -162,7 +162,7 @@ document.querySelectorAll(".faq-question-wrap").forEach((wrap) => {
       parentItem.classList.remove('active');
       answerElement.style.maxHeight = '0';
       answerElement.style.opacity = '0';
-      questionElement.style.color = "#b88255";
+      questionElement.style.color = "#FF6F61";
       arrowElement.src = "images/arrow-down.png";
     } else {
       // Show this one
