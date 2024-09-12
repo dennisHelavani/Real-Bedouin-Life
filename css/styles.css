@@ -28,6 +28,9 @@
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
 
+    --buttons-padding:12px 24px;
+    --buttons-background:linear-gradient(135deg, #FF914D, #FF6F61);
+    --buttons-backgorund-hover: linear-gradient(135deg, #FF6F61, #FF914D);
 }
 
 * {
@@ -791,14 +794,13 @@ select:focus {
     ;
 }
 
-.more-images button {
+/* .more-images button {
     cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
     background: #b88255;
-    /* Updated background color */
     border: 2px solid #b88255;
     border-radius: 25px;
     text-decoration: none;
@@ -806,11 +808,9 @@ select:focus {
 }
 
 .more-images button:hover {
-
     background: #a3714d;
-    /* Darken the background color on hover */
     color: #fff;
-}
+} */
 
 .spinner {
     /* height: 20%; */
@@ -1043,25 +1043,26 @@ select:focus {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-
+.more-images button,
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background: #b88255;
-    /* Updated background color */
-    border: 2px solid #b88255;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
+    padding:var( --buttons-padding);
+    background: var(--buttons-background);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.cta-button:hover {
-    background: #a3714d;
-    /* Darken the background color on hover */
-    color: #fff;
-    border-color: var(--animation-color);
+.cta-button:hover,
+.more-images button:hover {
+    background: var(--buttons-background-hover);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+
 }
 
 /* .cta-button:hover {
