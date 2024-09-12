@@ -1112,8 +1112,8 @@ select:focus {
     background: var(--bg-color);
     border: none;
     border-bottom: 1px solid var(--form-color);
-    padding: 12px 15px;
-    margin-bottom: 1rem;
+    padding: 12px 0 0 0;
+    margin-bottom: 1.2rem;
     border-radius: 0;
     outline: none;
     transition: all 0.3s ease;
