@@ -28,6 +28,9 @@
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
     --h2-fs: 18px;
+    --buttons-padding:12px 24px;
+    --buttons-background:linear-gradient(135deg, #FF914D, #FF6F61);
+    --buttons-backgorund-hover: linear-gradient(135deg, #FF6F61, #FF914D);
 }
 
 * {
