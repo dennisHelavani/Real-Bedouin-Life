@@ -20,7 +20,7 @@
     --bg-color: white;
     --button-color: #b88255;
     --h1-color: #3F444C;
-    --animation-color: #f0a500;
+    --animation-color: #FF6F61;
     --backgroud-div: #b88255;
     --price-fs: 18px;
     --form-fs: 16px;
@@ -704,23 +704,24 @@ select:focus {
 } */
 
 .book-button {
-    text-transform: uppercase;
-    font-weight: var(--tour-link-fw);
-    background: var(--button-color);
-    color: var(--bg-color);
-    width: 10rem;
-    height: 2.25rem;
+    padding: var(--buttons-padding);
+    background: var(--buttons-background);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
     border: none;
-    border-radius: 25px;
-    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .book-button:hover {
-    /* background-color: #8a6438; */
-    opacity: 0.8;
-    transform: scale(1.1);
+    background: white; /* White background on hover */
+    color: #FF6F61; /* Text color becomes orange to contrast */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF6F61;
 }
 
 .image-content {
